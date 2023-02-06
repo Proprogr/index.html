@@ -113,7 +113,7 @@
     
     .top-container1{
         width: 100%;
-        height: 19rem;
+        height: 18rem;
         justify-content: center;
         justify-items: center;
         object-fit: cover;
@@ -123,7 +123,7 @@
         overflow: hidden;
         position: relative;
         width: 100%;
-        height: 19rem;
+        height: 18rem;
         justify-content: center;
         background: transparent;
         
@@ -132,13 +132,13 @@
     .diapo1{
         position: absolute;
         width: 100%;
-        height: 19rem;
+        height: 18rem;
         animation: auto 27s ease-in infinite;
         animation-delay: 27s;
     }
     .diapo1 img{
         width: 100%;
-        height: 19rem;
+        height: 18rem;
     }
     @keyframes auto1{
     0%{left: 100%;}
@@ -151,13 +151,13 @@
     .diapo2{
         position: absolute;
         width: 100%;
-        height: 19rem;
+        height: 18rem;
         animation: auto 27s ease-in infinite;
         animation-delay: 18s;
     }
     .diapo2 img{
         width: 100%;
-        height: 19rem;
+        height: 18rem;
     }
     @keyframes auto{
     0%{left: 100%;}
@@ -185,7 +185,7 @@
     }
     .diapo3 img{
         width: 100%;
-        height: 19rem;
+        height: 18rem;
     }
 
     @keyframes auto{
@@ -203,14 +203,14 @@
         justify-content: center;
         align-items: center;
         width: 99.85%;
-        height: 16.5rem;
+        height: 14rem;
         padding: 1rem;
         border: 0.13rem solid rgba(66, 183, 255, 0.959);
         border-radius: 0.5rem;
-        margin-top: -0.55rem;
+        margin-top: -0.75rem;
         font-size: 2rem;
         color: rgb(247, 247, 247);
-        text-shadow: 0.5px 0.5px rgb(0, 238, 255);
+        text-shadow: 0.5px 0.5px rgba(66, 183, 255, 0.959);
     }
     
          .navbar{
@@ -471,7 +471,7 @@
             flex-direction: row;
             justify-content: center;
             align-items: center;
-            width: 290px;
+            width: 500px;
             height: 35px;
             font-family: 'georgia';
             padding: 5px;
@@ -749,7 +749,7 @@
         background: rgb(230, 230, 230);
     }
     ::-webkit-scrollbar-thumb{
-        background: rgb(172, 172, 172);
+        background: rgba(152, 152, 152, 0.95);
         width: auto;
     }
     ::-webkit-scrollbar-track-piece:hover{
@@ -771,8 +771,6 @@
         border-top: 0.5px solid rgb(230, 186, 120);
         border-left: 0.5px solid rgba(226, 183, 118, 0.985);
         border-right: 0.5px solid rgba(226, 183, 118, 0.985);
-        border-top-left-radius: 0.65rem;
-        border-top-right-radius: 0.65rem;
     }
 
     .fwrap1{
@@ -1773,45 +1771,57 @@ margin-top: 2.5rem;
         transition: 0.15s ease-in;
     }
 
-    .top-container {
+    .top-container{
+    display: flex;
+    position: relative;
+    background: rgba(158, 158, 158, 0.637);
+    width: 100%;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+    background-position: cover;
+}
+
+.ttle-container{
             display: flex;
             position: relative;
-            width: 100%;
-            height: 80px;
-            justify-content: center;
             align-items: center;
-            background-position: cover;
-            background-color: rgba(172, 172, 172, 0.986);
+            justify-content: center;
+            width: 83.9%;
+            height: 39px;
+            background: rgba(143, 143, 143, 0.975);
+            border-radius: 48px;
+            margin-left: -110px; 
+            margin-top: 8px;
         }
+        .tt-container{
+            display: flex;
+            position: relative;
+            align-items: center;
+            justify-content: start;
+            width: 99.3%;
+            height: 33px;
+            background: rgba(13, 13, 13, 0.7);
+            border-radius: 48px;
+            color: #fff;
+            font-size: 12px;
+            word-spacing: 1px;
+}
+    
 
-        .ttle-container {
+.ttle-container{
             display: flex;
             position: relative;
             align-items: center;
             justify-content: center;
             width: 95%;
             height: 39.4px;
-            background-color: #f7f7f7;
+            background: rgba(143, 143, 143, 0.975);
             border-radius: 48px;
             margin-left: 20px;
-            margin-top: 8px;
         }
-
-        .tt-container {
-            display: flex;
-            position: relative;
-            align-items: center;
-            justify-content: start;
-            width: 99.5%;
-            height: 34.8px;
-            background: rgba(23, 23, 23, 0.927);
-            border-radius: 48px;
-            color: #fff;
-            font-size: 12px;
-            word-spacing: 1px;
-        }
-
-        .titlecontainer {
+    
+.titlecontainer{
             display: flex;
             position: relative;
             align-items: center;
@@ -1823,232 +1833,183 @@ margin-top: 2.5rem;
             margin-left: 2.48px;
             border-radius: 15px;
             color: #000;
-            background: rgba(9, 9, 9, 0.798);
+            background: rgb(185, 177, 174);
             font-family: 'verdana';
-            animation: mymove0 55s ease-in infinite;
-            animation-direction: alternate;
-            cursor: pointer;
+            animation: mymove0 55s ease-in infinite; 
+            animation-direction: alternate; 
+            cursor: pointer; 
         }
+        @keyframes mymove0{
+0% {left: 0px; background:-webkit-linear-gradient( rgb(255, 251, 7), #e7e5e5ca);}
+40%{left: 78px; background: -webkit-linear-gradient( rgb(255, 251, 7), #e7e5e5ca);}
+70%{left: 85px; background: -webkit-linear-gradient(rgb(253, 255, 254), rgb(245, 249, 245));}
+100%{left: 182px; background: -webkit-linear-gradient(#ffbc9a, rgb(255, 255, 255));}
+}
+.titlecontainer:hover{
+            animation-play-state: paused;}
 
-        @keyframes mymove0 {
-            0% {
-                left: 0px;
-                background: -webkit-linear-gradient(rgba(255, 251, 10, 0.902), #d3d3d3e2);
+            .titlecontainer a:hover{
+                transform: scale(1.1);
             }
 
-            40% {
-                left: 78px;
-                background: -webkit-linear-gradient(rgba(255, 251, 10, 0.902), #d3d3d3e2);
-            }
+.ttl-container{
+    display: flex;
+    position: relative;
+    background: rgba(143, 143, 143, 0.975);
+    width: 75%;
+    height: 39.5px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-radius: 48px;
+    margin-left: 1.71%;
+    margin-top: 8px;
 
-            70% {
-                left: 85px;
-                background: -webkit-linear-gradient(#ffb793f6, rgb(243, 243, 243));
-            }
+}
+.t-container{
+    display: flex;
+    position: relative;
+    background: rgba(13, 13, 13, 0.7);
+    width: 96.1%;
+    height: 34px;
+    align-items: center;
+    justify-content: center ;
+    border-radius: 48px; 
+    margin-top: -0.1px!important;
+}
 
-            100% {
-                left: 182px;
-                background: -webkit-linear-gradient(#ffb793f6, rgb(243, 243, 243));
-            }
-        }
+.titlcontainer{
+    display: flex;
+    position: relative;
+    background:-webkit-linear-gradient( rgb(255, 251, 17), #e3dbd4ca);
+    font-family: 'verdana';
+    width:90px;
+    height:30.5px;
+    padding-right: 3.5px;
+    padding-left: 3.5px;
+    border-radius: 15px;
+    align-items: center;
+    justify-content: center;
+    margin-right: 49%;
+    animation: mymove18 45s ease-in infinite; 
+    animation-direction: alternate; 
+    cursor: pointer;       
+    
+}
 
-        .titlecontainer:hover {
-            animation-play-state: paused;
-        }
+@keyframes mymove18{
+ 0% {left: 0px; background:-webkit-linear-gradient( rgb(251, 255, 25), #e3dbd4ca);}
+15%{left: 49px; background:-webkit-linear-gradient(rgb(253, 255, 254), rgb(245, 249, 245));}
+46%{left: 58px; background:-webkit-linear-gradient(rgb(255, 255, 13), rgb(71, 255, 77));}
+65% {left: 85px; background:-webkit-linear-gradient(#fdb997, rgb(255, 255, 255));}
+}
+.titlcontainer:hover{
+    animation-play-state: paused;
+    transform: scale(1.1);
+}
 
-        .titlecontainer a:hover {
-            transform: scale(1.1);
-        }
+.wrapper{
+    display: flex;
+    position: relative;
+    background: transparent;
+    width: 98%;
+    height: 60px;
+    flex-wrap: wrap;
+    border-radius: 7px;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    margin-left: -5px;
+    margin-top: 4px;
+}
 
-        .ttl-container {
-            display: flex;
-            position: relative;
-            background-color: #f7f7f7;
-            width: 73%;
-            height: 39.5px;
-            align-items: center;
-            justify-content: center;
-            flex-wrap: wrap;
-            border-radius: 48px;
-            margin-left: 1.71%;
-            margin-top: 8px;
+.emonth-container{
+    display: flex;
+    position: relative;
+    background: -webkit-linear-gradient(rgb(0, 113, 0), rgb(0, 97, 0));
+    font-family: 'verdana';
+    font-size: 12px bold;
+    color: yellow;
+    border-top: 4px solid #ff0;
+    border-radius: 13px;
+    width:65% ;
+    height: 30px;
+    margin-top: -5px;
+    margin-left: -4.5px;
+    justify-content: start;
+    align-items: center;
+    animation: mymove14 55s ease-in infinite;
+    animation-direction: alternate;
+    cursor: pointer;
+}
+@keyframes mymove14{
+    from{left: -7px;}
+    to{left: -610px;}
+}
+.emonth-container:hover{
+    animation-play-state: paused;
+}
 
-        }
+.fmonth-container{
+    display: flex;
+    position: relative;
+    background: -webkit-linear-gradient(rgb(0, 113, 0), rgb(0, 97, 0));
+    font-family: 'verdana';
+    color: yellow;
+    font-size: 12px bold;
+    border-bottom: 4px solid yellow;
+    border-radius: 13px;
+    margin-left: -4.5px;
+    margin-top: -5px;
+    width:65%;
+    height: 30px;
+    justify-content: start;
+    align-items: center;
+    animation: mymove13 55s ease-in infinite;
+    animation-direction: alternate;
+    cursor: pointer;
+}
+@keyframes mymove13{
+    from{left: -7px;}
+    to{left: -610px;}
+}
+.fmonth-container:hover{
+    animation-play-state: paused;
+}
 
-        .t-container {
-            display: flex;
-            position: relative;
-            background: rgba(23, 23, 23, 0.927);
-            width: 96.3%;
-            height: 34px;
-            align-items: center;
-            justify-content: center;
-            border-radius: 48px;
-            margin-top: -0.1px !important;
-        }
+.mother-cover{
+    display: flex;
+    position: relative;
+    background: transparent;
+    width:100%;
+    height: 77px;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: -68px;
+}
+.cover{
+    display: flex;
+    position: relative;
+    width: 20%;
+    height: 69px;
+    background: rgba(158, 158, 158, 0.637);
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid transparent; 
+    margin-left: -1.31%; 
+}
 
-        .titlcontainer {
-            display: flex;
-            position: relative;
-            background: -webkit-linear-gradient(rgba(255, 251, 17, 0.902), #e3dbd4d0);
-            font-family: 'verdana';
-            width: 90px;
-            height: 30.5px;
-            padding-right: 3.5px;
-            padding-left: 3.5px;
-            border-radius: 15px;
-            align-items: center;
-            justify-content: center;
-            margin-right: 49%;
-            animation: mymove18 45s ease-in infinite;
-            animation-direction: alternate;
-            cursor: pointer;
-
-        }
-
-        @keyframes mymove18 {
-            0% {
-                left: 0px;
-                background: -webkit-linear-gradient(rgba(251, 255, 25, 0.872), #e3dbd4ca);
-            }
-
-            15% {
-                left: 49px;
-                background: -webkit-linear-gradient(rgb(253, 255, 254), rgb(245, 249, 245));
-            }
-
-            46% {
-                left: 58px;
-                background: -webkit-linear-gradient(rgb(255, 255, 13), rgb(71, 255, 77));
-            }
-
-            65% {
-                left: 85px;
-                background: -webkit-linear-gradient(#fdb997, rgb(255, 255, 255));
-            }
-        }
-
-        .titlcontainer:hover {
-            animation-play-state: paused;
-            transform: scale(1.1);
-        }
-
-        .wrapper {
-            display: flex;
-            position: relative;
-            background: transparent;
-            width: 98%;
-            height: 70px;
-            flex-wrap: wrap;
-            border-radius: 7px;
-            align-items: center;
-            justify-content: center;
-            align-self: center;
-            margin-left: -5px;
-        }
-
-        .emonth-container {
-            display: flex;
-            position: relative;
-            background: -webkit-linear-gradient(rgb(0, 113, 0), rgb(0, 97, 0));
-            font-family: 'verdana';
-            font-size: 12px bold;
-            color: yellow;
-            border-top: 4px solid #ff0;
-            border-radius: 13px;
-            width: 65%;
-            height: 30px;
-            margin-top: -4px;
-            margin-left: -4.5px;
-            justify-content: start;
-            align-items: center;
-            animation: mymove14 55s ease-in infinite;
-            animation-direction: alternate;
-            cursor: pointer;
-        }
-
-        @keyframes mymove14 {
-            from {
-                left: -7px;
-            }
-
-            to {
-                left: -610px;
-            }
-        }
-
-        .emonth-container:hover {
-            animation-play-state: paused;
-        }
-
-        .fmonth-container {
-            display: flex;
-            position: relative;
-            background: -webkit-linear-gradient(rgb(0, 113, 0), rgb(0, 97, 0));
-            font-family: 'verdana';
-            color: yellow;
-            font-size: 12px bold;
-            border-bottom: 4px solid yellow;
-            border-radius: 13px;
-            margin-left: -4.5px;
-            margin-top: -4px;
-            width: 65%;
-            height: 30px;
-            justify-content: start;
-            align-items: center;
-            animation: mymove13 55s ease-in infinite;
-            animation-direction: alternate;
-            cursor: pointer;
-        }
-
-        @keyframes mymove13 {
-            from {
-                left: -7px;
-            }
-
-            to {
-                left: -610px;
-            }
-        }
-
-        .fmonth-container:hover {
-            animation-play-state: paused;
-        }
-
-        .mother-cover {
-            display: flex;
-            position: relative;
-            background: transparent;
-            width: 100%;
-            height: 80px;
-            align-items: center;
-            justify-content: space-between;
-            margin-top: -68px;
-        }
-
-        .cover {
-            display: flex;
-            position: relative;
-            width: 20%;
-            height: 79px;
-            background-color: rgba(172, 172, 172, 0.986);
-            justify-content: center;
-            align-items: center;
-            margin-left: -1.31%;
-            margin-top: 10.5px;
-        }
-
-        .cover1 {
-            display: flex;
-            position: relative;
-            width: 79.6%;
-            height: 79px;
-            background-color: rgba(172, 172, 172, 0.986);
-            justify-content: center;
-            align-items: center;
-            margin-left: 7%;
-            margin-top: 10.5px;
-        }
+.cover1{
+    display: flex;
+    position: relative;
+    width: 80%;
+    height: 69px;
+    background: rgba(158, 158, 158, 0.637);
+    justify-content: center;
+    align-items: center;
+    border-left: 1px solid transparent;
+    margin-left: 8%;
+}
     
        </style>
     
@@ -2154,7 +2115,7 @@ new google.translate.TranslateElement({pageLanguage: 'en', layout: google.transl
     
     
         <div class="TikiYiki">
-            <button class="dropbtn"><em>Tiki Yiki Foundation</em>
+            <button class="dropbtn"><em>Tiki Yiki</em>
                 <i class="fa fa-caret-down">
             </i>
             </button>
@@ -2168,7 +2129,7 @@ new google.translate.TranslateElement({pageLanguage: 'en', layout: google.transl
         
         
         <div class="Education">
-            <button class="dropbtn"><em>Inclusive Education</em>
+            <button class="dropbtn"><em> Education</em>
                 <i class="fa fa-caret-down">
             </i>
             </button>
@@ -2180,7 +2141,7 @@ new google.translate.TranslateElement({pageLanguage: 'en', layout: google.transl
             </div>
         
                 <div class="HealthCare">
-                    <button class="dropbtn"><em>Health Care System</em>
+                    <button class="dropbtn"><em>Health Care</em>
                         <i class="fa fa-caret-down">
                     </i>
                     </button>
@@ -2523,41 +2484,36 @@ new google.translate.TranslateElement({pageLanguage: 'en', layout: google.transl
 
             <div class="top-container">
                 <div class="wrapper">
-        
+            
                     <div class="emonth-container">**MONDAY**TUESDAY**WEDNESDAY**THURSDAY**FRIDAY**SATURDAY**SUNDAY</div>
-        
+            
                     <div class="fmonth-container">***LUNDI****MARDI****MERCREDI****JEUDI***VENDREDI**SAMEDI**DIMANCHE</div>
-        
-                    <div class="mother-cover">
-        
-                        <div class="cover">
-                            <div class="ttl-container">
-                                <div class="t-container">
-                                    <div class="titlcontainer">
-                                        <a href="file:///C:/Users/User/Documents/Photo.html" target="blank">
-                                            <h4>Photos</h4>
-                                        </a>
-                                    </div>
-        
-                                </div>
-                            </div>
+            
+                <div class="mother-cover">
+                
+                    <div class="cover">
+                        <div class="ttl-container">
+                        <div class="t-container">
+                        <div class="titlcontainer">
+                           <a href="https://www.wfp.org/countries/burkina-faso#:~:text=In%202019%2C%20Burkina%20Faso%20was,a%20sharp%20spike%20in%20numbers." target="blank"><h4>Food</h4></a>
                         </div>
-        
-                        <div class="cover1">
-                            <div class="ttle-container">
-                                <div class="tt-container">
-                                    <div class="titlecontainer">
-                                        <a href="https://www.opensocietyfoundations.org/explainers/value-inclusive-education"
-                                            target="blank">
-                                            <h2>WHAT IS THE VALUE OF INCLUSIVE EDUCATION ? | Learn More...</h2>
-                                        </a>
-                                    </div>
-        
-                                </div>
-                            </div>
-                        </div>
+                
+                    </div>
                     </div>
                 </div>
+            
+                    <div class="cover1">
+                        <div class="ttle-container">
+                        <div class="tt-container">
+                        <div class="titlecontainer">
+                             <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6489163/" target="blank"><h2>WHAT IS THE VALUE OF INCLUSIVE EDUCATION ? | LEARN MORE...</h2></a>
+                        </div>
+                        
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
             </div>
             <div class="footer">
                 <br> 
