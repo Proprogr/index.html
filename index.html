@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="kid-education,activities,students">
-    <meta name="keywords" content="education,disablity,inclusion,africa,burkina-faso,west-africa,destiny,self-determination,photography,disabled people,disabled-potographer">
+    <meta name="description" content="education,activities,students">
+    <meta name="keywords" content="education,disablity,inclusion,africa,burkina-faso,destinity,self-determination,photography,disabled-people,disabled-potographer">
     <meta name="twitter:card" content="summary">
     <meta property="og:site_name" content="Tiki-Yiki">
     <meta property="og:title" content="education">
@@ -26,10 +26,11 @@
     <link rel="javascript" type="text/javascript" href="js.main" media="all">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="preconnect" href="https://fonts.googleapis.com">
 <style> 
 
     *{
-         box-sizing: border-box;
+        box-sizing: border-box;
         -moz-box-sizing: border-box;
         -webkit-box-sizing: border-box;
         margin-top: 0;
@@ -39,650 +40,369 @@
         list-style: none;
         text-decoration: none;
     }
-    .body{
-        width: 100vw;
-        height: 100vh;
-        margin: 0;
-
-    }
-    /* 
-  ##Device = Desktops
-  ##Screen = 1281px to higher resolution desktops
-*/
-
-@media (min-width: 1281px) {
-  
-  /* CSS */
-  
-}
-
-/* 
-  ##Device = Laptops, Desktops
-  ##Screen = B/w 1025px to 1280px
-*/
-
-@media (min-width: 1025px) and (max-width: 1280px) {
-  
-  /* CSS */
-  
-}
-
-/* 
-  ##Device = Tablets, Ipads (portrait)
-  ##Screen = B/w 768px to 1024px
-*/
-
-@media (min-width: 768px) and (max-width: 1024px) {
-  
-  /* CSS */
-  
-}
-
-/* 
-  ##Device = Tablets, Ipads (landscape)
-  ##Screen = B/w 768px to 1024px
-*/
-
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  
-  /* CSS */
-  
-}
-
-/* 
-  ##Device = Low Resolution Tablets, Mobiles (Landscape)
-  ##Screen = B/w 481px to 767px
-*/
-
-@media (min-width: 481px) and (max-width: 767px) {
-  
-  /* CSS */
-  
-}
-
-/* 
-  ##Device = Most of the Smartphones Mobiles (Portrait)
-  ##Screen = B/w 320px to 479px
-*/
-
-@media (min-width: 320px) and (max-width: 480px) {
-  
-  /* CSS */
-  
-}
     
-    .top-container1{
+    .top-container{
+        display: grid;
+        grid-template-columns: 0.8fr 190px 190px 1.2fr;
+        column-gap: 0.25rem;
+        justify-content: space-around;
+        align-items: center;
         width: 100%;
-        height: 15rem;
-        justify-content: center;
-        justify-items: center;
+        height: 3.25rem;
+        padding: 0.5rem;
         object-fit: cover;
-        background: transparent;
-    }
-    .diapo{
-        overflow: hidden;
-        position: relative;
-        width: 100%;
-        height: 15rem;
-        justify-content: center;
-        background: transparent;
-        
+        font-family: 'georgia';
+        font-size: 0.76rem;
+        color: rgb(219, 166, 32);
+        background: #242424ec;
     }
 
-    .diapo1{
-        position: absolute;
-        width: 100%;
-        height: 15rem;
-        animation: auto 27s ease-in infinite;
-        animation-delay: 27s;
-    }
-    .diapo1 img{
-        width: 100%;
-        height: 15rem;
-    }
-    @keyframes auto1{
-    0%{left: 100%;}
-    4%{left: 0%;}
-    33.33%{left: 0%;}
-    37.33%{left: -100%}
-    100%{left: -100%}
+    .Welcome{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 2rem;
+      padding: 2px;
+      color: #d4d4d4f7
     }
 
-    .diapo2{
-        position: absolute;
-        width: 100%;
-        height: 17rem;
-        animation: auto 27s ease-in infinite;
-        animation-delay: 18s;
-    }
-    .diapo2 img{
-        width: 100%;
-        height: 15rem;
-    }
-    @keyframes auto{
-    0%{left: 100%;}
-    4%{left: 0%;}
-    33.33%{left: 0%;}
-    37.33%{left: -100%}
-    100%{left: -100%}
-    
+    .Welcome:hover{
+      background: #040404;
+      color: rgb(255, 193, 36);
+      transition: 0.1s linear;
+      border: 0.1rem solid rgb(255, 193, 36);
+      border-radius: 0.3rem;
     }
 
-    .diapo3{
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        width: 100%;
-        height: 15rem;
-        animation: auto 27s ease-in infinite;
-        animation-delay: 9s;
-        background: rgba(25, 60, 177, 0.94);
-        font-family: 'Poppins';
-        justify-content: center;
-        align-items: center;
-        padding: 15px;
-        line-height: 49px;
-    }
-    .diapo3 img{
-        width: 100%;
-        height: 15rem;
+    .BF{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 2rem;
+      padding: 2px;
+      border-radius: 0.3rem;
+      cursor: pointer;
+      color: #d4d4d4f7
     }
 
-    @keyframes auto{
-    0%{left: 100%;}
-    4%{left: 0%;}
-    33.33%{left: 0%;}
-    37.33%{left: -100%}
-    100%{left: -100%}
-    
+    .BF:hover{
+      background: #040404;
+      color: rgb(255, 193, 36);
+      transition: 0.1s linear;
+      border: 0.1rem solid rgb(255, 193, 36);
+      border-radius: 0.3rem;
     }
     
-    .Framer{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 99.85%;
-        height: 12rem;
-        padding: 1rem;
-        border: 0.13rem solid rgba(66, 183, 255, 0.959);
-        border-radius: 0.5rem;
-        margin-top: -0.75rem;
-        font-size: 1.73rem;
-        color: rgb(247, 247, 247);
-        text-shadow: 0.5px 0.5px rgba(66, 183, 255, 0.959);
-        line-height: 38px;
+    .Asso{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 2rem;
+      padding: 2px;
+      color: #d4d4d4f7;
+      cursor: pointer;
     }
-    
-         .navbar{
-                 display: flex;
-                 justify-content: left;
-                 align-items: center;
-                 background: darkblue;
+
+    .Asso:hover{
+      background: #040404;
+      color: rgb(255, 193, 36);
+      transition: 0.1s linear;
+      border: 0.1rem solid rgb(255, 193, 36);
+      border-radius: 0.3rem;
+    }
+
+    .datime{
+      display: flex;
+      position: relative;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 2rem;
+      padding: 4px;
+      color: #d4d4d4f7;
+      border-radius: 0.3rem;
+      margin-top: 0.65rem;
+    }
+
+    .datime:hover{
+      background: #040404;
+      color: rgb(255, 193, 36);
+      transition: 0.1s linear;
+    }
+
+    .navbar{ display: grid;
+        grid-template-columns: 0.25fr 1fr;
+        column-gap: 0.25rem;
+                 justify-content: space-around;
+                 justify-items: center;
+                 background: #fff;
                  width: 100%;
-                 height: 46px;
+                 height: 81px;
                  object-fit: cover;
-                 background-position: 1vw;
                  z-index: 1;
                  top: 0;
                  position: sticky;
+                
+                 box-shadow: 0 0 0.5rem rgba(0, 134, 196, 0.906);
+                 border-bottom: 0.45rem solid rgba(0, 134, 196, 0.906);
+              
+          }
+          
+          .myDiv{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 40px;
+            padding: 1rem;
+            border-radius: 0.2rem;
+            cursor: pointer;
+            font-family: georgia;
+            font-size: 16px;
+            border: 0.2rem solid transparent;
+            color: rgb(0, 123, 180);
+            background: transparent;
+          }
+
+          .myDiv:hover{
+      border: 0.2rem solid #fa124c;
+      color: #000;
+      transition: 0.3s ease-in;
+      border-radius: 3rem;
+      background: #fff;
           }
 
           
+
+          .myDiv1{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 40px;
+            padding: 1rem;
+            border-radius: 0.2rem;
+            cursor: pointer;
+            font-family: georgia;
+            font-size: 16px;
+            border: 0.2rem solid transparent;
+            color: rgb(0, 123, 180);
+            background: transparent;
+          }
+
+          .myDiv1:hover{
+      border: 0.2rem solid #fa124c;
+      color: #000;
+      transition: 0.33s ease-in;
+      border-radius: 3rem;
+      background: #fff;
+          }
+
+          .myDiv2{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 40px;
+            padding: 1rem;
+            border-radius: 0.2rem;
+            cursor: pointer;
+            font-family: georgia;
+            font-size: 16px;
+            border: 0.2rem solid transparent;
+            color: rgb(0, 123, 180);
+            background: transparent;
+          }
+
+          .myDiv2:hover{
+      border: 0.2rem solid #fb275c;
+      color: #000;
+      transition: 0.3s ease-in;
+      border-radius: 3rem;
+      background: #fff;
+          }
+
+          .myDiv3{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 40px;
+            padding: 1rem;
+            border-radius: 0.2rem;
+            cursor: pointer;
+            font-family: georgia;
+            font-size: 16px;
+            border: 0.2rem solid transparent;
+            color: rgb(0, 123, 180);
+            background: transparent;
+          }
+
+          .myDiv3:hover{
+      border: 0.2rem solid #fa124c;
+      color: #000;
+      transition: 0.3s ease-in;
+      border-radius: 3rem;
+      background: #fff;
+          }
+
+          .myDiv4{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 40px;
+            padding: 1rem;
+            border-radius: 0.2rem;
+            cursor: pointer;
+            font-family: georgia;
+            font-size: 16px;
+            border: 0.2rem solid transparent;
+            color: rgb(0, 123, 180);
+            background: transparent;
+          }
+
+          .myDiv4:hover{
+      border: 0.2rem solid #fa124c;
+      color: #000;
+      transition: 0.3s ease-in;
+      border-radius: 3rem;
+      background: #fff;
+          }
+
+          .myDiv5{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 40px;
+            padding: 1rem;
+            border-radius: 0.2rem;
+            cursor: pointer;
+            font-family: georgia;
+            font-size: 16px;
+            border: 0.2rem solid transparent;
+            color: rgb(0, 123, 180);
+            background: transparent;
+          }
+
+          .myDiv5:hover{
+      border: 0.2rem solid #fa124c;
+      color: #000;
+      transition: 0.3s ease-in;
+      border-radius: 3rem;
+      background: #fff;
+          }
+
+          .myDiv4{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 40px;
+            padding: 1rem;
+            border-radius: 0.2rem;
+            cursor: pointer;
+            font-family: georgia;
+            font-size: 16px;
+            border: 0.2rem solid transparent;
+            color: rgb(0, 123, 180);
+            background: transparent;
+          }
+
+          .myDiv4:hover{
+      border: 0.2rem solid #fa124c;
+      color: #000;
+      transition: 0.3s ease-in;
+      border-radius: 3rem;
+      background: #fff;
+          }
+
+          .myDiv6{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 40px;
+            padding: 1rem;
+            border-radius: 0.2rem;
+            cursor: pointer;
+            font-family: georgia;
+            font-size: 16px;
+            border: 0.2rem solid transparent;
+            color: rgb(0, 123, 180);
+            background: transparent;
+          }
+
+          .myDiv6:hover{
+      border: 0.2rem solid #fa124c;
+      color: #000;
+      transition: 0.3s ease-in;
+      border-radius: 3rem;
+      background: #fff;
+          }
+
+          .Unyfy{
+            display: grid;
+            grid-template-rows: repeat(1fr,7);
+            justify-content: space-between;
+            justify-items: center;
+          }
+          
     .navbar a {
       display: block;
-      float: right;
-      font-size: 11.53px;
-      font-family: 'helvetica';
-      color: rgba(252, 252, 252, 0.945);
+      float: left;
+      font-size: 15px;
+      color: #000;
+      font-family: 'verdana';
       text-align: left;
-      padding: 16.5px 7px;
+      padding: 16.84px 7px;
       text-decoration: none;
       margin: 0;
     }
-    
-    
 
-            .TYK1{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 70px;
-    height: 40px;
-    border-radius: 50%;
-    color: yellow;
-    font-family: 'arial black';
-    font-size: 0.68rem;
-    padding: 2px;
-    border-right: 0.12rem solid yellow;
-    border-top: 0.12rem solid yellow;
-    border-bottom: 0.12rem solid yellow;
-    background: rgba(227, 25, 18, 0.964);
-    margin-top: 16px;
-            }
-    
-            .TYK1:hover {
-                transform: scale(1.05);
-            }
-
-            .navbar1{
-                 background: rgba(210, 46, 81, 0.991);
-                 width: 100%;
-                 height: 48.5px;
-                 object-fit: cover;
-                 padding: 1rem;
-                 color: #fff;
-                 font-size: 16px;
-                
-          }
-
-      .Climate-Change{
-                float: left;
-                overflow: hidden;
+    .navbar1{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 45px;
+      background: #f1f1f1e9;
+      color: darkblue;
+      font-family: 'Poppins';
+      font-size: 1.35rem;
+      padding: 1rem;
+      font-weight: bold;
     }
     
-    .Climate-Change .dropbtn{
-      font-family: 'georgia';
-      font-size: 17.5px; 
-      color: rgba(252, 252, 252, 0.967);
-      background: inherit;
-      border: none;  
-      padding: 12px 9px;
-      border-top-right-radius: 0.5rem;
-      border-top-left-radius: 0.5rem;
-    
-    }
-    
-    .navbar:hover .Climate-Change:hover .dropbtn{
-        background: rgba(63, 150, 231, 0.966);
-        color: #fff;  
-        transition: 0.2s ease-in;
-        cursor: pointer;
-    }
-    .Climate-Change-content{
-      display: none;
-      position: absolute;
-      background: #fff;
-      width: 288px;
-      z-index: 1;
-    }
-
-    .Climate-Change-content a{
-      float: none;
-      color: rgba(78, 78, 78, 0.704);
-      font-family: georgia;
-      font-size: 18px;
-      padding: 14px 16px;
-      text-decoration: none;
-      display: block;
-      text-align: left;
-      text-shadow: 0 0.55px rgba(18, 18, 18, 0.919);
-      transition: 0.15s ease-in-out;
-    }
-    .Climate-Change-content a:hover{
-        color: #f1f1f1;
-        text-shadow: 0.45px 0.45px rgba(255, 255, 0, 0.97);
-        font-family: 'georgia';
-        font-size: 20px;
-        padding: 8.5px 10px;
-        line-height: 31.6px;
-        background: #303030fa;
-        border-top: 1px solid #303030fa;
-        border-left: 1px solid #303030fa;
-        border-right: 1px solid #303030fa;
-    }
-    
-    .Climate-Change:hover .Climate-Change-content{
-        display: grid;
-    }
-    
-    
-    .FoodSecu{
-                float: left;
-                overflow: hidden;
-    }
-    
-    .FoodSecu .dropbtn{
-      font-family: 'georgia';
-      font-size: 17.5px; 
-      color: rgba(252, 252, 252, 0.967);
-      background: inherit;
-      border: none;  
-      padding: 12px 9px;
-      border-top-right-radius: 0.5rem;
-      border-top-left-radius: 0.5rem;
-    }
-    
-    .navbar:hover .FoodSecu:hover .dropbtn{
-        background: rgba(63, 150, 231, 0.966);
-        color: #fff;  
-        transition: 0.2s ease-in;
-        cursor: pointer;
-    }
-    
-    .FoodSecu-content{
-      display: none;
-      position: absolute;
-      background: #fff;
-      width: 280px;
-      z-index: 1;
-    }
-    
-    .FoodSecu-content a{
-      float: none;
-      color: rgba(78, 78, 78, 0.704);
-      font-family: georgia;
-      font-size: 18px;
-      padding: 14px 16px;
-      text-decoration: none;
-      display: block;
-      text-align: left;
-      text-shadow: 0 0.55px rgba(18, 18, 18, 0.919);
-      transition: 0.15s ease-in-out;
-    }
-    .FoodSecu-content a:hover{
-        color: #fff;
-        text-shadow: 0.45px 0.45px yellow;
-        font-family: 'georgia';
-        font-size: 20px;
-        padding: 8.5px 10px;
-        line-height: 31.6px;
-        background: #303030fa;
-        border-top: 1px solid #303030fa;
-        border-left: 1px solid #303030fa;
-        border-right: 1px solid #303030fa;
-    }
-    
-    .FoodSecu:hover .FoodSecu-content{
-        display: grid;
-    }
-    
-    .Painting{
-            float:left;
-            overflow: hidden;
-                }
-    
-    .Painting .dropbtn{
-      font-family: 'georgia';
-      font-size: 17.5px; 
-      color: rgba(252, 252, 252, 0.967);
-      background: inherit;
-      border: none;  
-      padding: 12px 9px;
-      border-top-right-radius: 0.5rem;
-      border-top-left-radius: 0.5rem;
-    }
-    
-    .navbar:hover .Painting:hover .dropbtn{
-        background: rgba(63, 150, 231, 0.966);
-        color: #fff;  
-        transition: 0.2s ease-in;
-        cursor: pointer;
-    }
-    
-    .Painting-content{
-      display: none;
-      position: absolute;
-      background: rgba(26, 121, 255, 0.964);
-      width: 192px;
-      z-index: 1;
-    }
-    
-    .Painting-content a{
-      float: none;
-      color: rgba(78, 78, 78, 0.704);
-      font-family: georgia;
-      font-size: 18px;
-      padding: 14px 16px;
-      text-decoration: none;
-      display: block;
-      text-align: left;
-      text-shadow: 0 0.55px rgba(18, 18, 18, 0.919);
-      transition: 0.15s ease;
-    }
-    .Painting-content a:hover{
-        color: #fff;
-        text-shadow: 0.45px 0.45px yellow;
-        font-family: 'georgia';
-        font-size: 20px;
-        padding: 8.5px 10px;
-        line-height: 31.6px;
-        background: #303030fa;
-        border-top: 1px solid #303030fa;
-        border-left: 1px solid #303030fa;
-        border-right: 1px solid #303030fa;
-    }
-
-    .Painting:hover .Painting-content{
-        display:  grid;
-    }
-    
-    .HealthCare{
-        float:left;
-        overflow: hidden;
-    }
-
-
-    .datime {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            width: 500px;
-            height: 35px;
-            font-family: 'georgia';
-            padding: 5px;
-        }
-    
-    .HealthCare .dropbtn{
-      font-family: 'georgia';
-      font-size: 17.5px;
-      color: rgba(252, 252, 252, 0.967);
-      background: inherit;
-      border: none;  
-      padding: 12px 9px;
-      border-top-right-radius: 0.5rem;
-      border-top-left-radius: 0.5rem;
-    }
-    
-    .navbar:hover .HealthCare:hover .dropbtn{
-        background: rgba(63, 150, 231, 0.966);
-        color: #fff;  
-        transition: 0.2s ease-in;
-        cursor: pointer;
-    }
-    
-    .HealthCare-content{
-      display: none;
-      position: absolute;
-      background: #fff;
-      width: 230px;
-      z-index: 1;
-    }
-    
-    .HealthCare-content a{
-      float: none;
-      color: rgba(78, 78, 78, 0.704);
-      font-family: georgia;
-      font-size: 18px;
-      padding: 14px 16px;
-      text-decoration: none;
-      display: block;
-      text-align: left;
-      text-shadow: 0 0.55px rgba(18, 18, 18, 0.919);
-      transition: 0.15s ease;
-    }
-    
-    .HealthCare-content a:hover{
-        color: #fff;
-        text-shadow: 0.45px 0.45px yellow;
-        font-family: 'georgia';
-        font-size: 20px;
-        padding: 8.5px 10px;
-        line-height: 31.6px;
-        background: #303030fa;
-        border-top: 1px solid #303030fa;
-        border-left: 1px solid #303030fa;
-        border-right: 1px solid #303030fa;
-    }
-    
-    .HealthCare:hover .HealthCare-content{
-        display: grid;
-    }
-    
-    .TikiYiki{
-        float:left;
-        overflow: hidden;
-    }
-    
-    .TikiYiki .dropbtn{
-      font-family: 'georgia';
-      font-size: 17.5px;
-      color: rgba(252, 252, 252, 0.967);
-      background: inherit;
-      border: none;  
-      margin-left: 5px;
-      padding: 12px 9px;
-      border-top-right-radius: 0.5rem;
-      border-top-left-radius: 0.5rem;
-    }
-    
-    .navbar:hover .TikiYiki:hover .dropbtn{
-        background: rgba(63, 150, 231, 0.966);
-        color: #fff;  
-        transition: 0.2s ease-in;
-        cursor: pointer;
-    }
-    
-    .TikiYiki-content{
-      display: none;
-      position: absolute;
-      background: #fff;
-      width: 280px;
-      z-index: 1;
-      margin-left: 5px;
-    }
-    
-    .TikiYiki-content a{
-      float: none;
-      color: rgba(78, 78, 78, 0.704);
-      font-family: georgia;
-      font-size: 18px;
-      padding: 14px 16px;
-      text-decoration: none;
-      display: block;
-      text-align: left;
-      text-shadow: 0 0.55px rgba(18, 18, 18, 0.919);
-      transition: 0.15s ease;
-      
-    }
-    
-    .TikiYiki-content a:hover{
-        color: #fff;
-        text-shadow: 0.45px 0.45px yellow;
-        font-family: 'georgia';
-        font-size: 20px;
-        padding: 8.5px 10px;
-        line-height: 31.6px;
-        background: #303030fa;
-        border-top: 1px solid #303030fa;
-        border-left: 1px solid #303030fa;
-        border-right: 1px solid #303030fa;
-    }
-    
-    .TikiYiki:hover .TikiYiki-content{
-        display: grid;
-    }
-    
-    .Education{
-        float:left;
-        overflow: hidden;
-    }
-    
-    .Education .dropbtn{
-      font-family: 'georgia';
-      font-size: 17.5px;
-      color: rgba(252, 252, 252, 0.967);
-      background: inherit;
-      border: none;  
-      padding: 12px 9px;
-      border-top-right-radius: 0.5rem;
-      border-top-left-radius: 0.5rem;
-    }
-
-    .navbar:hover .Education:hover .dropbtn{
-        background: rgba(63, 150, 231, 0.966);
-        color: #fff;  
-        transition: 0.2s ease-in;
-        cursor: pointer;
-    }
-    
-    .Education-content{
-      display: none;
-      position: absolute;
-      background: rgba(255, 255, 255, 0.999);
-      width: 250px;
-      z-index: 1;
-    }
-    
-    .Education-content a{
-      float: none;
-      color: rgba(78, 78, 78, 0.704);
-      font-family: georgia;
-      font-size: 18px;
-      padding: 14px 16px;
-      text-decoration: none;
-      display: block;
-      text-align: left;
-      text-shadow: 0 0.55px rgba(18, 18, 18, 0.919);
-      transition: 0.15s ease;
-    }
-    
-    .Education-content a:hover{
-        color: #fff;
-        text-shadow: 0.45px 0.45px yellow;
-        font-family: 'georgia';
-        font-size: 20px;
-        padding: 8.5px 10px;
-        line-height: 31.6px;
-        background: #303030fa;
-        border-top: 1px solid #303030fa;
-        border-left: 1px solid #303030fa;
-        border-right: 1px solid #303030fa;
-    }
-    
-    .Education:hover .Education-content{
-        display: grid;
-    }
-    
-    .footer{
-            display: flex;
-            width: 100%;
-            height: 138px;
-            position: relative;
-            font-family: 'arial';
-            font-size: 1.5rem;
-            line-height: 28px;
-            background: rgba(52, 52, 52, 0.926);
-            color: rgb(13, 158, 255);
-            justify-content: center;
-            flex-direction: column;
-            align-items: space-between;  
-            text-align: center; 
-            text-shadow: 0.5px 0.5px rgb(254, 254, 254);
-        }
         h1{
-            color: rgba(100, 100, 100, 0.93);
-            text-shadow: 0.8px 0.8px#efefeff4;
-        }
-
+        font-family: 'verdana';
+        font-size: 17.8px;
+        text-align: left;
+        margin-top: -39px;
+    }
+   
      h2{
         display: flex;
         position: relative;
         justify-content: space-around;
         align-items: center;
-        flex-direction: column;
         margin: auto;
         color:#000;
         font-family: 'verdana';
@@ -697,7 +417,7 @@
         display: flex;
         position: relative;
         font-family: arial;
-        font-size: 15px;
+        font-size: 18px;
         justify-content: center;
         align-items: center;
         flex-direction: row;
@@ -728,1053 +448,1316 @@
     
     .fwrapper{
         display: flex;
-        flex-direction: column;
+        position: relative;
+        justify-items: center;
         align-items: center;
-        justify-content: center;
+        flex-direction: column;
         width: 100%;
         height: auto;
-        background: #fff;
+        background: #f0f0f0;
     }
-    
-    ::-webkit-scrollbar{
-        width: auto;
-       
-    }
-    ::-webkit-scrollbar-track-piece{
-        background: rgba(242, 242, 242, 0.863);
-    }
-    ::-webkit-scrollbar-thumb{
-        background: rgba(141, 141, 141, 0.95);
-        width: auto;
-    }
-    ::-webkit-scrollbar-track-piece:hover{
-        background: rgb(250, 250, 250);
-    }
-    
 
-
-    .fwrapp1{
+    .content1{
         display: grid;
-        grid-template-columns: 730px 440px;
-        column-gap: 0.8rem;
+        grid-template-rows: 1fr 1.5fr;
+        justify-content: space-between;
         justify-items: center;
-        justify-content: space-around;
-        width: 99.9%;
-        height: auto;
-        background:rgba(253, 205, 132, 0.985);
-        margin-top: 6.25rem;
-        border-top: 0.1px solid rgb(230, 186, 120);
-    }
-
-    .fwrap1{
-        display: grid;
-        grid-template-rows: 79px 1fr;
-        row-gap: 0.2rem;
-        justify-content: center;
-        justify-items: center;
-        height: auto;
-        width: 705px;
-    }
-
-
-.fwrap{
-    width: 700px;
-    height: 400px;
-    position: relative;
-    overflow: hidden;
-    margin-left: -5px;
-    margin-top: -1.5rem;
-   
-    }
-
-    .fw1 img{
-        position: absolute;
-        width: 700px;
-        height: 400px;  
-        animation: auto 24s infinite ease-in;
-        animation-delay: 24s;
-    }
-    @keyframes auto {
-            0% {
-                left: 100%;
-            }
-
-            4% {
-                left: 0%;
-            }
-
-            33.33% {
-                left: 0%;
-            }
-
-            37.33% {
-                left: -100%;
-            }
-
-            100% {
-                left: -100%
-            }
-        }
-
-    .fw1 img:hover{
-        transform: scale(1.02);
-        transition: 0.2s ease-in;
-        opacity: 0.9;
-    }
-
-    .fw2 img{
-        position: absolute;
-        width: 700px;
-        height: 400px;  
-        animation: auto 24s infinite ease-in;
-        animation-delay: 16s;
-    }
-    @keyframes auto {
-            0% {
-                left: 100%;
-            }
-
-            4% {
-                left: 0%;
-            }
-
-            33.33% {
-                left: 0%;
-            }
-
-            37.33% {
-                left: -100%;
-            }
-
-            100% {
-                left: -100%
-            }
-        }
-
-    .fw2 img:hover{
-        transform: scale(1.02);
-        transition: 0.2s ease-in;
-        opacity: 0.9;
-    }
-
-    .fw3 img{
-        position: absolute;
-        width: 700px;
-        height: 400px;  
-        animation: auto 24s infinite ease-in;
-        animation-delay: 8s;
-    }
-    @keyframes auto{
-            0% {
-                left: 100%;
-            }
-
-            4% {
-                left: 0%;
-            }
-
-            33.33% {
-                left: 0%;
-            }
-
-            37.33% {
-                left: -100%;
-            }
-
-            100% {
-                left: -100%
-            }
-        }
-
-    .fw3 img:hover{
-        transform: scale(1.02);
-        transition: 0.2s ease-in;
-        opacity: 0.9;
-    }
-    .fwrapo0{
-        position: relative;
-        overflow: hidden;
-        width: 700px; 
-        height: 79px;
-        
-    }
-
-    .fwR{
-        position: absolute;
-        width: 700px; 
-        height: 79px;
-        animation: auto 24s infinite ease-in;
-        animation-delay: 24s;
-        margin-left: 3.8rem;
-}
-@keyframes auto{
-            0% {
-                left: 100%;
-            }
-
-            4% {
-                left: 0%;
-            }
-
-            33.33% {
-                left: 0%;
-            }
-
-            37.33% {
-                left: -100%;
-            }
-
-            100% {
-                left: -100%
-            }
-        }
-
-
-        .fwS{
-       position: absolute;
-        width: 700px; 
-        height: 79px;
-        animation: auto 24s infinite ease-in;
-        animation-delay: 16s;
-        margin-left: 3.8rem;
-
-    
-}
-@keyframes auto{
-            0% {
-                left: 100%;
-            }
-
-            4% {
-                left: 0%;
-            }
-
-            33.33% {
-                left: 0%;
-            }
-
-            37.33% {
-                left: -100%;
-            }
-
-            100% {
-                left: -100%
-            }
-        }
-
-        .fwT{
-        position: absolute;
-        width: 700px; 
-        height: 79px;
-        animation: auto 24s infinite ease-in;
-        animation-delay: 8s;
-        margin-left: 3.8rem;
-}
-@keyframes auto{
-            0% {
-                left: 100%;
-            }
-
-            4% {
-                left: 0%;
-            }
-
-            33.33% {
-                left: 0%;
-            }
-
-            37.33% {
-                left: -100%;
-            }
-
-            100% {
-                left: -100%
-            }
-        }
-
-
-
-    .fwrap2{
-        display: grid;
-        grid-template-rows: repeat(4 1fr);
-        row-gap: 0.1rem; 
-        text-align: center;
-        height: 450px; 
-        width: 95%; 
-        font-family: georgia;
-        padding: 20px;
-        border-radius: 0.25rem;
-        margin-top: 2.5rem;
-    }
-
-    .fwrapp2{
-        display: grid;
-        grid-template-rows: 50px 500px;
-        row-gap: 0.75rem;
-        width: 99.9%;
-        height: auto;
-        background: -webkit-linear-gradient(rgb(25, 60, 177), #e5e5e5);
-        background: -moz-linear-gradient(rgb(25, 60, 177), #e5e5e5);
-        padding: 5px;
-    }
-
-    .fwrappi{
-        padding: 2px; 
-        width: 100%; 
-        display: flex; 
-        justify-content: center; 
-        align-items: center; 
-        text-align: center;
-    }
-
-    .fwrappi1{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        column-gap: 0.1rem;
-        row-gap: 5px;
-        justify-content: center;
-        justify-items: center;
-        padding: 0.5rem;
-        width: 99.9%;
-    }
-    .diiv1{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        width: 390px;
-        height: 350px;
-        margin-top: 0.5rem;
-        font-family: georgia;
-        font-size: 16px;
-        text-shadow: 0.49px 0.49px #fff;
-    }
-    .diiv1 img{
-        width: 370px;
-        height: 350px;
-        padding: 1px;
-        border-top-left-radius: 10%;
-        border-bottom-right-radius: 10%;
-    }
-    .diiv1 img:hover{
-        transform: scale(1.03);
-        transition: 0.3s ease-in;
-    }
-
-
-    .diiv2{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        width: 370px;
-        height: 350px;
-        margin-top: 0.5rem;
-        font-family: georgia;
-        font-size: 16px;
-        text-shadow: 0.49px 0.49px #fff;
-    }
-
-    .diiv2 img{
-        width: 370px;
-        height: 350px;
-        padding: 1px;
-        border-top-left-radius: 10%;
-        border-bottom-right-radius: 10%;
-    }
-    .diiv2 img:hover{
-        transform: scale(1.03);
-        transition: 0.3s ease-in;
-    }
-
-
-    .diiv3{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        width: 370px;
-        height: 350px;
-        margin-top: 0.5rem;
-        font-family: georgia;
-        font-size: 16px;
-        text-shadow: 0.49px 0.49px #fff;
-    }
-    .diiv3 img{
-        width: 370px;
-        height: 350px;
-        padding: 1px;
-        border-top-left-radius: 10%;
-        border-bottom-right-radius: 10%;
-    }
-    .diiv3 img:hover{
-        transform: scale(1.03);
-        transition: 0.3s ease-in;
-    }
-
-
-    .diiv4{
-        display: flex;
-        position: relative;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 370px;
-        height: 70px;
-        font-family: georgia;
-        font-size: 3rem;
-        color: rgb(2, 2, 151);
-        background: #dcdcdc;
-        cursor: pointer;
-        margin-top: -0.1rem;
-    }
-
-    .diiv4:hover{
-     background: rgba(9, 22, 81, 0.991);
-     transition: 0.25s ease-in;
-     color: rgba(255, 136, 0, 0.968);
-     border: 0.13rem solid #fff;
-     border-radius: 0.45rem;
-     font-size: 3.5rem;
-    }
-
-    .diiv5{
-        display: flex;
-        position: relative;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 370px;
-        height: 70px;
-        font-family: georgia;
-        font-size: 3rem;
-        color: rgb(2, 2, 151);
-        background: #dcdcdc;
-        cursor: pointer;
-        margin-top: -0.1rem;
-    }
-
-    .diiv5:hover{
-     background: rgba(9, 22, 81, 0.991);
-     transition: 0.25s ease-in;
-     color: rgba(255, 136, 0, 0.968);
-     border-radius: 0.45rem;
-     border: 0.13rem solid #fff;
-     font-size: 3.5rem;
-    }
-
-    .diiv6{
-        display: flex;
-        position: relative;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 370px;
-        height: 70px;
-        font-family: georgia;
-        font-size: 3rem;
-        color: rgb(2, 2, 151);
-        background: #dcdcdc;
-        cursor: pointer;
-        margin-top: -0.1rem;
-    }
-
-    .diiv6:hover{
-     background: rgba(9, 22, 81, 0.991);
-     transition: 0.25s ease-in;
-     color: rgba(255, 136, 0, 0.968);
-     border-radius: 0.45rem;
-     border: 0.13rem solid #fff;
-     font-size: 3.5rem;
-    }
-
-    .fwrapp3{
-        display: grid;
-        grid-template-rows: 1fr 1fr 1fr;
-        row-gap: 1rem;
-        justify-content: center;
-        justify-items: center;
-        background:rgba(253, 205, 132, 0.985);
-        width: 99.9%;
-        height: 550px;
-    }
-
-    .fwrapo{
-        display: flex; 
-        position: relative;
-        flex-direction: column;
-        justify-content: center; 
-        align-items: center; 
-        font-family: 'georgia'; 
-        font-size: 12px; 
-        color: #000; 
-        width: 100%;
-        height: 33px;
-        padding: 2px;
-        margin-top: 12px;
-        cursor: pointer;
-        border-radius: 1.15rem;
-    }
-    .fwrapo:hover{
-        background: #fff;
-        font-size: 12.45px;
-        transition: 0.2s ease-in;
-    }
-
-.fwrapo1{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 3.5rem;
-    justify-content: center;
-    justify-items: center;
-    margin-bottom: 2rem;
-    padding: 5px;
-}
-
-.fwrapa{
-    display: grid;
-    width: 570px;
-    height: 380px;
-    grid-template-columns: 1fr;
-    justify-content: center;
-    justify-items: center;
-    cursor: pointer;
-}
-
-.fwrapa img:hover{
-    transform: scale(1.03);
-    transition: 0.2s ease;
-}
-
-.fwrapa img{
-    width: 550px;
-    height: 370px;
-    padding: 0.85px;
-    border-top-left-radius: 11%;
-    border-bottom-right-radius: 11%;
-}
-
-.fwrapa1{
-    display: grid;
-    width: 570px;
-    height: 380px;
-    grid-template-columns: 1fr;
-    justify-content: center;
-    justify-items: center;
-    cursor: pointer; 
-  }
-
-   .fwrapa1 img{
-    width: 570px;
-    height: 380px;
-    padding: 0.85px;
-    border-top-left-radius: 11%;
-    border-bottom-right-radius: 11%;
-}
-
-.fwrapa1 img:hover{
-    transform: scale(1.02);
-    transition: 0.2s ease;
-}
-
-
-.fwrapo2{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100.5%;
-    height: 30px;
-    padding: 5px;
-    border-radius: 5rem;
-    color: rgba(25, 46, 155, 0.944);
-    font-size: 0.97rem;
-    font-weight: bold;
-    font-family: georgia;
-    text-align: center;
-    cursor: pointer;
-    margin-top: 11px;
-    margin-left: -5px;
-}
-.fwrapo2:hover{
-    background: rgb(238, 251, 255);
-    border: 0.1rem solid rgba(19, 33, 142, 0.865); 
-    color: rgb(2, 70, 2);
-    transition: 0.2s ease-in;
-}
-
-.fwrapp4{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 1.25rem;
-    justify-content: space-between;
-    justify-items: center;
-    background: -webkit-linear-gradient(rgb(25, 60, 177), #e5e5e5);
-    background: -moz-linear-gradient(rgb(25, 60, 177), #e5e5e5);
-    width: 99.9%;
-}
-
-.FS{
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-content: center;
-    justify-items: center;
-    padding: 3rem;
-    width: auto;
-    height: auto;
-    border-right: 0.1rem solid rgba(217, 252, 19, 0.859);
-}
-
-.FS:hover{
-    transform: scale(1.03);
-    transition: 0.2s ease-in;
-}
-
-.FS1{
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-content: center; 
-    justify-items: center; 
-    color: #000;
-    width: auto;
-    margin-left: 1.45rem;
-    margin-top: 15px;
-}
-
-.FS1 img{
-width: 92%;
-height: 420px;
-margin-top: 2rem;
-margin-bottom: 1.4rem;
-padding: 1px;
-}
-.FS1:hover{
-    transform: scale(1.03);
-    transition: 0.2s ease-in;
-}
-
-.fwrapp5{
-    display: grid;
-    grid-template-rows: 0.5fr 2fr;
-    row-gap: 1rem;
-    justify-content: center;
-    justify-items: center;
-    background:rgba(253, 205, 132, 0.985); 
-    color: #000; 
-    width: 99.9%;
-    height: 610px;
-    border-bottom-left-radius: 45%;
-    border-bottom-right-radius: 45%;
-}
-
-.FW{
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    row-gap: 1rem;
-    justify-content: space-between;
-    justify-items: center;
-}
-
-.FW1{
- display: flex; 
- position: relative;
- flex-direction: column; 
- justify-content: space-around; 
- align-items: center; 
- background:rgba(255, 139, 6, 0.995); 
- width: 100%; 
- height: 352px; 
- padding: 2rem; 
- font-family: georgia; 
- font-size: 2rem; 
- text-align: center; 
- color:rgba(8, 8, 72, 0.923); 
- border-radius: 50%;
- box-shadow: 0 0 0.45rem 0.1px rgba(1, 4, 21, 0.923);
-}
-
-.FW1:hover{
-    background:rgba(255, 146, 21, 0.971); 
-    cursor: pointer;
-}
-
-.Supporto{
+            width: 100%;
+            height: 876px;
+            background: transparent;
+            padding: 12px;
+            color: #000;
+           
+          }
+
+          .STAMP{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 0.1rem;
+            justify-content: center;
+            justify-items: center;
+            background: transparent;
+            width: 86.13%;
+            height: auto;
+            padding: 5px;
+            background: transparent;
+          }
+
+          .T-Area{
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr;
+            row-gap: 0.85rem;
+            justify-content: space-around;
+            justify-items: center;
+            margin-top: 3rem;
+            width: 100%;
+            height: 787px;
+            cursor: pointer;
+            background: #fffffff1;
+            border: 0.15rem solid #949494eb;
+            border-radius: 0.5rem;
+            border-top-right-radius: 3rem;
+            border-bottom-right-radius: 3rem;
+            box-shadow: 0 0 0.2rem -0.25px rgba(182, 218, 215, 0.67);
+          }
+
+          .T-Area:hover{
+            background: #fff;
+           color: #595959;
+           border: 0.12rem solid #000;
+           transition: 0.2s ease-in;
+           border-radius: 0.51rem;
+          }
+
+          .PH img{
+            width: 101%;
+            height: 470px;
+            border-radius: 0.5rem;
+            margin-top: 2.25rem;
+          }
+            
+          .PH img:hover {
+            transform: scale(1.01);
+            transition: 0.12s ease-in;
+            opacity: 0.9;
+          }
+
+          .Drum{
+            display: grid;
+            grid-template-columns: 1fr;
+            justify-content: center;
+            justify-items: center;
+            background: transparent;
+            width: 78%;
+            height: 60px;
+            color: #5f5f5ff9;
+            padding: 5px;
+            font-family: 'Poppins';
+            font-size: 18.5px
+      
+          }
+
+          .PHCaption{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 55px;
+            border-radius: 0.5rem;
+            color: rgba(2, 141, 211, 0.955);
+            padding: 5px;
+            font-family: 'georgia';
+            font-size: 1.35rem;
+            border: 0.12rem solid rgb(0, 187, 255);
+            background: #f6f6f6;
+            box-shadow: 0 0 0.2rem -0.25px rgba(182, 218, 215, 0.67);
+          }
+
+          .PHCaption:hover{
+            background: #0f0f0ff0;
+            color:#fff;
+            transition: 0.16s ease;
+            border: 0.14rem solid #fff;
+          }
+
+         
+
+          .Pic{
+            display: grid;
+            grid-template-rows: 1.5fr 1fr;
+            row-gap: 0.5rem;
+            justify-content: space-between;
+            align-items: center;
+            background: transparent;
+            padding: 27px;
+            margin-top: 3rem;
+            margin-right: 4rem;
+            width: 100%;
+            height: 787px;
+            line-height: 24px;
+            font-family: 'georgia';
+            font-size: 20px;
+            color: #838383;
+            background: #fffffff1;
+            border: 0.15rem solid #949494eb;
+            border-radius: 0.5rem;
+            border-top-left-radius: 3rem;
+            border-bottom-left-radius: 3rem;
+            cursor: pointer;
+            box-shadow: 0 0 0.2rem -0.25px rgba(182, 218, 215, 0.67);
+          }
+          .Pic:hover{
+           background: #fff;
+           color: #595959;
+           border: 0.12rem solid #000;
+           transition: 0.2s ease-in;
+           border-radius: 0.51rem;
+          }
+
+          .PiKe{ 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 60px;
+            border-radius: 0.5rem;
+            color: rgba(2, 141, 211, 0.955);
+            padding: 5px;
+            font-family: 'georgia';
+            font-size: 1.35rem;
+            border: 0.12rem solid rgb(0, 187, 255);
+            background: #f6f6f6;
+            box-shadow: 0 0 0.2rem -0.25px rgba(182, 218, 215, 0.67);
+          }
+
+          .PiKe:hover{
+            background: #000;
+            color:#fff;
+            transition: 0.16s ease;
+            border: 0.12rem solid #fff;
+          }
+
+          .content2{
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            row-gap: 1rem;
+            justify-content: space-between;
+            justify-items: center;
+            width: 100%;
+            height: 510px;
+            background: transparent;
+            padding: 1rem;
+            color: #4b4b4b;
+          }
+
+          .KontenT{
+            display: grid;
+            grid-template-columns: 0.5fr 1.5fr;
+            justify-content: space-between;
+            justify-items: center;
+            width: 86.11%;
+            height: 185px;
+            padding: 2rem;
+            margin-top: 1rem;
+            line-height: 35px;
+            font-family: 'Poppins';
+            font-size: 1.5rem;
+            color: #8a8a8a;
+            border: 0.15rem solid #949494eb;
+            border-radius: 0.5rem;
+            background: #fffffff1;
+            box-shadow: 0 0 0.2rem -0.25px rgba(182, 218, 215, 0.67);
+            margin-top: 10px;
+          }
+
+          .KontenT:hover{
+            border: 0.15rem solid #000;
+            transition: 0.35s linear;
+            border-radius: 0.6rem;
+          }
+
+          .Portray{
+            display: flex;
+            position: relative;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: #fffffff1;
+            border-radius: 50%;
+            width: 190px;
+            height: 180px;
+            padding: 5px;
+            margin-top: -2rem;
+          }
+
+          .Portray img{
+            width: 170px;
+            height: 143px;
+            border-radius: 50%;
+            margin-top: 2rem;
+            
+          }
+
+          .KonT{ 
+            color: #636363ee;
+          }
+
+          .KonT:hover{
+            color: #000;
+           
+          }
+
+          .Kontent{
+            display: grid;
+            grid-template-columns: 365px 365px 365px;
+            justify-content: space-around;
+            justify-items: center;
+            padding: 0.3rem;
+            width: 85.98%;
+            height: 270px;
+            background: transparent;
+            margin-top: -0.1rem;
+            border: 0.15rem solid rgba(2, 156, 227, 0.906);
+            border-radius: 0.5rem;
+          }
+
+          .Kontent:hover{
+            border: 0.45rem solid #fff;
+            transition: 0.4s ease;
+            background: #f1f1f1;
+            border-bottom-left-radius: none;
+            border-top-right-radius: none;
+            border: 1rem;
+            border-top: 0.13rem groove blue;
+            border-left: 0.13rem groove blue;
+            border-right: 0.13rem groove red;
+            border-bottom: 0.13rem groove red;
+          }
+
+          .Kontent1{
 display: grid;
-grid-template-columns: 1fr 1fr;
-grid-template-rows: 1fr 1fr;
-column-gap: 0.5rem;
-row-gap: 2rem;
+grid-template-rows: 1fr 0.3fr;
 justify-content: center;
 justify-items: center;
-width: 70%; 
-height: 160px; 
-padding: 1rem; 
-color: #fff; 
-border-radius: 25rem; 
-border: 0.1rem solid rgba(233, 125, 1, 0.968); 
-font-size: 1rem; 
-font-family: georgia;
-text-shadow: 0.35px 0.35px rgb(44, 44, 44);
-margin-top: -7px;
-}
+width: 90%;
+height: 245px;
+padding: 10px;
+border: 0.15rem solid #949494eb;;
+background: #fffffff1;
+border-radius: 1rem;
+font-family: 'Poppins';
+font-size: 16px;
+color: #848484;
+cursor: pointer;
+margin-top: 0.35rem;
+box-shadow: 0 0 0.2rem -0.25px rgba(182, 218, 215, 0.67);
 
-.Supporto:hover{
-    background:rgb(255, 164, 61); 
-    transition: 0.25s linear;
-    cursor: pointer;
-    box-shadow: 0 0 0.55rem 0.1px rgba(12, 12, 12, 0.898);
-}
+          }
 
-.SUP1{
-    border: 0.18rem solid yellow;
-    border-radius: 15rem;
-    padding: 10px;
-    font-size: 15px;
-    background: -webkit-linear-gradient(rgba(29, 60, 214, 0.954), rgba(96, 123, 255, 0.991));
-    background:-moz-linear-gradient(rgba(29, 60, 214, 0.954), rgba(96, 123, 255, 0.991));
-    color: #fff;
-}
-.SUP1:hover{
-    background: #fff;
-    color: #000;
-    transition: 0.2s ease-in;
-    border: 0.13rem solid rgba(13, 35, 121, 0.94);
-    font-size: 16px;
-}
+          .Kontent1:hover{
+            background: #fff;
+            border: 0.13rem solid #000;
+            transition: 0.2s solid ease-in;
+            border-radius: 1rem;
+            color: #000;
+          }
 
-.SUP2{
-    border: 0.18rem solid yellow;
-    border-radius: 15rem;
-    padding: 10px;
-    font-size: 15px;
-    background: -webkit-linear-gradient(rgba(29, 60, 214, 0.954), rgba(96, 123, 255, 0.991));
-    background:-moz-linear-gradient(rgba(29, 60, 214, 0.954), rgba(96, 123, 255, 0.991));
-    color: #fff
-}
-.SUP2:hover{
-    background: #fff;
-    color: #000;
-    transition: 0.25s linear;
-    border: 0.13rem solid rgba(13, 35, 121, 0.94);
-    font-size: 16px;
-}
+          .AB{
+width: 305px;
+height: 190px;
+padding: 5px;
+          }
 
-.SUP3{
-    border: 0.18rem solid yellow;
-    border-radius: 15rem;
-    padding: 10px;
-    font-size: 15px;
-    background: -webkit-linear-gradient(rgba(29, 60, 214, 0.954), rgba(96, 123, 255, 0.991));
-    background:-moz-linear-gradient(rgba(29, 60, 214, 0.954), rgba(96, 123, 255, 0.991));
-    color: #fff
-}
-.SUP3:hover{
-    background: #fff;
-    color: #000;
-    transition: 0.2s ease-in;
-    border: 0.13rem solid rgba(19, 48, 165, 0.94);
-    font-size: 16px;
-}
+          .BA{
+            display: flex;
+            position: relative;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 0.12rem solid rgba(2, 156, 227, 0.906);
+width: 300px;
+height: 31px;
+padding: 6px;
+background: #fdfdfd;
+border-radius: 5rem;
+font-size: 1.05rem;
+color:rgba(1, 132, 197, 0.955);
+margin-top: -0.45rem;
+background: #f1f1f1;
+          }
 
-.SUP4{
-    border: 0.18rem solid yellow;
-    border-radius: 15rem;
-    padding: 10px;
-    font-size: 15px;
-    background: -webkit-linear-gradient(rgba(29, 60, 214, 0.954), rgba(96, 123, 255, 0.991));
-    background:-moz-linear-gradient(rgba(29, 60, 214, 0.954), rgba(96, 123, 255, 0.991));
-    color: #fff;
-}
-.SUP4:hover{
-    background: #fff;
-    color: #000;
-    transition: 0.2s ease-in;
-    border: 0.13rem solid rgba(13, 35, 121, 0.94);
-    font-size: 16px;
-}
+          .BA:hover{
+            border: 0.12rem solid #000;
+            background: #3d3d3d;
+            color: #f8f8f8;
+          }
 
-.TX{
-    display: grid;
-    grid-template-columns: 0.5fr 1.25fr;
-    column-gap: 1rem;
-    justify-content: space-between;
-    justify-items: center;
-    font-family: georgia; 
-    font-size: 3rem; 
-    padding: 3px; 
-    color:rgba(0, 255, 255, 0.87);
-    width: 100%;
-    height: 76px;
-}
+          .Kontent2{
+            display: grid;
+grid-template-rows: 1.6fr 0.4fr;
+row-gap: 0.5rem;
+justify-content: space-around;
+justify-items: center;
+width: 90%;
+height: 245px;
+padding: 10px;
+border: 0.15rem solid #949494eb;;
+background: #fffffff1;
+border-radius: 1rem;
+font-family: 'Poppins';
+font-size: 16px;
+color: #848484;
+cursor: pointer;
+margin-top: 0.35rem;
+box-shadow: 0 0 0.2rem -0.25px rgba(182, 218, 215, 0.67);
+          }
 
-.HealthKare img{
-    width: 90px;
-    height: 80px;
-    margin-left: -1.85rem;
-   }
+.Kontent2:hover{
+  background: #fff;
+            border: 0.13rem solid #000;
+            transition: 0.2s solid ease-in;
+            border-radius: 1rem;
+            color: #000;
+          }
 
-   .HealthKare img:hover{
-    transform: rotate(360deg);
-    transition: 0.75s ease;
-   }
+          .Kontent3{
+            display: flex;
+            display: grid;
+grid-template-rows: 1.6fr 0.4fr;
+row-gap: 0.5rem;
+justify-content: space-around;
+justify-items: center;
+width: 90%;
+height: 245px;
+padding: 10px;
+border: 0.15rem solid #949494eb;;
+background: #fffffff1;
+border-radius: 1rem;
+font-family: 'Poppins';
+font-size: 16px;
+color: #848484;
+cursor: pointer;
+margin-top: 0.35rem;
+box-shadow: 0 0 0.2rem -0.25px rgba(182, 218, 215, 0.67);
+          }
 
-.Health{
-    width: auto;
-    text-shadow: 0.59px 0.59px rgba(255, 217, 0, 0.974);
-   
-}
-.Health:hover{
-    
-   transform: scale(1.01);
-}
+          .Kontent3:hover{
+            background: #fff;
+            border: 0.13rem solid #000;
+            transition: 0.2s solid ease-in;
+            border-radius: 1rem;
+            color: #000;
+          }
 
-.TXX{
+          .navbar2{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      width: 84.05%;
+      height: 100px;
+      border: 0.15rem solid #949494eb;
+      color: #adadad;
+      font-family: 'Poppins';
+      font-size: 2rem;
+      padding: 1.5rem;
+      font-weight: bold;
+      border-radius: 0.5rem;
+      background: #fffffff1;
+      box-shadow: 0 0 0.2rem -0.25px rgba(182, 218, 215, 0.67);
+      cursor: pointer;
+      margin-top: 0.16rem;
+          }
+
+          .navbar2:hover{
+            background: #fff;
+            color: #858585;
+            border-radius: 0.7rem;
+            transition: 0.17s ease-in;
+            border: 0.15rem solid #000;
+          }
+
+          .navbar3{
+            display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      width: 84.05%;
+      height: 100px;
+      border: 0.15rem solid #949494eb;
+      color: #adadad;
+      font-family: 'Poppins';
+      font-size: 2rem;
+      padding: 1.5rem;
+      font-weight: bold;
+      border-radius: 0.5rem;
+      background: #fffffff1;
+      box-shadow: 0 0 0.2rem -0.25px rgba(182, 218, 215, 0.67);
+      cursor: pointer;
+      margin-top: -0.1rem;
+          }
+
+          .navbar3:hover{
+            background: #fff;
+            color: #858585;
+            border-radius: 0.7rem;
+            transition: 0.17s ease-in;
+            border: 0.15rem solid #000;
+        
+          }
+
+          .content3{
+            display: grid;
+            grid-template-columns: 1fr;
+            justify-content: center;
+            justify-items: center;
+            width: 100%;
+            height: 450px;
+            background: transparent;
+            padding: 16px;
+            color: #000;
+            margin-top: 0.25rem;
+            
+          }
+
+          .DiapoWrapper{
+
+            display: grid;
+            grid-template-columns: 1.25fr 0.75fr;
+            column-gap: 2rem;
+            justify-content: center;
+            justify-items: center;
+            width: 86.01%;
+            height: 420px;
+            padding: 20px;
+            background: #fffffff1;
+            border: 0.15rem solid #949494eb;
+            margin-top: 7px;
+            border-radius: 0.5rem;
+          }
+
+          .DiapoWrapper:hover{
+            border: 0.15rem solid #000;
+          }
+
+         .DiapoPhoto{
 display: grid;
-grid-template-columns: 1fr 1fr;
-column-gap: 1.8rem;
+grid-template-rows: 0.5fr 1.5fr;
+row-gap: 0.5rem;
 justify-content: space-between;
 justify-items: center;
+width: 100%;
+height:380px;
+position: relative;
+overflow: hidden;
+background: yellow;
+box-shadow: 0 0 0.2rem -0.25px rgba(182, 218, 215, 0.67);
+
+         }
+
+.T {
+position: absolute;
+width: 100%;
+height: 380px;
+animation: auto 15s ease-in infinite;
+animation-delay: 15s;
+}
+.T img{
+
+  width: 100%;
+  height: 380px;
+}
+@keyframes auto{
+            0% {
+                left: 100%;
+            }
+
+            4% {
+                left: 0%;
+            }
+
+            33.33% {
+                left: 0%;
+            }
+
+            37.33% {
+                left: -100%;
+            }
+
+            100% {
+                left: -100%
+            }
+        }
+
+
+.T1 img{
+  width: 100%;
+  height: 380px;
 }
 
-.TXXT img{
-width: 550px;
-height: 290px;
-margin-top: -5px;
+.T1 {
+position: absolute;
+width: 100%;
+height: 380px;
+animation: auto 15s ease-in infinite;
+animation-delay: 10s;
 }
 
-.TXXT1{
-width: 550px;
-height: 290px;
-background: -webkit-linear-gradient(rgb(25, 60, 177), #e2e2e2);
-background: -moz-linear-gradient(rgb(25, 60, 177), #e2e2e2);
-color: rgba(225, 225, 225, 0.994);
-font-family: georgia;
-font-size: 1rem;
-padding-left: 0.5rem;
-padding-right: 0.75rem;
-line-height: 21px;
-margin-top: -5px;
+@keyframes auto{
+            0% {
+                left: 100%;
+            }
+
+            4% {
+                left: 0%;
+            }
+
+            33.33% {
+                left: 0%;
+            }
+
+            37.33% {
+                left: -100%;
+            }
+
+            100% {
+                left: -100%
+            }
+        }
+
+
+.T2 {
+position: absolute;
+width: 100%;
+height: 380px;
+animation: auto 15s ease-in infinite;
+animation-delay: 5s;
 }
 
-.TXXT1:hover{
-    font-size: 1.03rem; 
-    transition: 0.3s ease-in;
+.T2 img{
+  width: 100%;
+  height: 380px;
+}
+@keyframes auto{
+            0% {
+                left: 100%;
+            }
+
+            4% {
+                left: 0%;
+            }
+
+            33.33% {
+                left: 0%;
+            }
+
+            37.33% {
+                left: -100%;
+            }
+
+            100% {
+                left: -100%
+            }
+        }
+
+
+.Dive1{
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 2rem;
+  justify-content: space-between;
+  justify-items: center;
+  width: 100%;
+  height: 385px;
+  padding: 10px;
+  box-shadow: 0 0 0.2rem -0.25px rgba(182, 218, 215, 0.67);
+  border-radius: 0.5rem;
+  transition: 0.2s ease-in;
+  color: #8a8a8a;
+  background: #fffffff1;
+  cursor: pointer;
 }
 
-.Thank-You{
-    font-size: 1.45rem;
-    color:rgba(9, 9, 107, 0.974);
-    text-shadow: 0.35px 0.35px rgb(1, 213, 213);
-    margin-top: -7px;
+.DiV1{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 1.8rem;
+  justify-content: space-between;
+  justify-items: center;
+  padding: 20px;
+  height: 33px;
+  background: #fffffff1;
 }
 
-.Wrapp{
-    display: grid;
-    grid-template-columns: 0.5fr 1fr;
-    column-gap: 0.5rem;
-    justify-content: space-between;
-    justify-items: center;
-    border: 0.5px solid rgba(75, 118, 132, 0.995);
-    border-radius: 0.5rem;
-    font-size: 1.25rem;
-    background: #f7fdfe;
-    cursor: pointer;
-    height: 90px;
-    box-shadow: 0 0 0.7rem 0.2px rgba(46, 63, 70, 0.9);
-    margin-top: 2px;
+.D{
+  display: grid;
+width: 100%;
+height: auto;
+padding: 10px;
+border: 1.5px solid rgba(0, 187, 255, 0.889);
+border-radius: 1.5rem;
+background-color: #fcfcfc;
+cursor: pointer;
 }
 
-.Wrapp:hover{
-    background: -webkit-linear-gradient(rgba(248, 248, 248, 0.977), rgb(105, 162, 180));
-    background: -moz-linear-gradient(rgba(248, 248, 248, 0.977), rgb(105, 162, 180));
-    transition: 0.27s ease-in;
-    font-size: 1.28rem;
-    border: 0.13rem solid rgba(78, 121, 138, 0.985);
-    color:rgba(24, 63, 136, 0.979);
-    text-decoration: underline;
+  .D:hover{
+    background-color: #eeeeee;
+  border: 1.8px solid #b8b7b7fb;
+  border-radius: 1.7rem;
+  transition: 0.3s ease-in;
+  color: #1b1b1bec;
 }
 
-.Ti img{
-    width: 90px;
-    height: 45px;
-    margin-top: 0.5rem;
+.DD{
+  display: grid;
+width: 100%;
+height: auto;
+padding: 10px;
+border: 1.5px solid rgba(0, 187, 255, 0.889);
+border-radius: 1.5rem;
+background-color: #fcfcfc;
+cursor: pointer;
+}
+.DD:hover{
+  background-color: #eeeeee;
+  border: 1.8px solid #b8b7b7fb;
+  border-radius: 1.7rem;
+  transition: 0.3s ease-in;
+  color: #1b1b1bec;
 }
 
-.Ti{
-    border-right: 0.13rem dashed rgba(64, 64, 64, 0.908);
-    padding: 1rem;
+.DC{
+  display: grid;
+width: 100%;
+height: auto;
+padding: 10px;
+border: 1.5px solid rgba(0, 187, 255, 0.889);
+border-radius: 1.5rem;
+background-color: #fcfcfc;
+cursor: pointer;
+}
+.DC:hover{
+  background-color: #eeeeee;
+  border: 1.8px solid #b8b7b7fb;
+  border-radius: 1.7rem;
+  transition: 0.3s ease-in;
+  color: #1b1b1bec;
 }
 
-.TYKmess{
-    margin-top: 1.5rem;
+.DiV2{
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  justify-items: center;
+  padding: 10px;
+  width: 100%;
+  height: 300px;
+  color: rgba(143, 143, 143, 0.987);
+  border-radius: 0.5rem;
 }
 
-.Wrapp1{
-    display: grid;
-    grid-template-columns: 0.5fr 1fr;
-    column-gap: 0.5rem;
-    justify-content: space-between;
-    justify-items: center;
-    border: 0.1px solid rgba(75, 118, 132, 0.995);
-    font-size: 1.25rem;
-    background: #f7fdfe;
-    border-radius: 0.5rem;
-    cursor: pointer;
-    height: 90px;
-    box-shadow: 0 0 0.7rem 0.2px rgba(46, 63, 70, 0.9);
+.DiV2:hover{
+  border: 0.15rem solid rgba(0, 187, 255, 0.889);
+  color: #000;
+  transition: 0.25s ease-in;
+  border-radius: 0.8rem;
+  padding: 5px;
 }
 
-.Wrapp1:hover{
-    background: -webkit-linear-gradient(rgba(248, 248, 248, 0.977), rgb(105, 162, 180));
-    background: -moz-linear-gradient(rgba(248, 248, 248, 0.977), rgb(105, 162, 180));
-    transition: 0.27s ease-in;
-    border: 0.13rem solid rgba(78, 121, 138, 0.985);
-    color:rgba(24, 63, 136, 0.979);
-    text-decoration: underline;
-    font-size: 1.28rem;
-}
-.TYK{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 90px;
-    height: 45px;
-    border-radius: 50%;
-    color: yellow;
-    font-family: 'arial black';
-    font-size: 0.75rem;
-    padding: 2px;
-    border-right: 0.12rem solid yellow;
-    border-top: 0.12rem solid yellow;
-    border-bottom: 0.12rem solid yellow;
-    background: rgba(227, 25, 18, 0.964);
-    padding: 10px;
-    margin-top: 0.5rem;
+.navbar4{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      width: 84.05%;
+      height: 100px;
+      border: 0.15rem solid #949494eb;
+      color: #adadad;
+      font-family: 'Poppins';
+      font-size: 2rem;
+      padding: 1.5rem;
+      font-weight: bold;
+      border-radius: 0.5rem;
+      background: #fffffff1;
+      box-shadow: 0 0 0.2rem -0.25px rgba(182, 218, 215, 0.67);
+      cursor: pointer;
+      margin-top: 1rem;
+
 }
 
-.TK{
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 120px;
-    height: 85px;
-    border-right: 0.13rem dashed rgba(64, 64, 64, 0.908);
-    margin-left: 3.75px;
+.navbar4:hover{
+  background: #fffffff1;
+            color: #000;
+            border-radius: 0.7rem;
+            transition: 0.17s ease-in;
+            border: 0.15rem solid #000;
 }
 
-.TYKMeaning{
-margin-top: 2.5rem;
-}
-.Wrapp2{
-    display: grid;
-    grid-template-columns: 0.5fr 1fr;
-    column-gap: 0.5rem;
-    justify-content: space-between;
-    justify-items: center;
-    border: 0.1px solid rgba(75, 118, 132, 0.995);
-    font-size: 1.25rem;
-    background: #f7fdfe;
-    border-radius: 0.5rem;
-    cursor: pointer;
-    height: 90px;
-    box-shadow: 0 0 0.7rem 0.2px rgba(46, 63, 70, 0.9);
+.navbar4:hover{
+  background: #fff;
+            color: #858585;
+            border-radius: 0.7rem;
+            transition: 0.17s ease-in;
+            border: 0.15rem solid #000;
 }
 
-.Wrapp2:hover{
-    background: -webkit-linear-gradient(rgba(248, 248, 248, 0.977), rgb(105, 162, 180));
-    background: -moz-linear-gradient(rgba(248, 248, 248, 0.977), rgb(105, 162, 180));
-    transition: 0.27s ease-in;
-    border: 0.13rem solid rgba(78, 121, 138, 0.985);
-    color:rgba(24, 63, 136, 0.979);
-    text-decoration: underline;
-    font-size: 1.28rem;
+.content4{
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr;
+            justify-content: center;
+            justify-items: center;
+            width: 100%;
+            height: 710px;
+            background: transparent;
+            padding: 10px;
+            margin-top: 1.2rem;
+          }
+
+          .H-P{
+            display: grid;
+            grid-template-rows: 1fr;
+            justify-content: center;
+            justify-items: center;
+            width: 85.4%;
+            height: 150px;
+            background: #fffffff1;
+            padding: 10px;
+            margin-top: -5px;
+            border: 0.15rem solid #949494eb;
+            box-shadow: 0 0 0.2rem -0.25px rgba(182, 218, 215, 0.67);
+            border-radius: 0.5rem;
+          }
+          .H-P:hover{
+            border: 0.15rem solid #000;
+          }
+
+.Horizontal-Wrapper{
+display: grid;
+grid-template-columns: 0.25fr 0.9fr 0.8fr;
+justify-content: space-between;
+justify-items: center;
+width: 101.59%;
+height: 87px;
+margin-top: -0.55rem;
+cursor: pointer;
+background: transparent;
 }
 
-.Activity img{
-    width: 90px;
-    height: 45px;
-    margin-top: 0.5rem;
+.Doctor-Logo-Wrapper{
+  display: grid;
+  grid-template-rows: 0.4fr 0.55fr;
+  justify-content: space-around;
+  justify-items: center;
+  width: 100%;
+  height: auto;
+
 }
 
-.Activity{
-    border-right: 0.13rem dashed rgba(64, 64, 64, 0.908);
-    padding: 1rem;
+.Doctor{
+  display: grid;
+  grid-template-rows: 1fr;
+  padding: 10px;
+  justify-content: center;
+  justify-items: center;
+  width: auto;
+  height: auto;
+  color: #2a2a2a;
+  font-size: 13.5px;
+line-height: 14.25px;
+background: #f1f1f1;
+border: 0.5px solid rgba(2, 141, 211, 0.955);
+border-radius: 3rem;
+}
+.Doctor:hover{
+background: #343434;
+color: #fff;
+border-radius: 3rem;
+border: 0.5px solid #fff;
+transition: 0.2s linear;
+font-size: 14px;
+}
+.Doctor-Logo img{
+  width: 90%;
+  height: 90px;
+  cursor: pointer;
 }
 
-.Activmess{
-    margin-top: 2.5rem;
+.Doctor-Logo img:hover{
+  transform: rotate(360deg);
+  transition: 0.3s ease-in;
+}
+.HPh{
+  display: grid;
+  grid-template-columns: 0.85fr 1fr;
+  column-gap: 0.2rem;
+  justify-content: space-between;
+  justify-items: center;
+  width: 102.3%;
+  padding: 10px;
+  background: #fffffff1;
+  margin-top: 5.5rem;
+  border: 0.15rem solid #949494eb;
+  box-shadow: 0 0 0.2rem -0.25px rgba(182, 218, 215, 0.67);
+            border-radius: 0.5rem;
+            cursor: pointer;
 }
 
-.Wrapp3{
-    display: grid;
-    grid-template-columns: 0.5fr 1fr;
-    justify-content: space-between;
-    justify-items: center;
-    border: 0.1px solid rgba(75, 118, 132, 0.995);
-    font-size: 1.25rem;
-    background: #f7fdfe;
-    border-radius: 0.5rem;
-    cursor: pointer;
-    width: auto;
-    height: 90px;
-    box-shadow: 0 0 0.7rem 0.2px rgba(46, 63, 70, 0.9);
+.VerTiWa{
+  display: grid;
+  grid-template-rows: 1fr;
+  padding: 25px;
+  justify-content: center;
+  justify-items: center;
+  width: 100%;
+  height: 66px;
+  color: #2a2a2a;
+  font-size: 22px;
+line-height: 14.25px;
+background: #f1f1f1;
+border: 0.5px solid rgba(38, 161, 222, 0.955);
+border-radius: 3rem;
+margin-top: 1rem;
 }
 
-.Wrapp3:hover{
-    background: -webkit-linear-gradient(rgba(248, 248, 248, 0.977), rgb(105, 162, 180));
-    background: -moz-linear-gradient(rgba(248, 248, 248, 0.977), rgb(105, 162, 180));
-    transition: 0.27s ease-in;
-    border: 0.13rem solid rgba(78, 121, 138, 0.985);
-    color:rgba(24, 63, 136, 0.979);
-    text-decoration: underline;
-    font-size: 1.28rem;
+.VerTiWa:hover{
+  background: #494949;
+color: #fff;
+border-radius: 3rem;
+border: 0.5px solid #fff;
+transition: 0.2s linear;
+font-size: 20px;
 }
 
-.Emailing{
-    border-right: 0.13rem dashed rgba(64, 64, 64, 0.908);
-    padding: 1rem;
+.HPh:hover{
+  color: #000;
+  border: 0.15rem solid #000;
 }
 
-.Emailing img{
-    width: 90px;
-    height: 45px;
-    margin-top: 0.5rem;
+.Vertical-Writing{
+  display: grid;
+  grid-template-rows: 1fr 0.25fr;
+  justify-items: space-between;
+  justify-items: center;
+  font-family: 'Poppins'; 
+  font-size: 2rem;
+  line-height: 40px;
+  margin-top: 4rem;
+  color: #979797;
+  width: 300spx;
+  background: transparent;
+}
+.Vertical-Writing:hover{
+  color: #575757;
 }
 
-.Emessage{
-    margin-top: 2rem;
+.HPhoto{
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  justify-items: center;
+  width: 100%;
+  height: auto;
+  padding: 10px;
+}
+
+.HPhoto img{
+  width: 95%;
+  height: 120px;
+}
+
+.H-P-H img{
+  width: 650px;
+  height: 470px;
+  cursor: pointer;
+}
+.H-P-H img:hover{
+  transform: scale(1.01);
+  transition: 0.2s ease-in;
+}
+
+.HPT{
+  background: transparent;
+  color:#747474fa;
+  font-family: 'Poppins';
+  font-size: 17.23px;
+  width: auto;
+  height: 125px;
+  padding: 5px;
+  line-height: 20px;
+  margin-top: 7px;
+  cursor: pointer;
+}
+
+.HPT:hover{
+  color: #333333f7;
+}
+
+.navbar5{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      width: 84.04%;
+      height: 100px;
+      border: 0.15rem solid #949494eb;
+      color: #adadad;
+      font-family: 'Poppins';
+      font-size: 2rem;
+      padding: 1.5rem;
+      font-weight: bold;
+      border-radius: 0.5rem;
+      background: #fffffff1;
+      box-shadow: 0 0 0.2rem -0.25px rgba(182, 218, 215, 0.67);
+      cursor: pointer;
     
+          }
+
+          .navbar5:hover{
+            background: #fff;
+            color: #858585;
+            border-radius: 0.7rem;
+            transition: 0.17s ease-in;
+            border: 0.15rem solid #000;
+          }
+
+
+          .content5{ display: grid;
+            grid-template-columns: 1fr;
+            justify-content: center;
+            justify-items: center;
+            width: 100%;
+            height: 500px;
+            background: transparent;
+            padding: 20px;
+            color: #000;
+          }
+
+          .FoodSecurity{
+            display: grid;
+            grid-template-columns: 1.35fr 1fr;
+            column-gap: 0.5rem;
+            justify-content: space-around;
+            justify-items: center;
+            padding: 10px;
+            width: 86.4%;
+            height: 468px;
+            background: #fffffff1;
+            border: 0.15rem solid #949494eb;
+            border-radius: 0.5rem;
+            margin-top: 9px;
+            box-shadow: 0 0 0.2rem -0.25px rgba(182, 218, 215, 0.67);
+          }
+.FoodSecurity:hover{
+  border: 1px solid #000;
 }
 
+    .FST img{ 
+      width: 650px;
+      height: 430px;
+      padding: 2px;
+      cursor: pointer;
+    }
+
+    .FST img:hover{
+      transform: scale(1.01);
+      background: #fff;
+    }
+
+    .FSTS{
+      width: 63%;
+      height: 427px;
+      color: #787878fa;
+      padding: 10px;
+      font-family: georgia;
+      font-size: 1.2rem;
+      line-height: 26px;
+      cursor: pointer;
+      box-shadow: 0 0 0.2rem -0.25px rgba(182, 218, 215, 0.67);
+    }
+
+.FSTS:hover{
+  color:#000;
+}
+
+.SF{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  width: auto;
+  height: auto;
+  color: #2a2a2a;
+  font-size: 13.5px;
+line-height: 14.25px;
+background: #f1f1f1;
+border: 0.5px solid rgba(2, 141, 211, 0.955);
+border-radius: 3rem;
+margin-top: 1rem;
+}
+
+.SF:hover{ 
+  background: #343434;
+color: #fff;
+border-radius: 3rem;
+border: 0.5px solid #fff;
+transition: 0.2s linear;
+font-size: 14px;
+}
     
+    ::-webkit-scrollbar{
+        width: 13.5px;
+    
+    }
+    ::-webkit-scrollbar-track-piece{
+        background: #dddddd;
+        cursor: pointer;
+  
+    }
+    ::-webkit-scrollbar-thumb{
+        background: -webkit-linear-gradient(#242424ec 50%, rgba(255, 217, 2, 0.979) 50%);
+        background: -moz-linear-gradient(#242424ec 50%, rgba(255, 217, 2, 0.979) 50%);
+    }
+    ::-webkit-scrollbar-track-piece:hover{
+        background: rgba(250, 250, 250, 0.937);
+    }
+    
+          
+          
+    .footer{
+            display: flex;
+            width: 100%;
+            height: 510px;
+            position: relative;
+            font-family: 'Poppins';
+            font-size: 1.5rem;
+            line-height: 32px;
+            background: rgba(35, 35, 35, 0.966);
+            color: #fff;
+            justify-content: center;
+            flex-direction: column;
+            align-items: space-between;  
+            text-align: center; 
+        }
+    .content a:hover{
+        text-decoration: underline;
+        color: rgba(255, 6, 6, 0.986);
+        transition: 0.25s ease-in;
+    }
     .reader{
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        border-bottom: 0.1rem solid gray;   
-        color: rgb(206, 19, 56);  
-        font-family: 'verdana'; 
-        font-size: 0.7rem; 
+        display: grid;
+        grid-template-columns: 0.7fr 1.3fr;
+        background: rgba(255, 217, 2, 0.979);
+        color: #3b3a3af5;  
+        font-family: 'Poppins';
+        font-size: 1.4rem; 
         justify-content: center;
-        align-items: center;
+        justify-items: center;
         width: 100%;
-        height: 1.5rem;
-        padding-top: 0.5rem;
-        padding-bottom: 0.5rem;
+        height: 2.47rem;
+        padding-top: 0.45rem;
+        padding-bottom: 0.45rem;
         word-spacing: 1px;
     }
 
-.SPan{
-    background-color: rgba(236, 235, 235, 0.939);
+    .Header{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        justify-items: center;
+        width: 88%;
+        height: 33px;
+        font-size: 1.35rem; 
+        font-weight:bold;
+        overflow: hidden;
+        position: relative;
+        margin-left: 1rem;
+    }
+
+   
+.HAD{
+  display: grid;
+  grid-template-columns: 0.2fr 1.85fr;
+  position: absolute;
+  width: 87%;
+        height: 33px;
+        font-size: 1.35rem; 
+        font-weight:bold;
+        animation: auto 12s ease-in infinite;
+        animation-delay: 12s;
+        background: rgba(255, 217, 2, 0.979);
+
+}
+
+@keyframes auto{
+            0% {
+                left: 100%;
+            }
+
+            4% {
+                left: 0%;
+            }
+
+            33.33% {
+                left: 0%;
+            }
+
+            37.33% {
+                left: -100%;
+            }
+
+            100% {
+                left: -100%
+            }
+        }
+
+        .DAH img{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          justify-items: center;
+          width: 60%;
+          height: 2rem;
+          padding: 0.5px;
+          border: 0.1rem solid red;
+          border-radius: 0.3rem;
+        }
+
+        .DAHO{
+        font-size: 1.35rem; 
+        background: rgba(255, 217, 2, 0.979);
+        font-weight:bold;
+        color: #000;
+        width: 85%;
+        height: 2rem;
+        }
+
+.HADE{
+  display: grid;
+  grid-template-columns: 0.2fr 1.85fr;
+  position: absolute;
+  width: 87%;
+        height: 33px;
+        font-size: 1.35rem; 
+        font-weight:bold;
+        animation: auto 12s ease-in infinite;
+        animation-delay: 8s;
+        background: rgba(255, 217, 2, 0.979);
+}
+
+.ADA img{
+  display: flex;
+          flex-direction: column;
+          justify-content: center;
+          justify-items: center;
+          width: 60%;
+          height: 2rem;
+          padding: 0.5px;
+          border: 0.1rem solid red;
+          border-radius: 0.3rem;
+}
+
+@keyframes auto{
+            0% {
+                left: 100%;
+            }
+
+            4% {
+                left: 0%;
+            }
+
+            33.33% {
+                left: 0%;
+            }
+
+            37.33% {
+                left: -100%;
+            }
+
+            100% {
+                left: -100%
+            }
+        }
+
+.HADEE{
+  display: grid;
+  grid-template-columns: 0.2fr 1.85fr;
+  position: absolute;
+  width: 87%;
+        height: 33px;
+        font-size: 1.35rem; 
+        background: rgba(255, 217, 2, 0.979);
+        font-weight:bold;
+        animation: auto 12s ease-in infinite;
+        animation-delay: 4s;
+}
+@keyframes auto{
+            0% {
+                left: 100%;
+            }
+
+            4% {
+                left: 0%;
+            }
+
+            33.33% {
+                left: 0%;
+            }
+
+            37.33% {
+                left: -100%;
+            }
+
+            100% {
+                left: -100%
+            }
+        }
+
+        .HA{
+        font-size: 1.35rem; 
+        background: rgba(255, 217, 2, 0.979);
+        font-weight:bold;
+        color: #000;
+        width: 85%;
+        height: 2rem;
+        }
+
+        .HA img{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          justify-items: center;
+          width: 65%;
+          height: 2rem;
+          padding: 0.5px;
+          border: 0.1rem solid red;
+          border-radius: 0.3rem;
+        }
+    .TOGETHER{
+      color: darkred;
+      font-size: 13px;
+      margin-top: 3px;
+      font-weight: bolder;
+      font-family: 'verdana';
+      padding: 0.55px;
+    }
+
+    .TYK1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 77px;
+    height: 67px;
+    border-radius: 50%;
+    color: yellow;
+    font-family: 'helvetica';
+    font-size: 0.79rem;
+    padding: 2px;
+    border: 0.22rem solid rgb(15, 179, 15);
+    background: rgb(255, 1, 1);
+    margin-top: -13.15px;
+    margin-left: 0.25rem;
+    cursor: pointer;
+   }
+
+   .TYK1:hover{
+   
+    transform: rotate(360deg);
+    transition: 0.5s ease;
+   }
+
+   .SPan{
+    background-color: #fff;
     display: flex; 
-    height: 28px;
+    width: 100%;
+    height: 30px;
     justify-content: center; 
     align-items: center; 
     padding: 0.5rem;
     color: rgba(16, 16, 175, 0.928);
+    border-radius: 0.3rem;
 }
 
 .SPan:hover{
@@ -1784,252 +1767,9 @@ margin-top: 2.5rem;
 }
 
     .SPan:hover{
-        transform: scaleY(1.05);
-        transition: 0.15s ease-in;
+        transform: scaleY(1.03);
+        transition: 0.12s ease-in;
     }
-
-    .top-container{
-    display: flex;
-    position: relative;
-    background: rgba(158, 158, 158, 0.637);
-    width: 100%;
-    height: 80px;
-    justify-content: center;
-    align-items: center;
-    background-position: cover;
-}
-
-.ttle-container{
-            display: flex;
-            position: relative;
-            align-items: center;
-            justify-content: center;
-            width: 83.9%;
-            height: 39px;
-            background: rgba(143, 143, 143, 0.975);
-            border-radius: 48px;
-            margin-left: -110px; 
-            margin-top: 8px;
-        }
-        .tt-container{
-            display: flex;
-            position: relative;
-            align-items: center;
-            justify-content: start;
-            width: 99.3%;
-            height: 33px;
-            background: rgba(13, 13, 13, 0.7);
-            border-radius: 48px;
-            color: #fff;
-            font-size: 12px;
-            word-spacing: 1px;
-            border: 0.13rem solid #bebebe;
-            margin-top: -0.15px!important;
-}
-    
-
-.ttle-container{
-            display: flex;
-            position: relative;
-            align-items: center;
-            justify-content: center;
-            width: 95%;
-            height: 39.4px;
-            background: rgba(143, 143, 143, 0.975);
-            border-radius: 48px;
-            margin-left: 20px;
-        }
-    
-.titlecontainer{
-            display: flex;
-            position: relative;
-            align-items: center;
-            text-align: center;
-            flex-direction: row;
-            justify-content: center;
-            width: 80%;
-            height: 30.5px;
-            margin-left: 2.48px;
-            border-radius: 15px;
-            color: #000;
-            background: rgb(185, 177, 174);
-            font-family: 'verdana';
-            animation: mymove0 55s ease-in infinite; 
-            animation-direction: alternate; 
-            cursor: pointer; 
-        }
-        @keyframes mymove0{
-0% {left: 0px; background:-webkit-linear-gradient( rgb(255, 251, 7), #e7e5e5ca);}
-40%{left: 78px; background: -webkit-linear-gradient( rgb(255, 251, 7), #e7e5e5ca);}
-70%{left: 85px; background: -webkit-linear-gradient(rgb(253, 255, 254), rgb(245, 249, 245));}
-100%{left: 182px; background: -webkit-linear-gradient(#ffbc9a, rgb(255, 255, 255));}
-}
-.titlecontainer:hover{
-            animation-play-state: paused;}
-
-            .titlecontainer a:hover{
-                transform: scale(1.1);
-            }
-
-.ttl-container{
-    display: flex;
-    position: relative;
-    background: rgba(143, 143, 143, 0.975);
-    width: 75%;
-    height: 39.5px;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    border-radius: 48px;
-    margin-left: 1.71%;
-    margin-top: 8px;
-
-}
-.t-container{
-    display: flex;
-    position: relative;
-    background: rgba(13, 13, 13, 0.7);
-    width: 96.1%;
-    height: 34px;
-    align-items: center;
-    justify-content: center ;
-    border-radius: 48px; 
-    margin-top: -0.15px!important;
-    border: 0.13rem solid #bebebe;
-}
-
-.titlcontainer{
-    display: flex;
-    position: relative;
-    background:-webkit-linear-gradient( rgb(255, 251, 17), #e3dbd4ca);
-    font-family: 'verdana';
-    width:100px;
-    height:30.5px;
-    padding-right: 3.5px;
-    padding-left: 3.5px;
-    border-radius: 15px;
-    align-items: center;
-    justify-content: center;
-    margin-right: 49%;
-    animation: mymove18 45s ease-in infinite; 
-    animation-direction: alternate; 
-    cursor: pointer;       
-    
-}
-
-@keyframes mymove18{
- 0% {left: 0px; background:-webkit-linear-gradient( rgb(251, 255, 25), #e3dbd4ca);}
-15%{left: 49px; background:-webkit-linear-gradient(rgb(253, 255, 254), rgb(245, 249, 245));}
-46%{left: 58px; background:-webkit-linear-gradient(rgb(255, 255, 13), rgb(71, 255, 77));}
-65% {left: 85px; background:-webkit-linear-gradient(#fdb997, rgb(255, 255, 255));}
-}
-.titlcontainer:hover{
-    animation-play-state: paused;
-    transform: scale(1.1);
-}
-
-.wrapper{
-    display: flex;
-    position: relative;
-    background: transparent;
-    width: 98%;
-    height: 60px;
-    flex-wrap: wrap;
-    border-radius: 7px;
-    align-items: center;
-    justify-content: center;
-    align-self: center;
-    margin-left: -5px;
-    margin-top: 4px;
-}
-
-.emonth-container{
-    display: flex;
-    position: relative;
-    background: -webkit-linear-gradient(rgb(0, 113, 0), rgb(0, 97, 0));
-    font-family: 'verdana';
-    font-size: 12px bold;
-    color: yellow;
-    border-top: 4px solid #ff0;
-    border-radius: 13px;
-    width:64.5% ;
-    height: 30px;
-    margin-top: -5px;
-    margin-left: -4.5px;
-    justify-content: start;
-    align-items: center;
-    animation: mymove14 55s ease-in infinite;
-    animation-direction: alternate;
-    cursor: pointer;
-}
-@keyframes mymove14{
-    from{left: -7px;}
-    to{left: -610px;}
-}
-.emonth-container:hover{
-    animation-play-state: paused;
-}
-
-.fmonth-container{
-    display: flex;
-    position: relative;
-    background: -webkit-linear-gradient(rgb(0, 113, 0), rgb(0, 97, 0));
-    font-family: 'verdana';
-    color: yellow;
-    font-size: 12px bold;
-    border-bottom: 4px solid yellow;
-    border-radius: 13px;
-    margin-left: -4.5px;
-    margin-top: -5px;
-    width:64.5%;
-    height: 30px;
-    justify-content: start;
-    align-items: center;
-    animation: mymove13 55s ease-in infinite;
-    animation-direction: alternate;
-    cursor: pointer;
-}
-@keyframes mymove13{
-    from{left: -7px;}
-    to{left: -610px;}
-}
-.fmonth-container:hover{
-    animation-play-state: paused;
-}
-
-.mother-cover{
-    display: flex;
-    position: relative;
-    background: transparent;
-    width:100%;
-    height: 77px;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: -71.5px;
-}
-.cover{
-    display: flex;
-    position: relative;
-    width: 20%;
-    height: 67px;
-    background: rgba(161, 161, 161, 0.541);
-    justify-content: center;
-    align-items: center;
-    border-right: 1px solid transparent; 
-    margin-left: -1.31%; 
-}
-
-.cover1{
-    display: flex;
-    position: relative;
-    width: 80%;
-    height: 67px;
-    background: rgba(161, 161, 161, 0.541);
-    justify-content: center;
-    align-items: center;
-    border-left: 1px solid transparent;
-    margin-left: 8%;
-}
     
        </style>
     
@@ -2038,22 +1778,12 @@ margin-top: 2.5rem;
     
         <a name="Top"></a>  
         
-        <title>TKY.html</title>  
+        <title>etymology.html</title>  
         
-        <body> 
-
-            <div class="scroll-bar"></div>
-
-            <div id="google_translate_element"></div>
-<script type="text/javascript">// <![CDATA[
-function googleTranslateElementInit() {
-new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
-}
-// ]]></script>
-<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" type="text/javascript">
+        <body>
     
-</script>
-
+        <div class="scroll-bar"></div>
+    
         <script>
     
         // When the user scrolls the page, execute myFunction
@@ -2074,477 +1804,477 @@ new google.translate.TranslateElement({pageLanguage: 'en', layout: google.transl
         header.classList.remove("sticky");
       }
     }
+    
+    //Get the ReadLess, ReadMore function
+           function readMoreFunction(){
+        var dots = document.getElementById("dots");
+        var contentText = document.getElementById("contentText");
+        var btnText = document.getElementById("buttonReadMore");
+        if (dots.style.display === "none"){
+           dots.style.display = "inline";
+           btnText.innerHTML = "Read More";
+           contentText.style.display = "none";
+       } else{
+           dots.style.display = "none";
+           btnText.innerHTML = "Read Less";
+           contentText.style.display = "inline";
+        }
+    }
+    
     </script>
-
         <a name="home"></a>
     
         <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
     
-    <div class="top-container1">
+    <div class="reader">
 
-        <a name="Top"></a>
+        <div class="TOGETHER">Together As One To Overcome</div>
         
-        <div class="reader">
-            <b>[N.B. Notice That Translating A Language To Another, Words Can Be Equal Or Change In Terms Of Their Sizes. Please, Resize The Zoom Of Your Browser To Have A Good Layout]</b>
 
-           </div>
-    
-        <div class="diapo">
-    
-        <a href="#" target="_blank">
-            <div class="diapo1" id="diapo1">
-                <img src="https://www.zupimages.net/up/23/06/nvux.png" alt="Monument Georges-Etienne Cartier by night">
-           </div>
-        </a>
-    
-    <a href="#" target="_blank">
-    <div class="diapo2" id="diapo2">
-        <img src="https://www.zupimages.net/up/23/06/hx80.png" alt="Hospital">
-    </div>
-    </a>
-    
-    <a href="https://www.britannica.com/topic/fleur-de-lis" target="_blank">
-        <div class="diapo3" id="diapo3">
+        <div class="Header">
 
-
-    <div class="Framer">
-            <b  style="font-size: 2.8rem; color: rgb(247, 247, 247)">Welcome Here ! </b>
         
-            This website is in project. It will be improving education and promoting inclusion for disabled children in Burkina Faso. Some of the photos are temporary embeded and will be replaced. Come Back Soon. Thank You ! 
-    </div>
-</div>
-    </a>
+        <div class="HAD">
+         
+          <div class="DAH"> 
+            <img src="http://significon.com/wp-content/uploads/2018/07/US_ISA1.png" alt="Disability Logo">
+          </div>
 
+          <div class="DAHO"> 
+            Disability Is Not Destiny
+          </div>
+        
         </div>
-    
+      
+        <div class="HADE">
+          <div class="ADA">
+          <img src="https://media.istockphoto.com/id/1361186131/fr/vectoriel/employ%C3%A9-de-bureau-en-fauteuil-roulant-au-bureau-accueillant-un-coll%C3%A8gue.jpg?s=1024x1024&w=is&k=20&c=e2YTUIx6QUdTTJaHw4Th8EiYGb3fkD1F7CzCAw6oeog=" alt="Inclusion Logo">
+          </div>
+
+          <div class="ADAA">
+            Inclusion Is Not A Privilege But A Right
+        </div>
+      
+      </div>
+     
+        <div class="HADEE">
+         
+          <div class="HA">
+
+            <img src="https://www.itineraire-libre.com/public/img/medium/baobabmadagascarjpg_5eec6d66f1765.jpg" alt="baobab trees">
+          </div>
+
+        
+          <div class="HAE">
+            Tiki N'Yiki, Improving Education and Promoting Inclusion 
+            </div>
+          </a>
+        </div>
+      
+        
     </div>
+  </div>
+
+    <div class="top-container">
+
+      <div class="Welcome">
+        Welcome on Tiki N'Yiki's website ! Enjoy your Visit !
+      </div>
+
+      <a href="https://en.wikipedia.org/wiki/Burkina_Faso" target="_blank">
+      <div class="BF">
+       Burkina Faso
+      </div>
+    </a>
+
+    <a href="https://ameiph.com/" target="_blank">
+      <div class="Asso">
+        Associations/Organisations
+      </div>
+    </a>
+
+      <div class="datime">
+              <p id="demo" style="margin-left: 35px">
+                 <span id="datetime" > </span>
+             </p>
+            </div>
+
+      <script>
+             var d = new Date();
+             document.getElementById("demo").innerHTML = d;
+         </script>
+    </div>
+    
     
         <div class="navbar" id="myHeader">
-            <a class="logo">
-            </a>
-            <ul>
-                <li><a class="logo"></a>
-                    
-                    <a href="file:///C:/Users/User/Documents/Tik-Yik.html">
-                        <div class="TYK1">Tiki N'Yiki
-                        </div>
+
+          <a href="#" target="blank">
+              <div class="TYK1">
+              <b> Tiki N'Yiki </b>
+              </div>
                 </a>
-            </li>        
-        </ul>
-    
-    
-        <div class="TikiYiki">
-            <button class="dropbtn">Tiki N'Yiki
-                <i class="fa fa-caret-down">
-            </i>
-            </button>
-            <div class="TikiYiki-content">
-                <a href="#" target="blank">Etymology And Meaning</a>
-                <a href="#" target="blank">Why Tiki N'Yiki ?</a>
-                <a href="#" target="blank">Support</a>
+
+                <div class="Unify"> 
+
+            <a href="#" target="blank">
+            <div class="myDiv">
+                Tiki N'Yiki
             </div>
-            
-        </div>
-        
-        
-        <div class="Education">
-            <button class="dropbtn">Education
-                <i class="fa fa-caret-down">
-            </i>
-            </button>
-            <div class="Education-content">
-                <a href="#" target="blank">Activities</a>
-                 <a href="#" target="blank">Beneficiaries</a>
-                <a href="#" target="blank">Volunteering</a>
+                </a>
+    
+
+        <a href="#" target="blank"> 
+            <div class="myDiv1">  Education 
+            </div>
+        </a>
+
+                <a href="#" target="blank"> 
+                    <div  class="myDiv2">
+                    Health Care 
                 </div>
-            </div>
-        
-                <div class="HealthCare">
-                    <button class="dropbtn">Health Care
-                        <i class="fa fa-caret-down">
-                    </i>
-                    </button>
-                    <div class="HealthCare-content">
-                        <a href="#" target="blank">Our Approach </a>
-                        <a href="#" target="blank">Who To Care ?</a>
-                        <a href="#" target="blank">Support</a>
+                </a>
+
+                <a href="https://www.wfp.org/countries/burkina-faso" target="blank"> 
+                    <div  class="myDiv3">Food Safety
                     </div>
-                </div> 
-        
-        <div class="FoodSecu">
-            <button class="dropbtn">Food Safety
-                <i class="fa fa-caret-down">
-            </i>
-            </button>
-            <div class="FoodSecu-content">
-                <a href="https://www.wfp.org/countries/burkina-faso#:~:text=In%202019%2C%20Burkina%20Faso%20was,a%20sharp%20spike%20in%20numbers" target="blank">The Context</a>
-                <a href="#" target="blank">Does Who Need Food ?</a>
-                <a href="#" target="blank">How to Reach Food Safety ?</a>
+                </a>
+
+                <a href="#" target="blank"> 
+                    <div  class="myDiv4">Painting
+                    </div>
+                </a>
+
+                <a href="#" target="blank"> 
+                  <div  class="myDiv5">Stories 
+                  </div>
+              </a>
+
+              <a href="#" target="blank"> 
+                <div  class="myDiv6">Support
                 </div>
-        </div>
+            </a>
+
+</div>
+            </div>
+
+            <div class="navbar1">
+              What it means to be and living as a differently-able [disabled] person ?
+            </div>
         
-        <div class="Climate-Change">
-            <button class="dropbtn">Climate Change
-                <i class="fa fa-caret-down">
-            </i>
-            </button>
-            <div class="Climate-Change-content">
-                <a href="https://news.un.org/en/news/topic/climate-change" target="_blank">What Is Climate Change ?</a>
-                <a href="#" target="blank">What Are We Doing ?</a>
-                <a href="#" target="blank">Documentation</a>
-             </div>
-        </div>
 
-        <ul>
-        <li><a class="datime">
-            <p id="demo" style="margin-left: 35px">
-               <span id="datetime" > </span>
-           </p>
-       </a>
-    </li>
-    </ul>
-
-    <script>
-           var d = new Date();
-           document.getElementById("demo").innerHTML = d;
-       </script>
+        <a name="Top"></a>
+    
         
-        </div>
-
-        <div class="navbar1" id="myHeader1">
-
-
-        </div>
     
     <div class="fwrapper">
 
-        <div class="fwrapp1">
-            
-            <div class="fwrap1">
+     
+    
+        <div class="content1">
 
-            <div class="fwrap0">
+          <div class="STAMP">
+                
+            <div class="T-Area">
 
-                    <div class="fwR">
-                    <h1 style=" font-family: 'georgia'; font-size: 1rem; color: darkblue; margin-top: 36px; ; line-height: 22px; text-align: justify">Tiki N'Yiki Foundation Celebrating Christmas With Kids In Ziniare [Burkina Faso]</h1>
-                </div>
-
-                <div class="fwS">
-                    <h1 style=" font-family: 'georgia'; font-size: 1rem; color: darkblue; margin-top: 2px; line-height: 22px; text-align: justify">Monitoring Children During A Summer Camp In Carouge [Switzerland] </h1>
-                </div>
-
-                <div class="fwT">
-                    <h1 style=" font-family: 'georgia'; font-size: 1rem; color: darkblue;  margin-top: 19px; line-height: 22px; text-align: justify">Teaching Kids Has Always Been Passionate To Me. I Have Learned Back A Lot.</h1>
-                </div>
-
+               <div class="PH">
+                <img src="https://zupimages.net/up/22/21/di3p.jpg" alt="Drumming Time - BFA">
             </div>
 
-            <a href="#">
-              <div class="fwrap">
-                <div class="fw1"> <img src="https://zupimages.net/up/22/31/z42x.jpg" alt="Christmas at Tiki N'Yiki"></div>
-                <div class="fw2"><img src="https://zupimages.net/up/22/34/rvh5.jpg" alt="In Switzerland"> </div>
-                <div class="fw3"> <img src="https://www.zupimages.net/up/22/31/ttk3.jpg" alt="Teaching in BF"></div>
-            </div>
-            </a>
-
-        </div>
+            <div class="Drum">
+              In addition to teaching, activities of Tiki N'Yiki include volunteering and sensibilisations about disability. As Culture Can Be A Base Of Our Identity there are some couple activities like drumming as well as theater.
+           </div>
            
-            <div class="fwrap2">
-                
-                <a href="#">
-                <div class="Wrapp">
-                    <div class="TK">
-                    <div class="TYK">Tiki N'Yiki
-                    </div>
-                    </div>
-
-                    <div class="TYKMeaning">Etymology Of Tiki N'Yiki</div>
-                </div>
-                </a>
-
-                <a href="#">
-                <div class="Wrapp1">
-                    <div class="Ti">
-                        <img src="https://cdn-icons-png.flaticon.com/512/2891/2891323.png" alt="TikiYiki">
-                    </div>
-                    <div class="TYKmess">Why Tiki N'Yiki ?</div>
-                </div>
-            </a>
-
-                <a href="#">
-                <div class="Wrapp2">
-                    <div class="Activity"><img src="https://cdn-icons-png.flaticon.com/512/11/11296.png" alt="acitivities-icon">
-                    </div>
-                    <div class="Activmess">Activities And Projects</div>
-                </div>
-            </a>
-
-                <a href="#">
-                <div class="Wrapp3">
-                    <div class="Emailing"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVnEXnBoadjrjEE9C5TSuLyHC4FjeEIlGHVLkDpVfQ_gus4zDOa2XjeKjEADxGgjgrycw&usqp=CAU" alt="email-logo">
-                    </div>
-                    <div class="Emessage">Mailing</div>
-                </div>
-            </a>
-                 
-            </div>
-        </div>
-        
-
-        <div class="fwrapp2">
-            <div class="fwrappi">
-                <h1 style="font-family: 'georgia'; margin-top: 1.15rem; font-size: 24px; background: transparent; width: 100%; color: rgba(213, 213, 213, 0.976)">Education Is A Backbone For Any Sustainable Development. It Should Be Accessible Everywhere</h1>
-            </div>
-            
-
-            <div class="fwrappi1">
-
-                
-            <a href="#">
-                <div class="diiv1">
-                <figure>
-                    <img src="https://zupimages.net/up/22/21/di3p.jpg" style="width: 370px; height: 350px;" alt="Drumming">
-                    <figcaption style="font-family: georgia; color: rgba(24, 24, 24, 0.924); margin-left: 3px">Drumming Is Part Of Tiki N'Yiki's Activities</figcaption>
-                </figure>
-                </div>
-            </a>
-
-            <a href="#">
-                <div class="diiv2">
-                <figure>
-                    <img src="https://zupimages.net/up/22/34/c7h6.jpg" style="width: 370px; height: 350px" alt="Life Scene In Ouagadougou">
-                    <figcaption style="font-family: georgia; color: rgba(24, 24, 24, 0.924); margin-left: 3px">Avenue d'Oubritenga [Ouagadougou - BFA]</figcaption>
-                </figure>
-                </div>
-            </a>
-
-            <a href="#">
-                <div class="diiv3">
-                    <figure>
-                    <img src="https://zupimages.net/up/22/27/zf4p.jpg" style="width: 370px; height: 350px" alt="Red Flower">
-                    <figcaption style="font-family: georgia; color: rgba(24, 24, 24, 0.924); margin-left: 3px">A Flower Symbolizing Volunteers And Donors</figcaption>
-                </figure>
-                </div>
-            </a>
-
-            <a href="#">
-                <div class="diiv4">
-                    Activities
-                </div>
-            </a>
-
-               <a href="#">
-                <div class="diiv5">
-                    Beneficiaries
-                </div>
-            </a>
-
-                <a href="#">
-                <div class="diiv6">
-                    Volunteering
-                </div>
-            </a>
-            </div>
-        </div>
-        
-
-        <div class="fwrapp3">
-            <div class="fwrapo">
-            <a href="#">
-                <h1 style="margin-top: 13px;">
-                    Climate Change Is Not A Joke. But It Is A Serious Threat That Is Challenging Human-Being
-                </h1>
+         <a href="#">
+          <div class="PHCaption">
+           Learn More...
+          </div>
         </a>
+
+        </div>
+  
+            <a href="#">
+            <div class="Pic">
+            <div class="PiK">
+              Sometimes they are considered to be the most courageous and angellustic people with a strong character by the ones and get included. But sometimes they are ridiculed, deviled, physically assaulted [Women with disabilities are more exposed to sexual harrasments]. They are experiencing many kinds of discriminations and then get excluded by the others. It should'nt. The people never lack words and ways to cheer them or drive fear to them. 
+              When it comes to include them by helping them have opportunities, that same people has sometimes been absent, indifferent or/and reticent about pushing and promoting inclusion in the communities. But
+              disabled people are also human-beings and differently able who fairly deserve their rights. The right to get a fair care, the right to study, the right at food safety, the right to get a job and the right to found a family if the conditions are gathered. Given a stammering inclusionary culture, 
+               those people have to struggle two times harder than any else to meagerly get their rights.  
+              Even few extreme cases where some people sucidiarily behaved because a culminated distress, many of them never give up. Some are activating for their rights that are cesaselessly violated.
+             In a spite of multiple adversities, it's unclear without supports, they will be able to fulfill their dreams. 
+             That is why Tiki N'Yiki is founded in order to support them.
+              </div>
+              
+        <div class="PiKe">
+            Learn More...
+        </div>
+      
+
     </div>
-            <div class="fwrapo1">
-                
-                <a href="#">
-                <div class="fwrapa">
-                    <figure>
-                    <img src="https://www.zupimages.net/up/22/51/uuga.jpg" alt="Snowed Bikes">
-                    <figcaption style="color: rgba(64, 64, 64, 0.95); font-family: Poppins; font-size: 17px; line-height: 18px;">
-                   These are not wrecks of bikes. These are snow-covered bikes given heavy snowstorms increased by Climate Change. The Cycle Of Water Is Broken.
-                    </figcaption>
-                </figure>
-                </div>
-            </a> 
-                
-            <a href="#">
-                <div class="fwrapa1">
-                    <figure>
-                        <img src="https://www.zupimages.net/up/22/30/01at.jpg" alt="La Prairie River-Laval" />
-                    <figcaption style="color: rgba(64, 64, 64, 0.95); font-family: Poppins; font-size: 17px; line-height: 18px">
-                    La <b>"Prairie River"</b>| Global Warming is concerning worldwide. Coastal cities are unfortunately the first to be threatened with the rise of global average temperatures. 
-                    </figcaption>
-                    </figure>
-                </div>
-            </a> 
+</a>
+</div>
+
+</div>
+
+<div class="navbar2">
+ Tiki N'Yiki | Etymology, Meaning, Reason and Region of Implementation
+</div>
+
+            <div class="content2">
+
+              <div class="KontenT">
+
+                <a href="https://en.wikipedia.org/wiki/Stephen_Hawking" target="_blank">
+
+                <div class="Portray">
+                  <figure>
+              <img src="https://www.yesmagazine.org/wp-content/uploads/imports/c70af56e26ee439bbcc889bb07e95bfe.jpg" alt="Stephen Hawking">
+            <figcaption style="font-family: arial; font-size: 11px; color: #5b5b5bf8; margin-left: 2.35rem; margin-top: -1rem;">Stephen Hawking</figcaption>
+                  </figure>    
             </div>
-            
-            
-            <a href="#">
-            <div class="fwrapo2">
-                We Are Living In A World Where There Are Increasing Floodings, Droughts And Wildfires. These Are The Premises Of Climate Change. See More
-            </div>
-        </a>
+              </a>
 
-        </div>
-       
+              <a href="https://en.wikipedia.org/wiki/Stephen_Hawking" target="_blank">
 
-        <div class="fwrapp4">
+                <div class="KonT"><em>"My advice to other disabled people would be, 
+                  concentrate on things your disability doesn't prevent you doing well, 
+                  and don't regret the things it interferes with. Don't be disabled in spirit, 
+                  as well as physically"
+                <br>
+                </em>
+                <em style="color: rgba(1, 10, 15, 0.963); font-family: 'Poppins'; font-size: 18px;">[Stephen Hawking, English Physicist, Cosmologist and Author] 
+                </em>
+              </div>
+            </a>
+          </div>
 
-            
-            <a href="#">
-            <div class="FS">    
-                <h1 style="font-family: georgia; font-size: 2.9rem; color: rgba(255, 255, 7, 0.97); line-height: 3.45rem; text-align: left">Food Safety Is Not A Reality In Many Countries Around The World. But It Shouldn't. Why Some People Still Have To Die Because Of Starvation ?</h1>
-            </div>
-        </a>
+              <div class="Kontent">
 
-        <a href="#">
-            <div class="FS1">
-                <figure>
-                <img src="https://cdn-icons-png.flaticon.com/512/4762/4762089.png" alt="Food Security">
-                    <figcaption style="color: rgba(54, 54, 54, 0.96); font-family: georgia; margin-top: -5px; font-size: 14px;">While some people throw food in the trash, others are starving without a piece of bread.</figcaption>
-                </figure>
-                
-            </div>
-        </a>
-            
-        </div>
-        
-        
-        <div class="fwrapp5">
+              <div class="Kontent2">
 
-            <div class="FW" style="margin-top: 1rem;   background: -webkit-linear-gradient(rgb(25, 60, 177), #e5e5e5);
-            background: -moz-linear-gradient(rgb(25, 60, 177), #e5e5e5); width: 100%; color: #fff; font-family: georgia; font-size: 1rem; height: 200px; border-bottom-right-radius: 5rem; border-bottom-left-radius: 5rem;">
-                
-                <a href="#">
-                <div class="TX">
-                    
-                    <div class="HealthKare">
+                <div class="AB">
+                <b style="font-size: 19px; color: rgba(1, 150, 224, 0.963)">Etymology and Meaning</b>
+                <br>
+                Tiki N'Yiki is etymologically structured by two (2) words of Moore a language in Burkina Faso :
+                <br>
+                <br>
+              <b>1. Tiki</b> that is litteraly meaning LEANING UPON
+                <br>
+                <br>
+              <b> 2. N'Yiki</b> that means GETTING UP
+              </div>
 
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3vWl37Fm3qb7GrEwYt8fHYGPvol1Ks4_ypiYRnWOFcbvSzoaEbJZVzqmX14k3Sf--nuM&usqp=CAU" alt="Medical Logo" />
-                    </div>
+              <a href="#">
+                <div class="BA">
+                Learn More...
+              </div>
+            </a>
 
-                        <div class="Health">
-                            Health Care For Everyone Matters
-                        </div>
-                </div>
-        </a>
+              </div>
 
-            <div class="TXX" style="background:rgb(255, 136, 0); color: rgba(20, 42, 152, 0.991);">
+              <div class="Kontent3">
 
-                
-                <a href="#">
-                <div class="TXXT">
-                    <img src="https://www.zupimages.net/up/23/06/hx80.png">
+                <div class="AB">
+                <b style="font-size: 19px; color: rgba(1, 150, 224, 0.963)"> Why Tiki N'Yiki ?</b>
+                <br> 
+                Tiki N'Yiki is created to reasonably support efforts of disabled people including disabled kids in Burkina Faso. It resonates as a slogan adressing a necessity for everyone to be aware of being the best archetect of his own sucess. 
+                 Tiki N'Yiki stimulatively supports the idea that every disabled kid can have a better future if helped.
+              </div>
+
+              <a href="#">
+              <div class="BA">
+              Learn More...
             </div>
           </a>
+          </div>
 
-          <a href="#">
-            <div class="TXXT1">
-                Health Care Systeme Is Important Because Being Healthy Is Part Of Human Basic Rights. The Outbreak Of 
-                Covid 19 Has Cost And Impacted Million Of Lives Worldwide. The Health Care Systeme Has Been Hit And Then Countless Shortcomings Have Come To Light. It's Time To Reinvent 
-                New Systemes Of Health Care For Everyone Without Any Discrimination. 
+              
+              <div class="Kontent1">
+
+                <div class="AB">
+                <b style="font-size: 19px; color: rgba(1, 150, 224, 0.963)">Region of Implementation</b>
+                <br>
+                Tiki N'Yiki has first been implemented in Burkina Faso at the midst of the year 2016. The reason was to improve education for kids living with recurent vulnerabilities. 
+               In the future Tiki N'Yiki would be extanding to neighbouring countries like Benin, Ghana as well as Ivory Coast.
+               The focus is to support disabled people projects or/and businesses that help other 
+               disabled people.
+              </div>
+
+              <a href="#">
+                <div class="BA" style="margin-top: 1.5px;">
+                Learn More...
+              </div>
+            </a>
+              
+            </div>
+
+          </div>
         </div>
-    </a>
 
-            </div>
-
-            </div>
-
-            <div class="FW1">
           
-            <div class="Thank-You">
-                    Thank You For Your Time !
-                <br>
-                Hopefully You Continue To Visit.
-                <br>
-                Depending What You Want To Do Next, Click Between The Boxes Below.  
-        </div>
 
-       
-        <div class="Supporto">
-
-            <a href="#">
-            <div class="SUP1">
-                I Just Want To Visit
+            <div class="navbar3">
+              Education is a backone of any sustainable development.
             </div>
-        </a>
 
-             <a href="#">
-            <div class="SUP2">
-                I Want To Visit And See What Will Happen
+            <div class="content3">
+
+              <div class="DiapoWrapper">
+            
+              
+
+              <div class="DiapoPhoto">
+                <div class="T">
+                <div style="background:#4a4a4af7; color: #fff; padding: 6px; font-family: 'Poppins'; font-size: 18px">Celebrating Christmas with Children at Tiki N'Yiki's headquarter [Burkina Faso]</div>
+                <div><img src="https://zupimages.net/up/22/31/z42x.jpg" alt="Christmas at Tiki N'Yiki"></div>
+              </div>
+
+              <div class="T1">
+                <div style="background: #4a4a4af7; color: #fff; padding: 6px; font-family: 'Poppins'; font-size: 18px">Classes in Ziniare [Burkina Faso]</div>
+                <div><img src="https://zupimages.net/up/22/21/3bad.jpg" alt="Classes"> </div>
+              </div>
+
+              <div class="T2">
+                <div style="background:#4a4a4af7; color: #fff; padding: 6px; font-family: 'Poppins'; font-size: 18px">Teaching Has Always Been Funny To Me. I Learned A Lot Back</div>
+                <div><img src="https://www.zupimages.net/up/22/31/ttk3.jpg" alt="Teaching in BF"></div>
+              </div>
+
+              </div>
+
+                <div class="Dive1">
+
+                  <div class="DiV1">
+
+                    <div class="D">
+                    Activities
+                    </div>
+
+                    <div class="DD">
+                    Beneficiaries
+                    </div>
+
+                    <div class="DC">
+                    Volunteering
+                    </div>
+                       </div>
+              <a href="https://www.education.gov.bf/accueil" target="_blank">
+                <div class="DiV2">
+                <b style="font-size: 23.9px; font-family: 'georgia'; line-height: 28.4px">The More The Rate of Education Get Higher, The More Poverty Will Be Lower And the Index of Development Get Ascendant. That Highlights How Education Is Important and It Stands as a Foundation for Nations to Build Up a Sustainable Development.</b>
+                </div>
+              </a>
+              </div>
+
+              </div>
+
             </div>
-        </a>
 
-            <a href="#">
-            <div class="SUP3">
-                I Just Want To Support And Leave
+            <div class="navbar4">
+              Health Care Even Crucial for Human-Beings Is Turning So Expensive.
+                 </div>
+
+            <div class="content4">
+
+              <div class="H-P">
+
+                   <div class="Horizontal-Wrapper">
+
+                    <div class="Doctor-Logo-Wrapper" >
+
+                      <div class="Doctor-Logo" >
+                      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3vWl37Fm3qb7GrEwYt8fHYGPvol1Ks4_ypiYRnWOFcbvSzoaEbJZVzqmX14k3Sf--nuM&usqp=CAU" alt="Medical Logo" />
+                    </div>
+
+                    <div class="Doctor" >
+                     Learn More...
+                    </div>
+
+                  </div>
+
+                      <div class="HPhoto">
+                      <img src="https://www.zupimages.net/up/23/06/hx80.png" alt="Hospital">
+                    </div>
+
+                    <div class="HPT">
+                      We are all human-beings but we don't have the same status. We can have the same sickness [illness] but we don't have the same care. 
+                      Nowadays Healthcare Affair is a Money Affair. 
+                      But how do the people without any income or with low income including 
+                      disabled people will access to health care? Many may have to wait or die.</div>
+                  
+                  </div>
+
+                  <div class="HPh">
+
+                    <div class="Vertical-Writing">
+                      <div class="VerTiWA">
+                      <h1> What Is The Power of Flower?</h1>
+                      </br>
+                        Since Antiquity people explored ways to use plants especially flowers to heal, feel happy, strenghten their mental states. This certainly has lead to the invention of nowadays medecinal drugs
+                    </div>
+                    <div class="VerTiWa">
+                      Learn More...
+                    </div>
+                  </div>
+                  <div class="H-P-H">
+                    <img src="https://zupimages.net/up/22/27/zf4p.jpg" alt="Red Flower">
+                  </div>
+
+                </div>
+
+                </div>
+
+                <div class="HP-HP" style="margin-left: 12rem; font-size: 0.9rem; background: #07070746; padding: 5px; color: #fff; height: 30px">
+                 What is about the healing power of flowers in phytotherapy?
+                </div>
             </div>
-        </a>
 
-            <a href="#">
-            <div class="SUP4">
-                I Want To Visit And Support
+            <div class="navbar5">
+              Food Safety Is Still A Concern In Some Regions Around The World. 
             </div>
-        </a>
-        </div>
-       
 
-        </div>
-        
-        </div>
-    </div>
+            <div class="content5">
+
+              <div class="FoodSecurity">
+
+                <div class="FST">
+                  <img src="https://www.zupimages.net/up/22/42/mh4v.jpg" alt="Cooked Pasta">
+                </div>
+
+                <div class="FSTS">
+
+                  <div>
+                  While in some regions around the world people have no more to worry about Food Safety, in some other ones, it is not the same reality. There are ceaseless worries in terms of having daily bread [Food]. Some people have to struggle hard to get it. In worse cases, some have died or are dying. But No Food Safety, No Sustainable Development. 
+                </div>
+
+                <div class="SF">
+                  learn More...
+              </div>
+
+                </div>
+
+              </div>
+              
+            </div>
+    
+          </div>
 
             <a href="#Top">
                 <div class="SPan">
-                    <span style="font-family: Poppins; font-size: 1.3rem"> <b>UP TO TOP </b></span>
+                    <span> <b>UP TO TOP </b></span>
                 </div>
             </a>
-
-            <div class="top-container">
-                <div class="wrapper">
-            
-                    <div class="emonth-container">**MONDAY**TUESDAY**WEDNESDAY**THURSDAY**FRIDAY**SATURDAY**SUNDAY</div>
-            
-                    <div class="fmonth-container">***LUNDI****MARDI****MERCREDI****JEUDI***VENDREDI**SAMEDI**DIMANCHE</div>
-            
-                <div class="mother-cover">
-                
-                    <div class="cover">
-                        <div class="ttl-container">
-                        <div class="t-container">
-                        <div class="titlcontainer">
-                           <a href="https://www.wfp.org/countries/burkina-faso#:~:text=In%202019%2C%20Burkina%20Faso%20was,a%20sharp%20spike%20in%20numbers" target="blank"><b style="font-size: 11.5px;">Food Safety</b></a>
-                        </div>
-                
-                    </div>
-                    </div>
-                </div>
-            
-                    <div class="cover1">
-                        <div class="ttle-container">
-                        <div class="tt-container">
-                        <div class="titlecontainer">
-                             <a href="https://www.opensocietyfoundations.org/explainers/value-inclusive-education" target="blank"><h2>WHAT IS THE VALUE OF INCLUSIVE EDUCATION ? | LEARN MORE...</h2></a>
-                        </div>
-                        
-                    </div>
-                </div>
-                </div>
-            </div>
-            </div>
-            </div>
+    
+        </div>
+        
             <div class="footer">
+                <br>
+                [Copyright © Tiki N'Yiki 2023] 
+                <br>
                 <br> 
-                Copyright © 2023 Tiki N'Yiki
-                <hr style="width: 10%; align-self: left">
-                Webmaster : <p>[ GCK ]<sup style="color: rgba(255, 201, 121, 0.985); font-family: verdana; font-size: 12px">
-                Disability Rights Advocate | Photography Passionate
-                </sup>
-                [ Disability is not Destiny ! ]
-                </div>
+                [Webmaster : GKC => | Disability Rights Advocate | Photography Passionate]
+                <br>
+                <br>
+                [DISABILITY IS NOT DESTINY = Le Handicap n'est pas une Fatalité]
+            </div>
     
     </body>
     
