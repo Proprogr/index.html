@@ -33,9 +33,7 @@
         box-sizing: border-box;
         -moz-box-sizing: border-box;
         -webkit-box-sizing: border-box;
-        margin-top: 0;
-        margin-left: 0;
-        margin-right: 0;
+        margin: 0;
         padding: 0;
         list-style: none;
         text-decoration: none;
@@ -48,13 +46,13 @@
         justify-content: space-around;
         align-items: center;
         width: 100%;
-        height: 2.99rem;
-        padding: 0.48rem;
+        height: 2.9rem;
+        padding: 0.2rem;
         object-fit: cover;
         font-family: 'georgia';
         font-size: 0.76rem;
-        color: rgb(226, 170, 28);
-        background: #9e0e40;
+        color: rgb(219, 166, 32);
+        background: #9e0e40f3;
     }
 
     .Welcome{
@@ -65,11 +63,11 @@
       width: 100%;
       height: 2rem;
       padding: 2px;
-      color: #e7e7e7;
+      color: #e7e7e7fd;
     }
 
     .Welcome:hover{
-      background: #0b2383;
+      background: #0a086cf9;
       color: rgb(255, 193, 36);
       transition: 0.1s linear;
       border: 0.1rem solid rgb(255, 193, 36);
@@ -86,11 +84,11 @@
       padding: 2px;
       border-radius: 0.3rem;
       cursor: pointer;
-      color: #e7e7e7;
+      color: #e7e7e7fd;
     }
 
     .BF:hover{
-      background: #0b2383;
+      background: #0a086cf9;
       color: rgb(255, 193, 36);
       transition: 0.1s linear;
       border: 0.1rem solid rgb(255, 193, 36);
@@ -105,12 +103,12 @@
       width: 100%;
       height: 2rem;
       padding: 2px;
-      color: #e7e7e7;
+      color: #e7e7e7fd;
       cursor: pointer;
     }
 
     .Asso:hover{
-      background: #0b2383;
+      background: #0a086cf9;
       color: rgb(255, 193, 36);
       transition: 0.1s linear;
       border: 0.1rem solid rgb(255, 193, 36);
@@ -126,32 +124,51 @@
       width: 100%;
       height: 2rem;
       padding: 4px;
-      color: #e7e7e7;
+      color: #e7e7e7fd;
       border-radius: 0.3rem;
       margin-top: 0.65rem;
-      margin-left: 0.5rem;
+      margin-left: 0.2rem;
     }
 
     .datime:hover{
-      background: #0b2383;
+      background: #0a086cf9;
       color: rgb(255, 193, 36);
       transition: 0.1s linear;
     }
 
     .navbar{ display: grid;
-        grid-template-columns: 0.25fr 1fr;
+        grid-template-columns: 0.43fr 1fr;
         column-gap: 0.25rem;
                  justify-content: space-around;
                  justify-items: center;
-                 background: #0b227c;
+                 background: #fff;
                  width: 100%;
-                 height: 75px;
+                 height: 85px;
                  object-fit: cover;
                  z-index: 1;
                  top: 0;
                  position: sticky;
+                 border-top: 5px solid rgb(6, 115, 240);
+                 box-shadow: 0 0 0.45rem 0.2px rgb(1, 204, 244);
           }
-          
+
+          .WP{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            justify-content: center;
+            justify-items: center;
+            width: 102%;
+            height: auto;
+            margin-left: 4.13rem;
+          }
+
+          .PW{
+            width: 100%;
+            margin-top: 30px;
+            color: rgb(0, 26, 255);
+            font-size: 13px;
+          }
+
           .myDiv{
             display: flex;
             flex-direction: column;
@@ -159,175 +176,13 @@
             align-items: center;
             width: 100%;
             height: 35px;
-            cursor: pointer;
             font-family: georgia;
-            font-size: 16px;
-            border: 0.3rem solid transparent;
-            color: #bbbbbb;
+            font-size: 1.9rem;
+            color: #727272;
+            margin-top: 17px;
             background: transparent;
           }
 
-          .myDiv:hover{
-            border-bottom: 0.3rem solid #fff;
-      color: #fff;
-      transition: 0.2s ease-in;
-      
-          }
-
-          .myDiv1{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-            height: 35px;
-            cursor: pointer;
-            font-family: georgia;
-            font-size: 16px;
-            border: 0.3rem solid transparent;
-            color: #bbbbbb;
-            background: transparent;
-          }
-
-          .myDiv1:hover{
-            border-bottom: 0.3rem solid rgb(255, 95, 37);
-      color: rgb(255, 95, 37);
-      transition: 0.2s ease-in;
-          }
-
-          .myDiv2{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-            height: 35px;
-            cursor: pointer;
-            font-family: georgia;
-            font-size: 16px;
-            border: 0.3rem solid transparent;
-            color: #bbbbbb;
-            background: transparent;
-          }
-
-          .myDiv2:hover{
-            border-bottom: 0.3rem solid rgb(255, 221, 31);
-      color: rgb(255, 221, 31);
-      transition: 0.2s ease-in;
-          }
-
-          .myDiv3{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-            height: 35px;
-            cursor: pointer;
-            font-family: georgia;
-            font-size: 16px;
-            border: 0.3rem solid transparent;
-            color: #bbbbbb;
-            background: transparent;
-          }
-
-          .myDiv3:hover{
-            border-bottom: 0.3rem solid rgb(37, 255, 37);
-      color: rgb(37, 255, 37);
-      transition: 0.2s ease-in;
-          }
-
-          .myDiv4{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-            height: 40px;
-            cursor: pointer;
-            font-family: georgia;
-            font-size: 16px;
-            border: 0.3rem solid transparent;
-            color: #bbbbbb;
-            background: transparent;
-          }
-
-          .myDiv4:hover{
-            border-bottom: 0.3rem solid rgb(255, 186, 209);
-      color: rgb(255, 186, 209);
-      transition: 0.2s ease-in;
-          }
-
-          .myDiv5{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-            height: 35px;
-            cursor: pointer;
-            font-family: georgia;
-            font-size: 16px;
-            border: 0.3rem solid transparent;
-            color: #bbbbbb;
-            background: transparent;
-          }
-
-          .myDiv5:hover{
-            border-bottom: 0.3rem solid rgb(59, 131, 255);
-      color: rgb(59, 131, 255);
-      transition: 0.2s ease-in;
-          }
-
-          .myDiv4{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-            height: 35px;
-            cursor: pointer;
-            font-family: georgia;
-            font-size: 16px;
-            border: 0.3rem solid transparent;
-            color: #bbbbbb;
-            background: transparent;
-          }
-
-          .myDiv4:hover{
-            border-bottom: 0.3rem solid #ff6a9e;
-      color: #ff6a9e;
-      transition: 0.2s ease-in;
-          }
-
-          .myDiv6{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-            height: 35px;
-            cursor: pointer;
-            font-family: georgia;
-            font-size: 16px;
-            border: 0.3rem solid transparent;
-            color: #bbbbbb;
-            background: transparent;
-          }
-
-          .myDiv6:hover{
-            border-bottom: 0.3rem solid #1fe5ff;
-      color: #1fe5ff;
-      transition: 0.2s ease-in;
-      
-          }
-
-          .Unyfy{
-            display: grid;
-            grid-template-rows: repeat(1fr,7);
-            justify-content: space-between;
-            justify-items: center;
-          }
           
     .navbar a {
       display: block;
@@ -341,23 +196,6 @@
       margin: 0;
     }
 
-    .navbar1{
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-      height: 55px;
-      background: #e8e7e7f2;  
-      border-bottom: 0.1rem solid #c714535b;  
-      border-top: 0.1rem solid #c9c8c8f7;  
-      color: darkblue;
-      font-family: 'Poppins';
-      font-size: 1.5rem;
-      padding: 0.5rem;
-      font-weight: bold;
-    }
-    
         h1{
         font-family: 'verdana';
         font-size: 17.8px;
@@ -421,1108 +259,183 @@
         flex-direction: column;
         width: 100%;
         height: auto;
-        background: #9e14443e;
+        background: transparent;
     }
 
     .content0{
       display: grid;
-        grid-template-columns: 1fr;
-        justify-content: space-between;
+        grid-template-columns: 0.5fr 1.5fr;
+        justify-content: space-around;
         justify-items: center;
             width: 100%;
-            height: 465px;
-            background: #9e14443e;
+            height: 955px;
+            background: rgba(218, 218, 218, 0.755);
+            padding: 10px;
+            margin-top: 2rem;
     }
 
     .KonTenT0{
       display: grid;
       grid-template-columns: 1fr;
-        justify-content: center;
+        justify-content: left;
         justify-items: center;
-            width: 84.2%;
-            height: 380px;
-            padding: 25px;
-            color: #d1d1d1fa;
-            font-size: 1.34rem;
-            line-height: 30px;
+            width: 93.45%;
+            height: 915px;
+            padding: 30px;
+            color: #555555fd;
+            font-size: 1.25rem;
+            line-height: 24px;
             font-family: 'georgia';
-            background: #9e0e40f3;
-            border-radius: 0.15rem;
             text-align: justify;
-            margin-top: 2.6rem;
-            box-shadow: 0 0 0.2rem -0.25px rgba(182, 218, 215, 0.67);
-            cursor: pointer;
+            background: #fff;
+            margin-top: 1rem;
+            border: 0.12rem solid #b6b6b6cb;
+            box-shadow: 0 0 0.25rem 0.15px #c0c0c0df;
     }
+.TypoS{
+    display: grid;
+    grid-template-rows: repeat(1fr 8);
+    justify-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 690px;
+    background: transparent;
+    margin-top: 1rem;
+    margin-left: 3.75rem;
+    position: sticky;
+    top: 0;
+}
 
-    .KonTenT0:hover{
-      background: #9a0e3f;
-      color: #cac9c9fd;
-      transition: 0.2s ease-in;
-    }
+.TPO{
+  height: 57px;
+  width: 100%;
+  font-family: verdana;
+  font-size: 11px;
+}
+
+.TP1{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 38px;
+    border: 1px solid #bebebee2;
+    color: rgb(5, 109, 255);
+    background: #bafbfbfc;
+    font-size: 18px;
+    border-radius: 6rem;
+}
+
+.TP1:hover{
+    background: #fff;
+    text-decoration: underline;
+    transition: 0.2s ease-in;
+    color: #000;
+    border: 2px solid #111111;
+}
+
+.Def{ display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    border-bottom: 3px solid rgb(0, 139, 232);
+    height: 50px;
+    padding: 2px;
+}
+
     .content1{
         display: grid;
-        grid-template-rows: 1fr 1.5fr;
+        grid-template-columns: 0.56fr 1.5fr;
         justify-content: space-between;
         justify-items: center;
             width: 100%;
-            height: 844px;
-            background: transparent;
-            padding: 12px;
-            color: #000;
+            height: 700px;
+            background: #4d9af9c7;
+            padding: 20px;
+            color: rgba(58, 58, 58, 0.999);
+            font-family: georgia;
+            font-size: 1.1rem;
+            line-height: 28px;
            
           }
 
-          .STAMP{
+          .TT1{
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            column-gap: 2.5rem;
-            justify-content: center;
-            justify-items: center;
-            background: transparent;
-            width: 88.75%;
-            height: auto;
-            padding: 5px;
-            margin-top: -1rem;
-            margin-left: 1.75rem;
-          }
-
-          .T-Area{
-            display: grid;
-            grid-template-rows: 1.5fr 1fr;
-            row-gap: 0.5rem;
+            grid-template-rows: 0.4fr 0.85fr 0.85fr 0.85fr;
+            width: 220px;
+            height: 550px;
             justify-content: space-between;
-            align-items: center;
-            background: transparent;
-            padding: 27px;
-            margin-top: 3rem;
-            width: 100%;
-            height: 777px;
-            line-height: 21px;
-            font-family: 'georgia';
-            font-size: 17px;
-            color: #b5b5b5fa;
-            background: #9e0e40;
-            cursor: pointer;
-            margin-left: 0.25rem;
-          }
-
-          .T-Area:hover{
-           background: #fff;
-           color: #000;
-           border: 0.12rem solid #000;
-           transition: 0.2s ease-in;
-          }
-
-          .PH img{
-            width: 101%;
-            height: 470px;
-          }
-          .CIP img{
-            width: 101%;
-            height: 470px;
-          }
-            
-          .PH img:hover {
-            transform: scale(1.01);
-            transition: 0.12s ease-in;
-            opacity: 0.9;
-          }
-
-          .Drum{
-            display: grid;
-            grid-template-columns: 1fr;
-            justify-content: center;
             justify-items: center;
-            background: transparent;
-            width: 100%;
-            height: 60px;
-            color: #b5b5b5fa;
             padding: 5px;
-            font-family: 'georgia';
-            font-size: 18px;
-            line-height: 23px;
+            position: sticky;
+            top: 0;
+            margin-left: 2.85rem;
           }
 
-          .Drum:hover{
-            color: #5d5d5df6;
+          .TT1 img{
+            width: 130px;
+            height: 120px;
           }
 
-          .PHCaption{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-            height: 60px;
-            background: #7f0b33f6;
-            color: gold;
-            border-radius: 3rem;
-            border: 0.15px solid #8f8f8ff9;
-            padding: 5px;
-            font-family: 'georgia';
-            font-size: 1.35rem;
-            
-          }
-
-          .PHCaption:hover{
-            background: #0f0f0ff0;
-            color:#fff;
-            transition: 0.16s ease;
-            border: 0.14rem solid #fff;
-          }
-
-         
-
-          .Pic{
+          .TT2{
             display: grid;
-            grid-template-rows: 1.5fr 1fr;
-            row-gap: 0.5rem;
+            grid-template-rows: 0.15fr 1.25fr;
+            row-gap: 0.15rem;
             justify-content: space-between;
-            align-items: center;
-            background: transparent;
-            padding: 27px;
-            margin-top: 3rem;
-            margin-right: 3.8rem;
-            width: 100%;
-            height: 777px;
-            line-height: 21px;
-            font-family: 'georgia';
-            font-size: 17px;
-            color: #c3c3c3eb;
-            background: #9e0e40;
-            cursor: pointer;
-          }
-          .Pic:hover{
-           background: #fff;
-           color: #595959;
-           border: 0.12rem solid #000;
-           transition: 0.2s ease-in;
-                    }
-
-          .PiKe{ 
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-            height: 60px;
-            background: #7f0b33f6;
-color: gold;
-border-radius: 3rem;
-border: 0.15px solid #8f8f8ff9;
-            padding: 5px;
-            font-family: 'georgia';
-            font-size: 1.35rem;
-          }
-
-          .PiKe:hover{
-            background: #000;
-            color:#fff;
-            transition: 0.16s ease;
-            border: 0.12rem solid #fff;
+            justify-items: center;
+            padding: 30px;
+            border: 0.11rem solid #e7fafdfe;
+            width: 97.55%;
+            margin-left: -1.5rem;
+            background: #afe0f9e8;
+            box-shadow: 0 0 0.2rem 0.2px #7fc5f4f6;
           }
 
           .content2{
             display: grid;
-            grid-template-rows: 1fr 1fr;
-            row-gap: 1rem;
-            justify-content: space-between;
-            justify-items: center;
+        grid-template-rows: 1fr;
+        justify-content: space-between;
+        justify-items: center;
             width: 100%;
-            height: 617px;
+            height: 650px;
             background: transparent;
-            padding: 1rem;
-            color: #4b4b4b;
-          }
-
-          .KontenT{
-            display: grid;
-            grid-template-columns: 0.5fr 1.5fr;
-            justify-content: space-between;
-            justify-items: center;
-            width: 86%;
-            height: 185px;
-            padding: 2rem;
-            margin-top: 1rem;
-            line-height: 28px;
-            font-family: 'georgia';
-            font-size: 1.22rem;
-            color: #8d8d8d;
-            background: #9e0e40;
-            border-radius: 0.15rem;
-            margin-top: -17px;
-          }
-
-          .KontenT:hover{
-            border: 0.15rem solid #000;
-            transition: 0.35s linear;
-            border-radius: 0.6rem;
-          }
-
-          .Portray{
-            display: flex;
-            position: relative;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            background: #fffffff1;
-            border-radius: 50%;
-            width: 185px;
-            height: 173px;
-            padding: 5px;
-            margin-top: -1.76rem;
-          }
-
-          .Portray img{
-            width: 166px;
-            height: 138px;
-            border-radius: 50%;
-            margin-top: 2rem;
+            padding: 12px;
+            color: #000;
             
           }
 
-          .KonT{ 
-            color: #d2d2d2;
-          }
-
-          .KonT:hover{
-            color: #d2d2d2;
-           
-          }
-
-          .Kontent{
-            display: grid;
-            grid-template-columns: 360px 360px 360px;
-            justify-content: space-around;
-            justify-items: center;
-            padding: 0.9rem;
-            width: 86.01%;
-            height: 285px;
-            background: #9e0e40;
-            margin-top: 1.2px;
-            border-radius: 0.56rem;
-           }
-
-          .Kontent:hover{
-            border: 0.15rem solid #000;
-            transition: 0.3s linear;
-            background: gold;
-            border-radius: 0.65rem;
-          }
-
-          .Kontent1{
-display: grid;
-grid-template-rows: 1fr 0.3fr;
-justify-content: center;
-justify-items: center;
-width: 88%;
-height: 245px;
-padding: 10px;
-color: #c5c5c5ed;
-background: #bd114ddc;
-box-shadow: 0 0 0.25rem -0.25px rgba(192, 226, 224, 0.883);
-border-radius: 1rem;
-font-family: 'georgia';
-font-size: 13px;
-line-height: 17.5px;
-cursor: pointer;
-margin-top: 0.3rem;
-
-          }
-
-          .Kontent1:hover{
-            background: #fff;
-            border: 0.13rem solid #000;
-            transition: 0.2s solid ease-in;
-            border-radius: 1rem;
-            color: #464646f7;
-          }
-
-          .AB{
-width: 305px;
-height: 190px;
-padding: 5px;
-          }
-
-          .BA{
-            display: flex;
-            position: relative;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-width: 300px;
-height: 37px;
-padding: 6px;
-background: #7f0b33f6;
-color: gold;
-border-radius: 3rem;
-border: 0.15px solid #a0a0a0fe;
-font-size: 1.05rem;
-margin-top: -0.5rem;
-          }
-
-          .BA:hover{
-            border: 0.12rem solid #000;
-            background: #3d3d3d;
-            color: #f8f8f8;
-          }
-
-          .ABC{
-            font-size: 11.84px;
-          }
-
-          .Kontent2{
-            display: grid;
-grid-template-rows: 1.6fr 0.4fr;
-row-gap: 0.5rem;
-justify-content: space-around;
-justify-items: center;
-width: 88%;
-height: 245px;
-padding: 10px;
-color: #c5c5c5ed;
-background: #bd114ddc;
-box-shadow: 0 0 0.25rem -0.25px rgba(192, 226, 224, 0.883);
-border-radius: 1rem;
-font-family: 'georgia';
-font-size: 13px;
-line-height: 17.5px;
-cursor: pointer;
-margin-top: 0.35rem;
-          }
-
-.Kontent2:hover{
-  background: #fff;
-            border: 0.13rem solid #000;
-            transition: 0.2s solid ease-in;
-            border-radius: 1rem;
-            color: #464646f7;
-          }
-
-          .Kontent3{
-            display: flex;
-            display: grid;
-grid-template-rows: 1.6fr 0.4fr;
-row-gap: 0.5rem;
-justify-content: space-around;
-justify-items: center;
-width: 88%;
-height: 245px;
-padding: 10px;
-color: #c5c5c5ed;
-background: #bd114ddc;
-box-shadow: 0 0 0.25rem -0.25px rgba(192, 226, 224, 0.883);
-border-radius: 1rem;
-font-family: 'georgia';
-font-size: 13px;
-line-height: 17.5px;
-cursor: pointer;
-margin-top: 0.35rem;
-          }
-
-          .Kontent3:hover{
-            background: #fff;
-            border: 0.13rem solid #000;
-            transition: 0.2s solid ease-in;
-            border-radius: 1rem;
-            color: #464646f7;
-          }
-
-          .navbar2{
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      width: 86%;
-      height: 100px;
-      background: #9e0e40;
-      color: #e9e9e9a7;
-      font-family: 'Poppins';
-      font-size: 2rem;
-      padding: 1.5rem;
-      font-weight: bold;
-      border-radius: 0.15rem;
-      cursor: pointer;
-      margin-top: 1px;
-          }
-
-          .navbar2:hover{
-            background: #fff;
-            color: #858585;
-            border-radius: 0.7rem;
-            transition: 0.17s ease-in;
-            border: 0.15rem solid #000;
-          }
-
-          .navbar3{
-            display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      width: 84%;
-      height: 100px;
-      background: #9e0e40;
-      color: #e9e9e9a7;
-      font-family: 'Poppins';
-      font-size: 2rem;
-      padding: 1.5rem;
-      font-weight: bold;
-      border-radius: 0.15rem;
-      cursor: pointer;
-      margin-top: 0.3rem;
-          }
-
-          .navbar3:hover{
-            background: #fff;
-            color: #858585;
-            border-radius: 0.7rem;
-            transition: 0.17s ease-in;
-            border: 0.15rem solid #000;
-        
-          }
-
-          .content3{
-            display: grid;
-            grid-template-columns: 1fr;
-            justify-content: center;
-            justify-items: center;
+.content3{
+    display: grid;
+        grid-template-rows: 1fr;
+        justify-content: space-between;
+        justify-items: center;
             width: 100%;
-            height: 435px;
-            background: transparent;
-            padding: 16px;
-            color: #000;
-            margin-top: 0.25rem;
-            
-          }
-
-          .DiapoWrapper{
-
-            display: grid;
-            grid-template-columns: 1.25fr 0.75fr;
-            column-gap: 2rem;
-            justify-content: center;
-            justify-items: center;
-            width: 86.01%;
-            height: 430px;
-            padding: 20px;
-            background: #9e0e40;
-            margin-top: -2px;
-            border-radius: 0.15rem;
-          }
-
-          .DiapoWrapper:hover{
-            border: 0.15rem solid #000;
-          }
-
-         .DiapoPhoto{
-display: grid;
-grid-template-rows: 0.5fr 1.5fr;
-row-gap: 0.5rem;
-justify-content: space-between;
-justify-items: center;
-width: 100%;
-height:380px;
-position: relative;
-overflow: hidden;
-background: #9e0e40;
-box-shadow: 0 0 0.2rem -0.25px rgba(182, 218, 215, 0.67);
-
-         }
-
-.T {
-position: absolute;
-width: 100%;
-height: 380px;
-animation: auto 15s ease-in infinite;
-animation-delay: 15s;
-}
-.T img{
-
-  width: 100%;
-  height: 380px;
-}
-@keyframes auto{
-            0% {
-                left: 100%;
-            }
-
-            4% {
-                left: 0%;
-            }
-
-            33.33% {
-                left: 0%;
-            }
-
-            37.33% {
-                left: -100%;
-            }
-
-            100% {
-                left: -100%
-            }
-        }
-
-
-.T1 img{
-  width: 100%;
-  height: 380px;
-}
-
-.T1 {
-position: absolute;
-width: 100%;
-height: 380px;
-animation: auto 15s ease-in infinite;
-animation-delay: 10s;
-}
-
-@keyframes auto{
-            0% {
-                left: 100%;
-            }
-
-            4% {
-                left: 0%;
-            }
-
-            33.33% {
-                left: 0%;
-            }
-
-            37.33% {
-                left: -100%;
-            }
-
-            100% {
-                left: -100%
-            }
-        }
-
-
-.T2 {
-position: absolute;
-width: 100%;
-height: 380px;
-animation: auto 15s ease-in infinite;
-animation-delay: 5s;
-}
-
-.T2 img{
-  width: 100%;
-  height: 380px;
-}
-@keyframes auto{
-            0% {
-                left: 100%;
-            }
-
-            4% {
-                left: 0%;
-            }
-
-            33.33% {
-                left: 0%;
-            }
-
-            37.33% {
-                left: -100%;
-            }
-
-            100% {
-                left: -100%
-            }
-        }
-
-
-.Dive1{
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  row-gap: 2rem;
-  justify-content: space-between;
-  justify-items: center;
-  width: 100%;
-  height: 385px;
-  padding: 10px;
-  border-radius: 0.5rem;
-  transition: 0.2s ease-in;
-  color: #b0afaf;
-  background: #bd114ddc;
-  box-shadow: 0 0 0.25rem -0.25px rgba(191, 224, 222, 0.692);
-  cursor: pointer;
-}
-
-.DiV1{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 1.8rem;
-  justify-content: space-between;
-  justify-items: center;
-  padding: 20px;
-  height: 33px;
-  background: transparent;
-}
-
-.D{
-  display: grid;
-width: 100%;
-height: auto;
-padding: 10px;
-background: #7f0b33f6;
-color: gold;
-border-radius: 3rem;
-border: 0.15px solid #a0a0a0fe;
-cursor: pointer;
-}
-
-  .D:hover{
-    background-color: #eeeeee;
-  border: 1.8px solid #b8b7b7fb;
-  border-radius: 1.7rem;
-  transition: 0.3s ease-in;
-  color: #1b1b1bec;
-}
-
-.DD{
-  display: grid;
-width: 100%;
-height: auto;
-padding: 10px;
-background: #7f0b33f6;
-color: gold;
-border-radius: 3rem;
-border: 0.15px solid #a0a0a0fe;
-cursor: pointer;
-}
-.DD:hover{
-  background-color: #eeeeee;
-  border: 1.8px solid #b8b7b7fb;
-  border-radius: 1.7rem;
-  transition: 0.3s ease-in;
-  color: #1b1b1bec;
-}
-
-.DC{
-  display: grid;
-width: 100%;
-height: auto;
-padding: 10px;
-background: #7f0b33f6;
-color: gold;
-border-radius: 3rem;
-border: 0.15px solid #a0a0a0fe;
-cursor: pointer;
-}
-.DC:hover{
-  background-color: #eeeeee;
-  border: 1.8px solid #b8b7b7fb;
-  border-radius: 1.7rem;
-  transition: 0.3s ease-in;
-  color: #1b1b1bec;
-}
-
-.DiV2{
-  display: grid;
-  grid-template-columns: 1fr;
-  justify-content: center;
-  justify-items: center;
-  padding: 9px;
-  width: 100%;
-  height: 300px;
-  color: #c6c6c6c7;
-  border-radius: 0.5rem;
-  
-}
-
-.DiV2:hover{
-  border: 0.2rem solid #000;
-  color: #3f3f3ff7;
-  transition: 0.2s ease-in;
-  border-radius: 0.8rem;
-  padding: 5px;
-  background: #fff;
-}
-
-.navbar4{
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      width: 83.97%;
-      height: 100px;
-      background: #9e0e40;
-      color: #e9e9e9a7;
-      font-family: 'Poppins';
-      font-size: 2rem;
-      padding: 1.5rem;
-      font-weight: bold;
-      border-radius: 0.15rem;
-      cursor: pointer;
-margin-top: 1.57rem;
-}
-
-.navbar4:hover{
-  background: #fff;
-            color: #858585;
-            border-radius: 0.7rem;
-            transition: 0.17s ease-in;
-            border: 0.15rem solid #000;
-}
-
-.content4{
-            display: grid;
-            grid-template-rows: 1fr 1fr 1fr;
-            justify-content: center;
-            justify-items: center;
-            width: 100%;
-            height: 675px;
-            background: transparent;
-            padding: 10px;
-            margin-top: 0.45rem;
-          }
-
-          .H-P{
-            display: grid;
-            grid-template-rows: 1fr;
-            justify-content: center;
-            justify-items: center;
-            width: 85.24%;
-            height: 140px;
-            background: #9e0e40;
-            padding: 10px;
-            margin-top: 1px;
-            border-radius: 0.15rem;
-          }
-          .H-P:hover{
-            border: 0.15rem solid #000;
-          }
-
-          .HP-HP{
-            margin-left: 18rem; 
-            font-size: 0.9rem; 
-            background: #07070746; 
-            padding: 5px; 
-            color: #fff; 
-            height: 30px;
-          }
-
-.Horizontal-Wrapper{
-display: grid;
-grid-template-columns: 0.25fr 0.8fr 0.8fr;
-justify-content: space-between;
-justify-items: center;
-width: 98.25%;
-height: 88px;
-margin-top: -8px;
-cursor: pointer;
-background: transparent;
-}
-
-.Doctor-Logo-Wrapper{
-  display: grid;
-  grid-template-rows: 0.4fr 0.55fr;
-  justify-content: space-around;
-  justify-items: center;
-  width: 100%;
-  height: auto;
-
-}
-
-.Doctor{
-  display: grid;
-  grid-template-rows: 1fr;
-  padding: 10px;
-  justify-content: center;
-  justify-items: center;
-  width: auto;
-  height: auto;
-  font-size: 13.5px;
-line-height: 14.25px;
-background: #7f0b33f6;
-color: gold;
-border-radius: 3rem;
-border: 0.15px solid #8f8f8ff9;
-}
-.Doctor:hover{
-background: #fff;
-color: #000;
-border-radius: 3rem;
-border: 0.5px solid #fff;
-transition: 0.2s linear;
-font-size: 14px;
-}
-.Doctor-Logo img{
-  width: 90%;
-  height: 90px;
-  cursor: pointer;
-}
-
-.Doctor-Logo img:hover{
-  transform: rotate(360deg);
-  transition: 0.3s ease-in;
-}
-
-.HPh{
-  display: grid;
-  grid-template-columns: 0.85fr 1fr;
-  column-gap: 0.6rem;
-  justify-content: space-between;
-  justify-items: center;
-  width: 101.9%;
-  height: 514px;
-  padding: 20px;
-  background: #9e0e40;
-  border-radius: 0.15rem;
-  cursor: pointer;
-  margin-top: 4.2rem;
-}
-
-.VerTiWA{
-  height: 150px;
-  line-height: 30px;
-  font-size: 1.85rem;
-  color: #aaa9a9;
-}
-.VerTiWa{
-  display: grid;
-  grid-template-rows: 1fr;
-  padding: 25px;
-  justify-content: center;
-  justify-items: center;
-  width: 100%;
-  height: 60px;
-  font-size: 22px;
-line-height: 14.25px;
-background: #7f0b33f6;
-color: gold;
-border-radius: 3rem;
-border: 0.15px solid #8f8f8ff9;
-margin-top: 1rem;
-}
-
-.VerTiWa:hover{
-  background: #404040;
-color: #fff;
-border-radius: 1rem;
-border: 0.5px solid #e3e3e3;
-transition: 0.2s linear;
-font-size: 20px;
-}
-
-.HPh:hover{
-  color: #000;
-  border: 0.15rem solid #000;
-}
-
-.Vertical-Writing{
-  display: grid;
-  grid-template-rows: 1fr 0.25fr;
-  justify-items: space-between;
-  justify-items: center;
-  font-family: 'Poppins'; 
-  line-height: 40px;
-  margin-top: 4rem;
-  color: #d2d2d2;
-  width: 300px;
-  background: transparent;
-}
-.Vertical-Writing:hover{
-  color: #c4c3c3;
-  transition: 0.2s ease;
-}
-
-.HPhoto{
-  display: grid;
-  grid-template-columns: 1fr;
-  justify-content: center;
-  justify-items: center;
-  width: 100%;
-  height: auto;
-  padding: 10px;
-}
-
-.HPhoto img{
-  width: 95%;
-  height: 120px;
-}
-
-.H-P-H img{
-  width: 648px;
-  height: 450px;
-  cursor: pointer;
-}
-.H-P-H img:hover{
-  transform: scale(1.01);
-  transition: 0.2s ease-in;
-}
-
-.HPT{
-  background: transparent;
-  color: rgba(22, 205, 255, 0.961);
-  font-family: 'georgia';
-  font-size: 14px;
-  width: auto;
-  height: 125px;
-  padding: 5px;
-  line-height: 19.5px;
-  margin-top: 7px;
-  text-align: justify;
-  cursor: pointer;
-}
-
-.HPT:hover{
-  color:#595959ea;
-  background: #fff;
-  transition: 0.2s ease-in;
-  padding: 5px;
-  border-radius: 0.5rem;
-}
-
-.navbar5{
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      width: 83.97%;
-      height: 100px;
-      background: #9e0e40;
-      color: #e9e9e9a7;
-      font-family: 'Poppins';
-      font-size: 2rem;
-      padding: 1.5rem;
-      font-weight: bold;
-      cursor: pointer;
-      margin-top: 1.5rem;
-    
-          }
-
-          .navbar5:hover{
-            background: #fff;
-            color: #616161;
-            border-radius: 0.7rem;
-            transition: 0.17s ease-in;
-            border: 0.15rem solid #000;
-          }
-
-
-          .content5{ display: grid;
-            grid-template-columns: 1fr;
-            justify-content: center;
-            justify-items: center;
-            width: 100%;
-            height: 520px;
-            background: transparent;
-            padding: 20px;
+            height: 540px;
+            background: #4594f5be;
+            padding: 12px;
             color: #000;
           }
-
-          .FoodSecurity{
+          
+          .content4{ 
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            justify-content: center;
-            justify-items: center;
-            padding: 10px;
-            width: 86.48%;
-            height: 480px;
-            background: #9e0e40;
-            border-radius: 0.15rem;
-            margin-top: -2.5px;
+        grid-template-rows: 1fr;
+        justify-content: space-between;
+        justify-items: center;
+            width: 100%;
+            height: 700px;
+            background: transparent;
+            padding: 12px;
+            color: #000;
           }
-.FoodSecurity:hover{
-  border: 1px solid #000;
-}
-
-.FST{
-  display: flex;
-  position: relative;
-  justify-content: center;
-  align-items: center;
-  width: 500px;
-  height: auto;
-  border-right: 0.15rem solid #be124e;
-  padding: 2px;
-} 
-
-    .FST img{ 
-      width: 450px;
-      height: 400px;
-      padding: 2px;
-      cursor: pointer;
-    }
-
-    .FST img:hover{
-      transform: scale(1.01);
-    }
-
-    .FSTS{
-      width: 470px;
-      height: 400px;
-      color: #787878fa;
-      padding: 10px;
-      font-family: georgia;
-      font-size: 2rem;
-      line-height: 40px;
-      cursor: pointer;
-      margin-top: 10px;
-      border-radius: 0.5rem;
-      
-    }
-
-.FSTS:hover{
-  color:#000;
-}
-
-.FooD{
-  width: 448px;
-  height: 350px;
-  font-family: georgia;
-  font-size: 27px;
-  line-height: 29px;
-  color: #cacacadc;
-  padding: 20px;
-  border-radius: 0.2rem;
-  text-align: left;
-  background: #bd114ddc;
-  box-shadow: 0 0 0.25rem -0.25px rgba(191, 224, 222, 0.692);
-}
-
-.FooD:hover{
-  color: #696969fa;
-  background: #edececf3;
-  transition: 0.24s ease-in;
-}
-
-.SF{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  width: auto;
-  height: 48px;
-  font-size: 19px;
-line-height: 14.25px;
-background: #7f0b33f6;
-color: gold;
-border-radius: 3rem;
-border: 0.15px solid #8f8f8ff9;
-margin-top: 1rem;
-}
-
-.SF:hover{ 
-background: #7f0b33f6;
-color: gold;
-border-radius: 3rem;
-border: 0.15px solid #8f8f8ff9;
-transition: 0.2s linear;
-font-size: 18px;
-}
     
     ::-webkit-scrollbar{
         width: 13.5px;
     
     }
     ::-webkit-scrollbar-track-piece{
-        background: #9e0e402a;
+        background: #bcbbbbe8;
         cursor: pointer;
   
     }
@@ -1544,11 +457,11 @@ font-size: 18px;
             justify-content: center;
             justify-items: center;
             row-gap: 0.5rem;
-            font-family: 'georgia';
+            font-family: 'Poppins';
             font-size: 1.25rem;
             line-height: 30px;
-            background: #9e0e4045;
-            color: #383838f6;  
+            background: transparent;
+            color: #5b5b5bf5;  
             text-align: center; 
             padding: 10px;
         }
@@ -1817,8 +730,8 @@ font-size: 18px;
     font-size: 12.9px;
     padding: 2px;
     background: orangered;
-    margin-top: -7px;
-    margin-left: 4rem;
+    margin-top: -5px;
+    margin-left: 8.4rem;
     cursor: pointer;
    }
 
@@ -1832,7 +745,7 @@ font-size: 18px;
     background: #ddddddc0;  
     display: flex; 
     width: 100%;
-    height: 35px;
+    height: 40px;
     justify-content: center; 
     align-items: center; 
     padding: 0.5rem;
@@ -2100,7 +1013,7 @@ font-size: 18px;
     
         <a name="Top"></a>  
         
-        <title>etymology.html</title>  
+        <title>disabilitylife.html</title>  
         
         <body>
     
@@ -2230,74 +1143,103 @@ font-size: 18px;
     
     
         <div class="navbar" id="myHeader">
+          <div class="WP">
 
           <a href="#" target="blank">
               <div class="TYK1">
               <b> Tiki N'Yiki </b>
               </div>
-                </a>
+                </a> 
 
-                <div class="Unify"> 
+                <div class="PW">
+                <b><em>Disability is not Destiny</em></b>
+                </div>
+          </div>
 
-            <a href="#" target="blank">
+            
             <div class="myDiv">
-              <b>Tiki N'Yiki </b>
+              <b>What it means to be and living as a disabled person ? </b>
             </div>
-                </a>
-    
-
-        <a href="#" target="blank"> 
-            <div class="myDiv1">  
-              <b>Education</b>
+              
             </div>
-        </a>
 
-                <a href="#" target="blank"> 
-                    <div  class="myDiv2">
-                      <b>Health Care </b>
-                </div>
-                </a>
-
-                <a href="https://www.wfp.org/countries/burkina-faso" target="blank"> 
-                    <div  class="myDiv3">
-                      <b>Food Safety</b>
-                    </div>
-                </a>
-
-                <a href="#" target="blank"> 
-                    <div  class="myDiv4">
-                      <b>Painting</b>
-                    </div>
-                </a>
-
-              <a href="#" target="blank"> 
-                <div  class="myDiv6">
-                  <b>Support</b>
-                </div>
-            </a>
-
-</div>
-            </div>
+            <div class="Separation" style="width: 100%; height: 14.5px; background: transparent;"> </div>
 
             <div class="content0"> 
+                <div class="TypoS">
+
+                    <div class="TP0" style="height: 57px; padding: 4px;">
+                    
+                  </div>
+
+                    <a href="#">
+                        <div class="TP1">
+                        Causing Diseases
+                      </div>
+                    </a>
+
+                <a href="https://www.cdc.gov/dotw/polio/index.html" target="_blank">
+                    <div class="TP1">Polio</div>
+                  </a>
+
+                 <a href="https://www.who.int/news-room/fact-sheets/detail/blindness-and-visual-impairment" target="_blank">
+                    <div class="TP1">Blindness</div>
+                </a>
+
+                <a href="#">
+                    <div class="TP1">Elderness</div>
+                  </a>
+
+                  <a href="#">
+                    <div class="TP1">Diabetis</div>
+                </a> 
+
+                <a href="#">
+                    <div class="TP1">Congenital Issues</div>
+                </a>
+
+                <a href="#">
+                    <div class="TP1">Others</div>
+                </a>
+
+
+                </div>
 
               <div class="KonTenT0">  
-                <b style="text-align: center; font-size: 1.73rem;">Welcome on Tiki N'Yiki's Website !</b> 
-              
-              This website is in project. It will be dedicated to improve education, promote inclusion and protect rights of disabled people. Tiki N'Yiki through its Vision, focuses especially on DISABLED CHILDREN, their INCLUSION and EDUCATION in Burkina Faso in order to HELP them realize their DREAMS. One of the main leverages of dreaming is fundamentally to getting EDUCATED. 
+                
+                <b style="color: rgb(0, 137, 222); font-size: 25px; text-align: left; line-height: 30px;">Before talking about being and living as a disabled person, it's paramountly important to know what is the definition of disability.</b> 
+            
+                <p>Disability is a complex phenomenon, reflecting an interaction between features of a person's body and mind and features of the society in which they live. 
+                <br>
+                <br>
+                A disability can occur at any time in a person's life; some people are born with a disability, while others develop a disability later in life. It can be permanent, temporary or episodic. 
+                
+                <br>
+                <br>
+                Disability can steadily worsen, remain the same, or improve. It can be very mild to very severe. It can be the cause, as well as the result, of disease, illness, injury, or substance abuse.
+
+                Because of its complexity, there is no single, harmonized “operational” definition of disability across federal programs.
+                
+                Reflecting this complexity are the different approaches to understanding the experience of disability. 
+                <br>
+                <br>
+                According to the traditional, bio-medical approach, disability is viewed as a medical or health problem that prevents or reduces a person's ability to participate fully in society. In contrast, the social approach views disability as a natural part of society, where attitudes, stigma and prejudices present barriers to people with disabilities, and prevent or hinder their participation in mainstream society.
+                <br>
+                <br>
+                The most widely accepted definition of disability is provided by the World Health Organization:
+                
+                    Disabilities is an umbrella term, covering impairments, activity limitations, and participation restrictions. An impairment is a problem in body function or structure; an activity limitation is a difficulty encountered by an individual in executing a task or action; while a participation restriction is a problem experienced by an individual in involvement in life situations.
+                
               <br>
               <br>
-              It is not onely a great pleasure to have you here and wanting to learn more about realities of being, living as a disabled person but also and hopefully you'll become a relay and help to enhance inclusion and defend the rights of disabled people in the society if needed. <b style="align-items: center; color: rgb(2, 165, 247)">Thank you for your time and feedback !
+              It is not onely a great pleasure to have you here and wanting to learn more about realities of being, living as a disabled person but also and hopefully you'll become a relay and help to enhance inclusion and 
+              defend the rights of disabled people in the society if needed.</p>
+        
+              <b style="align-items: center; color: rgb(147, 147, 147)">Thank you for your time and feedback !
 
             </div>
 
           </div>
-
-<a href="file:///C:/Users/User/Documents/disabilitylife.html" target="_blank">
-            <div class="navbar1">
-              What it means to be and living as a differently-able [disabled] person ?
-            </div>
-      </a>
         
 
         <a name="Top"></a>
@@ -2305,314 +1247,81 @@ font-size: 18px;
         
     
     <div class="fwrapper">
-    
-        <div class="content1">
 
-          <div class="STAMP">
+            <div class="content1">
                 
-            <div class="T-Area">
+                    <div class="TT1">
+                        <div class="Stik" style="height: 83px">
+                        </div>
 
-               <div class="PH">
+                        <div style="background: transparent; padding: 2px;">
+                          <figure>
+                            <img src="https://cdn-icons-png.flaticon.com/128/2446/2446016.png" alt="favicon for a disabled woman">
+                            <figcaption style="font-family: 'helvetica'; color: #000; font-size: 12.5px">A disabled user of crutches</figcation>
+                            </figure>
+                          </div>
 
-              <figure>
-                <img src="https://www.zupimages.net/up/22/21/di3p.jpg" alt="Drumming - BFA">
-                <figcaption style="color: rgb(8, 181, 255); margin-top: 3px;">Drumming is one of beloved activities for kids</figcaption>
-                </figure>
+                        <div style="background: transparent; padding: 2px;">
+                          <figure>
+                            <img src=" https://cdn-icons-png.flaticon.com/512/2446/2446056.png" alt="favicon for a disabled person in a wheelchair">
+                            <figcaption style="font-family: 'helvetica'; color: #000; font-size: 12.5px">A disabled user of wheelchair</figcation>
+                          </figure>
+                          </div>
 
-              </div>
+                          <div style="background: transparent; padding: 2px;">
+                            <figure>
+                              <img src="https://png.pngtree.com/png-vector/20220610/ourmid/pngtree-blind-man-with-dog-icon-png-image_4865592.png" alt="favicon for a blind man guided by dog">
+                              <figcaption style="font-family: 'helvetica'; color: #000; font-size: 12.5px">A blind man guided by dog</figcation>
+                            </figure>
+                            </div>
 
-            <div class="Drum">
-              In addition to teaching activities there are also volunteering, sensibilisations about disability and vulnerability as well as drumming.
-           </div>
-           
-         <a href="#">
-          <div class="PHCaption">
-           Learn More...
-          </div>
-        </a>
+                          
 
+                    </div>
+
+                    <div class="TT2">
+                        <div class="TT" style="color:darkblue; font-size: 27px;"> 
+                          Being and living as disabled is permanently challenging
+                        </div>
+
+                        <div class="TTT">
+                          Being and living as disabled means to deal with countless issues on a daily basis. People living with diablities have special mention to fight harder to get their needs met. A social long time and hostile culture of exclusion has been doggered and remains as a main bareer for disabled people to get well-accepted and included in the society. Amid these challenges there are: 
+                          
+                          <ul style="color: rgba(214, 70, 22, 0.975)">
+                          <li>1. Challenge of transportation</li>
+                          <li>2. Challenge about Discriminations and Social Stereotypes </li>
+                          <li>3. Challenge to study</li>
+                          <li>4. Challenge to get a job</li>
+                          <li>5. Challenge to found a family</li>
+                          <li>6. Challenge to get included</li>
+                        
+                          </ul>
+                      
+                        Living with disability means to be courageous, creative and steady in terms of wanting to achieve. 
+                        In some cases people have to get paired with other resources to live better and fulfill their dreams. 
+                        Amongst these resources, there are orthopedical shoes, glasses, crutches, canes, wheelchairs, 
+                        mechanical aide, tricycles, faithfull friends, guiding dogs etc.
+                      </div>
+
+                        But it doesn't mean that disability is destiny. No it isn't. It's sometimes inspiring for some normal people while they are seeing disabled people who don't give up despite the disability.
+                    </div>
+            
         </div>
-  
-           
-            <div class="Pic">
-              <div class="CIP">
-              <figure>
-                <img src="https://www.zupimages.net/up/22/46/daw5.jpg" alt="Support Teaching">
-                <figcaption style="color: rgb(8, 181, 255); margin-top: -1px;">Teaching Maths and Computer Science</figcaption>
-                </figure>
-            </div>
-            <div class="PiK">
-              Sometimes disabled people are considered to be the most courageous and angelustic people with a strong character by the ones and are included. But sometimes they are ridiculed, deviled, physically assaulted. They are experiencing many kinds of discriminations and then get excluded by the others.
-            </div>
-            <a href="file:///C:/Users/User/Documents/disabilitylife.html" target="_blank">
-              <div class="PiKe">
-            Learn More...
-        </div>
-      </a>
-
-    </div>
-
-</div>
-
-</div>
 
 
             <div class="content2">
+                Content 2
 
-              <div class="KontenT">
-
-                <a href="https://en.wikipedia.org/wiki/Stephen_Hawking" target="_blank">
-
-                <div class="Portray">
-                  <figure>
-              <img src="https://www.yesmagazine.org/wp-content/uploads/imports/c70af56e26ee439bbcc889bb07e95bfe.jpg" alt="Stephen Hawking">
-            <figcaption style="font-family: arial; font-size: 9.5px; color: #4d4d4df8; margin-left: 2.32rem; margin-top: -1rem;">Stephen Hawking</figcaption>
-                  </figure>    
-            </div>
-              </a>
-
-              <a href="https://en.wikipedia.org/wiki/Stephen_Hawking" target="_blank">
-
-                <div class="KonT"><em>"My advice to other disabled people would be, 
-                  concentrate on things your disability doesn't prevent you doing well, 
-                  and don't regret the things it interferes with. Don't be disabled in spirit, 
-                  as well as physically"
-                <br>
-                </em>
-                <em style="color: rgb(2, 165, 247); font-family: 'Poppins'; font-size: 18px;">[Stephen Hawking, English Physicist, Cosmologist and Author] 
-                </em>
-              </div>
-            </a>
-          </div>
-
-          <div class="navbar2">
-            Tiki N'Yiki | Etymology, Meaning, Reason and Region of Implementation
-           </div>
-
-              <div class="Kontent">
-
-              <div class="Kontent2">
-
-                <div class="AB">
-                <b style="font-size: 20px; color: rgb(12, 166, 255)">Etymology and Meaning</b>
-                <br>
-                <br>
-                Tiki N'Yiki is etymologically structured of two (2) words of Moore, a language in Burkina Faso</a> :
-                <br>
-                <br>
-              <b>1. Tiki</b> is litteraly meaning <b style="color: rgb(12, 166, 255); font-size: 16px;">Leaning upon</b>
-                <br>
-                <br>
-              <b> 2. N'Yiki</b> is meaning <b style="color: rgb(12, 166, 255); font-size: 16px;">Getting up</b>
-              </div>
-
-              <a href="#">
-                <div class="BA">
-                Learn More...
-              </div>
-            </a>
-
-              </div>
-
-              <div class="Kontent3">
-
-                <div class="AB">
-                <b style="font-size: 20px; color: rgb(12, 166, 255)"> Why Tiki N'Yiki ?</b>
-                <br> 
-                <br>
-                Tiki N'Yiki is created to improve education and support efforts of disabled children in Burkina Faso. It is sounding as a slogan adressing the necessity and the possibility for everyone to lead his own achievement. 
-                 Tiki N'Yiki stimulatively supports the idea that every disabled kid can have a better future if helped.
-              </div>
-
-              <a href="#">
-              <div class="BA">
-              Learn More...
-            </div>
-          </a>
-          </div>
-
-              
-              <div class="Kontent1">
-
-                <div class="ABC">
-                <b style="font-size: 20px; color: rgb(12, 166, 255)">Region of Implementation</b>
-                <br>
-                <br>
-                Tiki N'Yiki has first been implemented in Burkina Faso in 2016. Amongs many reasons is the main one that focuses to create a free and ideal space and time on improving education for disabled kids. 
-               In the future Tiki N'Yiki would be extanding to neighboring countries like Benin, as well Ivory Coast depending with good security conditions in the region.
-              </div>
-
-              <a href="#">
-                <div class="BA" style="margin-top: 12px;">
-                Learn More...
-              </div>
-            </a>
-            
             </div>
 
-          </div>
-        </div>
-
-            <div class="navbar3">
-              Education is a backone of any sustainable development.
-            </div>
 
             <div class="content3">
+                Content 3
 
-              <div class="DiapoWrapper">
-            
-              
-
-              <div class="DiapoPhoto">
-                <div class="T">
-                <div style="background:#4a4a4af7; color: #fff; padding: 6px; font-family: 'Poppins'; font-size: 18px">Celebrating Christmas at Tiki N'Yiki's headquarter [Burkina Faso]</div>
-                <div><img src="https://www.zupimages.net/up/22/31/z42x.jpg" alt="Christmas at Tiki N'Yiki"></div>
-              </div>
-
-              <div class="T1">
-                <div style="background: #4a4a4af7; color: #fff; padding: 6px; font-family: 'Poppins'; font-size: 18px">Classes in Ziniare [Burkina Faso]</div>
-                <div><img src="https://www.zupimages.net/up/22/21/3bad.jpg" alt="Classes"> </div>
-              </div>
-
-              <div class="T2">
-                <div style="background:#4a4a4af7; color: #fff; padding: 6px; font-family: 'Poppins'; font-size: 18px">Teaching Has Always Been Funny To Me. I Learned A Lot Back</div>
-                <div><img src="https://www.zupimages.net/up/22/31/ttk3.jpg" alt="Teaching in BF"></div>
-              </div>
-
-              </div>
-
-                <div class="Dive1">
-
-                  <div class="DiV1">
-
-                    <div class="D">
-                    Activities
-                    </div>
-
-                    <div class="DD">
-                    Beneficiaries
-                    </div>
-
-                    <div class="DC">
-                    Volunteering
-                    </div>
-                       </div>
-              <a href="https://www.education.gov.bf/accueil" target="_blank">
-                <div class="DiV2">
-                <b style="font-size: 23.8px; font-family: 'georgia'; line-height: 28.27px">The More The Rate of Education Get Higher, The More The Rate of Poverty Will Be Lower And The More the Index of Development Will Be Ascendant. That Highlights How Education Is Important and Stands as a Foundation for Nations to Implement a Sustainable Development.</b>
                 </div>
-              </a>
-              </div>
-
-              </div>
-
-            </div>
-
-            <div class="navbar4">
-              Health Care Even Crucial for Human-Beings Is Turning So Expensive.
-                 </div>
 
             <div class="content4">
-
-              <div class="H-P">
-
-                   <div class="Horizontal-Wrapper">
-
-                    <div class="Doctor-Logo-Wrapper" >
-
-                      <div class="Doctor-Logo" >
-                      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3vWl37Fm3qb7GrEwYt8fHYGPvol1Ks4_ypiYRnWOFcbvSzoaEbJZVzqmX14k3Sf--nuM&usqp=CAU" alt="Medical Logo" />
-                    </div>
-
-                    <div class="Doctor" >
-                     Learn More...
-                    </div>
-
-                  </div>
-
-                      <div class="HPhoto">
-                      <img src="https://www.zupimages.net/up/23/06/hx80.png" alt="Hospital">
-                    </div>
-
-                    <div class="HPT">
-                      We are all human-beings but we don't have the same status. We can have the same disease but we don't have the same care. 
-                      Nowadays Healthcare is trending to become a Money Affair. 
-                      But how do the people without any income or with low income including 
-                      disabled people access to health care? Many have to wait in the suffering or die.
-                    </div>
-                  
-                  </div>
-
-                  <div class="HPh">
-
-                    <div class="Vertical-Writing">
-
-                      <a href="https://randomactsofflowers.org/guest-blog-magic-healing-power-flowers-katie-hess-lotuswei/" target="_blank">
-                      <div class="VerTiWA">
-                      <h1> What Is The Power of Flower in Health Care ?</h1>
-                      Since Antiquity human-being has explored many ways to use plants especially flowers to heal, getting a well-being, strenghten their minds. This has led to the invention of modern medecinal drugs.
-                    </div>
-                  </a>
-
-                  <a href="https://randomactsofflowers.org/guest-blog-magic-healing-power-flowers-katie-hess-lotuswei/" target="_blank">
-                    <div class="VerTiWa">
-                      Learn More...
-                    </div>
-                  </a>
-
-                  </div>
-
-                  <a href="https://randomactsofflowers.org/guest-blog-magic-healing-power-flowers-katie-hess-lotuswei/" target="_blank">
-                  <div class="H-P-H">
-                  <figure>
-                    <img src="https://www.zupimages.net/up/22/27/zf4p.jpg" alt="Red Flower">
-                    <figcaption style="font-size: 16px; text-align: left; color: rgb(2, 165, 247);">
-                      A Multicolored Flower Shining to Summer
-                    </figcaption>
-                </figure>
-                  </div>
-                </a>
-
-                </div>
-
-                </div>
-
-                <div class="HP-HP">
-                 What is about the healing power of flowers in phytotherapy?
-                </div>
-            </div>
-
-            <div class="navbar5">
-              Food Safety Is Still A Concern In Some Regions Around The World. 
-            </div>
-
-            <div class="content5">
-
-              <div class="FoodSecurity">
-
-                <div class="FST">
-                  <figure>
-                    <img src="https://cdn-icons-png.flaticon.com/512/4762/4762089.png" alt="Food Security">
-                        <figcaption style="color: rgb(3, 234, 255); font-size: 13px; font-family: georgia; margin-top: 5px">Some people are throwing food in the trash and others are starving
-                        </figcaption>
-                    </figure>
-
-                  </div>
-
-                <div class="FSTS">
-
-                  <div class="FooD">
-                  While in some regions around the world people have no more to worry about Food Safety, in some other regions, it is not the same reality. Some people are struggling hard to get daily food. And in worse cases some have died or are dying. But No Food Safety, No Sustainable Development. 
-                </div>
-
-                <div class="SF">
-                  Learn More...
-              </div>
-
-                </div>
-
-              </div>
-              
+                Content 4             
             </div>
     
           </div>
@@ -2667,7 +1376,7 @@ font-size: 18px;
               <div class="footer1">
                 <figure>
                 <img src="https://www.zupimages.net/up/21/49/h8iv.jpg" alt="Champignon Ahuntsic">
-                <figcaption style="font-size: 17px; text-align: left; color: rgb(7, 172, 255);">A Mushroom</figcaption>
+                <figcaption style="font-size: 17px; text-align: left; color: rgb(7, 172, 255);">A mushroom in Ahuntsic</figcaption>
                 </figure>
               </div>
             </a>
