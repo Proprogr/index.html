@@ -25,7 +25,7 @@
     <link rel="stylesheets" href="flexbox" media="all">
     <link rel="javascript" type="text/javascript" href="js.main" media="all">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <style> 
 
@@ -43,18 +43,35 @@
     
     .top-container{
         display: grid;
-        grid-template-columns: 0.8fr 190px 190px 1.2fr;
-        column-gap: 0.25rem;
+        grid-template-columns: 1fr 0.5fr 0.5fr 1.5fr;
         justify-content: space-around;
-        align-items: center;
+        justify-items: center;
         width: 100%;
-        height: 2.6rem;
+        height: 2rem;
         padding: 0.5rem;
         object-fit: cover;
         font-family: 'georgia';
-        font-size: 0.76rem;
+        font-size: 0.72rem;
         color: gold;
-        background: #0c0c0ce9;
+        background: #1b1b1bf1;
+    }
+
+    .reader{
+      display: grid;
+        grid-template-columns: 0.35fr 1.2fr;
+        column-gap: 0.5rem;
+        border-bottom: 0.2rem solid #fff;
+        color: #0e0e0ee3;  
+        font-family: 'Poppins';
+        font-size: 1.4rem; 
+        justify-content: center;
+        justify-items: center;
+        width: 100%;
+        height: 2.55rem;
+        padding-top: 0.4rem;
+        padding-bottom: 0.45rem;
+        word-spacing: 1px;
+        background: transparent;
     }
 
     .Welcome{
@@ -64,17 +81,20 @@
       align-items: center;
       width: 100%;
       height: 1.5rem;
-      padding: 2px;
+      padding: 5px;
+      border-radius: 0.3rem;
       color: #e7e7e7;
-      margin-top: -0.25rem;
+      margin-top: -0.1rem;
     }
 
     .Welcome:hover{
-      background: #0b2383;
-      color: rgb(255, 193, 36);
-      transition: 0.1s linear;
-      border: 0.1rem solid rgb(255, 193, 36);
-      border-radius: 0.3rem;
+      border-bottom: 0.1rem solid rgb(255, 193, 36);
+      border-left: 0.1rem solid rgb(255, 193, 36);
+      border-right: 0.1rem solid rgb(255, 193, 36);
+      transition: 0.23s ease-in;
+      box-shadow: 0 -1.1px 0.5rem 1px #234cf0;
+      width: 100%;
+      color: #ff0;
     }
 
     .BF{
@@ -84,19 +104,23 @@
       align-items: center;
       width: 100%;
       height: 1.5rem;
-      padding: 2px;
+      padding: 5px;
       border-radius: 0.3rem;
       cursor: pointer;
-      color: #e7e7e7;
-      margin-top: -0.25rem;
+      color: #bab9b9;
+      margin-top: -1.1rem;
+      font-size: 0.75rem;
+      font-family: arial;
     }
 
     .BF:hover{
-      background: #0b2383;
-      color: rgb(255, 193, 36);
-      transition: 0.1s linear;
-      border: 0.1rem solid rgb(255, 193, 36);
-      border-radius: 0.3rem;
+      border-bottom: 0.1rem solid rgb(255, 193, 36);
+      border-left: 0.1rem solid rgb(255, 193, 36);
+      border-right: 0.1rem solid rgb(255, 193, 36);
+      transition: 0.23s ease-in;
+      box-shadow: 0 -1.1px 0.5rem 1px #234cf0;
+      width: 100%;
+      color: #ff0;
     }
     
     .Asso{
@@ -106,75 +130,91 @@
       align-items: center;
       width: 100%;
       height: 1.5rem;
-      padding: 2px;
-      color: #e7e7e7;
+      border-radius: 0.3rem;
+      padding: 5px;
       cursor: pointer;
-      margin-top: -0.25rem;
+      margin-top: -1.1rem;
+      font-family: arial;
+      font-size: 0.75rem;
+      color: #bab9b9;
     }
 
     .Asso:hover{
-      background: #0b2383;
-      color: rgb(255, 193, 36);
-      transition: 0.1s linear;
-      border: 0.1rem solid rgb(255, 193, 36);
-      border-radius: 0.3rem;
+      border-bottom: 0.1rem solid rgb(255, 193, 36);
+      border-left: 0.1rem solid rgb(255, 193, 36);
+      border-right: 0.1rem solid rgb(255, 193, 36);
+      transition: 0.23s ease-in;
+      box-shadow: 0 -1.1px 0.5rem 1px #234cf0;
+      width: 100%;
+      color: #ff0;
     }
 
     .datime{
       display: flex;
       position: relative;
-      flex-direction: row;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
       width: 100%;
-      height: 1.7rem;
-      padding: 2px;
-      color: #e7e7e7;
-      border-top-left-radius: 0.3rem;
-      border-bottom-left-radius: 0.3rem;
-      margin-top: 0.41rem;
+      height: 1.5rem;
+      padding: 5px;
+      font-family: arial;
+      font-size: 0.75rem;
+      color: #bab9b9;
+      border-radius: 0.3rem;
+      margin-top: -1.11rem;
       margin-left: 0.45rem;
     }
 
     .datime:hover{
-      background: darkblue;
-      color: rgb(255, 193, 36);
-      transition: 0.1s linear;
+      border-bottom: 0.1rem solid rgb(255, 193, 36);
+      border-left: 0.1rem solid rgb(255, 193, 36);
+      border-right: 0.1rem solid rgb(255, 193, 36);
+      transition: 0.23s ease-in;
+      box-shadow: 0 -1.1px 0.5rem 1px #234cf0;
+      width: 100%;
+      color: #ff0;
     }
 
-    .navbar{ display: grid;
-        grid-template-columns: 0.25fr 1fr;
-        column-gap: 0.25rem;
-                 justify-content: space-around;
+    .navbar{
+      display: grid;
+        grid-template-rows: 0.25fr 0.7fr;
+        row-gap: 0.5rem;
+                 justify-content: space-between;
                  justify-items: center;
-                 background: darkblue;
+                 background: #fff;
                  width: 100%;
-                 height: 65px;
+                 height: 102px;
                  object-fit: cover;
                  z-index: 1;
                  top: 0;
                  position: sticky;
+                 box-shadow: 0 0 0.35rem 0.25px rgb(3, 154, 255);
           }
           
+          .Joint-Point{
+            display: grid;
+            grid-template-columns: 0.5fr 1.5fr;
+          }
           .myDiv{
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             width: 100%;
-            height: 35px;
+            height: 25px;
             cursor: pointer;
             font-family: georgia;
             font-size: 16px;
             border: 0.3rem solid transparent;
-            color: #c5c5c5;
+            color: #adadad;
             background: transparent;
           }
 
           .myDiv:hover{
-            border-bottom: 0.3rem solid #fff;
-      color: #fff;
-      transition: 0.2s ease-in;
+            border-bottom: 0.35rem solid blue;
+            color: blue;
+            transition: 0.2s ease-in;
       
           }
 
@@ -184,18 +224,18 @@
             justify-content: center;
             align-items: center;
             width: 100%;
-            height: 35px;
+            height: 25px;
             cursor: pointer;
             font-family: georgia;
             font-size: 16px;
             border: 0.3rem solid transparent;
-            color: #c5c5c5;
+            color: #adadad;
             background: transparent;
           }
 
           .myDiv1:hover{
-      border-bottom: 0.3rem solid #1fe5ff;
-      color: #1fe5ff;
+      border-bottom: 0.35rem solid #00c2d0;
+      color: #00c2d0;
       transition: 0.2s ease-in;
           }
 
@@ -205,18 +245,18 @@
             justify-content: center;
             align-items: center;
             width: 100%;
-            height: 35px;
+            height: 25px;
             cursor: pointer;
             font-family: georgia;
             font-size: 16px;
             border: 0.3rem solid transparent;
-            color: #c5c5c5;
+            color: #adadad;
             background: transparent;
           }
 
           .myDiv2:hover{
-            border-bottom: 0.3rem solid rgb(255, 221, 31);
-      color: rgb(255, 221, 31);
+            border-bottom: 0.35rem solid red;
+      color: red;
       transition: 0.2s ease-in;
           }
 
@@ -226,18 +266,18 @@
             justify-content: center;
             align-items: center;
             width: 100%;
-            height: 35px;
+            height: 25px;
             cursor: pointer;
             font-family: georgia;
             font-size: 16px;
             border: 0.3rem solid transparent;
-            color: #c5c5c5;
+            color: #adadad;
             background: transparent;
           }
 
           .myDiv3:hover{
-            border-bottom: 0.3rem solid rgb(255, 151, 241);
-      color: rgb(255, 151, 241);
+            border-bottom: 0.35rem solid rgb(255, 0, 221);
+      color: rgb(255, 0, 221);
       transition: 0.2s ease-in;
           }
 
@@ -247,17 +287,17 @@
             justify-content: center;
             align-items: center;
             width: 100%;
-            height: 40px;
+            height: 25px;
             cursor: pointer;
             font-family: georgia;
             font-size: 16px;
             border: 0.3rem solid transparent;
-            color: #c5c5c5;
+            color: #adadad;
             background: transparent;
           }
 
           .myDiv4:hover{
-            border-bottom: 0.3rem solid rgb(255, 186, 209);
+            border-bottom: 0.35rem solid rgb(255, 186, 209);
       color: #fff;
       transition: 0.2s ease-in;
           }
@@ -268,17 +308,17 @@
             justify-content: center;
             align-items: center;
             width: 100%;
-            height: 35px;
+            height: 25px;
             cursor: pointer;
             font-family: georgia;
             font-size: 16px;
             border: 0.3rem solid transparent;
-            color: #c5c5c5;
+            color: #adadad;
             background: transparent;
           }
 
           .myDiv5:hover{
-            border-bottom: 0.3rem solid rgb(255, 95, 37);
+            border-bottom: 0.35rem solid rgb(255, 95, 37);
       color: rgb(255, 95, 37);
       transition: 0.2s ease-in;
           }
@@ -289,18 +329,18 @@
             justify-content: center;
             align-items: center;
             width: 100%;
-            height: 35px;
+            height: 25px;
             cursor: pointer;
             font-family: georgia;
             font-size: 16px;
             border: 0.3rem solid transparent;
-            color: #c5c5c5;
+            color: #adadad;
             background: transparent;
           }
 
           .myDiv4:hover{
-            border-bottom: 0.3rem solid rgb(255, 42, 42);
-      color: rgb(255, 42, 42);
+            border-bottom: 0.35rem solid rgb(6, 174, 57);
+      color: rgb(6, 174, 57);
       transition: 0.2s ease-in;
           }
 
@@ -310,7 +350,7 @@
             justify-content: center;
             align-items: center;
             width: 100%;
-            height: 35px;
+            height: 25px;
             cursor: pointer;
             font-family: georgia;
             font-size: 16px;
@@ -320,8 +360,8 @@
           }
 
           .myDiv6:hover{
-      border-bottom: 0.3rem solid chartreuse;
-      color: chartreuse;
+      border-bottom: 0.35rem solid rgb(240, 99, 6);
+      color: rgb(240, 99, 6);
       transition: 0.2s ease-in;
       
           }
@@ -329,7 +369,7 @@
           .Unyfy{
             display: grid;
             grid-template-rows: repeat(1fr,7);
-            justify-content: space-between;
+            justify-content: space-around;
             justify-items: center;
           }
           
@@ -346,18 +386,20 @@
     }
 
     .navbar1{
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
+      display: grid;
+      grid-template-columns: 0.7fr 1.35fr;
+      column-gap: 0.2rem;
+      justify-content: space-around;
+      justify-items: center;
       width: 100%;
-      height: 55px;
-      background: #e2e2e2fd;  
-      color: darkblue;
+      height: 19px;
+      background: transparent;  
+      color: #acabab;
       font-family: 'Poppins';
-      font-size: 1.5rem;
+      font-size: 0.93rem;
       padding: 0.5rem;
       font-weight: bold;
+      
     }
     
         h1{
@@ -423,67 +465,35 @@
         flex-direction: column;
         width: 100%;
         height: auto;
-        background: rgba(1, 1, 203, 0.272);
+        background: transparent;
     }
-
-    .content0{
-      display: grid;
-        grid-template-columns: 1fr;
-        justify-content: space-between;
-        justify-items: center;
-            width: 100%;
-            height: 465px;
-            background: rgba(0, 0, 139, 0.629);
-    }
-
-    .KonTenT0{
-      display: grid;
-      grid-template-columns: 1fr;
-        justify-content: center;
-        justify-items: center;
-            width: 80%;
-            height: 400px;
-            padding: 25px;
-            color: #f1f1f1;
-            font-size: 1.34rem;
-            line-height: 30px;
-            font-family: 'georgia';
-            background: transparent;
-            border-radius: 0.95rem;
-            text-align: justify;
-            margin-top: 2.6rem;
-    }
-
-    .KonTenT0:hover{
-      background: rgba(0, 0, 139, 0.951);
-      color: #ededed;
-      transition: 0.2s ease-in;
-    }
+  
     .content1{
         display: grid;
-        grid-template-rows: 1fr 1.5fr;
-        justify-content: space-between;
+        grid-template-rows: 1fr 1fr;
+        justify-content: center;
         justify-items: center;
             width: 100%;
             height: 844px;
             background: transparent;
-            padding: 12px;
+            padding: 10px;
             color: #000;
+            margin-top: 3.6rem;
            
           }
 
           .STAMP{
             display: grid;
             grid-template-columns: 1fr 1fr;
-            column-gap: 2.5rem;
+            column-gap: 2.22rem;
             justify-content: center;
             justify-items: center;
-            background: transparent;
-            width: 88.75%;
+            background: #fff;
+            width: 88.52%;
             height: auto;
             padding: 5px;
-            margin-top: -1rem;
-            margin-left: 1.75rem;
+            margin-top: -0.2rem;
+            margin-left: 1.76rem;
           }
 
           .T-Area{
@@ -500,10 +510,10 @@
             line-height: 21px;
             font-family: 'georgia';
             font-size: 17px;
-            color: #b5b5b5fa;
-            background: #9e0e40;
+            color: #c7c6c6fa;
+            background:rgb(182, 24, 79);
             cursor: pointer;
-            margin-left: 0.25rem;
+            margin-left: 0.28rem;
           }
 
           .T-Area:hover{
@@ -536,7 +546,7 @@
             background: transparent;
             width: 100%;
             height: 60px;
-            color: #b5b5b5fa;
+            color: #e8e7e7fa;
             padding: 5px;
             font-family: 'georgia';
             font-size: 18px;
@@ -588,8 +598,8 @@
             line-height: 21px;
             font-family: 'georgia';
             font-size: 17px;
-            color: #c3c3c3eb;
-            background: #9e0e40;
+            color: #e8e7e7fa;
+            background:rgb(182, 24, 79);
             cursor: pointer;
           }
           .Pic:hover{
@@ -647,8 +657,8 @@ border: 0.15px solid #8f8f8ff9;
             line-height: 28px;
             font-family: 'georgia';
             font-size: 1.22rem;
-            color: #8d8d8d;
-            background: #9e0e40;
+            color: #d9d9d9;
+            background:rgb(182, 24, 79);
             border-radius: 0.15rem;
             margin-top: -17px;
           }
@@ -665,7 +675,7 @@ border: 0.15px solid #8f8f8ff9;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            background: #fffffff1;
+            background: #ffffff;
             border-radius: 50%;
             width: 185px;
             height: 173px;
@@ -682,7 +692,7 @@ border: 0.15px solid #8f8f8ff9;
           }
 
           .KonT{ 
-            color: #d2d2d2;
+            color: #f1f1f1;
           }
 
           .KonT:hover{
@@ -698,7 +708,7 @@ border: 0.15px solid #8f8f8ff9;
             padding: 0.9rem;
             width: 86.01%;
             height: 285px;
-            background: #9e0e40;
+            background:rgb(182, 24, 79);
             margin-top: 1.2px;
             border-radius: 0.56rem;
            }
@@ -711,9 +721,10 @@ border: 0.15px solid #8f8f8ff9;
           }
 
           .Kontent1{
-display: grid;
-grid-template-rows: 1fr 0.3fr;
-justify-content: center;
+            display: grid;
+grid-template-rows: 1.6fr 0.4fr;
+row-gap: 0.5rem;
+justify-content: space-around;
 justify-items: center;
 width: 88%;
 height: 245px;
@@ -726,7 +737,7 @@ font-family: 'georgia';
 font-size: 13px;
 line-height: 17.5px;
 cursor: pointer;
-margin-top: 0.3rem;
+margin-top: 0.1rem;
 
           }
 
@@ -751,24 +762,24 @@ padding: 5px;
             justify-content: center;
             align-items: center;
 width: 300px;
-height: 37px;
+height: 36px;
 padding: 6px;
 background: #7f0b33f6;
 color: gold;
 border-radius: 3rem;
 border: 0.15px solid #a0a0a0fe;
 font-size: 1.05rem;
-margin-top: -0.5rem;
+margin-top: -1.8rem;
           }
 
           .BA:hover{
             border: 0.12rem solid #000;
-            background: #3d3d3d;
+            background: #313131;
             color: #f8f8f8;
           }
 
-          .ABC{
-            font-size: 11.84px;
+          .AB{
+            font-size: 14px;
           }
 
           .Kontent2{
@@ -788,7 +799,7 @@ font-family: 'georgia';
 font-size: 13px;
 line-height: 17.5px;
 cursor: pointer;
-margin-top: 0.35rem;
+margin-top: 0.1rem;
           }
 
 .Kontent2:hover{
@@ -802,7 +813,7 @@ margin-top: 0.35rem;
           .Kontent3{
             display: flex;
             display: grid;
-grid-template-rows: 1.6fr 0.4fr;
+            grid-template-rows: 1.6fr 0.4fr;
 row-gap: 0.5rem;
 justify-content: space-around;
 justify-items: center;
@@ -816,8 +827,8 @@ border-radius: 1rem;
 font-family: 'georgia';
 font-size: 13px;
 line-height: 17.5px;
+margin-top: 0.1rem;
 cursor: pointer;
-margin-top: 0.35rem;
           }
 
           .Kontent3:hover{
@@ -835,7 +846,7 @@ margin-top: 0.35rem;
       align-items: center;
       width: 86%;
       height: 100px;
-      background: #9e0e40;
+      background:rgb(182, 24, 79);
       color: #e9e9e9a7;
       font-family: 'Poppins';
       font-size: 2rem;
@@ -861,7 +872,7 @@ margin-top: 0.35rem;
       align-items: center;
       width: 84%;
       height: 100px;
-      background: #9e0e40;
+      background:rgb(182, 24, 79);
       color: #e9e9e9a7;
       font-family: 'Poppins';
       font-size: 2rem;
@@ -905,7 +916,7 @@ margin-top: 0.35rem;
             width: 86.01%;
             height: 430px;
             padding: 20px;
-            background: #9e0e40;
+            background:rgb(182, 24, 79);
             margin-top: -2px;
             border-radius: 0.15rem;
           }
@@ -924,7 +935,7 @@ width: 100%;
 height:380px;
 position: relative;
 overflow: hidden;
-background: #9e0e40;
+background: #9e0e40f0;
 box-shadow: 0 0 0.2rem -0.25px rgba(182, 218, 215, 0.67);
 
          }
@@ -1128,7 +1139,7 @@ cursor: pointer;
   justify-items: center;
   padding: 9px;
   width: 100%;
-  height: 300px;
+  height:280px;
   color: #c6c6c6c7;
   border-radius: 0.5rem;
   
@@ -1150,7 +1161,7 @@ cursor: pointer;
       align-items: center;
       width: 83.97%;
       height: 100px;
-      background: #9e0e40;
+      background:rgb(182, 24, 79);
       color: #e9e9e9a7;
       font-family: 'Poppins';
       font-size: 2rem;
@@ -1188,7 +1199,7 @@ margin-top: 1.57rem;
             justify-items: center;
             width: 85.24%;
             height: 140px;
-            background: #9e0e40;
+            background:rgb(182, 24, 79);
             padding: 10px;
             margin-top: 1px;
             border-radius: 0.15rem;
@@ -1271,17 +1282,21 @@ font-size: 14px;
   width: 101.9%;
   height: 514px;
   padding: 20px;
-  background: #9e0e40;
+  background:rgb(182, 24, 79);
   border-radius: 0.15rem;
   cursor: pointer;
   margin-top: 4.2rem;
 }
 
 .VerTiWA{
-  height: 150px;
+  height: 140px;
   line-height: 30px;
-  font-size: 1.85rem;
+  font-size: 1.4rem;
   color: #aaa9a9;
+}
+
+.VertiWA:hover{
+  color: #fff;
 }
 .VerTiWa{
   display: grid;
@@ -1291,13 +1306,12 @@ font-size: 14px;
   justify-items: center;
   width: 100%;
   height: 60px;
-  font-size: 22px;
+  font-size: 19px;
 line-height: 14.25px;
 background: #7f0b33f6;
 color: gold;
 border-radius: 3rem;
 border: 0.15px solid #8f8f8ff9;
-margin-top: 1rem;
 }
 
 .VerTiWa:hover{
@@ -1306,7 +1320,7 @@ color: #fff;
 border-radius: 1rem;
 border: 0.5px solid #e3e3e3;
 transition: 0.2s linear;
-font-size: 20px;
+font-size: 18px;
 }
 
 .HPh:hover{
@@ -1317,17 +1331,17 @@ font-size: 20px;
 .Vertical-Writing{
   display: grid;
   grid-template-rows: 1fr 0.25fr;
-  justify-items: space-between;
+  justify-items: center;
   justify-items: center;
   font-family: 'Poppins'; 
   line-height: 40px;
-  margin-top: 4rem;
+  padding: 10px;
   color: #d2d2d2;
   width: 300px;
   background: transparent;
 }
 .Vertical-Writing:hover{
-  color: #c4c3c3;
+  color: #fff;
   transition: 0.2s ease;
 }
 
@@ -1361,8 +1375,8 @@ font-size: 20px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #dcdcdc;
-  background: #c31250dc;
+  color: #ececec;
+  background:rgb(213, 28, 92);
   border: 0.45px solid #8f8f8f;
   border-radius: 0.5rem;
   font-family: 'georgia';
@@ -1390,7 +1404,7 @@ font-size: 20px;
       align-items: center;
       width: 83.97%;
       height: 100px;
-      background: #9e0e40;
+      background:rgb(182, 24, 79);
       color: #e9e9e9a7;
       font-family: 'Poppins';
       font-size: 2rem;
@@ -1428,7 +1442,7 @@ font-size: 20px;
             padding: 10px;
             width: 86.48%;
             height: 480px;
-            background: #9e0e40;
+            background:rgb(182, 24, 79);
             border-radius: 0.15rem;
             margin-top: -2.5px;
           }
@@ -1443,7 +1457,7 @@ font-size: 20px;
   align-items: center;
   width: 500px;
   height: auto;
-  border-right: 0.15rem solid #be124e;
+  border-right: 0.15rem solid #f11a65;
   padding: 2px;
 } 
 
@@ -1542,15 +1556,15 @@ font-size: 19px;
           
     .footer{
             display: grid;
-            grid-template-rows: 1fr 1fr;
+            grid-template-rows: 0.5fr 0.5fr;
             width: 100%;
-            height: 450px;
+            height: 600px;
             justify-content: center;
             justify-items: center;
             font-family: 'georgia';
             font-size: 1.25rem;
             line-height: 30px;
-            background: rgba(1, 1, 203, 0.272);
+            background: transparent;
             color: #000;  
             text-align: center; 
             padding: 10px;
@@ -1561,37 +1575,38 @@ font-size: 19px;
           grid-template-columns: 1fr 1fr;
           justify-content: center;
           justify-items: center;
-          width: 85.45%;
-          height: 340px;
-          background: #9e0e40;
-          padding: 13px;
-          border-radius: 0.95rem;
-          font-size: 2.2rem;
-          box-shadow: 0 0 0.2rem -0.25px rgba(182, 218, 215, 0.67);
+          width: 100%;
+          height: 256px;
+          background: #a91e4fef;
+          padding: 10px;
+          font-size: 1.8rem;
+          box-shadow: 0 0 0.2rem -0.25px rgba(185, 210, 208, 0.79);
           cursor: pointer;
         }
-.F1:hover{
-  background: #8b0c39;
+
+.ViD:hover{
+color: #fff;
 }
 
 .footer1 img{
-   width: 400px;
-   height: 290px;
+   width: 300px;
+   height: 230px;
    cursor: pointer;
+   
 }
 
 .F2{
   display: grid;
   grid-template-columns: 1fr;
   font-family: 'georgia';
-  font-size: 1.8rem;
+  font-size: 1.72rem;
+  width: 90%;
+  height: 290px;
   line-height: 31px;
   text-align: left;
-  padding: 20px;
-  color: #dcdcdc;
-  background: #c31250dc;
-  border: 0.45px solid #8f8f8f;
-  border-radius: 0.5rem;
+  padding: 10px;
+  color: #c2cee1;
+  background: transparent;
 }
 
 .F2:hover{
@@ -1602,33 +1617,31 @@ font-size: 19px;
   display: grid;
   justify-content: center;
   justify-items: center;
-  width: 100%;
+  width: 31.5%;
   height: auto;
-  font-family: 'georgia';
+  padding: 20px;
+  line-height: 20px;
+  word-spacing: 1px;
+  font-family: 'arial';
   font-size: 14px;
+  color: #f8f7f7fe;
+  text-align: justify;
+  background:#dc2465f7;
+  border-bottom-left-radius:20%;
+  border-bottom-right-radius: 20%;
 }
+
+.footer2:hover{
+          background: #ce245ffc;
+      
+        }
     .content a:hover{
         text-decoration: underline;
         color: rgba(255, 6, 6, 0.986);
         transition: 0.25s ease-in;
     }
-    .reader{
-        display: grid;
-        grid-template-columns: 0.7fr 1.3fr;
-        background: transparent;
-        color: #0e0e0ef5;  
-        font-family: 'Poppins';
-        font-size: 1.4rem; 
-        justify-content: center;
-        justify-items: center;
-        width: 100%;
-        height: 2.47rem;
-        padding-top: 0.4rem;
-        padding-bottom: 0.45rem;
-        word-spacing: 1px;
-    }
 
-    .Header{
+    .HeadeR{
         display: grid;
         grid-template-columns: 1fr;
         justify-content: center;
@@ -1820,13 +1833,13 @@ font-size: 19px;
     border-radius: 50%;
     color: gold;
     font-family: 'arial narrow';
-    font-size: 14px;
+    font-size: 13.7px;
     padding: 2px;
-    background: #9e0e40;
-    margin-top: -12px;
+    background: #ab0f46f4;
+    margin-top: -18px;
     margin-left: 0.45rem;
     cursor: pointer;
-    border: 0.13rem solid rgb(1, 1, 228);
+    border: 0.13rem solid rgb(122, 149, 150);
    }
 
    .TYK1:hover{
@@ -2081,7 +2094,7 @@ font-size: 19px;
     position: relative;
     width: 20%;
     height: 67px;
-    background: #9e0e40;
+    background:rgb(182, 24, 79);
     justify-content: center;
     align-items: center;
     border-right: 1px solid transparent; 
@@ -2093,7 +2106,7 @@ font-size: 19px;
     position: relative;
     width: 80%;
     height: 67px;
-    background: #9e0e40;
+    background:rgb(182, 24, 79);
     justify-content: center;
     align-items: center;
     border-left: 1px solid transparent;
@@ -2161,7 +2174,7 @@ font-size: 19px;
         <div class="TOGETHER">Together As One To Overcome</div>
         
 
-        <div class="Header">
+        <div class="HeadeR">
 
         
         <div class="HAD">
@@ -2199,44 +2212,47 @@ font-size: 19px;
             Tiki N'Yiki, Improving Education and Promoting Inclusion 
             </div>
           </a>
-        </div>
-      
-        
+        </div>  
+
     </div>
+
   </div>
 
-    <div class="top-container">
-
-      <div class="Welcome">
-        Welcome on Tiki N'Yiki's website ! Enjoy your Visit !
-      </div>
-
-      <a href="https://en.wikipedia.org/wiki/Burkina_Faso" target="_blank">
-      <div class="BF">
-       Burkina Faso
-      </div>
-    </a>
-
-    <a href="https://ameiph.com/" target="_blank">
-      <div class="Asso">
-        Associations/Organisations
-      </div>
-    </a>
-
-      <div class="datime">
-              <p id="demo" style="margin-left: 35px">
-                 <span id="datetime" > </span>
-             </p>
-            </div>
-
-      <script>
-             var d = new Date();
-             document.getElementById("demo").innerHTML = d;
-         </script>
-    </div>
-    
     
         <div class="navbar" id="myHeader">
+
+          <div class="top-container">
+
+            <div class="Welcome">
+              Welcome on Tiki N'Yiki's website ! Enjoy your Visit !
+            </div>
+      
+            <a href="https://en.wikipedia.org/wiki/Burkina_Faso" target="_blank">
+            <div class="BF">
+             Burkina Faso
+            </div>
+          </a>
+      
+          <a href="https://ameiph.com/" target="_blank">
+            <div class="Asso">
+              Associations/Organisations
+            </div>
+          </a>
+          <a href="https://www.timeanddate.com/calendar/" target="_blank">
+            <div class="datime">
+                    <p id="demo" style="margin-left: 35px">
+                       <span id="datetime" > </span>
+                   </p>
+                  </div>
+                </a>
+
+            <script>
+                   var d = new Date();
+                   document.getElementById("demo").innerHTML = d;
+               </script>
+          </div>
+
+          <div class="Joint-Point">
 
           <a href="#" target="blank">
               <div class="TYK1">
@@ -2248,7 +2264,7 @@ font-size: 19px;
 
             <a href="#" target="blank">
             <div class="myDiv">
-              <b>Tiki N'Yiki </b>
+              <b>Foundation Tiki N'Yiki</b>
             </div>
                 </a>
     
@@ -2284,26 +2300,23 @@ font-size: 19px;
             </a>
 
 </div>
-            </div>
 
-            <div class="content0"> 
+</div>
 
-              <div class="KonTenT0">  
-                <b style="text-align: center; font-size: 1.73rem;">Welcome on Tiki N'Yiki's Website !</b> 
-              
-              This website is in project. It will be dedicated to improve education, promote inclusion and protect rights of disabled people. Tiki N'Yiki through its Vision, focuses especially on DISABLED CHILDREN, their INCLUSION and EDUCATION in Burkina Faso in order to HELP them realize their DREAMS. One of the main leverages of dreaming is fundamentally to getting EDUCATED. 
-              <br>
-              <br>
-              It is not onely a great pleasure to have you here and wanting to learn more about realities of being, living as a disabled person but also and hopefully you'll become a relay and help to enhance inclusion and defend the rights of disabled people in the society if needed. <b style="align-items: center; color: #ff0">Thank you for your time and feedback !
 
+<a href="file:///C:/Users/User/Documents/disabilitylife.html" target="_blank">
+
+            <div class="navbar1">
+              <div class="ViD" style="font-family: 'Courier New', Courier, monospace; margin-top: 4px;">
+                <b style="font-family: 'Courier New', Courier, monospace">What it means to living as a disabled person ?</b>
+                <br>
+                Living as a disabled person is very challenging. Many discriminations on a daily basis and lots social bareers. Few opportunities and disabled people have to struggle more tougher to get theirs needs met. Where is their right to inclusiveness ?
+              </div>
+
+             <div class="VDi">
             </div>
 
           </div>
-
-<a href="file:///C:/Users/User/Documents/disabilitylife.html" target="_blank">
-            <div class="navbar1">
-              What it means to be and living as a differently-able [disabled] person ?
-            </div>
       </a>
         
 
@@ -2373,7 +2386,7 @@ font-size: 19px;
                 <div class="Portray">
                   <figure>
               <img src="https://www.yesmagazine.org/wp-content/uploads/imports/c70af56e26ee439bbcc889bb07e95bfe.jpg" alt="Stephen Hawking">
-            <figcaption style="font-family: arial; font-size: 9.5px; color: #4d4d4df8; margin-left: 2.32rem; margin-top: -1rem;">Stephen Hawking</figcaption>
+            <figcaption style="font-family: arial; font-size: 9.5px; color: #000000; margin-left: 2.67rem; margin-top: -1rem;">Stephen Hawking</figcaption>
                   </figure>    
             </div>
               </a>
@@ -2386,7 +2399,7 @@ font-size: 19px;
                   as well as physically"
                 <br>
                 </em>
-                <em style="color: rgb(2, 165, 247); font-family: 'Poppins'; font-size: 18px;">[Stephen Hawking, English Physicist, Cosmologist and Author] 
+                <em style="color: rgb(18, 208, 255); font-family: 'Poppins'; font-size: 18px;">[Stephen Hawking, English Physicist, Cosmologist and Author] 
                 </em>
               </div>
             </a>
@@ -2436,21 +2449,22 @@ font-size: 19px;
               Learn More...
             </div>
           </a>
+
           </div>
 
               
               <div class="Kontent1">
 
-                <div class="ABC">
+                <div class="AB">
                 <b style="font-size: 20px; color: rgb(12, 166, 255)">Region of Implementation</b>
                 <br>
                 <br>
                 Tiki N'Yiki has first been implemented in Burkina Faso in 2016. Amongs many reasons is the main one that focuses to create a free and ideal space and time on improving education for disabled kids. 
-               In the future Tiki N'Yiki would be extanding to neighboring countries like Benin, as well Ivory Coast depending with good security conditions in the region.
+               In the future Tiki N'Yiki would delocalize some of its activities to neighboring countries like Benin, as well Ivory Coast depending the safety in the region.
               </div>
 
               <a href="#">
-                <div class="BA" style="margin-top: 12px;">
+                <div class="BA">
                 Learn More...
               </div>
             </a>
@@ -2508,7 +2522,7 @@ font-size: 19px;
 
               <a href="https://www.education.gov.bf/accueil" target="_blank">
                 <div class="DiV2">
-                <b style="font-size: 23.8px; font-family: 'georgia'; line-height: 28.27px">The More The Rate of Education Get Higher, The More The Rate of Poverty Will Be Lower And The More the Index of Development Will Be Ascendant. That Highlights How Education Is Important and Stands as a Foundation for Nations to Implement a Sustainable Development.</b>
+                <b style="font-size: 20px; font-family: 'georgia'; line-height: 28px">The More The Rate of Education Get Higher, The More The Rate of Poverty Will Be Lower And The More the Index of Development Will Be Ascendant. That Highlights How Education Is Important and Stands as a Foundation for Nations to Implement a Sustainable Development.</b>
                 </div>
               </a>
               
@@ -2560,7 +2574,8 @@ font-size: 19px;
 
                       <a href="https://randomactsofflowers.org/guest-blog-magic-healing-power-flowers-katie-hess-lotuswei/" target="_blank">
                       <div class="VerTiWA">
-                      <h1> What Is The Power of Flower in Health Care ?</h1>
+                      <b> What Is The Power of Flower on HealthCare ?</b>
+                    <br> 
                       Since Antiquity human-being has explored many ways to use plants especially flowers to heal, getting a well-being, strenghten their minds. This has led to the invention of modern medicinal drugs.
                     </div>
                   </a>
@@ -2626,7 +2641,43 @@ font-size: 19px;
               
             </div>
     
+            <div class="top-container1">
+
+              <div class="wrapper">
+          
+                  <div class="emonth-container">**MONDAY**TUESDAY**WEDNESDAY**THURSDAY**FRIDAY**SATURDAY**SUNDAY</div>
+          
+                  <div class="fmonth-container">***LUNDI****MARDI****MERCREDI****JEUDI***VENDREDI**SAMEDI**DIMANCHE</div>
+          
+              <div class="mother-cover">
+              
+                  <div class="cover">
+                      <div class="ttl-container">
+                      <div class="t-container">
+                      <div class="titlcontainer">
+                         <a href="https://www.wfp.org/countries/burkina-faso#:~:text=In%202019%2C%20Burkina%20Faso%20was,a%20sharp%20spike%20in%20numbers" target="blank"><b style="font-size: 11px;">Food Safety</b></a>
+                      </div>
+              
+                  </div>
+                  </div>
+              </div>
+          
+                  <div class="cover1">
+                      <div class="ttle-container">
+                      <div class="tt-container">
+                      <div class="titlecontainer">
+                           <a href="https://www.opensocietyfoundations.org/explainers/value-inclusive-education" target="blank"><h2>WHAT IS THE VALUE OF INCLUSIVE EDUCATION ? | LEARN MORE...</h2></a>
+                      </div>
+                      
+                  </div>
+              </div>
+              </div>
           </div>
+          </div>
+          </div>
+
+          </div>
+
 
             <a href="#Top">
                 <div class="SPan">
@@ -2635,39 +2686,9 @@ font-size: 19px;
             </a>
     
         </div>
-        <div class="top-container1">
-          <div class="wrapper">
-      
-              <div class="emonth-container">**MONDAY**TUESDAY**WEDNESDAY**THURSDAY**FRIDAY**SATURDAY**SUNDAY</div>
-      
-              <div class="fmonth-container">***LUNDI****MARDI****MERCREDI****JEUDI***VENDREDI**SAMEDI**DIMANCHE</div>
-      
-          <div class="mother-cover">
-          
-              <div class="cover">
-                  <div class="ttl-container">
-                  <div class="t-container">
-                  <div class="titlcontainer">
-                     <a href="https://www.wfp.org/countries/burkina-faso#:~:text=In%202019%2C%20Burkina%20Faso%20was,a%20sharp%20spike%20in%20numbers" target="blank"><b style="font-size: 11px;">Food Safety</b></a>
-                  </div>
-          
-              </div>
-              </div>
-          </div>
-      
-              <div class="cover1">
-                  <div class="ttle-container">
-                  <div class="tt-container">
-                  <div class="titlecontainer">
-                       <a href="https://www.opensocietyfoundations.org/explainers/value-inclusive-education" target="blank"><h2>WHAT IS THE VALUE OF INCLUSIVE EDUCATION ? | LEARN MORE...</h2></a>
-                  </div>
-                  
-              </div>
-          </div>
-          </div>
-      </div>
-      </div>
-      </div>
+
+
+        
         
             <div class="footer">
 
@@ -2678,7 +2699,7 @@ font-size: 19px;
               <div class="footer1">
                 <figure>
                 <img src="https://www.zupimages.net/up/21/49/h8iv.jpg" alt="Champignon Ahuntsic">
-                <figcaption style="font-size: 17px; text-align: left; color: rgb(7, 172, 255);">A Mushroom</figcaption>
+                <figcaption style="font-size: 14px; text-align: left; margin-top: 4px; color: #636363e9;">A Mushroom</figcaption>
                 </figure>
               </div>
             </a>
@@ -2691,11 +2712,12 @@ font-size: 19px;
           </div>
        
               <div class="footer2">
-                [Copyright © Tiki N'Yiki 2023] 
-                <br> 
-                [Webmaster : GKC => | Disability Rights Advocate | Photography Passionate]
-                <br>
-                [DISABILITY IS NOT DESTINY = Le Handicap n'est pas une Fatalité]
+                <p style="text-align: center;"> Copyright © Tiki N'Yiki 2023</p>
+                <br>  
+                It's not easy to come to the end about a secular culture, mindset of thinking and behaving that's exclusive, underrating, underestimating or/and downplaying, neglecting people who're living with disabilities even in a millisecond time long. But it's a way in having a public approach on conversations about disabilities and related issues, diversities and inclusion. The important perspective is to understand and overocme over discriminations those people are experiencing on a daily basis. And this should be questionned: What are the causes ? Then trying to figure them out by implementing a reponsive scheme to overcome social stigmatisation. That, inclusiveness will become more reallistic and benefital to targeted people.
+                
+                  <p style="text-align: center; margin-top: 0.5rem;"> DISABILITY IS NOT DESTINY</p>
+               
               </div>
 
             </div>
