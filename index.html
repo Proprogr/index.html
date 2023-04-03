@@ -44,16 +44,16 @@
     .top-container{
         display: grid;
         grid-template-columns: 1fr 0.5fr 0.5fr 1.5fr;
-        justify-content: space-around;
+        justify-content: center;
         justify-items: center;
-        width: 100%;
+        width: auto;
         height: 2rem;
         padding: 0.5rem;
         object-fit: cover;
         font-family: 'georgia';
         font-size: 0.72rem;
         color: gold;
-        background: #1b1b1bf1;
+        background: transparent;
     }
 
     .reader{
@@ -71,7 +71,7 @@
         padding-top: 0.4rem;
         padding-bottom: 0.45rem;
         word-spacing: 1px;
-        background: transparent;
+        background: lightblue;
     }
 
     .Welcome{
@@ -83,7 +83,7 @@
       height: 1.5rem;
       padding: 5px;
       border-radius: 0.3rem;
-      color: #e7e7e7;
+      color: #9a9a9a;
       margin-top: -0.1rem;
     }
 
@@ -107,7 +107,7 @@
       padding: 5px;
       border-radius: 0.3rem;
       cursor: pointer;
-      color: #bab9b9;
+      color: #9a9a9a;
       margin-top: -1.1rem;
       font-size: 0.75rem;
       font-family: arial;
@@ -136,7 +136,7 @@
       margin-top: -1.1rem;
       font-family: arial;
       font-size: 0.75rem;
-      color: #bab9b9;
+      color: #9a9a9a;
     }
 
     .Asso:hover{
@@ -160,7 +160,7 @@
       padding: 5px;
       font-family: arial;
       font-size: 0.75rem;
-      color: #bab9b9;
+      color: #9a9a9a;
       border-radius: 0.3rem;
       margin-top: -1.11rem;
       margin-left: 0.45rem;
@@ -178,22 +178,27 @@
 
     .navbar{
       display: grid;
-        grid-template-rows: 0.25fr 0.7fr;
+        grid-template-rows: 1fr 1fr;
         row-gap: 0.5rem;
                  justify-content: space-between;
                  justify-items: center;
                  background: #fff;
                  width: 100%;
-                 height: 102px;
+                 height: 95px;
                  object-fit: cover;
                  z-index: 1;
                  top: 0;
                  position: sticky;
-                 box-shadow: 0 0 0.35rem 0.25px rgb(3, 154, 255);
+                 border-bottom: 2px solid #f1f1f1;
+                 border-top: 0.4rem solid rgb(3, 154, 255);
           }
           
           .Joint-Point{
             display: grid;
+            grid-template-rows: 1fr 1fr;
+            justify-content: center;
+            justify-items: center;
+            width: 100%;
             grid-template-columns: 0.5fr 1.5fr;
           }
           .myDiv{
@@ -387,13 +392,12 @@
 
     .navbar1{
       display: grid;
-      grid-template-columns: 0.7fr 1.35fr;
-      column-gap: 0.2rem;
-      justify-content: space-around;
+      grid-template-columns: 1fr;
+      justify-content: center;
       justify-items: center;
       width: 100%;
-      height: 19px;
-      background: transparent;  
+      height: auto;
+      background: #f1f1f1;  
       color: rgb(160, 158, 158);
       font-family: 'arial';
       font-size: 0.93rem;
@@ -474,7 +478,7 @@
         justify-content: center;
         justify-items: center;
             width: 100%;
-            height: 844px;
+            height: 796px;
             background: transparent;
             padding: 10px;
             color: #000;
@@ -493,7 +497,6 @@
             height: 500px;
             padding: 5px;
             margin-left: 1.76rem;
-            margin-top: 0.13rem;
           }
 
           .T-Area{
@@ -504,7 +507,6 @@
             align-items: center;
             background: transparent;
             padding: 27px;
-            margin-top: 1rem;
             width: 100%;
             height: 777px;
             line-height: 21px;
@@ -514,6 +516,7 @@
             background:rgb(182, 24, 79);
             cursor: pointer;
             margin-left: 2rem;
+            margin-top: -2rem;
           }
 
           .T-Area:hover{
@@ -591,7 +594,7 @@
             align-items: center;
             background: transparent;
             padding: 27px;
-            margin-top: 1rem;
+            margin-top: -2rem;
             margin-right: 2rem;
             width: 100%;
             height: 777px;
@@ -1281,8 +1284,8 @@ font-size: 14px;
 
 .HPh{
   display: grid;
-  grid-template-columns: 0.6fr 0.8fr;
-  column-gap: 0.35rem;
+  grid-template-columns: 0.72fr 0.74fr;
+  column-gap: 0.3rem;
   justify-content: space-between;
   justify-items: center;
   width: 101.8%;
@@ -1297,7 +1300,7 @@ font-size: 14px;
 .VerTiWA{
   height: 140px;
   line-height: 30px;
-  font-size: 1.4rem;
+  font-size: 1.96rem;
   color: #aaa9a9;
   width: 100%;
 }
@@ -1313,7 +1316,7 @@ font-size: 14px;
   justify-items: center;
   width: 100%;
   height: 60px;
-  font-size: 19px;
+  font-size: 18px;
 line-height: 14.25px;
 background: #7f0b33f6;
 color: gold;
@@ -1337,14 +1340,14 @@ font-size: 18px;
 
 .Vertical-Writing{
   display: grid;
-  grid-template-rows: 1fr 0.25fr;
+  grid-template-rows: 1.7fr 0.14fr;
   justify-items: center;
   justify-items: center;
   font-family: 'Poppins'; 
   line-height: 40px;
   padding: 10px;
   color: #d2d2d2;
-  width: 300px;
+  width: 310px;
   background: transparent;
 }
 .Vertical-Writing:hover{
@@ -1436,7 +1439,7 @@ font-size: 18px;
             justify-content: center;
             justify-items: center;
             width: 100%;
-            height: 970px;
+            height: 550px;
             background: transparent;
             padding: 20px;
             color: #000;
@@ -1449,7 +1452,7 @@ font-size: 18px;
             justify-items: center;
             padding: 10px;
             width: 86.8%;
-            height: 460px;
+            height: 490px;
             background:rgb(182, 24, 79);
             border-radius: 0.15rem;
             margin-top: -5.5px;
@@ -1594,8 +1597,18 @@ font-size: 19px;
           margin-top: 0.2rem;
         }
 
-.ViD:hover{
-color: #fff;
+.ViD{
+  width: 74%;
+  height: 200px;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+color: #5e5e5ef3;
+font-family: georgia;
+font-size: 1.5rem;
+line-height: 32px;
 }
 
 .footer1 img{
@@ -1624,25 +1637,23 @@ color: #fff;
 }
 
 .footer2{
-  display: grid;
+ 
   justify-content: center;
-  justify-items: center;
-  width: 31.5%;
+  align-items: center;
+  width: 90%;
   height: auto;
-  padding: 20px;
+  padding: 15px;
   line-height: 19.15px;
   word-spacing: 1px;
   font-family: 'arial';
   font-size: 14px;
-  color: #f7f7f7f8;
+  color: #323232f9;
   text-align: justify;
-  background:#dc2465f7;
+  border:0.5px solid#9e0e40d9;
+  border-radius: 0.5rem;
+  background: #f1f1f1;
 }
 
-.footer2:hover{
-          background: #ce245ffc;
-      
-        }
     .content a:hover{
         text-decoration: underline;
         color: rgba(255, 6, 6, 0.986);
@@ -1674,7 +1685,7 @@ color: #fff;
         font-weight:bold;
         animation: auto 12s ease-in infinite;
         animation-delay: 12s;
-        background: #fff;
+        background: lightblue;
 
 }
 
@@ -1714,7 +1725,7 @@ color: #fff;
 
         .DAHO{
         font-size: 1.35rem; 
-        background: #fff;
+        background: lightblue;
         font-weight:bold;
         color: #000;
         width: 85%;
@@ -1731,7 +1742,7 @@ color: #fff;
         font-weight:bold;
         animation: auto 12s ease-in infinite;
         animation-delay: 8s;
-        background: #fff;
+        background: lightblue;
 }
 
 .ADA img{
@@ -1775,7 +1786,7 @@ color: #fff;
   width: 87%;
         height: 33px;
         font-size: 1.35rem; 
-        background: #fff;
+        background: lightblue;
         font-weight:bold;
         animation: auto 12s ease-in infinite;
         animation-delay: 4s;
@@ -1804,7 +1815,7 @@ color: #fff;
 
         .HA{
         font-size: 1.35rem; 
-        background: #fff;
+        background: lightblue;
         font-weight:bold;
         color: #000;
         width: 85%;
@@ -1836,15 +1847,15 @@ color: #fff;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 64px;
-    height: 56px;
+    width: 60px;
+    height: 52px;
     border-radius: 50%;
     color: gold;
     font-family: 'arial narrow';
-    font-size: 13.7px;
+    font-size: 13.45px;
     padding: 2px;
     background: #ab0f46f4;
-    margin-top: -18px;
+    margin-top: -26px;
     margin-left: 0.45rem;
     cursor: pointer;
     border: 0.13rem solid rgb(122, 149, 150);
@@ -2312,20 +2323,21 @@ color: #fff;
 
 </div>
 
+</div>
+
 
 <a href="file:///C:/Users/User/Documents/disabilitylife.html" target="_blank">
 
             <div class="navbar1">
-              <div class="ViD" style="font-family: 'helvetica'; line-height: 20px; margin-top: 4px;">
-                <b style="font-family: 'helvetica'">What it means to living as a disabled person ?</b>
-                <br>
-                Living as a disabled person is very challenging. Many discriminations on a daily basis and lots social bareers. Few opportunities and disabled people have to struggle more tougher to get theirs needs met. Where is their right to inclusiveness ?
+
+              <div class="ViD">
+              
+                <b style="font-family: 'helvetica';">What it means to living as a disabled person ?</b>
+          
+                <p style="font-size: 20px">Living as a disabled person is very challenging. Many discriminations on a daily basis and lots social bareers. Few opportunities and disabled people have to struggle more tougher to get theirs needs met. Where is their right to inclusiveness ?</p>
               </div>
 
-             <div class="VDi">
             </div>
-
-          </div>
       </a>
         
 
