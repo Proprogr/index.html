@@ -170,27 +170,14 @@
                  justify-items: center;
                  background: #fff;
                  width: 100%;
-                 height: 125px;
+                 height: 120px;
                  object-fit: cover;
                  z-index: 1;
                  top: 0;
                  position: sticky;
-                 border-bottom: 0.6rem solid #111d8df5;
+                 border-bottom: 0.6rem solid #121d82f5;
           }
 
-          .navbar0{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            width: 100%; 
-            height: 75px; 
-            background: transparent;
-            font-family: 'arial black';
-            font-size: 1rem;
-            color: #000;
-          }
-          
           .Joint-Point{
             display: grid;
             grid-template-columns: 0.25fr 1fr;
@@ -355,16 +342,15 @@
 
     .navbar1{
       display: grid;
-      grid-template-rows: 1fr 1.2fr;
+      grid-template-rows: 0.8fr 1fr;
       justify-content: space-between;
       justify-items: center;
-      row-gap: 3.5rem;
+      row-gap: 3.6rem;
       width: 100%;
       height: auto;
       background: transparent;  
       color: rgba(126, 124, 124, 0.92);
-      font-family: 'arial';
-      padding: 0.5rem;
+      font-family: 'helvetica';
       font-weight: bold;
       
     }
@@ -459,6 +445,7 @@
             width: 88.6%;
             height: 500px;
             padding: 5px;
+            opacity: 0.97;
           }
 
           .T-Area{
@@ -479,6 +466,7 @@
             cursor: pointer;
             margin-left: 2rem;
             margin-top: -2rem;
+            opacity: 0.97;
           }
 
           .T-Area:hover{
@@ -591,6 +579,7 @@
             color: #f1f1f1;
             background:rgb(182, 24, 79);
             cursor: pointer;
+            opacity: 0.97;
   
           }
           .Pic:hover{
@@ -651,6 +640,7 @@ border: 0.15px solid #8f8f8ff9;
             background:rgb(182, 24, 79);
             border-radius: 0.15rem;
             margin-top: -34px;
+            opacity: 0.97;
           }
 
           .KontenT:hover{
@@ -701,7 +691,9 @@ border: 0.15px solid #8f8f8ff9;
             height: 280px;
             background:rgb(182, 24, 79);
             margin-top: -1px;
+            opacity: 0.97;
            }
+           
 
           .Kontent:hover{
             border: 0.15rem solid #000;
@@ -728,6 +720,7 @@ font-size: 18px;
 line-height: 19px;
 cursor: pointer;
 margin-top: 0.1rem;
+opacity: 0.97;
 
           }
 
@@ -787,6 +780,7 @@ font-size: 18px;
 line-height: 19px;
 cursor: pointer;
 margin-top: 0.1rem;
+opacity: 0.97;
           }
 
 .Kontent2:hover{
@@ -816,6 +810,7 @@ font-size: 18px;
 line-height: 19px;
 margin-top: 0.1rem;
 cursor: pointer;
+opacity: 0.97;
           }
 
           .Kontent3:hover{
@@ -842,6 +837,7 @@ cursor: pointer;
       border-radius: 0.15rem;
       cursor: pointer;
       margin-top: 1px;
+      opacity: 0.97;
           }
 
           .navbar2:hover{
@@ -868,6 +864,7 @@ cursor: pointer;
       border-radius: 0.15rem;
       cursor: pointer;
       margin-top: 0.3rem;
+      opacity: 0.97;
           }
 
           .navbar3:hover{
@@ -890,6 +887,7 @@ cursor: pointer;
             padding: 16px;
             color: #000;
             margin-top: 0.25rem;
+            opacity: 0.97;
             
           }
 
@@ -1598,49 +1596,130 @@ font-size: 19px;
           margin-top: 0.2rem;
         }
 
-.ViD{
-  width: 66%;
-  height: 220px;
-  display: flex;
+.VDi{
   position: relative;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-color: #c5275ef7;
-line-height: 26px;
-background: transparent;
-border-left: 0.5rem solid #111d8df5;
-border-right: 0.5rem solid #111d8df5;
-padding: 22px;
-margin-top: 7.7rem;
-opacity: 0.66;
+  width: 100%;
+  height: 467px;
+  overflow: hidden;
+  opacity: 0.89;
 }
 
-.ViD:hover{
+.VDi:hover{
   opacity: 1;
 }
 
-.VDi{
+.VDI{
+  position: absolute;
+  animation: auto 12s ease-in infinite;
+  animation-delay: 12s;
   width: 100%;
-  height: 350px;
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-color: #c5275ef7;
-background: transparent;
+  height: 467px;
 }
 
-.VDi img{
+.VDI img{
   width: 100%;
-  height: auto;
-  opacity: 0.85;
+  height: 467px;
 }
 
-.VDi img:hover{
-  opacity:1;
+@keyframes auto{
+            0% {
+                left: 100%;
+            }
+
+            4% {
+                left: 0%;
+            }
+
+            33.33% {
+                left: 0%;
+            }
+
+            37.33% {
+                left: -100%;
+            }
+
+            100% {
+                left: -100%
+            }
+        }
+
+.VDII{
+  width: 100%;
+  height: 467px;
+  position: absolute;
+  animation: auto 12s ease-in infinite;
+  animation-delay: 8s;
 }
+
+.VDII img{
+  width: 100%;
+  height: 467px;
+}
+@keyframes auto{
+            0% {
+                left: 100%;
+            }
+
+            4% {
+                left: 0%;
+            }
+
+            33.33% {
+                left: 0%;
+            }
+
+            37.33% {
+                left: -100%;
+            }
+
+            100% {
+                left: -100%
+            }
+        }
+
+.VDIII{
+  width: 100%;
+  height: 467px;
+  position: absolute;
+  animation: auto 12s ease-in infinite;
+  animation-delay: 4s;
+}
+
+.VDIII img{
+  width: 100%;
+  height: 467px;
+}
+@keyframes auto{
+            0% {
+                left: 100%;
+            }
+
+            4% {
+                left: 0%;
+            }
+
+            33.33% {
+                left: 0%;
+            }
+
+            37.33% {
+                left: -100%;
+            }
+
+            100% {
+                left: -100%
+            }
+        }
+
+        .ViD{
+          width: 59%;
+          height: 280px;
+          color: rgba(31, 102, 164, 0.983) ; 
+          font-size: 21.25px; 
+          text-align: left; 
+          line-height: 29px;
+          opacity: 0.67;
+        }
 
 .footer1 img{
    width: 300px;
@@ -1884,11 +1963,11 @@ background: transparent;
     font-family: 'arial narrow';
     font-size: 15.25px;
     padding: 2px;
-    background: #c41f59ed;
-    margin-top: -11.9px;
+    background: #bd2157f0;
+    margin-top: -12px;
     margin-left: 0.3rem;
     cursor: pointer;
-    border: 0.12rem solid rgb(12, 12, 108);
+    border: 0.12rem solid rgba(12, 12, 103, 0.972);
     
    }
 
@@ -2356,42 +2435,43 @@ background: transparent;
 
 </div>
 
-<div class="navbar0">WELCOME ! THIS WEBSITE IS IN PROJECT. PLEASE, COME BACK SOON !</div>
-
-<a href="file:///C:/Users/User/Documents/disabilitylife.html" target="_blank">
-
 
             <div class="navbar1">
 
               <div class="VDi">
-                <figure>
+              
+                <div class="VDI">
               <img src="https://www.zupimages.net/up/23/14/zilu.jpg" alt="sunshet of la Prairie River">
-            <figcaption style="color: rgba(151, 151, 151, 0.972); font-size: 12px; font-family: arial;"> Beautiful Sunshet on Laval [Temporary Pic]</figcaption>
-          </figure>
             </div>
+
+            <div class="VDII">
+              <img src="https://www.zupimages.net/up/23/14/dgy8.jpg" alt="A Sunflower">
+            </div>
+
+            <div class="VDIII">
+              <img src="https://www.zupimages.net/up/22/42/efqp.jpg" alt=" Street Art">
+            </div>
+
+          </div>
 
               <div class="ViD">
               
-                <h1 style="font-size: 1.9rem; color: greenyellow; margin-left: 1.6rem;">What it means to live with a disability ?</h1>
-              <br>
-              <br>
-            <p style="color: rgba(31, 102, 164, 0.983) ; font-size: 20px; text-align: left; line-height: 27.5px;">Living as a disabled is very challenging but also learning in terms of how the society makes its approach with disabilty and disabled people in general, Sometimes, it's like those people may be similar to social barometers despite social bareers they are experiencing every single day. 
+                <h1 style="font-size: 2rem; text-align: left; color: orangered;">What it means to live with a disability ?</h1>
+            <p>Living as a disabled is very challenging but also learning in terms of how the society makes its approach with disabilty and disabled people in general, Sometimes, it's like those people may be similar to social barometers despite social bareers they are experiencing every single day. 
               From disabled people, it may be possible to jauge the level of humility, sensibility, receptivity, proactivity and/or solidarity amongst many other qualities of people, based partly on their behavings. 
               There is no doubt that being disabled is not easy and the level of difficulties varies from person to person and from a region to another.
                Depending the status and the region where disabled people are living, will determine the quality and life experiences. Many of you do know the existence of discriminations towards these people but it shouldn't. How tough it is for them to manage a lifetime to fulfill. That's why Tiki N'Yiki is implemented and is focused to improve Education for disabled kids and helps them realize their dreams.
 
-               
               </p>
         
               <a href="file:///C:/Users/User/Documents/disabilitylife.html" target="_blank">
           Learn More
         </a>
 
-    
               </div>
+            
 
             </div>
-      </a>
         
 
         <a name="Top"></a>
