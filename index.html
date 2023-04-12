@@ -363,12 +363,13 @@
 
     .navbar1{
       display: grid;
-      grid-template-rows: 0.6fr 0.2fr 0.55fr;
-      justify-content: center;
+      grid-template-rows: 0.4fr 0.2fr 0.55fr;
+      row-gap: 0.25rem;
+      justify-content: space-between;
       justify-items: center;
       width: 100%;
-      height: 1200px;
-      background: rgba(201, 204, 222, 0.195);  
+      height: 1180px;
+      background: rgba(197, 200, 215, 0.195);  
       color: rgba(109, 109, 109, 0.925);
       font-family: 'helvetica';
       font-weight: bold;
@@ -1640,12 +1641,18 @@ font-size: 19px;
         }
 
 .VDi{
+  display: grid;
+  justify-content: center;
+  justify-items: center;
   position: relative;
-  width: 100%;
-  height: 467px;
+  width: 80%;
+  height: 450px;
   overflow: hidden;
   opacity: 0.97;
-  border: 0.12rem solid rgba(179, 180, 187, 0.192);
+  margin-top: 0.5rem;
+  border: 2px solid #a9afe8d9;
+  background: #120101;
+  border-radius: 0.5rem;
 }
 
 .VDi:hover{
@@ -1657,14 +1664,15 @@ font-size: 19px;
   animation: auto 12s ease-in infinite;
   animation-delay: 12s;
   width: 100%;
-  height: 467px;
+  height: 450px;
   background: lightblue;
   opacity: 0.97;
+  padding: 5px;
 }
 
 .VDI img{
   width: 100%;
-  height: 467px;
+  height: 450px;
 }
 
 @keyframes auto{
@@ -1691,17 +1699,18 @@ font-size: 19px;
 
 .VDII{
   width: 100%;
-  height: 467px;
+  height: 450px;
   position: absolute;
   animation: auto 12s ease-in infinite;
   animation-delay: 8s;
   background: lightblue;
   opacity: 0.97;
+  padding: 5px;
 }
 
 .VDII img{
   width: 100%;
-  height: 467px;
+  height: 450px;
 }
 @keyframes auto{
             0% {
@@ -1727,17 +1736,18 @@ font-size: 19px;
 
 .VDIII{
   width: 100%;
-  height: 467px;
+  height: 450px;
   position: absolute;
   animation: auto 12s ease-in infinite;
   animation-delay: 4s;
   background: lightblue;
   opacity: 0.97;
+  padding: 5px;
 }
 
 .VDIII img{
   width: 100%;
-  height: 467px;
+  height: 450px;
 }
 @keyframes auto{
             0% {
@@ -1766,18 +1776,18 @@ font-size: 19px;
           justify-content: center;
           align-items: center;
           flex-direction: column;
-          width: 78%;
+          width: 80%;
           height: 600px;
           color: #7b7b7bf5; 
           font-family: georgia;
-          font-size: 21.6px; 
+          font-size: 22.25px; 
           text-align: left; 
-          line-height: 28.7px;
+          line-height: 29.95px;
           padding: 2rem;
           cursor: pointer;
           background: #fff;  
           opacity: 0.96;
-          margin-top: 1rem;
+    
         }
 
 .footer1 img{
