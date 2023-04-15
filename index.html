@@ -368,7 +368,7 @@
       justify-content: space-between;
       justify-items: center;
       width: 100%;
-      height: 1420px;
+      height: 1430px;
       background: rgba(152, 152, 160, 0.292);
       color: rgba(109, 109, 109, 0.925);
       font-family: 'helvetica';
@@ -1635,10 +1635,10 @@ font-size: 19px;
         
         .VD2i{
           display: grid;
-          grid-template-rows: 0.35fr 1fr 0.5fr;
+          grid-template-rows: 0.45fr 1fr 0.5fr;
           justify-content: space-around;
           justify-items: center;
-          row-gap: 0.5rem;
+          row-gap: 1rem;
           width: 89.55%;
           height: 650px;
           background: #fff;
@@ -1654,7 +1654,7 @@ font-size: 19px;
           font-family: 'comic sans ms';
           font-size: 1.96rem;
           color:rgba(108, 108, 108, 0.847);
-          margin-top: 2rem;
+          margin-top: 2.88rem;
 
 }
 
@@ -1778,20 +1778,111 @@ font-size: 19px;
         }
 
         .ViDe{
-          display: flex;
           position: relative;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
           width: 100%; 
           height: 70px; 
-          padding: 10px;
+          overflow: hidden;
           background: transparent;
           font-family: arial;
           font-size: 20px;
-          color: #7d7d7dd9;
-          margin-top: 1px;
+          color: #2c2f35af;
         }
+
+        .VDA{
+          position: absolute;
+          width: 100%; 
+          height: 70px; 
+          animation: auto 12s ease-in infinite;
+          animation-delay: 12s;
+          background: #fff;
+          text-align: center;
+        }
+        @keyframes auto{
+            0% {
+                left: 100%;
+            }
+
+            4% {
+                left: 0%;
+            }
+
+            33.33% {
+                left: 0%;
+            }
+
+            37.33% {
+                left: -100%;
+            }
+
+            100% {
+                left: -100%
+            }
+        }
+
+        .VDB{
+          position: absolute;
+          width: 100%; 
+          height: 70px; 
+          animation: auto 12s ease-in infinite;
+          animation-delay: 8s;
+          background: #fff;
+          text-align: center;
+        }
+
+        @keyframes auto{
+            0% {
+                left: 100%;
+            }
+
+            4% {
+                left: 0%;
+            }
+
+            33.33% {
+                left: 0%;
+            }
+
+            37.33% {
+                left: -100%;
+            }
+
+            100% {
+                left: -100%
+            }
+        }
+
+
+        .VDC{
+          position: absolute;
+          width: 100%; 
+          height: 70px; 
+          animation: auto 12s ease-in infinite;
+          animation-delay: 4s;
+          background: #fff;
+          text-align: center;
+        }
+        @keyframes auto{
+            0% {
+                left: 100%;
+            }
+
+            4% {
+                left: 0%;
+            }
+
+            33.33% {
+                left: 0%;
+            }
+
+            37.33% {
+                left: -100%;
+            }
+
+            100% {
+                left: -100%
+            }
+        }
+
 
         .ViD{
           display: flex;
@@ -1804,12 +1895,31 @@ font-size: 19px;
           font-family: 'arial';
           font-size: 18.5px; 
           text-align: left; 
-          line-height: 21.25px;
+          line-height: 24px;
           padding: 4rem;
           cursor: pointer;
           background: #fff;  
           border: 0.12rem solid rgba(157, 157, 159, 0.614);
           margin-top: 0.5rem;
+        }
+
+        .LM{
+          font-family: Arial;
+          font-size: 18px;
+          width: 100%; 
+          height: auto; 
+          padding: 10px; 
+          border: 2px solid rgb(26, 136, 173); 
+          border-radius: 1rem;
+        }
+
+        .LM:hover{
+          font-family: Arial;
+          font-size: 19px;
+          background: #9dcbe4;
+border: 0.17rem solid #141414f0;
+color: #252525d4;
+transition: 0.2s ease-in;
         }
 
 .footer1 img{
@@ -2552,8 +2662,19 @@ font-size: 19px;
 
           </div>
 
-          <div class="ViDe" style="color: #32475ada">
-            Here a caption for a pic or a descriptive explanation
+          <div class="ViDe">
+
+            <div class="VDA">
+             Beautiful Sunset of Laval  [Temporary Photo to be Replaced]
+            </div>
+
+            <div class="VDB">
+              Do You Know What Makes A Sunflower Special ?  [Temporary Photo to be Replaced]
+            </div>
+
+            <div class="VDC">
+              Some of Montreal Streets Are Tagged Like This  [Temporary Photo to be Replaced] 
+            </div>
           </div>
 
         </div>
@@ -2586,7 +2707,7 @@ font-size: 19px;
               </p>
         
               <a href="file:///C:/Users/User/Documents/disabilitylife.html" target="_blank">
-          Learn More
+              <span class="LM"> Learn More </span>
         </a>
 
               </div>
