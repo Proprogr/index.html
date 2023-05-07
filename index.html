@@ -139,7 +139,7 @@
       flex-direction: column;
       justify-content: left;
       align-items: center;
-      width: 120%;
+      width: 100%;
       height: 1.5rem;
       font-family: georgia;
       font-size: 15px;
@@ -154,10 +154,9 @@
       color: #ff3006;
     }
 
-    .navbar{
-      display: grid;
-        grid-template-rows: 1fr 1fr;
-                 justify-content: space-between;
+    .navbar{display: grid;
+      grid-template-rows: 1fr 0.5fr 0.5fr 0.5fr;
+                 justify-content: center;
                  justify-items: center;
                  background: #fff;
                  width: 100%;
@@ -169,6 +168,29 @@
                  border-bottom: 0.47rem solid #03b0fafd;
                  
           }
+          .TYK1{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 61px;
+  height: 61px;
+  font-size: 9px;
+  font-family: 'arial black';
+  border-radius: 50%;
+  background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%); 
+  border: 0.1rem solid #4b4b4bf4;
+  color:rgb(7, 7, 85);
+  padding: 4px;
+  margin-top: -6px;
+  
+}
+.TYK1:hover{
+  transform: rotate(360deg);
+  transition: 0.5s ease-in;
+}
+
           .navbar0{
             display: flex;
             flex-direction: column;
@@ -808,14 +830,12 @@ hr{
 .fwrapper{
     display: flex;
     position: relative;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
     width:100%;
     height: auto;
     background: #fffffffa;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: -2px;
+    justify-content: center;
+    align-items: center
     
 }
 
@@ -838,18 +858,16 @@ hr{
 .content1{
     display: flex;
     flex-direction: column;
-    justify-content: left;
+    justify-content: center;
     align-items: center;
     background: #fffffffa;
-    width: 99%;
+    width: 90%;
     height: auto;
     font-family: 'georgia';
-    color: rgb(47, 47, 47);
-    font-size: 22px;
-    line-height: 32.8px;
+    color: rgb(57, 57, 57);
+    font-size: 20px;
+    line-height: 24px;
     text-align: left;
-    word-spacing: 1.8px;
-    margin-top: 30px;
     padding: 7px;
 }
 .content1 a:hover{
@@ -944,10 +962,11 @@ hr{
     justify-items: center;
     justify-content: center;
     text-align: left;
-    width: 72%;
+    width: 75%;
     margin-top: 0.5rem;
     font-family: georgia;
-    line-height: 28px;
+    line-height: 26px;
+    padding: 5px;
 }
 
 
@@ -1002,28 +1021,6 @@ hr{
     transition: 0.11s linear;
 }
 
-.TYK1{
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  justify-content: center;
-  align-items: center;
-  width: 61px;
-  height: 61px;
-  font-size: 9px;
-  font-family: 'arial black';
-  border-radius: 50%;
-  background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%); 
-  border: 0.1rem solid #4b4b4bf4;
-  color:rgb(7, 7, 85);
-  padding: 4px;
-  margin-top: -6px;
-  margin-left: 11rem;
-}
-.TYK1:hover{
-  transform: rotate(360deg);
-  transition: 0.5s ease-in;
-}
 </style>
 
     <title>Tik-Yik.html</title>                              
@@ -1264,7 +1261,7 @@ function myFunction() {
         <hr style="color: rgb(13, 31, 136); justify-self: center;">
         <span style="background: transparent; font-family: 'georgia'; font-size: 30px; color: rgb(42, 61, 172); text-align: left;"><strong>A Philosophical View Of Tiki Yiki </strong></span>
 
-        <span style="color: rgb(47, 47, 47); font-size: 22px; font-family: 'georgia'; text-align: left; line-height: 32px;">"From a philosophical view to a specifical-based and inclusive case like Disability, Tiki Yiki is echoeing efforts, courage and determination in fulfilling own goals. 
+        <span style="color: rgb(47, 47, 47); font-size: 21px; font-family: 'georgia'; text-align: left; line-height: 26px;">"From a philosophical view to a specifical-based and inclusive case like Disability, Tiki Yiki is echoeing efforts, courage and determination in fulfilling own goals. 
             Basically Yiki Yiki means to focus on auto-determination with ceaseless efforts."
             <br>For many disabled people this has been more harder than nobody else in terms of aspiring to autonomy. Nothing is easy and not garantued to those people in Burkina Faso even a periodically welfare pay to help them insure daily basic need. In that reality gettinf educated, having a good care and having a food security is advantageously empowering and life-changing. But many disabled and orphaned kids in rural campaigns of Burkina Faso are still living into that specter of worries and there is little to do to make things better in deep villages. 
         </span>
@@ -1273,7 +1270,7 @@ function myFunction() {
            
            <span style="background: transparent; font-family: 'georgia'; font-size: 30px; color: rgb(42, 61, 172); text-align: left;"><strong>A Disabled Activist Is Talking About Inclusion </strong></span>
 
-            <span style="background: transparent; font-family: 'georgia'; font-size: 22px; color: rgb(47, 47, 47); text-align: left; line-height: 32px;">Even Stammering, Inclusion For Disabled People Has Still Yet No Room In Some Rural Areas In Burkina Faso. There, Stigmatisation And Discrimination Are Rated Amongst The Highest Ones In The Region. Disabled People Are Sometimes Hidden During Some Familial Meetings Or/And Celebrations Where Convives Are Attending No Matter It is A Baptism Or A Wedding. Because The Family Is Not Proud By The Fact It Has A Chance To Welcome And Accept A Kid With A Difference (A Disabled One), But Is Shy. That Reality Has Been Impacted By The Social Mentalities. Many Times Disabled People Have Been Put Away When It Comes To Decisons Or Opinion-Giving. Basically They Seem to Not Be Counted And Taken As Part Of The Community. But Every Disabled Person As A Non-Disabled Person Also Matters. He Should Be Accepted, Respected And Be Meeting His Deserved Rigths And Opportunities In The Communities. [Gabriel COMPAORE, Disability Rights Activist]
+            <span style="background: transparent; font-family: 'georgia'; font-size: 20px; color: rgb(47, 47, 47); text-align: left; line-height: 26px;">Even Stammering, Inclusion For Disabled People Has Still Yet No Room In Some Rural Areas In Burkina Faso. There, Stigmatisation And Discrimination Are Rated Amongst The Highest Ones In The Region. Disabled People Are Sometimes Hidden During Some Familial Meetings Or/And Celebrations Where Convives Are Attending No Matter It is A Baptism Or A Wedding. Because The Family Is Not Proud By The Fact It Has A Chance To Welcome And Accept A Kid With A Difference (A Disabled One), But Is Shy. That Reality Has Been Impacted By The Social Mentalities. Many Times Disabled People Have Been Put Away When It Comes To Decisons Or Opinion-Giving. Basically They Seem to Not Be Counted And Taken As Part Of The Community. But Every Disabled Person As A Non-Disabled Person Also Matters. He Should Be Accepted, Respected And Be Meeting His Deserved Rigths And Opportunities In The Communities. [Gabriel COMPAORE, Disability Rights Activist]
             </span>
             
              <hr style="color: rgb(13, 31, 136); justify-self: center;"> 
