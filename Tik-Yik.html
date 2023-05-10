@@ -43,33 +43,27 @@
 
 .top-container{
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 0.75fr 0.45fr 0.45fr 1.8fr;
         justify-content: center;
         justify-items: center;
         width: 100%;
-        height: 2rem;
-        padding: 0.3rem;
+        height: 1.5rem;
         object-fit: cover;
         font-family: 'georgia';
-        font-size: 0.72rem;
-        color: gold;
-        background: transparent;
     }
 
     .reader{
       display: grid;
-        grid-template-columns: 1.5fr 0.5fr;
-        column-gap: 2rem;
-        border-bottom: 0.2rem solid #fff;
+        grid-template-columns: 2fr 2fr;
         color: #0e28e6f0;  
         font-family: 'georgia';
         font-size: 0.8rem; 
         justify-content: center;
         justify-items: center;
         width: 100%;
-        height: 1.55rem;
+        height: 0.1rem;
         word-spacing: 1px;
-        
+        border-bottom: 0.3rem solid rgba(20, 120, 174, 0.996);
     }
 
     .Translator{
@@ -78,19 +72,18 @@
       justify-content: center;
       align-items: center;
       width: 100%;
-      height: 1.45rem;
-      font-size: 12px;
+      height: 1.5rem;
+      font-family: georgia;
+      font-size: 15px;
+      color: #e9e9e9f8;
       padding: 5px;
-      border-radius: 0.3rem;
-      color: #fff;
-      margin-top: -1.15rem;
-      margin-left: 0.55rem;
+      margin-top: -1rem;
     }
 
     .Translator:hover{
       transition: 0.3s ease-in;
       width: 100%;
-      color: rgb(4, 205, 255);
+      color: #ff8484;
     }
 
     .BF{
@@ -100,19 +93,17 @@
       align-items: center;
       width: 100%;
       height: 1.5rem;
+      font-family: georgia;
+      font-size: 15px;
+      color: #e9e9e9f8;
       padding: 5px;
-      border-radius: 0.3rem;
-      cursor: pointer;
-      color: #fff;
-      margin-top: -1.1rem;
-      font-size: 0.75rem;
-      font-family: arial;
+      margin-top: -1rem;
     }
 
     .BF:hover{
       transition: 0.3s ease-in;
       width: 100%;
-      color: rgb(4, 205, 255);
+      color: #ff8484;
     }
     
     .Asso{
@@ -120,73 +111,94 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      cursor: pointer;
       width: 100%;
       height: 1.5rem;
-      border-radius: 0.3rem;
+      font-family: georgia;
+      font-size: 15px;
+      color: #e9e9e9f8;
       padding: 5px;
-      cursor: pointer;
-      margin-top: -1.1rem;
-      font-family: arial;
-      font-size: 0.75rem;
-      color: #fff;
+      margin-top: -1rem;
     }
 
     .Asso:hover{
       transition: 0.3s ease-in;
       width: 100%;
-      color: rgb(4, 205, 255);
+      color: #ff8484;
     }
 
     .datime{
       display: flex;
       position: relative;
       flex-direction: column;
-      justify-content: center;
+      justify-content: left;
       align-items: center;
       width: 100%;
       height: 1.5rem;
+      font-family: georgia;
+      font-size: 15px;
+      color: #e9e9e9f8;
       padding: 5px;
-      font-family: arial;
-      font-size: 0.75rem;
-      color: orangered;
-      border-radius: 0.3rem;
-      margin-top: -0.72rem;
-      margin-left: 0.45rem;
+      margin-top: -1rem;
     }
 
     .datime:hover{
       transition: 0.3s ease-in;
       width: 100%;
-      color: rgb(4, 205, 255);
+      color: #ff8484;
     }
 
-    .navbar{
-      display: grid;
-        grid-template-rows: 1fr 1fr;
-        
-                 justify-content: space-between;
+    
+    .navbar{display: grid;
+      grid-template-rows: 0.4fr 0.5fr 0.5fr 0.5fr;
+                 justify-content: center;
                  justify-items: center;
-                 background: #fff;
+                 background: #c01c55fe;
                  width: 100%;
-                 height: 96px;
+                 height: 92px;
                  object-fit: cover;
                  z-index: 1;
                  top: 0;
                  position: sticky;
-                 border-bottom: 2px solid #f1f1f1;
+                 border-bottom: 0.45rem solid rgba(25, 50, 132, 0.994);
+                 box-shadow: 0 2px 0.77rem 0.11px rgba(7, 26, 67, 0.991);
+                 
           }
+
+          .TYK1{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 60.85px;
+  height: 58px;
+  font-size: 9px;
+  font-family: 'arial black';
+  border-radius: 50%;
+  background: -webkit-linear-gradient(#ff3006 0%,#ff0 100%); 
+  border: 0.11rem solid #9c17469d;
+  color:darkblue;
+  padding: 4px;
+  margin-top: -17px;
+  margin-left: -1rem;
+}
+.TYK1:hover{
+  transform: rotate(360deg);
+  transition: 0.5s ease-in;
+}
 
           .navbar0{
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            justify-content: left;
             align-items: center;
             width: 100%; 
-            height: 75px; 
-            background: transparent;
-            font-family: 'arial black';
-            font-size: 1rem;
-            color: #000;
+            height: 140px; 
+            background: rgba(24, 126, 189, 0.996);
+            font-family: 'trebuchet ms';
+            font-size: 1.7rem;
+            color: #fffffff7;
           }
           
           .Joint-Point{
@@ -206,17 +218,15 @@
             cursor: pointer;
             font-family: georgia;
             font-size: 19px;
-            margin-top: -5px;
             height: 40px;
             width: 100%;
-            color: #616161ef;
-            border: 0.3rem solid transparent;
+            color: rgb(16, 183, 255);
             background: transparent;
           }
 
           .myDiv:hover{
-            border-bottom: 0.8rem solid rgb(29, 63, 255);
-            color: rgb(29, 63, 255);
+            border-bottom: 0.8rem solid rgb(16, 183, 255);
+            color: rgb(16, 183, 255);
             transition: 0.15s ease-in;
       
           }
@@ -226,20 +236,18 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            margin-top: -5px;
             height: 40px;
             width: 100%;
             font-size: 19px;
             cursor: pointer;
             font-family: georgia;
-            color: #616161ef;
-            border: 0.3rem solid transparent;
+            color: rgb(16, 183, 255);
             background: transparent;
           }
 
           .myDiv1:hover{
-      border-bottom: 0.8rem solid rgb(255, 4, 0);
-      color: rgb(255, 4, 0);
+      border-bottom: 0.8rem solid chartreuse;
+      color: chartreuse;
       transition: 0.15s ease-in;
           }
 
@@ -248,20 +256,18 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            margin-top: -5px;
             height: 40px;
             width: 100%;
             font-size: 19px;
             cursor: pointer;
             font-family: georgia;
-            color: #616161ef;
-            border: 0.3rem solid transparent;
+            color: rgb(16, 183, 255);
             background: transparent;
           }
 
           .myDiv2:hover{
-            border-bottom: 0.8rem solid rgb(172, 29, 172);
-      color: rgb(172, 29, 172);
+            border-bottom: 0.8rem solid #fff;
+      color: #fff;
       transition: 0.15s ease-in;
           }
 
@@ -270,21 +276,19 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            margin-top: -5px;
             height: 40px;
             width: 100%;
             font-size: 19px;
             cursor: pointer;
             font-family: georgia;
-            color: #616161ef;
-            border: 0.3rem solid transparent;
+            color: rgb(16, 183, 255);
             background: transparent;
           }
 
           .myDiv3:hover{
             border-bottom: 0.8rem solid #000000f3;
-      color: #000000f3;
-      transition: 0.15s ease-in;
+            color: #000000f3;
+            transition: 0.15s ease-in;
           }
 
           .myDiv4{
@@ -292,14 +296,12 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            margin-top: -5px;
             height: 40px;
             width: 100%;
             font-size: 19px;
             cursor: pointer;
             font-family: georgia;
-            border: 0.3rem solid transparent;
-            color: #616161ef;
+            color: rgb(16, 183, 255);
             background: transparent;
           }
 
@@ -314,20 +316,18 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            margin-top: -5px;
             height: 40px;
             width: 100%;
             font-size: 19px;
             cursor: pointer;
             font-family: georgia;
-            border: 0.3rem solid transparent;
-            color: #616161ef;
+            color: rgb(16, 183, 255);
             background: transparent;
           }
 
           .myDiv6:hover{
-            border-bottom: 0.8rem solid rgb(14, 158, 45);
-      color: rgb(14, 158, 45);
+            border-bottom: 0.8rem solid yellow;
+      color: yellow;
       transition: 0.15s ease-in;
           }
 
@@ -741,11 +741,11 @@
 .footer{
         display: flex;
         width: 100%;
-        height: 580px;
+        height: 466px;
         position: relative;
         font-family: 'trebuchet ms';
-        font-size: 19px;
-        background: -webkit-linear-gradient(rgb(0, 0, 0), rgba(8, 8, 8, 0.914));
+        font-size: 16px;
+        background: -webkit-linear-gradient(rgb(0, 0, 0), rgba(45, 45, 45, 0.914));
         background-size: cover;
         object-fit:cover;
         color: #fff;
@@ -753,9 +753,9 @@
         flex-direction: column;
         align-items: center;  
         text-align: center; 
-        border-top: 0.5px solid #fff;
-       
+        border-top: 0.5px solid #fff;   
     }
+
     h1{
     font-family: 'verdana';
     font-size: 17.8px;
@@ -811,23 +811,22 @@ h5{
 }
 
 hr{
-    color: 0.5px solid rgb(30, 13, 135)!important;
-    width: 100%;
+   width: 100%;
     align-self: center;  
+    margin-top: 10px;
+    margin-bottom: 8px;
 }
 
  
 .fwrapper{
     display: flex;
     position: relative;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
     width:100%;
     height: auto;
-    background: #edededfd;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: -2px;
+    background: #f9f9f9fb;
+    justify-content: center;
+    align-items: center
     
 }
 
@@ -836,10 +835,11 @@ hr{
 
 }
 ::-webkit-scrollbar-track-piece{
-    background: rgba(189, 189, 189, 0.947);
+    background: rgba(190, 190, 190, 0.884);
 }
 ::-webkit-scrollbar-thumb{
-    background: rgb(158, 158, 158);
+    background: rgb(119, 119, 119);
+    width: 14px;
     padding: 4px;
 }
 ::-webkit-scrollbar-track-piece:hover{
@@ -849,22 +849,23 @@ hr{
 .content1{
     display: flex;
     flex-direction: column;
-    justify-content: left;
-    align-items: center;
-    background: #fff;
-    width: 70%;
+    justify-content: center;
+    align-items: left;
+    background: #f9f9f9fb;
+    width: 89%;
     height: auto;
-    font-family: 'georgia';
-    color: rgb(47, 47, 47);
-    font-size: 22px;
-    line-height: 32.8px;
+    font-family: 'helvetica';
+    color: rgb(56, 56, 56);
+    font-size: 17.5px;
+    line-height: 26px;
     text-align: left;
-    word-spacing: 1.8px;
-    margin-top: 30px;
-    padding: 7px;
+    padding: 2rem;
+    border: 0.11rem solid rgba(4, 184, 255, 0.878);
+    border-top: none;
+    border-bottom-left-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
 }
 .content1 a:hover{
-    text-decoration: underline;
     color: red;
 }
 
@@ -894,22 +895,23 @@ hr{
 .k-image{
     position: relative;
     overflow: hidden;
-    width: 690px; 
-    height: 390px;
-    background: rgba(230, 230, 230, 0.961);
+    width: 73%; 
+    height: 400px;
+    background-color: #fffffffb;
     font-family: 'verdana';
     font-size: 12px;
     color:#000;
-    margin-top: 2%;
-    margin-left: -6%;
+    margin-top: 2.5%; 
 }
 
 .k1-image img{
-    width: 690px; 
-    height: 390px;
+    width: 670px; 
+    height: 400px;
     animation: auto1 12s infinite ease-in;
     animation-delay: 4s;
     position: absolute;
+    padding: 1px;
+    border: 0.12rem solid rgba(4, 150, 254, 0.652);
 }
 @keyframes auto1{
     0%{left: 100%;}
@@ -920,11 +922,13 @@ hr{
 }
 
 .k2-image img{
-    width: 690px; 
-    height: 390px;
+    width: 670px; 
+    height: 400px;
     animation: auto2 12s infinite ease-in;
     animation-delay: 12s;
     position: absolute;
+    padding: 1px;
+    border: 0.12rem solid rgba(4, 150, 254, 0.652);
 }
 @keyframes auto2{
     0%{left: 100%;}
@@ -933,12 +937,15 @@ hr{
     37.33%{left: -100%;}
     100%{left: -100%;}
 }
+
 .k3-image img{
-    width: 690px; 
-    height: 390px;
+    width: 670px; 
+    height: 400px;
     animation: auto3 12s infinite ease-in;
     animation-delay: 8s;
     position: absolute;
+    padding: 1px;
+    border: 0.12rem solid rgba(4, 150, 254, 0.652);
 }
 
 @keyframes auto3{
@@ -951,32 +958,44 @@ hr{
 
 .k1{
     display: grid;
-    gap: 10px;
-    background: transparent;
-    justify-items: left;
+    background: #fffffffb;
+    justify-items: center;
     justify-content: center;
-    text-align: left;
-    width: 800px;
+    text-align: justify;
+    width: 73%;
     margin-top: 0.5rem;
-    margin-left: 2.8rem;
+    font-family: helvetica;
+    font-size: 17.5px;
+    line-height: 28px;
+    padding: 20px;
+}
+.k1 img{
+  padding: 5px;
+  border: 0.12rem solid rgba(4, 150, 254, 0.652);
+  background: #fffffffb;
 }
 
-
-.k2 img{
-    width: 748px ; 
-    height:710px;
-    padding: 2px 2px;
+.k2{
+    width: 740px ; 
+    height:705px;
+    padding: 5px;
     margin-top: -1%;
+    width: 73% ; 
+    height:705px;
+    padding: 5px;
+    margin-top: -1%;
+    background: #fffffffb;
 }
 .k3{
-    display: grid;
-    gap: 5px;
-    background: #00f;
-    justify-content: left;
+  display: grid;
     justify-items: center;
-    text-align: left;
-    width: 750px ; 
-    height: 548px;
+    justify-content: center;
+    text-align: justify;
+    width: 73%;
+    margin-top: 0.5rem;
+    font-family: georgia;
+    line-height: 26.15px;
+    background: #fffffffb;
 }
 .k3 img{
     width: 735px ; 
@@ -993,56 +1012,43 @@ hr{
     width: 800px ; 
 }
 
-.datime {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            color: #fff;
-            width: 200px;
-            height: 35px;
-            font-family: 'arial';
-            font-size: 9px;
-            padding: 5px;
-            margin-left: 58%;
-            margin-top: -1.75rem;
-            border-radius: 0.3rem;
-            cursor: pointer;
-        }
-
 .SPan{ 
     display: flex;
-    width: 120px;
-    height: 40px;
+    width: 100%;
+    height: 50px;
     font-family: verdana;
     justify-content: center;
     align-items: center;
-    background: rgba(254, 254, 3, 0.686); 
-    color: rgba(150, 149, 149, 0.65); 
-    border-radius: 7px;
-    padding: 3px 3px; 
+    border: 0.13rem solid rgba(191, 191, 191, 0.65); 
+    color: #000; 
+    border-radius: 0.2rem;
+    padding: 2px; 
     font-size: 18px;
     cursor: pointer;
+    border-bottom: 1rem;
+    border-top: 1rem;
+    border-radius: 1rem;
 }
 .SPan:hover{
-    background:rgb(224, 217, 2);
-    color: rgb(1, 93, 1);
+    background:#0b0b0bf3;
+    color: #ff0;
     transition: 0.11s linear;
 }
-
-.kbutton{
-    display: flex;
-    position: relative;
-    width: 80%;
-    height: 20px;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-    background-color: transparent;
-    padding-top: 20px;
-    padding-bottom: 10px;
+.FTR{
+  width: 45%; 
+  height: 60%; 
+  display: flex; 
+  position: relative;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center; 
+  background: transparent; 
+  border: 0.2rem solid #fff; 
+  border-radius: 50%; 
+  font-family: 'helvetica'; 
+  font-size: 20px; 
+  line-height: 30px;
 }
-
 </style>
 
     <title>Tik-Yik.html</title>                              
@@ -1100,11 +1106,7 @@ function myFunction() {
 
 <div class="reader">
 
-    <div class="TOGETHER">Together As One To Overcome</div>
-    
-
     <div class="HeadeR">
-
     
     <div class="HAD">
      
@@ -1151,12 +1153,12 @@ function myFunction() {
 
       <div class="top-container">
 
-        <a href="https://www.online-translator.com/translation/french-english/manger" target="_blank">
-        
+        <a href="https://disabilitycreditcanada.com/top-16-famous-people-with-disabilities/" target="_blank">
         <div class="Translator">
-          Translator
+          Famous Disabled
         </div>
       </a>
+      
         <a href="https://en.wikipedia.org/wiki/Burkina_Faso" target="_blank">
         <div class="BF">
          Burkina Faso
@@ -1185,16 +1187,18 @@ function myFunction() {
       <div class="Joint-Point">
 
       <a href="#" target="blank">
-          <div class="TYK1">
-          <b> Tiki N'Yiki </b>
+          
+        <div class="TYK1"style="border-radius: 50%; background: ;">
+        Tiki N'Yiki
           </div>
-            </a>
+            
+        </a>
 
             <div class="Unify"> 
 
         <a href="#" target="blank">
         <div class="myDiv">
-          <b>Foundation Tiki N'Yiki</b>
+          <b>Tiki N'Yiki</b>
         </div>
             </a>
 
@@ -1217,12 +1221,6 @@ function myFunction() {
                 </div>
             </a>
 
-            <a href="#" target="blank"> 
-                <div  class="myDiv4">
-                  <b>Painting</b>
-                </div>
-            </a>
-
           <a href="#" target="blank"> 
             <div  class="myDiv6">
               <b>Support</b>
@@ -1234,45 +1232,29 @@ function myFunction() {
 
 </div>
 
-<div class="navbar0">WELCOME ! THIS WEBSITE IS IN PROJECT. PLEASE, COME BACK SOON !</div>
+<div class="navbar0">Welcome ! This Website is in Project. Please, Come Back Soon !</div>
 
 <div class="fwrapper">
 
     <div class="content1"> 
 
-        <div class="kbutton">  
-            <a href="file:///C:/Users/User/Documents/education.html"  target="_blank">
-            <button class="button2">
-                Education
-            </button>
-        </a>
-    </div>
-
-        <div class="k1" style=" margin-top: 3%;">
-            <br>
-            <span style=" background: transparent; justify-self: left; font-family: 'georgia'; font-size: 35px; color: rgb(42, 61, 172); text-align: left;">
-                <strong>Etymology and Meaning of Tiki Yiki</strong>
-            </span>
-                    <hr style="justify-self: left;">
-                </div>
-
-
     <div class="k-image">
-        <a href="https://en.wikipedia.org/wiki/Burkina_Faso" target="_blank">
+
+        <a href="#" target="_blank">
 
                     <div class="k1-image">
-                <img src="https://zupimages.net/up/22/46/daw5.jpg" alt="Sunset in Burkina Faso" />
+                <img src="https://www.zupimages.net/up/22/46/daw5.jpg" alt="Sunset in Burkina Faso" />
         </div>
         </a>
     
-        <a href="https://www.laval.ca/Pages/Fr/accueil.aspx" target="_blank">
+        <a href="#" target="_blank">
             
             <div class="k2-image">
-            <img src="https://zupimages.net/up/22/21/3bad.jpg" alt="">
+            <img src="https://www.zupimages.net/up/22/21/3bad.jpg" alt="">
     </div>
     </a>
     
-    <a href="https://www.laval.ca/Pages/Fr/accueil.aspx" target="_blank">
+    <a href="#" target="_blank">
 
     <div class="k3-image">
         <img src="https://www.zupimages.net/up/22/31/ttk3.jpg" alt="Classes in Burkina Faso">
@@ -1280,111 +1262,101 @@ function myFunction() {
     </a>
 
         </div>
+       
+        
+             
     
-        <div class="k1">
-            <br>
-            <p><b>Tiki Yiki</b> is etymologically structured with two (2) <a href="https://fr.wikipedia.org/wiki/Mossi_(peuple)" target="blank">words [<b>Tiki and Yiki</b>] of [<b>Mossi</b>] </a> language from <a href="https://en.wikipedia.org/wiki/Burkina_Faso" target="blank">Burkina Faso in West-Africa</a>.
+        <div class="k1" >
+
+          <hr style="color: rgb(13, 31, 136); justify-self: center;">
+
+          <br>
+          <span style=" background: transparent; align-items: center; font-family: 'georgia'; font-size: 25px; color: rgb(42, 61, 172); text-align: left;">
+            <strong>Tiki N'Yiki: Etymology and Meaning</strong>
+        </span>
+  
+            <p>
+              <br><b>Tiki N'Yiki</b> is etymologically structured by two (2) words <a href="https://fr.wikipedia.org/wiki/Mossi_(peuple)" target="blank">[<b>Tiki and N'Yiki</b>] </a> of Moore, a language in <a href="https://en.wikipedia.org/wiki/Burkina_Faso" target="blank">Burkina Faso/West-Africa</a>.
                
-            <b>Tiki</b> means to <b>LEAN ON</b> and <b>Yiki</b> means to <b>GET UP</b>. 
+            <b>Tiki</b> means to <b>LEAN ON</b> and <b>N'Yiki</b> means to <b>GET UP</b>. 
         </p>
         
 
-    <p style="margin-top: -4px;">Literally translated, Tiki Yiki means to lean on and then get up. But philosophically and in a context of disability, Tiki Yiki means <b>Disability is not Destiny.</b>
-        <hr style="color: rgb(13, 31, 136); justify-self: center;">
-        <span style="background: transparent; font-family: 'georgia'; font-size: 35px; color: rgb(42, 61, 172); text-align: left;"><strong>A Philosophical View Of Tiki Yiki </strong></span>
-
-        <span style="color: rgb(47, 47, 47); font-size: 22px; font-family: 'georgia'; text-align: left; line-height: 32px;">"From a philosophical view to a specifical-based and inclusive case like Disability, Tiki Yiki is echoeing efforts, courage and determination in fulfilling own goals. 
-            Basically Yiki Yiki means to focus on auto-determination with ceaseless efforts."
-            <br>For many disabled people this has been more harder than nobody else in terms of aspiring to autonomy. Nothing is easy and not garantued to those people in Burkina Faso even a periodically welfare pay to help them insure daily basic need. In that reality gettinf educated, having a good care and having a food security is advantageously empowering and life-changing. But many disabled and orphaned kids in rural campaigns of Burkina Faso are still living into that specter of worries and there is little to do to make things better in deep villages. 
-        </span>
-        
-           <hr style="color: rgb(13, 31, 136); justify-self: center;"> 
+    <p style="margin-top: -4px;">Literally translated, Tiki N'Yiki means to leaning on and getting up. But through a philosophical angle, 
+      Tiki N'Yiki is echoeing the fact that <b>Disability is not Destiny.</b>
+      <hr style="color: rgb(13, 31, 136); justify-self: center;"> 
            
-           <span style="background: transparent; font-family: 'georgia'; font-size: 35px; color: rgb(42, 61, 172); text-align: left;"><strong>A Disabled Activist Is Talking About Inclusion </strong></span>
+    <span style="background: transparent; font-family: 'georgia'; font-size: 25px; color: rgb(42, 61, 172); text-align: justify;"><strong>Context And Stammering Inclusion in Burkina Faso </strong></span>
 
-            <span style="background: transparent; font-family: 'georgia'; font-size: 22px; color: rgb(47, 47, 47); text-align: left; line-height: 32px;">Even Stammering, Inclusion For Disabled People Has Still Yet No Room In Some Rural Areas In Burkina Faso. There, Stigmatisation And Discrimination Are Rated Amongst The Highest Ones In The Region. Disabled People Are Sometimes Hidden During Some Familial Meetings Or/And Celebrations Where Convives Are Attending No Matter It is A Baptism Or A Wedding. Because The Family Is Not Proud By The Fact It Has A Chance To Welcome And Accept A Kid With A Difference (A Disabled One), But Is Shy. That Reality Has Been Impacted By The Social Mentalities. Many Times Disabled People Have Been Put Away When It Comes To Decisons Or Opinion-Giving. Basically They Seem to Not Be Counted And Taken As Part Of The Community. But Every Disabled Person As A Non-Disabled Person Also Matters. He Should Be Accepted, Respected And Be Meeting His Deserved Rigths And Opportunities In The Communities. [Gabriel COMPAORE, Disability Rights Activist]
-            </span>
-            
-             <hr style="color: rgb(13, 31, 136); justify-self: center;"> 
-
-             <span style="background: transparent; font-family: 'georgia'; font-size: 35px; color: rgb(42, 61, 172); text-align: left;"><strong>Stammering Inclusion In Burkina Faso </strong></span>
-
-             <p>In <a href="https://en.wikipedia.org/wiki/Burkina_Faso" target="blank">Burkina Faso</a>, despite the increasing number of the population of disabled people (From polio or other diseases and elders), we are still living sometimes scenarios where disabled people are completely underestimated. In the civil code few policies are set nationwide to value and protect the rights of that social component in inclusive way. And those policies that have been implemented never practically get set up. They (policies ) have been limited only to theorical texts and empty speeches. How much time should the disabled population wait before totally grabbing what are called their rights? The right to live decently even the disability?  The state of inclusion for disabled children is still stammering and unexistant in some regions around Africa. Culminated situation as reject hit regularly many disabled people who are countlessly experiencing in many ways discriminations, social injustice because first of all their disabilities and second the mentalities that are underestimating disabled people. There is a big concern about understanding, accepting, socially including and helping people with disabilities. 
-                
-    Therefore living with disability in the societies with such mentalities is really and perpetually threatening no matter the gender in terms of having acceptable quality of life. 
-    Some of those disabled people feel sometimes like second-class citizens and they can meet no opportunities because they're being discriminated and forgotten. The fact that people who supposed to get support have come to be forgotten is unbelievably heartbreaking. It seems to be a social mistake and should immediately be fought. 
-    <br><br>
-    Then any project in the future for disabled people will be eased, rise optimism, hope and bring positive change to disabled population than the fear and social discriminations they're experiencing on a daily basis. Disabled kids have to be promoted by inclusion, so that they can meet some opportunities and get a certain autonomy or semi-autonomy in the future. These are crucial goals Tiki Yiki focuses on to be able to accompaign especially disabled kids who need to reach their full <a href="https://www.independentliving.org/docs4/lagadien.html" target="blank">potentials</a> but are generally isolated because of social discriminations.<br><br>
-                </p>
+        <p>
+         <br>In <a href="https://en.wikipedia.org/wiki/Burkina_Faso" target="blank">Burkina Faso</a>, despite the increasing number of the population of disabled people (From polio or other diseases and elders), we are still living sometimes scenarios where disabled people are completely underestimated. 
+         Few policies are set nationwide to protect and may enforce some rights in a inclusive way for disabled. And those policies that have been implemented never practically been totally Ok. They (policies) have been limited only to theorical texts and empty speeches. How much time disabled people have to more wait should 
+        before totally taking what are called their personal rights? 
+         The right to live decently even the disability?  Inclusion for disabled children is still stammering in some regions around Africa.
+        There is a big concern about understanding, accepting, socially including and helping people with disabilities. 
+           Therefore living with disability in societies with such mentalities is really and perpetually threatening no matter the gender in terms of having an inclusive quality of life. 
+Some of those disabled people feel sometimes like second-class citizens and they can meet no opportunities because they're being discriminated and forgotten. The fact that people who supposed to get support have come to be forgotten is unbelievably heartbreaking. It seems to be a social mistake and should immediately be fought. 
+<br><br>
+Then any project in the future for disabled people will be eased, rise optimism, hope and bring positive change to disabled population than the fear and social discriminations they're experiencing on a daily basis. Disabled kids have to be promoted by inclusion, so that they can meet some opportunities and get a 
+certain autonomy or semi-autonomy in the future. These are crucial goals Tiki N'Yiki focuses on to be able to accompaign especially disabled kids who need to reach their full <a href="https://www.independentliving.org/docs4/lagadien.html" target="blank">potentials</a> but are generally isolated because of social discriminations.
+<br><br>
+        </p>
             </div>
 
 <div class="k2">
 <figure>
-<img src="https://zupimages.net/up/22/21/di3p.jpg" alt="Drumming">
-<figcaption style=" color:rgb(103, 103, 103); font-family: 'verdana'; font-size: 15px; text-align: left;">Kids really enjoy drumming. I was there for them. Sometimes with acrobatic pretty feelings  </figcaption>
+<img src="https://www.zupimages.net/up/22/21/di3p.jpg" alt="Drumming">
+<figcaption style=" color:rgb(103, 103, 103); font-family: 'verdana'; font-size: 15px; text-align: left;">After a course and as an award for students who performed well in class, I drummed for all of them</figcaption>
 </figure>
 </div>
 
 <div class="k1">
     <hr style="color: rgb(13, 31, 136); justify-self: left;"> 
-<p><span style="background: transparent; font-family: 'georgia'; font-size: 35px; color: rgb(42, 61, 172); text-align: left;"><strong>A Lack Of Adapted Infrastructures And Services </strong></span>
+
+<p><span style="background: transparent; font-family: 'georgia'; font-size: 25px; color: rgb(42, 61, 172); text-align: left;">
+  <strong>A Lack Of Adapted Infrastructures And Services 
+</strong>
+</span>
     <br>
-   One of the common characteristics of African countries is that they do not sufficiently have adapted and coordinated services to support education and inclusion of people living with disabilities in general but especially to disabled children. And this makes them excluded from a social participation to the development. They are still put away from the community.   
-    It's unclear that living in countries with non inclusive mentalities, disabled kids will be easily included as kids like others.
+    <br>One of African countries common social issues about disabled people is not only they are stigmatised on a daily basis, but they are also missing the basic and adapted services to accomodate their lives. How many schools in Africa (sub-Africa) are equiped with ramps in order to allow an accessibility for disabled students ? 
+    It's unclear clear to tell a right figure but any statistics about that matter will hightlight probably at ninety nine percent the big necessity to doing more for disabled people in terms of getting them included. Otherwise this means that many of them are excluded from a participative development. Some of them have been be put away from the community and are not included as human-beings.
     <br>
+
     <hr style="color: rgb(13, 31, 136); justify-self: center;"> 
-    <p><span style="background: transparent; font-family: 'georgia'; font-size: 35px; color: rgb(42, 61, 172); text-align: left;"><strong>Why Tiki Yiki ?</strong></span>
-<br>Given that appalant mentioned reality below in terms of including disabled people in Burkina Faso, it's obvious they experience social discriminations on a daily basis. Depending the area they're living, a few has a chance to attend school and may dream. 
+
+    <p><span style="background: transparent; font-family: 'georgia'; font-size: 25px; color: rgb(42, 61, 172); text-align: right;">
+      <strong>
+        Why Tiki N'Yiki ?
+      </strong>
+    </span>
+<br>
+<br>Given the appalant reality highlighted by the lack of fundemental infrastrures cited above, it's obvious they experience social discriminations on a daily basis and the government has done few things to help them. Depending the area they're living, few has a chance to attend school and may dream in the future. 
         <br><br>
-        It's like easy for some people to make kids but very heavy for them to take responsabilities. When it's kids with disabilities that's a lot of difficulties and that's why Tiki Yiki has been founded in 2016 to focus on those different issues met by kids with disablities. The issues are diveses, thoughest  at a different level but are also challengeable and the society has tools to come to end the discriminations toward difference in Burkina Faso wher I come from. Meanwhile it can look like inthinkable the fact to see many disabled not being able to go to hospital or to a care centre because not having the possibiltiy. No car, no moto, no bike and being diabled and livng in a remote area where it rare to regularly transportation. It's rural. So based on those facts Tiki Yiki would define, implement and facilitate lives to many of those disabled people including kids who're living in deep villages in Burkina Faso. The project would found tricycles (A three weels cycle for disabled people) to help them hanging out where they need to. There are obviously education, health care, food security and climate change challenges. 
-        Because of the insufficience of adapetd infractrustures and services, schools or hospitals, Tiki Yiki plans to build a multi-service and adapted centre (With a medical centre where some volunteers, all around the world, can offer their carrying services) to disabled people especially children and orphans and also the local population. 
+        It's easy for some people to make kids but very heavy in terms of the responsabilities. When it's kids with disabilities that's more harder and that's why Tiki N'Yiki has been founded to help solve some of those issues. The issues are diverse, thoughest  
+        at a different level but are also challengeable and the society has tools to come to end exclusion toward difference everywhere and especially in Burkina Faso. Meanwhile it can look like unthinkable the fact to see many disabled not being able to go to hospital or to a care centre because not having the possibiltiy. No car, no moto, no 
+        bike and being disabled and living in a remote area where it's rare to regularly transportation. It's rural. So based on those facts Tiki N'Yiki would define, implement and facilitate lives to many of those disabled people including kids who're living in deep villages in Burkina Faso. The project would found tricycles (A three weels cycle for 
+        disabled people) to help them hanging out where they need to. There are obviously education, health care, food security and climate change challenges. 
+        Because of the insufficience of adapetd infractrustures and services, schools or hospitals, Tiki N'Yiki plans to build a multi-service and adapted centre (With a medical centre where some volunteers, all around the world, can offer their carrying services) to disabled people especially children and orphans and also the local population. 
         <br><br>
-        For those whose families are living in remote areas, rooms and other infractrustures will be built in the the centre yard for them. Doing that, kids will conveniently live in adapted and secure places but are allowed to go back to visit their families according to a plan. Living at Tiki Yiki's centre that is built in a city means to be close to some important, useful, daily services and needs like hospitals, shops, sport centres or/and others. 
+        For those whose families are living in remote areas, rooms and other infractrustures will be built in the the centre yard for them. Doing that, kids will conveniently live in adapted and secure places but are allowed to go back to visit their families according to a plan. Living at Tiki N'Yiki's centre that is built in a city means to be close 
+        to some important, useful, daily services and needs like hospitals, shops, sport centres or/and others. 
+        <br>
+        They may at least experience less discriminations than in rural areas where inclusion for disabled children has no means to them. Tiki N'Yiki will support them to figure it out and then change a social mentality about disability. 
+        We all know the key importance of education as a powerful tool for life, the main goal of Tiki N'Yiki is to improve education, empower lives of disabled children and orphans by giving them the opportunities they deserve even their disabilities. That's why INCLUSION for disabled children should also be supported.
         <br><br>
-        They may at least experience less discriminations than in rural areas where inclusion for disabled children has no means to them. Tiki Yiki will support them to figure it out and then change a social mentality about disability. 
-        We all know the key importance of education as a powerful tool for life, the main goal of Tiki Yiki is to improve education, empower lives of disabled children and orphans by giving them the opportunities they deserve even their disabilities. That's why INCLUSION for disabled children should also be supported.
-        <br><br>
-        <b style="font-size: 26px; font-family:'georgia'; color: rgb(42, 61, 172); text-align: justify; line-height: 30px;">Having the right to get educated, carried and obviously be safe from food insecurity is part of the vision that Tiki Yiki is projecting on.</b>
+        <b style="font-size: 20px; font-family:'trebuchet ms'; color: rgb(36, 56, 171); text-align: justify; line-height: 20px;">Having the right to get educated, carried and obviously be safe from food insecurity is part of the vision that Tiki N'Yiki is projecting on.</b>
     </p>
 </div>
-    <br>
-<div class="k3">
-    <figure>
-        <img src="https://zupimages.net/up/22/21/3bad.jpg" alt="Teaching Kids in Ziniare [Burkina Faso]">
-    <figcaption style=" color:rgb(103, 103, 103); font-family: 'verdana'; font-size: 15px; text-align: left;">
-        Teaching To Improve Education in the City of Ziniare <a href="https://en.wikipedia.org/wiki/Burkina_Faso" target="_blank">[Burkina Faso]</a>
-    </figcaption>
-</figure>
-</div>
 
-    <div class="k1">
-        <br>
+<div class="k1">
 
-        <p><hr style="color: rgb(13, 31, 136); justify-self: center;"> 
-        <span style="background: transparent; font-family: 'georgia'; font-size: 35px; color: rgb(42, 61, 172); text-align: left;"><strong>The Climate Change Approach</strong></span>
-    
-        The fourth point to have been taken in count is the CLIMATE CHANGE and its increasing threats to the environment and obviously to us as human-beings.
-       
-    
-       Tiki Yiki has plan to make sure that the different challenges against Climate Change can get met. But Tiki Yiki already organized cleaning days with the neighborhood kids to help sensibilize the public opinion about climate change and drive the necessity for everyone to do something for the proctection of the nature. Climate Change is impacting our lives day by day but human-being is the real factor of the climate change. That's why through kids Tiki Yiki is sending a strong message of and needs them to understand the issues and then get involved.
+  <hr style="margin-top: 3%; color: rgb(13, 31, 136); justify-self: center;"> 
+       <span style="background: transparent; font-family: 'georgia'; font-size: 25px; color: rgb(42, 61, 172); text-align: left;"><strong>The Main Plan</strong></span>
+        
        <br>
-       </p>
-       <div class="k3">
-        <figure>
-           <img src="https://zupimages.net/up/22/29/epkw.jpg" alt="Plastic bags Cleaning">
-    
-        <figcaption style="font-family: 'verdana'; font-size: 14px; color: blue">
-            Plastic Bags Cleaning Day With Kids in Ziniare [<a href="https://en.wikipedia.org/wiki/Burkina_Faso" target="blank">Burkina Faso</a>]
-        </figcaption> 
-    </figure>
-    </div>
-    <br> 
-       <hr style="margin-top: 3%; color: rgb(13, 31, 136); justify-self: center;"> 
-       <span style="background: transparent; font-family: 'georgia'; font-size: 35px; color: rgb(42, 61, 172); text-align: left;"><strong>The Main Plan</strong></span>
-        
-        In its focus  to conveniently and widely reach those diverse challenges and helps change the public perception of what is to be a disabled and what inclusion is so important, the VISION has been compartimented through four (4) main domains of actions as following:
-        
-       <blockquote>
+  In its focus  to conveniently and widely reach those diverse challenges and helps change the public perception of what is to be a disabled and what inclusion is so important, the VISION has been compartimented through four (4) main domains of actions as following:
+  <br>
+  <br>
         <b>
      <a href="file:///C:/Users/User/Documents/education.html"  target="blank">1. Education</a>
          <br>
@@ -1394,11 +1366,49 @@ function myFunction() {
          <br>
      <a href="https://www.nationalgeographic.com/environment/article/global-warming-effects" target="blank">4. Climate Change</a> 
      </b>
-    </blockquote>
+     <br>
+    <figure>
+        <img src="https://www.zupimages.net/up/22/21/3bad.jpg" alt="Teaching Kids in Ziniare [Burkina Faso]">
+    <figcaption style=" color:rgb(103, 103, 103); font-family: 'verdana'; font-size: 14px; text-align: left; margin-top: -1px;">
+        Teaching To Improve Education in the City of Ziniare 
+        <a href="https://en.wikipedia.org/wiki/Burkina_Faso" target="_blank">[Burkina Faso]</a>
+    </figcaption>
+</figure>
+
+
+            <hr style="margin-top: 1rem; color: rgb(13, 31, 136); justify-self: center;"> 
+        <span style="background: transparent; font-family: 'georgia'; font-size: 25px; color: rgb(42, 61, 172); text-align: left;">
+          <strong>The Climate Change Approach
+          </strong>
+        </span>
+        <br>The fourth point to have been taken in count is the CLIMATE CHANGE and its increasing threats to the environment and obviously to us as human-beings.
+       
+    
+       Tiki N'Yiki has plan to make sure that the different challenges against Climate Change can get met. But Tiki N'Yiki already organized cleaning days with the neighborhood kids to help sensibilize the public opinion about climate change and drive the necessity for everyone to do something for the proctection of the nature. Climate Change is impacting our lives day by day but human-being is the real factor of the climate change. That's why through kids Tiki N'Yiki is sending a strong message of and needs them to understand the issues and then get involved.
+       <br>
+       </p>
+      </div>
+     
+
+       <div class="k3">
+        <figure>
+           <img src="https://www.zupimages.net/up/22/29/epkw.jpg" alt="Plastic bags Cleaning">
+    
+        <figcaption style="font-family: 'verdana'; margin-top: 5px; font-size: 14px; color: blue">
+            Plastic Bags Cleaning Day With Kids in Ziniare [<a href="https://en.wikipedia.org/wiki/Burkina_Faso" target="blank">Burkina Faso</a>]
+        </figcaption> 
+    </figure>
+  </div>
         
                 <hr style="color: rgb(13, 31, 136); justify-self: center;">
-                <span style="background: transparent; font-family: 'georgia'; font-size: 35px; color: rgb(42, 61, 172); text-align: left;"><strong>A Bit Of History</strong></span>            
-                    <p>Basically the envy to help others has originated the vision of TIKI YIKI during the year of 2016 when I was living in Burkina Faso, my homeland country. 
+
+                <span style="background: transparent; font-family: 'georgia'; font-size: 25px; color: rgb(42, 61, 172); text-align: left;">
+                  <strong>
+                    A Bit Of History
+                  </strong>
+                </span>            
+                    <p>
+                      <br>Basically the envy to help others has originated the vision of TIKI N'YIKI during the year of 2016 when I was living in Burkina Faso, my homeland country. 
                 <br>
                 <br>
                 Before I worked as an organizer in an association of disabled kids and orphans where I started to nurture the idea of Tiki Yiki. The motivation seems to be innate in me. So when I shared my idea and motivation with friends living around the world, some of them appreciated and congratulated me. 
@@ -1407,7 +1417,7 @@ function myFunction() {
                 Many of them had let me know they can support the interesting vision not only by small donations but also in networking to fundraise money and support the project. It was the beginning of a dream.
         </p>    
         <hr style="color: rgb(13, 31, 136); justify-self: center;">
-            <p><span style="background: transparent; font-family: 'georgia'; font-size: 35px; color: rgb(42, 61, 172); text-align: left;"><strong>The Seem-To-Be-Seen Case Of Kuirba From Tabinko</strong></span>
+            <p><span style="background: transparent; font-family: 'georgia'; font-size: 25px; color: rgb(42, 61, 172); text-align: left;"><strong>The Seem-To-Be-Seen Case Of Kuirba From Tabinko</strong></span>
                 <br>
             There are lots people who have done so much things to help people living with disabilities and sharing their services and love to those people. 
             <br>
@@ -1440,25 +1450,24 @@ function myFunction() {
             In some rural areas I am aware of what some families don't like their disabled parents or relatives to being associated with their celebrations. It's like those disabled are denigrating their families. So there are some people who hide their handicapped relatives, not allowing them to show up during families parties, meetings, celebrations, weddings, baptisms or funerals that gather many people. That's seems to be unrealistic to lots people nowadays. It's crual, unhuman and heartbreaking. Especially disabled kids who have the same rights like the physically ones to get educated.
                 That's why I thought to those issues and which action is a right to do and then leading to fundamental changes about social perceptions to disabled people and especially the disabled kids. living with disabilities. I am looking forward to support the community live better, together in total harmony. Empowering lives of many disabled kids and/or orphans in Burkina Faso is to get done. 
                 
-                <span id="read"></span><span id="read"></span>
+                <span id="read"></span>
                 <br>
                 </p>
-                
-                <a href="#Top">
-                <div class="SPan">
-                    <span style="justify-self: center;">UP TO TOP</span>
-                </div>
-            </a>
-            <br>
         </div>
-       
+
+        <a href="#Top">
+          <div class="SPan">
+              <span style="justify-self: center;">UP TO TOP</span>
+          </div>
+      </a>
+       <br>
             </div>
 
 </div>
 
 <div class="footer">
    
-    <div class="FTR" style="width: 29%; height: 60%; display: flex; justify-content: center; align-items: center; background: transparent; border: 0.2rem solid #fff; border-radius: 50%; font-family: 'helvetica'; font-size: 21px; line-height: 36px;">
+    <div class="FTR">
     Copyright © Tiki N'Yiki 2023 
     <br>
     <br>
