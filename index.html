@@ -479,25 +479,53 @@ hr{
 
 .YT{
   display: grid;
-  position: relative;
-  width: 66.5%;
+  grid-template-columns: 0.5fr 1fr 0.5fr;
+  column-gap: 0.5rem;
+  width: 70.5%;
   justify-content: center;
   justify-items: center;
-  height: 150px;
-  margin-left: 13rem;
+  height: 310px;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
  line-height: 25px; 
- font-size: 23.7px; 
+ font-size: 23px; 
  text-align: left; 
- color:rgba(132, 130, 130, 0.975);
+ color:rgba(151, 149, 149, 0.975);
  word-spacing: 1px;
- border-bottom: 1rem solid rgba(24, 126, 189, 0.87);
+ margin-top: -4.55rem;
+ border-top: 0.15rem solid rgba(197, 197, 197, 0.744);
+ border-bottom: 0.15rem solid rgba(197, 197, 197, 0.744);
 }
 
 .YT:hover{
-  color: #02a6ed;
-  border-bottom: 1rem solid red;
+  background: #ecf3ff2d;
+  color: #02a6ff;
+  border-left: 0.15rem solid rgba(197, 197, 197, 0.744);
+  border-top: 0.15rem solid rgba(197, 197, 197, 0.744);
+  border-bottom: 0.15rem solid rgba(197, 197, 197, 0.744);
+  border-right: 0.15rem solid rgba(197, 197, 197, 0.744);
   animation: 0.5s ease;
+ }
+
+.YTY img{
+width: 100%;
+height: auto;
+}
+
+.YTP{
+  padding: 0.5rem;
+  text-align: left;
+  font-size: 24px;
+  line-height: 25px;
+}
+
+.YTPP{
+  display: grid;
+  grid-template-rows: 0.8fr 1.2fr;
+}
+
+.TYPP img{
+  width: 100%;
+  height: auto;
 }
 
 .button2{
@@ -535,7 +563,7 @@ hr{
     font-size: 12px;
     color:#000;
     margin-left: 12%; 
-    margin-top: -1.5rem;
+    margin-top: 1.5rem;
 }
 
 .k1-image img{
@@ -928,18 +956,48 @@ function myFunction() {
 
 <div class="fwrapper">
 
-  <a href="https://www.hawking.org.uk/" target="_blank">
-
-  <div class="YT"> 
-  <b> "Mon conseil aux autres personnes handicapées serait de se concentrer 
-    sur les choses que leur handicap ne les empêche pas de bien faire et ne pas regretter les choses avec lesquelles il interfère. 
-    Ne soyez handicapé ni mentalement, ni physiquement"</b> <em style="color: rgba(38, 57, 150, 0.982); family: Arial, Helvetica, sans-serif; font-size: 20px;">[ Stephen Hawkings, métaphysicien et auteur Anglais ]</em>
-  </div> 
-
-</a> 
-
 
     <div class="content1"> 
+     
+        <div class="YT"> 
+
+          <a href="https://www.hawking.org.uk/" target="_blank">
+          <div class="YTY">  
+            <img src="https://upload.wikimedia.org/wikipedia/commons/e/eb/Stephen_Hawking.StarChild.jpg" alt="Stephen Hawkings">
+          <figure>
+            <figcation style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 15px; padding: 2px;">
+              Stephen Hawking
+              </figcation>
+            </figure>
+        
+          </div>
+        </a>
+
+        <a href="https://www.hawking.org.uk/" target="_blank">
+          <div class="YTP">
+        <b> Mon conseil aux autres personnes handicapées serait de se concentrer 
+          sur les choses que leur handicap ne les empêche pas de bien faire et ne pas regretter les choses avec lesquelles il interfère. 
+          Ne soyez handicapé ni mentalement, ni physiquement 
+          <em style="color: rgb(0, 128, 255); family: Arial, Helvetica, sans-serif; font-size: 12px;">[Stephen Hawking, métaphysicien, cosmologiste et auteur Anglais]</em>
+      
+        </b>
+        </div>
+      </a>
+
+      <a href="https://www.hawking.org.uk/" target="_blank">
+        <div class="YTPP">
+          <div class="TYP" style="border-left: 0.25rem solid rgba(203, 203, 203, 0.876); border-right: 0.25rem solid rgba(203, 203, 203, 0.876); padding: 15px,justify-content: center; align-items: center; display: flex;">
+          <p style="color:rgba(8, 130, 253, 0.904); font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 25px;"> <b> L'intelligence est la faculté de s'adapter au changement</b> </p>
+        </div> 
+        <div class="TYPP">
+        <img src="https://images.news18.com/ibnlive/uploads/2018/03/Stephen-Hawking4.jpg?impolicy=website&width=600&height=600" alt="Stephen Hawking">
+        </div>
+      </div> 
+    </a>
+
+      </div> 
+      
+    
 
     <div class="k-image">
 
