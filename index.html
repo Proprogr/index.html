@@ -872,19 +872,21 @@ animation: auto 12s infinite ease-in;
 
 .Ecole{
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1.25fr 0.75fr;
+  column-gap: 0.25rem;
   justify-content: center;
   justify-items: center;  
-  width: 70%; 
-  height: 50%;
+  width: 100%; 
+  height: 30%;
   margin-top: -2rem;
+  padding: 0.5rem;
 }
 
 .student{
   display: grid;
-  grid-template-columns: 0.5fr 0.5fr;
+  grid-template-columns: 1fr 1fr;
   column-gap: 4rem;
-  justify-content: center;
+  justify-content: space-between;
   justify-items: center;
   width: 100%;
   height: 280px;
@@ -1207,7 +1209,7 @@ function myFunction() {
             
         Le Burkina Faso est un pays sahélien, enclavé au coeur de l'Afrique de l'Ouest et s'étend sur une superficie de 
         <em style="color: red">274.300 kilomètres carrés avec une population de 22.1 millions d'habitants. Le Burkina Faso partage des frontières au nord; nord-ouest par le Mali, à l'est par le Niger, au sud par la Côte-d'Ivoire, le Ghana, le Togo et le Bénin. 
-        </em>  Il bénéficie d'un climat tropical sahélien caracterisé par 4 mois de pluviométrie et 8 mois de sécheresse. En dépit de cette réalité climatique, son économie se repose en grande partie sur l'agriculture, l'élévage et le maraîchage. 
+        </em>  Il bénéficie d'un climat tropical sahélien caracterisé par 4 mois de pluviométrie et 8 mois de sécheresse. En dépit de cette réalité climatique, son économie repose en grande partie sur l'agriculture, l'élévage et le maraîchage
         Heureusement elle se diversifie à travers d'autres secteurs comme les services et le numérique. Elle reste par contre impactée par une crise sécuritaire dans la sous-région qui sécoue aussi le Mali et le Niger deux pays voisins en plus d'une inflation globale.     
         <br>  
         <br>     
@@ -1334,22 +1336,27 @@ Dépendemment de leurs régions de vie, peu d'entre elles iront à l'école afin
         Il est impensable de voir que des personnes handicapées ne soient pas à mesure de partir à l'hôpital quand elles tombent malades, aller étudier ou sortir pour une simple visite faute de moyens de transport. Elles n'ont pas la possibilité de le faire. Elles n'ont pas de voitures, de motos ni même des tricycles 
         pour le déplacement. Elles vivent isolées et ceci rend difficile leurs vies car toute personne a souvent besoin de sociabiliser. 
         <br>
-        <br>
-        <b style="color:rgba(0, 0, 139, 0.592); font-size: 19.8px; font-family: Arial, Helvetica, sans-serif;">
-          Sur la base de ces difficultés constituées de barrières sociales, d'insuffisance d'infractrustures, de services et de moyens de déplacements adaptés, Tiki N'Yiki veut construire un centre nommé Accadémie Tiki N'Yiki 
-          dans lequel il y aura des salles de classe, des chambres adaptées, des salles de récréation et de conditionnement sportif, d'une salle de réunion, des bureaux et une cuisine pour les enseignants et certain-es élèves ou étudiant-es handicapé-es dont les familles habitent loin de l'accadémie. En plus le projet prendra en compte la fabrication et l'octroi de tricyles et/ou de fauiteuils roulants, moyens de déplacement très utiles aux étudiant-es pour avoir une certaine mobilité en cas de nécessité de sortir de l'accadémie Tiki N'Yiki.
-        </b>
-       <br>
+        
         <br>
         <div class="Ecole">
+        <div>
           <img src="https://cdn-icons-png.flaticon.com/512/167/167707.png" alt="Icon of a school building">
         <figure>
             <figcaption style="font-family: 'arial black'; font-size: 12px; color: rgba(0, 0, 139, 0.52); margin-top: -1rem;">
-              Building à inspirer pour l'Accadémie Tiki N'Yiki. Le logo sera sur le drapeau en haut
+              Accadémie Tiki N'Yiki. Le logo sera inscrit sur le drapeau en haut
             </figcaption>
           </figure>
       </figure>
+    </div>
+  <div>
+    <p style="color:rgba(0, 0, 139, 0.717); font-size: 18.8px; font-family: Arial, Helvetica, sans-serif; text-align: justify;">
+      Sur la base de ces difficultés constituées de barrières sociales, d'insuffisance d'infractrustures, de services et de moyens de déplacements adaptés, Tiki N'Yiki veut construire un centre nommé Accadémie Tiki N'Yiki 
+      dans lequel il y aura des salles de classe, des chambres adaptées, des salles de récréation et de conditionnement sportif, d'une salle de réunion, des bureaux et une cuisine pour les enseignants et certain-es élèves ou étudiant-es handicapé-es dont les familles habitent loin de l'accadémie. En plus le projet prendra en compte la fabrication et l'octroi de tricyles et/ou de fauiteuils roulants, moyens de déplacement 
+      très utiles aux étudiant-es pour avoir une certaine mobilité en cas de nécessité d'aller en dehors de l'accadémie.
+    </p>
+   <br>
         </div>
+      </div>
         Etant handicapés, pouvoir vivre et étudier au centre Tiki N'Yiki qui sera établi en ville est synonyme d'une proximité aux services comme l'hôpital, les centres d'achat, les lieux de sport, de divertissement. 
         Au déla de cette proximité avec différents services en ville, la discrimination va s'amoindrir quant-à comparer à leur vie en campagne ou l'inclusion est pas très balbutiante voire inexistante. 
         <br>
@@ -1394,7 +1401,7 @@ Dépendemment de leurs régions de vie, peu d'entre elles iront à l'école afin
     <img src="https://icons.iconarchive.com/icons/icons8/ios7/512/Science-Classroom-icon.png" alt="reader icon">
   <figure>
     <figcation style="color:rgba(0, 0, 0, 0.882); font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 15px; margin-top: -1rem;">
-      Etudiants en classe
+      Enseignants et étudiants en classe
       <figcation>
 </figure>
 </div>
