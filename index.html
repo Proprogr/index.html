@@ -57,21 +57,40 @@
     .DAH{
       display: grid; 
       grid-template-rows: 1fr 1fr;
+      row-gap: 0.27rem;
       justify-content: space-between;
       justify-items: center;
-      width: 40%;
+      width: 45%;
     }
-.DAH img{
-  width: 50%;
+.Mage img{
+  width: 60%;
   border-radius: 50%;
   cursor: pointer;
 }
 
-.DAH img:hover{
+.Mage img:hover{
   transform: rotate(360deg);
   transition: 0.99s ease;
 }
 
+.TEM{
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  justify-items: center;
+  width: 100%;
+  color: #ff0;
+}
+
+.TEM:hover{
+  background:-webkit-linear-gradient(rgba(223, 223, 2, 0.945) 30%,rgb(249, 249, 0) 70%) ;
+  transition: 0.99s ease;
+  color: #ff0;
+  border-top-left-radius: 47%;
+  border-bottom-left-radius: 47%;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
     .Translator{
       display: flex;
       flex-direction: column;
@@ -1166,13 +1185,16 @@ function myFunction() {
 <div class="navbar0"> 
 
   <a href="https://gorampe.com/vivre-en-fauteuil-roulant-7-mythes-et-realites/" target="_blank">
+    
     <div class="DAH"> 
-    <div>
+    <div class="Mage" style="width: 100%;">
       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8RaX1EMvIv5A0vsX1ptakOpBMnvIuT2BSfg&usqp=CAU" alt="Disability Logo">
     </div>
-  <div style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 18px; color: #2072c4;">
+
+  <div class="TEM" style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 16px; color: #2352a3f9;">
     Témoignage
 </div>
+
   </div>
   </a>
 
@@ -1699,7 +1721,7 @@ Dépendemment de leurs régions de vie, peu d'entre elles iront à l'école afin
 <div class="SEKU">
       <div>
         <hr style=" color: rgb(13, 31, 136); justify-self: center;"> 
-        
+
         <span style="background: transparent; font-family: 'georgia'; font-size: 25px; color: rgb(42, 61, 172); text-align: left;">
           <strong>3. Sécurité Alimentaire
           </strong>
