@@ -52,15 +52,18 @@
 
     .DAH{
       display: grid; 
-      grid-template-rows: 1fr 1fr;
+      grid-template-rows: 1fr 0.5fr;
+      row-gap: 1rem;
       justify-content: center;
       justify-items: center;
       width: 45%;
+      height: 100%;
     }
 .Mage img{
   width: 60%;
   border-radius: 50%;
   cursor: pointer;
+  margin-top: 0.6rem;
 }
 
 .Mage img:hover{
@@ -75,17 +78,17 @@
   justify-content: center;
   align-items: center;
   width: 97%;
-  font-family: 'trebuchet ms';
+  font-family: 'verdana';
   font-size: 13px; 
-  color: #7c7c7cfc;
+  color: #00000afc;
   padding: 5px;
-  margin-top: -0.85rem;
+  margin-top: -1.3rem;
 }
 
 .TEM:hover{
-  background:-webkit-linear-gradient(rgb(255, 108, 55) 0%, #ff0 100%) ;
+  background:-webkit-linear-gradient(#0c0c0cf1 0%, #ffffff 100%) ;
   transition: 0.45s linear;
-  color: #00f;
+  color: cyan;
   border-top-left-radius: 49%;
   border-bottom-left-radius: 49%;
   border-top-right-radius: 50%;
@@ -1420,6 +1423,7 @@ function myFunction() {
   <a href="https://gorampe.com/vivre-en-fauteuil-roulant-7-mythes-et-realites/" target="_blank">
     
     <div class="DAH"> 
+
     <div class="Mage" style="width: 100%;">
       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8RaX1EMvIv5A0vsX1ptakOpBMnvIuT2BSfg&usqp=CAU" alt="Disability Logo">
     </div>
@@ -2222,6 +2226,8 @@ Dépendemment de leurs régions de vie, peu d'entre elles iront à l'école afin
 </body>
 
 </html>
+
+
 
 
 
