@@ -185,7 +185,7 @@
       grid-template-rows: 0.85fr 0.8fr 0.5fr 0.95fr;
                  justify-content: center;
                  justify-items: center;
-                 background: rgba(159, 219, 251, 0.988);
+                 background: #d0d2eef8;
                  width: 100%;
                  height: 115px;
                  object-fit: cover;
@@ -198,21 +198,21 @@
           }
           
           .TYK1{
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  justify-content: center;
-  align-items: center;
-  width: 100px;
-  height: 40px;
-  font-size: 13.85px;
-  font-family: 'arial black';
-  background: transparent; 
-  border: 0.18rem solid #0820685e;
-  border-radius: 2rem;
-  color: red;
-  padding: 8px;
-  margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            height: auto;
+            width: 100%;
+            border-radius: 2rem;
+            background: transparent;
+            border: 0.18rem solid #0820685e;
+            color:red;
+            margin-top: 1.25rem;
+            padding: 7px;
+            font-family:'arial black';
+            font-size: 15.85px;
 }
 
 .TYK1:hover{
@@ -269,7 +269,7 @@
           font-size: 1rem; 
           margin-top: -0.19rem;
           font-family: 'arial black'; 
-          border-top: 0.1rem solid rgba(161, 220, 251, 0.948);
+          border-top: 0.1rem solid #d0d2eecd;
           border-bottom-left-radius: 50rem;
           border-bottom-right-radius: 50rem;
          }
@@ -286,16 +286,16 @@
             justify-content: center;
             align-items: center;
             cursor: pointer;
-            height: 40px;
+            height: auto;
             width: 100%;
-            background: transparent;
             border-radius: 2rem;
+            background: transparent;
             border: 0.18rem solid #0820685e;
             color:red;
             margin-top: 1.25rem;
-            font-family: 'arial black';
-            font-size: 15.85px;
             padding: 7px;
+            font-family:'arial black';
+            font-size: 15.85px;
           }
 
           .myDiv:hover{
@@ -314,10 +314,10 @@
             justify-content: center;
             align-items: center;
             cursor: pointer;
-            height: 40px;
+            height: auto;
             width: 100%;
-            background: transparent;
             border-radius: 2rem;
+            background: transparent;
             border: 0.18rem solid #0820685e;
             color:red;
             margin-top: 1.25rem;
@@ -341,10 +341,10 @@
             justify-content: center;
             align-items: center;
             cursor: pointer;
-            height: 40px;
+            height: auto;
             width: 100%;
-            background: transparent;
             border-radius: 2rem;
+            background: transparent;
             border: 0.18rem solid #0820685e;
             color:red;
             margin-top: 1.25rem;
@@ -368,7 +368,7 @@
             justify-content: center;
             align-items: center;
             cursor: pointer;
-            height: 40px;
+            height: auto;
             width: 100%;
             border-radius: 2rem;
             background: transparent;
@@ -388,22 +388,50 @@
             transition: 0.29s ease-in;
           }
 
+          .Peinture{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            height: auto;
+            width: 100%;
+            border-radius: 2rem;
+            background: transparent;
+            border: 0.18rem solid #0820685e;
+            color:red;
+            margin-top: 1.25rem;
+            padding: 7px;
+            font-family:'arial black';
+            font-size: 15.85px;
+          }
+
+          .Peinture:hover{
+            border-radius: 2rem;
+            border: 0.18rem solid #04123cac;
+            background: red;
+            border-bottom: 1rem solid rgb(40, 203, 3);
+            color: yellow;
+            transition: 0.29s ease-in;
+          }
+
+
           .myDiv6{
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             cursor: pointer;
+            height: auto;
+            width: 100%;
+            border-radius: 2rem;
+            background: transparent;
             border: 0.18rem solid #0820685e;
             color:red;
             margin-top: 1.25rem;
             padding: 7px;
-            font-family:"arial black";
+            font-family:'arial black';
             font-size: 15.85px;
-            height: 40px;
-            width: 100%;
-            border-radius: 2rem;
-            background: transparent;
             }
 
           .myDiv6:hover{
@@ -458,16 +486,6 @@
         border-top: 0.5px solid #fff;   
     }
 
-    h1{
-    font-family: 'verdana';
-    font-size: 17.8px;
-    text-align: left;
-    margin-top: -39px;
-}
-h1:hover{
-    transform: rotate(2deg);
-    cursor: pointer;
-}
  h2{
     display: flex;
     position: relative;
@@ -1363,6 +1381,19 @@ transition: 0.26s linear;
   box-shadow: 8px 8px 0.6rem 0.5px rgba(165, 165, 165, 0.724);
 }
 
+.Painting{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows:  1fr 1fr;
+  column-gap: 1rem;
+  row-gap: 3.3rem;
+  justify-content: space-between;
+  justify-items: center;
+  width: 108%;
+  height: 600px;
+  background: #017af328;
+}
+
 </style>
 
     <title>accueil.html</title>                              
@@ -1514,6 +1545,15 @@ function myFunction() {
               
             </div>
           </a>
+
+          <a href="#Peinture">
+
+          <div class="Peinture">
+              
+            <b>Peinture</b>
+            
+          </div>
+        </a>
 
 
           <a href="mailto:gabrielkouss2001@yahoo.fr"> 
@@ -2282,7 +2322,7 @@ Dépendemment de leurs régions de vie, peu d'entre elles iront à l'école afin
         </div>
 
         <a href="https://www.un.org/fr/global-issues/climate-change" target="_blank">
-          
+          <a name="Peinture"> </a>
         
           <div class="C3"> 
             
@@ -2310,6 +2350,33 @@ Dépendemment de leurs régions de vie, peu d'entre elles iront à l'école afin
 </div>
 </a> 
 </div>
+
+
+
+<div class="Painting">
+
+
+<div class="P1" style="background: #fff; width: 500px;">
+Div1 [ jhefj  efnjefnj fjkdf mfnkj fjknj edfuh bvdaHN JISD  ]
+</div>
+
+<div class="P1" style="background: #ff0; width: 500px;">
+  Div2 Sudnrue sksdnd djhsholc jsjhcg cdj ujwwjwd jcuidfh cujdujc 
+</div>
+
+<div class="P1" style="background: #0ff; width: 500px;">
+  Div3 We are btyhe possdi djkjkked trk doedm nsndfnm and dio it perfetctgd bd
+</div>
+
+<div class="P1" style="background: #ff0a06; width: 500px;">
+  Div4 shhs hsgx dshvbvhs bwdfbs  cjbh bs sbn bh cbnxjnbc df fm n cf nnk nc  sdjk
+</div>
+
+</div>
+
+
+
+
 <a name="PROMOTEUR"></a>  
 
   <div class="kptr">
@@ -2317,7 +2384,7 @@ Dépendemment de leurs régions de vie, peu d'entre elles iront à l'école afin
                 <hr style="color: rgb(13, 31, 136); justify-self: center;">
               
                   <strong style="padding: 15px; background: transparent; font-family: 'georgia'; font-size: 25px; color: rgb(42, 61, 172); text-align: left;">
-                   Promoteur du Projet et Webmaster du Site Internet
+                   Promoteur du Projet et Develop du Site Internet
                   </strong>
                
                 
@@ -2403,6 +2470,7 @@ Dépendemment de leurs régions de vie, peu d'entre elles iront à l'école afin
 </body>
 
 </html>
+
 
 
 
