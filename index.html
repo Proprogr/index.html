@@ -1392,22 +1392,42 @@ transition: 0.26s linear;
   display: grid;
   grid-template-columns: 0.5fr 0.5fr;
   grid-template-rows:  0.5fr 0.5fr;
-  column-gap: 1rem;
-  row-gap: 3.3rem;
+  column-gap: 0.2rem;
+  row-gap: 0.2rem;
   justify-content: space-between;
   justify-items: center;
   width: 100%;
-  height: 690px;
+  height: auto;
   background: transparent;
 }
 
 .P1{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-rows: 30px 1fr;
+  row-gap: 0.5rem;
+  justify-content: space-between;
+  justify-items: center;
+  width: 500px;
+  height: auto;
+  padding: 10px; 
+  margin-left: 0.5rem; 
+  margin-top: 1rem;
 }
 
+.P1 img{
+  width: 100%;
+  height: 320px;
+}
+.PHOTOCAPTION{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color:rgb(2, 157, 228);
+
+}
 </style>
 
     <title>accueil.html</title>                              
@@ -2396,35 +2416,123 @@ Dépendemment de leurs régions de vie, peu d'entre elles iront à l'école afin
 </div>
 
 <div class="PaintingTitle">
-  Diverses images sur l'impact des changements climatiques
+  Photos des changements climatiques à travers le monde
 </div>
 
 <div class="Painting">
 
 
-<div class="P1" style="padding: 10px; width: 500px; margin-left: 0.5rem; border: 0.13rem solid #d1d1d1ac; margin-top: 1rem;">
-<h1> Div1 [ Afrique 1 ]</h1>
+<div class="P1">
+  
+  <div class="PHOTOCAPTION">
+  <h1> 
+    Sol aride en Mauritanie
+  </h1>
+  </div>
+  
+  <div>
+  <img src="https://www.un.org/africarenewal/sites/www.un.org.africarenewal/files/styles/ar_main_story_big_picture/public/WEBC436909399053_fd6ee96d10_o.jpg?itok=gLbOz-nj">
+  <figure>
+    <figcaption style="font-family:Verdana, Geneva, Tahoma, sans-serif; font-size: 12px; color:rgba(65, 65, 65, 0.895)">Copyright © Oxfam/Pablo Tosco
+  </figcation>
+    </figure>
 </div>
 
-<div class="P1" style="padding: 10px; border: 0.13rem solid #d1d1d1ac; border-radius: 0.1rem;  width: 500px; margin-top: 1rem; margin-right: 0.5rem;">
-  <h1>Div2 [ Asie 2 ]</h1>
-</div>
-
-<div class="P1" style="padding: 10px; border: 0.13rem solid #d1d1d1ac; border-radius: 0.1rem;  width: 500px; margin-left: 0.5rem; margin-bottom: 1rem;">
-<h1>Div3 [ Amérique 3 ]</h1>
-</div>
-
-<div class="P1" style="padding: 10px; border: 0.13rem solid #d1d1d1ac; border-radius: 0.1rem; width: 500px; margin-right: 0.5rem; margin-bottom: 1rem;">
-<h1> Div4 [ Europe 4 ]</h1>
-</div>
-
-<div class="P1" style="padding: 10px; border: 0.13rem solid #d1d1d1ac; border-radius: 0.1rem; width: 500px; margin-right: 0.5rem; margin-bottom: 1rem;">
-  <h1> Div5 [ Océanie 5 ]</h1>
   </div>
 
+<div class="P1">
+  
+  <div class="PHOTOCAPTION">
+    <h1> 
+      Sol aride en Asie
+    </h1>
+    </div>
+  
+    <div>
+    <img src="https://thumbs.dreamstime.com/z/man-climate-change-drought-70881673.jpg?w=992">
+    <figure>
+    <figcaption style="font-family:Verdana, Geneva, Tahoma, sans-serif; font-size: 12px; color:rgba(65, 65, 65, 0.895)">Copyright © Nitsuku [Dreamstime.com]
+  </figcation>
+    </figure>
+   </div>
+
 </div>
 
+<div class="P1">
 
+  <div class="PHOTOCAPTION">
+    <h1> 
+     Feu à Mistissini-Que
+    </h1>
+    </div>
+  
+    <div>
+    <img src="https://assets2.cbsnewsstatic.com/hub/i/r/2023/06/29/053d0463-e76c-49ec-a002-262c64b3aa0a/thumbnail/620x384/339fabdb07860614bb2a419753385bb1/2023-06-13t230335z-1465786189-rc2nh1aljvju-rtrmadp-3-canada-wildfires.jpg?v=b9ad248140817530b57bedd1355bcccb">
+    <figure>
+      <figcaption style="font-family:Verdana, Geneva, Tahoma, sans-serif; font-size: 12px; color:rgba(65, 65, 65, 0.895)">
+        Copyright © CANADIAN FORCES via Reuters
+    </figcation>
+      </figure>
+   </div>
+</div>
+
+<div class="P1">
+  
+  <div class="PHOTOCAPTION">
+    <h1> 
+      Inondation en Allemagne 
+    </h1>
+    </div>
+  
+    <div>
+    <img src="https://static01.nyt.com/images/2021/07/16/climate/16cli-floodexplain1/merlin_190930506_3ab1afea-9ab0-4bfe-9c5a-82d04496e181-superJumbo.jpg?quality=75&auto=webp">
+    <figure>
+      <figcaption style="font-family:Verdana, Geneva, Tahoma, sans-serif; font-size: 12px; color:rgba(65, 65, 65, 0.895)">
+        Copyright © Friedemann Vogel/EPA, via Shutterstock
+    </figcation>
+      </figure>
+   </div>
+
+</div>
+
+<div class="P1">
+  
+  <div class="PHOTOCAPTION">
+    <h1> 
+      Feu en Australie
+    </h1>
+    </div>
+  
+    <div>
+    <img src="https://live-production.wcms.abc-cdn.net.au/0057b9be72b83c98d462189813b3f13f?impolicy=wcms_crop_resize&cropH=480&cropW=852&xPos=7&yPos=0&width=862&height=485">
+    <figure>
+      <figcaption style="font-family:Verdana, Geneva, Tahoma, sans-serif; font-size: 12px; color:rgba(65, 65, 65, 0.895)">
+        Copyright © (ABC News: James Carmody)
+    </figcation>
+      </figure>
+   </div>
+
+   </div>
+
+   <div class="P1">
+
+    <div class="PHOTOCAPTION">
+      <h1> 
+        Feu en Californie
+      </h1>
+      </div>
+
+   <div>
+    <img src="https://static.politico.com/98/73/278e484f44a0a2e996d2b201fbb9/200911-california-wildfire-ap-773.jpg">
+    <figure>
+      <figcaption style="font-family:Verdana, Geneva, Tahoma, sans-serif; font-size: 12px; color:rgba(65, 65, 65, 0.895)">
+        Copyright © Noah Berger/AP Photo 
+    </figcation>
+      </figure>
+   </div>
+
+  </div>
+</div>
 
 
 <a name="PROMOTEUR"></a>  
@@ -2522,5 +2630,6 @@ Dépendemment de leurs régions de vie, peu d'entre elles iront à l'école afin
 </body>
 
 </html>
+
 
 
