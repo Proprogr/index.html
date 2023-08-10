@@ -202,7 +202,7 @@
                  z-index: 1;
                  top: 0;
                  position: sticky;   
-                 box-shadow: 0 2.35px 0.46rem 0 #3a3a3aed;
+                 box-shadow: 0 2.35px 0.4rem 0 #3a3a3af7;
           }
           
           
@@ -730,15 +730,16 @@ position: relative;
   align-items: left;
 }
 .Glober{
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 1fr;
   justify-content: center;
-  align-items: center;
+  justify-items: center;
   background: transparent;
   width: 72%;
   height: 516;
   border: 0.11rem solid rgba(203, 203, 203, 0.876); 
-  margin-top: 1rem;
+  margin-top: 0.5rem;
+  padding: 4px;
 }
 
 .Glober:hover{
@@ -747,7 +748,7 @@ position: relative;
 }
 
 .k-image{
-  display: block;
+ 
     justify-content: center;
     align-items: center;
     position: relative;
@@ -762,16 +763,18 @@ position: relative;
 
 .KRT{
   display: grid;
+  justify-content: center;
+  justify-items: center;
   grid-template-rows: 0.5fr 1.5fr;
   width: 100%;
-  height: auto;
+  height: 505px;
   animation: auto 15s infinite linear;
     animation-delay: 5s;
     position: absolute;
     padding: 10px;
 }
 
-.k1-image img{
+.KRT img{
   width: 100%;
   height: 505px;
     
@@ -792,13 +795,13 @@ position: relative;
   justify-content: center;
   justify-items: center;
   width: 100%;
-  height: auto;
+  height: 505px;
   animation: auto 15s infinite linear;
     animation-delay: 10s;
     position: absolute;
     padding: 10px;
 }
-.k2-image img{
+.EDE img{
   width: 100%;
   height: 505px;
 }
@@ -816,13 +819,13 @@ position: relative;
   justify-content: center;
   justify-items: center;
   width: 100%;
-  height: auto;
+  height: 505px;
 animation: auto 15s infinite linear;
     animation-delay: 15s;
     position: absolute;
     padding: 10px;
 }
-.k3-image img{
+.DER img{
   width: 100%;
   height: 505px;
 }
