@@ -542,7 +542,7 @@ hr{
     flex-direction: column;
     width: 100%;
     height: auto;
-    background: rgba(233, 233, 233, 0.95);
+    background: rgba(233, 233, 233, 0.922);
     justify-content: center;
     align-items: center;
     opacity: 0.99;
@@ -892,17 +892,18 @@ animation: auto 15s infinite linear;
 .kptr{
   display: grid;
   grid-template-columns: 1.2fr 0.8fr;
-  column-gap: 0.25rem;
   justify-items: center;
   justify-content: space-between;
   width: 72%;
   height: auto;
   border-top: 0.1rem solid orangered;
-  margin-top: 5.35rem;
+  margin-top: 5rem;
  
 }
 
 .kpt{
+  display: grid;
+  grid-template-columns: 1fr;
   width: 100%;
   height: auto;
   font-family: 'Tektur', cursive;
@@ -912,34 +913,29 @@ animation: auto 15s infinite linear;
   line-height: 27px;
   text-align: left;
   background:rgba(14, 36, 149, 0);
-  border-right: 0.25rem solid transparent;
+  border: 0.15rem solid transparent;
   padding: 10px;
   border-bottom: 0.25rem solid transparent;
+  border-radius: 0.4rem;
 }
 .kpt:hover{
   transition: 0.25s linear;
-  background: #122aff0a;
-  box-shadow: 4px 8px 0.4rem 0.5px rgba(204, 204, 204, 0.724);
+  border: 0.15rem solid #cdcdcd91;
   color:rgba(104, 104, 104, 0.915);
   border-radius: 0.4rem;
 }
 
 .kgp{
     display: grid;
+    grid-template-rows: 1fr;
     justify-items: center;
     justify-content: center;
     text-align: left;
     width: 100%;
-    height: 58%;
+    height: auto;
     background: transparent;
     border-radius: 0.15rem;
     padding: 3px;
-}
-
-.kgp:hover{
-  transition: 0.26s linear;
-  box-shadow: -4px 8px 0.4rem 0.5px rgba(204, 204, 204, 0.724);
-  background: #0c17e70a;
 }
 
 .kgp img{
@@ -1095,18 +1091,19 @@ height: 750px;
     font-size: 22px;
     cursor: pointer;
     text-align: center;
+    margin-bottom: 0.5rem;
 }
 
 .SPan img{
-  width: 75px;
+  width: 70px;
   height: 70px;
   margin-top: -0.7rem;
+ border-radius: 50%;
 }
 .SPan:hover{
-    background:rgb(0, 151, 0);
-    color: #ff0;
-    transition: 0.3s linear;
-    box-shadow: 6px 5px 0.55rem 0.15px red;
+    border: 0.13rem solid orangered;
+    padding: 0.5rem;
+    border-radius: 50%;
 }
 .FTR{
   width: 500px; 
@@ -1459,6 +1456,8 @@ transition: 0.26s linear;
   color:rgb(7, 121, 214);
 
 }
+
+
 </style>
 
     <title>accueil.html</title>                              
@@ -1467,6 +1466,7 @@ transition: 0.26s linear;
 <body>
 
     <div class="scroll-bar"></div>
+
     <script>
 
     // When the user scrolls the page, execute myFunction
@@ -1480,6 +1480,7 @@ var navbar = document.getElementById("navbar");
 var sticky = navbar.offsetTop;
 
 // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+
 function myFunction() {
   if (window.pageYOffset >= sticky) {
     navbar.classList.add("sticky");
@@ -1487,23 +1488,6 @@ function myFunction() {
     navbar.classList.remove("sticky");
   }
 }
-
-//Get the ReadLess, ReadMore function
-       function readMoreFunction(){
-    var dots = document.getElementById("dots");
-    var contentText = document.getElementById("contentText");
-    var btnText = document.getElementById("buttonReadMore");
-    if (dots.style.display === "none"){
-       dots.style.display = "inline";
-       btnText.innerHTML = "Read More";
-       contentText.style.display = "none";
-   } else{
-       dots.style.display = "none";
-       btnText.innerHTML = "Read Less";
-       contentText.style.display = "inline";
-    }
-}
-
 </script>
 
 <a name="Top"></a>
@@ -1862,7 +1846,7 @@ function myFunction() {
 
         <div class="CRT1">
             
-          Le Burkina Faso ou pays des hommes intègres est un pays sahélien indépendant le 5 août 1960 de la France. Il est enclavé au coeur de l'Afrique de l'Ouest et s'étend sur une superficie de :
+        <p>Le Burkina Faso ou pays des hommes intègres est un pays sahélien indépendant le 5 août 1960 de la France. Il est enclavé au coeur de l'Afrique de l'Ouest et s'étend sur une superficie de :
 
    <em><b>274.220 kilomètres carrés </b><a href="https://donnees.banquemondiale.org/indicator/AG.SRF.TOTL.K2?locations=BF" style="font-size: 18px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; line-height: 22px;" target="_blank">[Sources: Banque Mondiale] </a>avec une population approximative de <b>23.300.000 habitants. </b><a href="https://www.unfpa.org/data/world-population/BF" style="font-size: 16px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; line-height: 22px;" target="_blank"> [Sources: UNFPA - UNITED NATIONS POPULATION FUND]</a> </em> 
      
@@ -1884,7 +1868,7 @@ le Burkina Faso dans son emsemble avance vers une certaine autonomie de vie, un 
    Ceci n'est pas seulement un fait causé par une culture toxique d'exclusion dûe aux discriminations et barrières sociales,
    mais aussi par une insuffisance de légifération et une mise en application des lois par rapport au handicap, les droits et les devoirs corollaires. 
   Et cela rend très difficile la vie des personnes handicapées qui doivent perpétuellement lutter pour avoir quelques droits basiques.  
-   
+</p>
    </div>
 
         </div>
@@ -1958,7 +1942,7 @@ Tiki N'Yiki veut oeuvrer pour changer la tendance de telles mentalités, faire t
 <br> 
 </span>
     <br>
-    Les personnes handicapées sont discriminées partout à travers le monde. Mais celles d'Afrique et spécialement du Burkina Faso expérimentent de sévères marginalisations dans la société et même de l'état qui était censé les aider et protéger.<a href="https://www.ouestaf.com/personnes-vivant-avec-un-handicap-marginalisees-par-letat-au-burkina/" style="font-size: 18px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; line-height: 22px;" target="_blank">[Lire plus...]</a>
+  <p>Les personnes handicapées sont discriminées partout à travers le monde. Mais celles d'Afrique et spécialement du Burkina Faso expérimentent de sévères marginalisations dans la société et même de l'état qui était censé les aider et protéger. <a href="https://www.ouestaf.com/personnes-vivant-avec-un-handicap-marginalisees-par-letat-au-burkina/" style="font-size: 18px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; line-height: 22px;" target="_blank">[Lire plus...]</a>
     <br>  
     Sinon pourquoi des personnes handicapées dépendantes et vivant isolées sont oubliées quand on doit leur apporter à manger ou à boire, les faire prendre un bain ou leur apporter un besoin quelconque ?
     <br>  
@@ -1971,12 +1955,13 @@ Tiki N'Yiki veut oeuvrer pour changer la tendance de telles mentalités, faire t
     <br>
     <em style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color: green;">La probable réponse proche à ces questions est : 
       <a href="https://www.chrc-ccdp.gc.ca/fr/droits-de-la-personne/quest-ce-que-la-discrimination" target="_blank"><b style="color: red;">LA DISCRIMINATION. 
-      </b> </em>  
+      </b> 
+    </em>  
     </a> 
     <br>  
     <br>
     <b style="color: rgb(0, 174, 255); font-size: 19.5px; font-family: 'Titillium Web', sans-serif;">Mais il faut que ces discriminations cessent et que les barrières sociales tombent car les personnes handicapées sont avant tout des êtres humains qui ont aussi des droits humains.</b>
-  
+  </p>
   </div>
 
   <div class="k1">
@@ -2010,10 +1995,11 @@ Tiki N'Yiki veut oeuvrer pour changer la tendance de telles mentalités, faire t
 <div class="NL">
 
   <div class="Noel">
-    <div style="font-family: 'Titillium Web', sans sherif; text-align: left; line-height: 23px; color: rgba(110, 110, 110, 0.927); font-size: 17.5px;">
-      Noël est une célébration généralement adorée par beaucoup d'enfants. Pour ce faire Tiki N'Yiki organisait un arbre de Noël à l'approche de chaque 25 décembre (Jour de la Nativité) au cours duquel
+    <div style="font-family: 'Titillium Web', sans sherif; text-align: left; line-height: 23px; color: rgba(96, 96, 96, 0.884); font-size: 17px;">
+    <p>Noël est une célébration généralement adorée par beaucoup d'enfants. Pour ce faire Tiki N'Yiki organisait un arbre de Noël à l'approche de chaque 25 décembre (Jour de la Nativité) au cours duquel
       les enfants étaient invités à un repas. Une sensibilisation sur le handicap et l'inclusion est tenue et par la suite des questions sont posées afin de 
-      recueillir les réactions des un-es et des autres. 
+      recueillir les différentes réactions. 
+    </p>
     </div>
   <div>
 <img src="https://zupimages.net/up/22/31/z42x.jpg">
@@ -2028,7 +2014,7 @@ Tiki N'Yiki veut oeuvrer pour changer la tendance de telles mentalités, faire t
 
 </div>
 </a>
-Compte tenu des innombrables défis sociaux y compris les barrières sociales, le manque d'infrastructures, de services adéquats et adaptés, des discriminations recurrentes, il est sans doute évident que les personnes handicapées font face à de nombreux challenges sociaux et ne sont certainement pas prises en priorité ni par les autorités ni par la société. 
+<p>Compte tenu des innombrables défis sociaux y compris les barrières sociales, le manque d'infrastructures, de services adéquats et adaptés, des discriminations recurrentes, il est sans doute évident que les personnes handicapées font face à de nombreux challenges sociaux et ne sont certainement pas prises en priorité ni par les autorités ni par la société. 
 <br>  
         <br> Elles n'ont pas la vie facile et doivent s'activer plus fort pour réaliser leurs rêves. Et c'est débile 
 que les gouvernements font peu de choses pour aider financièrement les personnes qui ne peuvent pas travailler afin de pouvoir subvenir à leurs besoins vitaux.  
@@ -2036,7 +2022,7 @@ que les gouvernements font peu de choses pour aider financièrement les personne
 <br>   
 
         
-Dépendemment de leurs régions de vie, peu d'entre elles iront à l'école afin de rêver dans le futur. 
+         Dépendemment de leurs régions de vie, peu d'entre elles iront à l'école afin de rêver dans le futur. 
         <br><br>
          Dans certaines familles il n'y a aucun doute que des enfants handicapés ne soient pas toujours privilégiés par rapport aux enfants dits nornaux. La priorité étant portée sur les enfants dits normaux plutôt que l'enfant handicapé. 
          
@@ -2047,9 +2033,10 @@ Dépendemment de leurs régions de vie, peu d'entre elles iront à l'école afin
         <hr style="color: rgba(239, 54, 7, 0.977); justify-self: center;"> 
         <b style="font-size: 23px; font-family: 'Titillium Web', sans-serif; font-size: 30px; color: rgb(32, 87, 175);">Académie Tiki N'Yiki</b> 
         <br>  
-        Il est inimaginable de voir que de personnes handicapées ne soient pas à mesure de partir à l'hôpital quand elles tombent malades, aller étudier, partir au marché, aller au culte ou simplement sortir marcher à cause du manque de moyens de déplacement (transport). 
+      <p>Il est inimaginable de voir que de personnes handicapées ne soient pas à mesure de partir à l'hôpital quand elles tombent malades, aller étudier, partir au marché, aller au culte ou simplement sortir marcher à cause du manque de moyens de déplacement (transport). 
         <br>  
         Certains handicapés n'ont pas de moyens financiers pour s'offrir de moyens de déplacements comme des tricycles. Elles n'ont pas d'aides financières ou de dotations d'équipements auxiliaires de l'état. Certain-es vivent isolé-es dans des coins réculés en campagne et n'ont ni voiture, ni moto ou même un tricycle pour se déplacer. 
+      </p>
         <br>
         <br>
         <a href="https://thumbs.dreamstime.com/b/golden-graduation-cap-diploma-d-illustration-isolated-white-background-36184349.jpg" target="_blank">
@@ -2082,7 +2069,7 @@ Dépendemment de leurs régions de vie, peu d'entre elles iront à l'école afin
       </a>
       <br>
     
-        En étant handicapés, loger et étudier à l'académie Tiki N'Yiki qui sera établi en ville sera synonyme de vivre à proximité d'importants services comme l'hôpital, les lieux de culte, les centres d'achat, les lieux de sport, de divertissement. 
+    <p>En étant handicapés, loger et étudier à l'académie Tiki N'Yiki qui sera établi en ville sera synonyme de vivre à proximité d'importants services comme l'hôpital, les lieux de culte, les centres d'achat, les lieux de sport, de divertissement. 
         Au déla de cette vie en ville, la discrimination va s'amoindrir vis-à-vis de la vie en campagne ou l'inclusion est très balbutiante voire inexistante. 
         <br>
         <br>
@@ -2293,7 +2280,7 @@ Dépendemment de leurs régions de vie, peu d'entre elles iront à l'école afin
           
           <br>
       
-          La santé est un droit universel et doit être accessible à tout le monde. Par ailleurs avec l'augmentation de la population mondiale et de l'espérance de vie facilitée par les prouesses de la médécine, le fonctionnement des systèmes de santé est confronté à divers challenges et se retrouve sous forte pression. Les urgences bondent les salles d'attente. 
+        La santé est un droit universel et doit être accessible à tout le monde. Par ailleurs avec l'augmentation de la population mondiale et de l'espérance de vie facilitée par les prouesses de la médécine, le fonctionnement des systèmes de santé est confronté à divers challenges et se retrouve sous forte pression. Les urgences bondent les salles d'attente. 
           Parmi les raisons on a d'une part le manque de main d'oeuvre qualifiée dans l'hémisphère Nord et d'autre part le manque d'infrastructures et d'équipements dans l'hémisphère Sud. 
           <br>
           <br>
@@ -2308,7 +2295,8 @@ Dépendemment de leurs régions de vie, peu d'entre elles iront à l'école afin
           partenariats très sûrs avec des hôpitaux, des médécins, du professionel soignant, 
           d'infirmières afin d'utiliser leur expertise pour soutenir bénévolement en conseils de santé, dans des soins ou à travers autres actions médicales visant a maintenir en bonne santé les enfants handicapés qui n'ont pas
          <a href="https://www.hi.org/fr/pays/burkina-faso " style="font-size: 18px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; line-height: 22px;" target="_blank"> de couverture
-         médicale.</a> 
+         médicale.
+        </a> 
 
         </p>
 
@@ -2331,7 +2319,7 @@ Dépendemment de leurs régions de vie, peu d'entre elles iront à l'école afin
       <b style="color:rgba(8, 115, 203, 0.953); font-size: 13.5px; word-spacing: 0.6px;">"La faim justifie les moyens, mais on a rarement les moyens quand on a faim" [ Dictionnaire des idées revues * Jacques Sternberg ]</b> 
       <br>
       <br>
-          Il n'y a aucun doute que quand les un-es mangent à leur faim, à quelque part à travers le monde, il y a aussi d'autres qui meurent de faim. En 2023 près de 783 millions de personnes de la population globale ne sont pas sûres de pouvoir s'assurer un repas quotidien. <a href="https://www.wfp.org/global-hunger-crisis" target="_blank">[Sources: P.A.M (Programme Alimentaire Mondial)]</a>
+    <p> Il n'y a aucun doute que quand les un-es mangent à leur faim, à quelque part à travers le monde, il y a aussi d'autres qui meurent de faim. En 2023 près de 783 millions de personnes de la population globale ne sont pas sûres de pouvoir s'assurer un repas quotidien. <a href="https://www.wfp.org/global-hunger-crisis" target="_blank">[Sources: P.A.M (Programme Alimentaire Mondial)]</a>
           <br>
           <br>
           L'insécurité alimentaire s'est surtout aggravée dans les pays en proie au terrorisme violent qui a généré une crise humanitaire avec un grand nombre de réfugiés internes
@@ -2355,7 +2343,7 @@ Dépendemment de leurs régions de vie, peu d'entre elles iront à l'école afin
           3. La troisième approche est l'intégration (association) des nouveaux moyens technologiques dans les processus de production agricole. En effet les producteurs doivent de plus en plus intégrer et 
           utiliser les applications technologiques qui vont les assister à mieux analyser, prévoir, décéler, réguler, contrôler, corriger, optimiser leurs productions pour gagner en temps, en qualité et en quantité 
           tout en respectant la nature.
-
+        </p>
         </div>
        
         <a href="https://www.banquemondiale.org/fr/topic/agriculture/brief/food-security-update/what-is-food-security" target="_blank">
@@ -2415,8 +2403,9 @@ Dépendemment de leurs régions de vie, peu d'entre elles iront à l'école afin
         
         <img src="https://www.zupimages.net/up/23/24/o4k8.jpg" alt="Sensibiliser par rapport aux changements climatiques">
         <figcaption style="font-family: 'Titillium Web', sans sherif; color: #474747d5; margin-top: -1px; font-size: 14px; line-height: 20px; padding: 5px;">
-          Les enfants sont les responsables du futur. Les sensibiliser sur les changements climatiques fait partie des nobles 
+        <p> Les enfants sont les responsables du futur. Les sensibiliser sur les changements climatiques fait partie des nobles 
           objectifs que Tiki N'Yiki s'est fixés et travaille à les atteindre. 
+        </p>
       </figcaption> 
   </figure>
       </div>
@@ -2441,7 +2430,7 @@ Dépendemment de leurs régions de vie, peu d'entre elles iront à l'école afin
     </b>
     <br>
     <br>
-    Les changements climatiques désignent les variations à long terme de la température et des modèles météorologiques. 
+  <p>Les changements climatiques désignent les variations à long terme de la température et des modèles météorologiques. 
     Il peut s’agir de variations naturelles, dues par exemple à celles du cycle solaire ou à des éruptions volcaniques massives. <a href="https://www.un.org/fr/climatechange/what-is-climate-change" target="_blank" style="font-size: 15px;">[Sources: Nations Unies]</a> 
     <br>
     <br>
@@ -2456,7 +2445,7 @@ Dépendemment de leurs régions de vie, peu d'entre elles iront à l'école afin
  <br>
  
  Avant chaque séance de nettoyage la condition sine quanon est d'imprégner aux participants particulierièment les enfants la notion de changement climatique et quelles sont ses conséquences sur la planète et plus particulièrement sur nous-mêmes entant qu'humains.
- 
+</p>
 </div>
 
 </div>
@@ -2590,20 +2579,23 @@ Dépendemment de leurs régions de vie, peu d'entre elles iront à l'école afin
                   </strong>
                
                 <div class="kpt">
-                 
                     <p>
-                   
-                     La vision de Tiki N'Yiki a pour promoteur Gabriel, une personne à mobilité réduite. Il a étudié au lycée Bassy de <a href="https://civitac.org/spip.php?article447" target="_blank">Ziniaré</a> et au lycée <a href="https://www.africabizinfo.com/fr-BF/lyc%C3%A9e-newton-descartes" target="_blank">Newton</a> de <a href="https://mairie-ouaga.bf/accueil" target="_blank"> Ouagadougou</a> au pays des hommes intègres, le <a href="https://www.ontb.bf/" target="_blank">Burkina Faso.</a>
+                     La vision de Tiki N'Yiki a pour promoteur Gabriel, une personne à mobilité réduite. 
+                     Il a étudié au lycée Bassy de <a href="https://civitac.org/spip.php?article447" target="_blank">Ziniaré</a> 
+                     et au lycée <a href="https://www.africabizinfo.com/fr-BF/lyc%C3%A9e-newton-descartes" target="_blank">Newton</a> 
+                     de <a href="https://mairie-ouaga.bf/accueil" target="_blank"> Ouagadougou</a> 
+                     au pays des hommes intègres, le <a href="https://www.ontb.bf/" target="_blank">Burkina Faso.</a>
                     
                      Fervent défenseur des droits des personnes handicapées, il s'est engagé et a travaillé dans plusieurs associations pour l'éducation,
                        la promotion et la défense des personnes à mobilité réduite dont les enfants. 
-                       <br>
-                       <br>
+        
                        En 2006 Gabriel etait un des membres fondateurs de l'association PAAS NEERE
                        </a> dans laquelle il a enseigné des enfants handicapés et orphelins, animé de multiples séances de sensibilisation avec thème focal "Handicap et Inclusion Sociale" de 2006 à 2014.
                        <br>
                        <br>
+                       
                        En 2007, 2008, 2013, Gabriel a voyagé en Europe pour des recherches de fonds. Ses séjours l'ont conduit notamment à <a href="https://www.geneve.ch/fr" target="_blank">Genève</a>, à <a href="https://www.sion.ch/" target="_blank"> Sion</a>, à <a href="https://www.delemont.ch/" target="_blank">Delémont</a>, à <a href="http://www.vendlincourt.ch/" target="_blank"> Vendlincourt</a> en Suisse en collaboration avec ses ami-es et les dirigeants de <a href="https://www.transporthandicap.ch/www/1-accueil" target="_blank"> Transport Handicap en Valais</a> et à <a href=" https://fr.wikipedia.org/wiki/Rastatt" target="_blank"> Rasttat</a> et <a href="https://fr.wikipedia.org/wiki/Kuppenheim" target="_blank"> Kuppenheim</a> dans le <a href="https://fr.wikipedia.org/wiki/Bade-Wurtemberg" target="_blank"> Bade-Wurtemberg [Baden-Württemberg] </a>en Allemagne pour donner des series de conférences sur l'association PAAS NEERE dont il était président, les différents projets à implémenter, les défis à atteindre et l'impact de l'association pour les communautés locales de la région de Ziniare.
+                     
                       <br>
                       <br>
                       En 2012, il a été décoré Chevalier de l'Ordre du Mérite par l'état du Burkina Faso pour l'ensemble de sa contribution au développement et l'épanouissement d'une communauté différente, marginalisée dans la société dont les personnes handicapées.
@@ -2623,36 +2615,43 @@ Dépendemment de leurs régions de vie, peu d'entre elles iront à l'école afin
                       <br>
                       Gabriel souhaite créer une fondation pour soutenir l'éducation des enfants handicapés, défendre leurs droits et leur créer des opportunités<a href="https://www.ontb.bf/" target="_blank"> au Burkina Faso.</a>
                      Il aime la nature, la photographie, l'histoire, la géographie, l'architecture, le cyclisme, le football et le hockey.
-                    </p>      
-      </div>
+                      </p>
+                </div>
 
       <div class="kgp">
+
+      <div class="handi">
+        <figure>
         <img src="https://www.zupimages.net/up/23/28/kkoy.jpg" alt="At office">
-      <figure>
-        <figcaption style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 19px; margin-top: -11rem;">
-        <b style="color:#0177fe"> Le handicap n'est pas une fatalité !</b>
-      </figcaption> 
-    </figure>
+        <figure>
+          <figcaption style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 19px; text-align: center;">
+          <b style="color:#0177fe"> Le handicap n'est pas une fatalité !</b>
+        </figcaption> 
+      </figure>
         </div>
 
-      </div>
-   
-
-    <div class="Thanking" style="padding: 1rem;"> <b style="font-family:'Titillium Web', sans sherif; color: rgba(16, 84, 201, 0.996); font-size: 20px">
-      Merci pour votre attention et vos réactions ! 
-    </b>
-  </div>
+   </div>
 
 </div> 
+</div> 
 
-  <a href="#Top">
-    <div class="SPan">
-    <img src="https://pixlok.com/wp-content/uploads/2021/10/Up-Arrow-0s8m3s.png" />
-    </div>
-</a>
 
-</div>       
 
+<div class="Thanking" style="padding: 1rem;"> 
+  <b style="font-family:'Titillium Web', sans sherif; color: rgba(16, 84, 201, 0.996); font-size: 20px">
+  Merci pour votre attention et vos réactions ! 
+</b>
+</div>
+
+<a href="#Top">
+    
+  <div class="SPan">
+  <img src="https://pixlok.com/wp-content/uploads/2021/10/Up-Arrow-0s8m3s.png" />
+  </div>
+</a> 
+
+</div> 
+     
 
 <div class="footer">
 
