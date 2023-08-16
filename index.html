@@ -879,33 +879,17 @@ animation: auto 15s infinite linear;
   padding: 10px;
   border-radius: 0.25rem;
 }
+
 .kpt:hover{
   transition: 0.25s linear;
   color:rgba(104, 104, 104, 0.915);
 }
 
-label{
-  display: inline-block;
-                      cursor: pointer;
-                      background: #0177fe;
-                      color: #fff;
-                      padding: 3px 13px;
-                      border-radius: 0.2rem;
-                      padding-top: 12px;
+#more {display: none;
 }
-#ch{
-display: none;
-}
-#ch:checked .CT{
-  display: block;
-}
-
-#ch:checked label{
-  display: none;
-}
-
-.CT{
-  display: none;
+.button{
+width: 100%;
+height: auto;
 }
 .kgp{
     display: grid;
@@ -2567,9 +2551,7 @@ que les gouvernements font peu de choses pour aider financièrement les personne
                   </strong>
                
                 <div class="kpt">
-                  <input id="ch" type="checkbox">
-
-                  <h2>Portfolio</h2>
+                
                     <p>
                      La vision de Tiki N'Yiki a pour promoteur Gabriel, une personne à mobilité réduite. 
                      Il a étudié au lycée Bassy de <a href="https://civitac.org/spip.php?article447" target="_blank">Ziniaré</a> 
@@ -2579,15 +2561,17 @@ que les gouvernements font peu de choses pour aider financièrement les personne
                     
                      Fervent défenseur des droits des personnes handicapées, il s'est engagé et a travaillé dans plusieurs associations pour l'éducation,
                        la promotion et la défense des personnes à mobilité réduite dont les enfants. 
+              
                       </p>
-
-                     <div class="CT">
+                     
                       <p>
-                       En 2006 Gabriel etait un des membres fondateurs de l'association PAAS NEERE
+                       
+                       En 2006 <span id="dots">...</span><span id="more"> Gabriel etait un des membres fondateurs de l'association PAAS NEERE
                        </a> dans laquelle il a enseigné des enfants handicapés et orphelins, animé de multiples séances de sensibilisation avec comme thème focal "Handicap et Inclusion Sociale".
                        <br>
                        <br>                    
-                       En 2007, 2008, 2013, Gabriel a voyagé en Europe pour des recherches de fonds. Ses séjours l'ont conduit notamment à <a href="https://www.geneve.ch/fr" target="_blank">Genève</a>, à <a href="https://www.sion.ch/" target="_blank"> Sion</a>, à <a href="https://www.delemont.ch/" target="_blank">Delémont</a>, à <a href="http://www.vendlincourt.ch/" target="_blank"> Vendlincourt</a> en Suisse en collaboration avec ses ami-es et les dirigeants de <a href="https://www.transporthandicap.ch/www/1-accueil" target="_blank"> Transport Handicap en Valais</a> et à <a href=" https://fr.wikipedia.org/wiki/Rastatt" target="_blank"> Rasttat</a> et <a href="https://fr.wikipedia.org/wiki/Kuppenheim" target="_blank"> Kuppenheim</a> dans le <a href="https://fr.wikipedia.org/wiki/Bade-Wurtemberg" target="_blank"> Bade-Wurtemberg [Baden-Württemberg] </a>en Allemagne pour donner des series de conférences sur l'association PAAS NEERE dont il était président, les différents projets à implémenter, les défis à atteindre et l'impact de l'association pour les communautés locales de la région de Ziniare.
+                       En 2007, 2008, 2013, Gabriel a voyagé en Europe pour des recherches de fonds. Ses séjours l'ont conduit notamment à <a href="https://www.geneve.ch/fr" target="_blank">Genève</a>, à <a href="https://www.sion.ch/" target="_blank"> Sion</a>, à <a href="https://www.delemont.ch/" target="_blank">Delémont</a>, à <a href="http://www.vendlincourt.ch/" target="_blank"> Vendlincourt</a> en Suisse en collaboration avec ses ami-es et les dirigeants de <a href="https://www.transporthandicap.ch/www/1-accueil" target="_blank"> 
+                        Transport Handicap en Valais</a> et à <a href=" https://fr.wikipedia.org/wiki/Rastatt" target="_blank"> Rasttat</a> et <a href="https://fr.wikipedia.org/wiki/Kuppenheim" target="_blank"> Kuppenheim</a> dans le <a href="https://fr.wikipedia.org/wiki/Bade-Wurtemberg" target="_blank"> Bade-Wurtemberg [Baden-Württemberg] </a>en Allemagne pour donner des series de conférences sur l'association PAAS NEERE dont il était président, les différents projets à implémenter, les défis à atteindre et l'impact de l'association pour les communautés locales de la région de Ziniare.
                      
                       <br>
                       <br>
@@ -2608,17 +2592,28 @@ que les gouvernements font peu de choses pour aider financièrement les personne
                       <br>
                       Gabriel souhaite créer une fondation pour soutenir l'éducation des enfants handicapés, défendre leurs droits et leur créer des opportunités<a href="https://www.ontb.bf/" target="_blank"> au Burkina Faso.</a>
                      Il aime la nature, la photographie, l'histoire, la géographie, l'architecture, le cyclisme, le football et le hockey.
-                      </p>
-
-                      <label for="ch">
-                      Read Less
-                    </label>
-                       
-                      </div>
-
-                      <label for="ch">
-                      Read More
-                    </label>
+                    </span>
+                  </p>
+                    <button class="button" onclick="myFunction()" id="myBtn">Read more</button>
+                    
+                    <script>
+                    function myFunction() {
+                      var dots = document.getElementById("dots");
+                      var moreText = document.getElementById("more");
+                      var btnText = document.getElementById("myBtn");
+                    
+                      if (dots.style.display === "none") {
+                        dots.style.display = "inline";
+                        btnText.innerHTML = "Read more"; 
+                        moreText.style.display = "none";
+                      } else {
+                        dots.style.display = "none";
+                        btnText.innerHTML = "Read less"; 
+                        moreText.style.display = "inline";
+                      }
+                    }
+                    </script>
+                    
                 </div>
 
       <div class="kgp">
