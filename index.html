@@ -1074,7 +1074,7 @@
             position: relative;
             flex-direction: column;
             width: 100%;
-            height: 6105px;
+            height: 6200px;
             background-color: rgba(222, 222, 222, 0.791);
             justify-content: center;
             align-items: center;
@@ -2172,19 +2172,52 @@
 
         .CANADA{
             display: grid;
+            grid-template-rows: 1fr 2fr;
+            row-gap: 1.2rem; 
+            width: 84%;
+            height: 409px;
+            padding: 20px;
+            justify-content: center;
+            justify-items: center;
+            background: #fff;
+        }
+
+.DACA{
+    background: #f1f1f1f1;
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    font-family: georgia;
+    font-size: 20px;
+    color:rgba(2, 72, 142, 0.895);
+    width: 100%;
+    height: auto;
+    padding: 16px;
+    border: 0.12px solid rgba(181, 191, 200, 0.87);
+    box-shadow: -1px 2px 0.5rem 1px rgba(20, 61, 103, 0.829);
+}
+
+.DACA:hover{
+    background: #fff;
+    box-shadow: 0 2px 0.9rem 3px rgba(23, 76, 130, 0.829);
+    transition: 0.2s linear;
+    color:rgb(8, 48, 88);
+    border: 0.12px solid rgba(181, 191, 200, 0.87);
+}
+
+        .DANACA{
+            display: grid;
             grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
             grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
             row-gap: 1.25rem; 
             column-gap: 0.5rem;
-            width: 84%;
-            height: 340px;
+            width: auto;
+            height: 350px;
             padding: 20px;
-            padding-top: 30px;
             justify-content: center;
             justify-items: center;
             background: rgba(104, 144, 254, 0.286);
         }
-
         .NADA{
             background: #fff;
             display: grid;
@@ -4050,6 +4083,14 @@ function showSlides(n) {
 
             <div class="CANADA">
 
+            <a href="https://www.canada.ca/fr.html" target="_blank">
+                <div class="DACA">
+                <b>CANADA : A Country From Coast To Coast</b>
+                </div>
+            </a>
+
+                <div class="DANACA">
+
                 <a href="https://www2.gnb.ca/" target="_blank">
                 <div class="NADA">
                 New-Brunswick
@@ -4139,7 +4180,7 @@ function showSlides(n) {
                                     Pacific Ocean
                                 </div>
                                 </a>
-
+                            </div>
             </div>
 
             <div class="content9">
