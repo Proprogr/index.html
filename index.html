@@ -3425,6 +3425,29 @@ background: #717171;
             box-shadow: 0px 5px 0.5rem 1px rgba(9, 106, 197, 0.851);
             transition: 0.45s ease;
         }
+
+        .TOPE{
+            display: grid;
+            grid-template-columns: 1fr;
+            justify-content: center;
+            justify-items: center;
+            background: purple; 
+            font-family: 'Merienda'; 
+            font-size: 22px; 
+            color: #fff; 
+            width: 200px; 
+            height: 50px;
+            padding: 10px;
+            border-radius: 0.5rem;
+            cursor: pointer;
+            margin-top: 0.5rem;
+            margin-bottom: 0.5rem;
+    }
+
+    .TOPE:hover{
+        background: #000;
+        transition: 0.2s linear;
+    }
         
     </style>
 
@@ -3433,6 +3456,7 @@ background: #717171;
 </head>
 
 <body>
+    <a href="#Top"></a>
 
     <div class="scroll-bar"></div>
 
@@ -3505,8 +3529,6 @@ function showSlides(n) {
         }
     </script>
 
-    <a name="Top"></a>
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
     <link href="indexx_fichiers/css2_002.css" rel="stylesheet">
@@ -3540,6 +3562,7 @@ function showSlides(n) {
                         </div>
                     </div>
                 </div>
+
 
                 <div class="cover1">
                     <div class="ttle-container">
@@ -5069,16 +5092,19 @@ function showSlides(n) {
                     <span class="dot" oncliclick="currentSlide(54)"></span>
                     <span class="dot" oncliclick="currentSlide(55)"></span>   
                 </div>
-                
-                 </div>
                  
     </div>
+</div>
 
-        </div>
 
-    
+
+
+<a href="#Top">
+    <div class="TOPE"> 
+        UP-TOP
     </div>
-
+</a>
+    
     <div class="footer">
         Copyright © 2023 Tiki N'Yiki
         <br>
@@ -5089,6 +5115,7 @@ function showSlides(n) {
         Webmaster: Gabriel K.C, Disability Rights Activist
         <br>
     </div>
+
 </body>
 
 </html>
