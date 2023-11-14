@@ -1310,7 +1310,7 @@
             background-color: #fdfdfde5;
             padding-top: 20px;
             padding-bottom: 20px;
-            margin-top: 6%;
+            margin-top: 3.5%;
             box-shadow: 0 0 0.5rem 0.5px rgb(49, 128, 255);
         }
 
@@ -3406,15 +3406,15 @@ background: #717171;
             justify-content: center;
             align-items: center;
             text-align: center;
-            width: 84%;
+            width: 100%;
             padding: 5px;
             height: 45px;
             font-family: 'Merienda';
             font-size: 16px;
             border: 0.5px solid rgba(221, 221, 221, 0.161);
-            box-shadow: 0px 5px 0.5rem 1px rgba(9, 106, 197, 0.851);
+            box-shadow: 0 5px 0.5rem 1px rgba(10, 117, 216, 0.851);
             border-radius: 0.25rem;
-            margin-top: 30px;
+            margin-top: -1.5rem;
         }
 
         .reader:hover{
@@ -3422,8 +3422,34 @@ background: #717171;
             border: 0.1px solid rgba(121, 121, 121, 0.486);
             border-bottom: none;
             color: rgba(9, 106, 197, 0.949);
-            box-shadow: 0px 5px 0.5rem 1px rgba(9, 106, 197, 0.851);
+            box-shadow: 0 5px 0.5rem 1px rgba(10, 117, 216, 0.851);
             transition: 0.45s ease;
+        }
+
+        .disabled{
+            display: grid;
+            grid-template-columns: 1fr;
+            justify-content: center;
+            justify-items: center;
+            color: rgba(0, 0, 139, 0.903);
+            font-size: 23px;
+            font-family: 'arial black';
+            width: 84%;
+        }
+
+        .read{
+            display: grid;
+            grid-template-rows: 0.5fr 0.5fr;
+            justify-content: center;
+            justify-items: center;
+            padding: 10px;
+            height: 120px;
+            width: 84%;
+            background: rgba(213, 216, 217, 0.381);
+            color: #000;
+            margin-top: 3.5rem;
+            box-shadow: 0 3px 0.25rem 1px rgba(77, 164, 245, 0.842);
+            border-radius: 0.35rem;
         }
 
         .TOPE{
@@ -3781,12 +3807,18 @@ function showSlides(n) {
     <div class="fwrapper">
 
         <div class="s-wrapper">
-            <div class="reader">
+
+            <div class="read">
+
+                <div class="disabled">
+                    DO NOT VIOLATE DISABILITY RIGHTS ANYTIME AND ANYWHERE
+                </div>
+
+                <div class="reader">
                 <b>Welcome ! This Website is in Project. Some of the Pics And Links Are Temporary Or Not Set Yet. Enjoy your Visit ! Thank You !</b>
             </div>
 
-            
-
+        </div>
 
             <div class="Home-Photo1">
 
