@@ -2358,7 +2358,7 @@ height: auto;
             cursor: pointer;
             box-shadow: 0 6px 0.85rem 6px rgba(6, 11, 45, 0.924);
             color: #000;
-            transition: 0.15s linear;
+            transition: 0.19s ease-in;
             font-size: 17.5px;
         }
 
@@ -2643,12 +2643,13 @@ height: auto;
     padding: 5px;
     height: 175px;
     border-radius: 0.5rem;
-    box-shadow: 0 -0.5px 0.3rem 1px rgb(21, 48, 148);
+    box-shadow: 0 -0.5px 0.3rem 1px rgba(30, 63, 184, 0.914);
 }
 
 .Burkimap img:hover{
+    background: -webkit-linear-gradient(rgba(0, 128, 0, 0.667),#fff);
     box-shadow: -0.2px 2px 0.35rem 2px rgb(21, 48, 148);
-    transition: 0.16s linear;
+    transition: 0.14s linear;
 }
         .FASOTITLE{
             display: grid;
@@ -2659,17 +2660,19 @@ height: auto;
             width: 800px;
             height: 175px;
             padding: 15px;
-            background: #f9f9f9;
+            background: #f4f4f4;
             border-radius: 0.35rem;
-            box-shadow: 0 -0.5px 0.3rem 1px rgb(21, 48, 148);
-            color:#000;
+            box-shadow: 0 -0.5px 0.3rem 1px rgba(30, 63, 184, 0.914);
+            color:rgba(101, 101, 101, 0.925);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 15px;
         }
 
         .FASOTITLE:hover{
-            color:rgb(172, 35, 62);
-            transition: 0.16s linear;
-            box-shadow: -0.2px 2px 0.35rem 2px rgb(21, 48, 148);
-            background: #f6f6f6;
+            color:rgb(26, 49, 133);
+            transition: 0.14s linear;
+            box-shadow: -0.2px 2px 0.35rem 2px rgb(22, 46, 133);
+            background: -webkit-linear-gradient(rgba(0, 128, 0, 0.305),#fff);
         }
 
         .BUFASO{
@@ -2704,11 +2707,38 @@ color: rgb(40, 40, 137);
 cursor: pointer;
         }
         .FASO:hover{
-            background: #0a0a0a;
-            color: #fff;
+            background: -webkit-linear-gradient(#000000ee,rgb(14, 165, 0));
+            color: #ff0;
             border: 1.5px solid #fff;
             border-radius: 0.5rem;
-            transition: 0.29s ease-in;
+            transition: 0.2s ease-in;
+            box-shadow: 2px 3px 0.8rem 2px rgba(17, 17, 88, 0.796);
+        }
+
+        .SOFA{
+            display: grid;
+grid-template-columns: 1fr;
+justify-content: center;
+justify-items: center;
+background: rgb(201, 206, 210);
+font-family: 'Merienda';
+font-size: 14px;
+box-shadow: 2px 3px 0.5rem 1px rgba(19, 19, 99, 0.796);
+border: 1.5px solid rgba(33, 33, 171, 0.796);
+border-radius: 0.5rem;
+width: 149px;
+height: 65px;
+padding: 15px;
+color: purple;
+cursor: pointer;
+        }
+
+        .SOFA:hover{
+            background: -webkit-linear-gradient(#000000ee,rgb(14, 165, 0));
+            color: gold;
+            border: 1.5px solid #fff;
+            border-radius: 0.5rem;
+            transition: 0.2s ease-in;
             box-shadow: 2px 3px 0.8rem 2px rgba(17, 17, 88, 0.796);
         }
        
@@ -4232,10 +4262,14 @@ function showSlides(n) {
                     <img src="https://zupimages.net/up/22/32/t861.png" alt="Burkina Map">
                 </div>
 
-                <div class="FASOTITLE">Burkina Faso, the land of integrity and a landlocked country of 45 provinces is nested in the heart of West Africa. Burkina Faso is independent in 1960 from France. Its capital and
-                main city is Ouagadougou. The population of Burkina Faso is about 23 300 000 inhabitants mainly composed of young people. Geography influences Economy. The economy of Burkina Faso is mostly based on the
+                <div class="FASOTITLE">
+                <p><b>Burkina Faso, the land of integrity and landlocked country of 45 provinces, is nested within the heart of West Africa. Burkina Faso was a former colony of France from which it took its independence in August 5th, 1960. Its capital and
+                main city is Ouagadougou. 
+                Ouagadougou city area is populated by 1.086.505 people according to the website of PopulationStat.The population of Burkina Faso is about 23 300 000 inhabitants mainly composed of young people. Geography influences Economy. The economy of Burkina Faso is mostly based on the
                 agriculture, livestock breeding, mining, market gardening. The informal
-                sector is growing and believed to create jobs. Citizens of Burkina Faso are called Burkinabè or Burkinabé.              
+                sector is growing and believed to create jobs. Citizens of Burkina Faso are called Burkinabè or Burkinabé.  
+                </b>    
+            </p>            
             </div>
 
         </div>
@@ -4425,19 +4459,19 @@ function showSlides(n) {
     </div>
 </a>
 <a href= "https://mairie-ouaga.bf/accueil" target="_blank">
-    <div class="FASO" style="color: blue;"> Ouagadougou
+    <div class="SOFA"> Ouagadougou
     </div>
 </a>
 <a href= "https://www.britannica.com/place/Bobo-Dioulasso" target="_blank">
-    <div class="FASO" style="color: blue;"> Bobo Dioula
+    <div class="SOFA"> Bobo Dioulasso
     </div>
 </a>
 <a href= "https://en.wikivoyage.org/wiki/Ouahigouya" target="_blank">
-    <div class="FASO" style="color: blue;"> Ouahigouya
+    <div class="SOFA"> Ouahigouya
     </div>
 </a>
 <a href= "https://en.wikipedia.org/wiki/Banfora" target="_blank">
-    <div class="FASO" style="color: blue;"> Banfora
+    <div class="SOFA"> Banfora
     </div>
 </a>
 
