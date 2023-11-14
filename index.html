@@ -1878,13 +1878,13 @@
 
         .k-imagek5 {
             display: grid;
-            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr;
             width: 560px;
-            column-gap: 5px;
-            justify-content: right;
+            height: 260px;
+            row-gap: 5px;
+            justify-content: center;
             justify-items: center;
             background: transparent;
-            height: 260px;
             font-family: arial;
             font-size: 18px;
             line-height: 23px;
@@ -1910,6 +1910,46 @@
         .k-imageM img {
             width: 334px;
             height: 230px;
+        }
+
+        .Clim1{
+display: grid;
+grid-template-columns: 1fr;
+justify-content: center;
+justify-items: center;
+width: auto;
+height: auto;
+        }
+
+        .Clim2{
+            display: grid;
+            grid-template-columns: repeat(6,0.25fr);
+            justify-content: space-between;
+            justify-items: center;
+            width: 100%;
+            height: auto;
+            
+        }
+
+        .Cli{
+            display: grid;
+            grid-template-rows: 0.25fr;
+            justify-content: center;
+            justify-items: center;
+            background: #f0f0f0;
+            width: 80px;
+            height: auto;
+            padding: 2px;
+            border: 0.12rem solid crimson;
+            border-radius: 0.25rem;
+            color: #000;
+            font-family: arial;
+        }
+
+        .Cli:hover{
+            background: #000;
+            color: yellow;
+            transition: 0.18s linear;
         }
 
         .content6 {
@@ -3995,16 +4035,27 @@ function showSlides(n) {
             <div class="content5">
 
                 <a href="https://www.un.org/en/global-issues/climate-change" target="_blank">
+
                     <div class="k-imagek5">
+
+                        <div class="Clim1">
                         <p
                             style="font-family: 'Titillium Web', sans serif; font-size: 18px; line-height: 25px; color: rgb(0, 149, 255); padding: 5px;">
                             <b>Climate Change Is a Big Threat To Human-Beings And To Earth. Climate Change is Deadly Causing Floodings, Wildfires, Droughts, Earthquakes And Volcanos Around The World. There Is No Doubt that Climate Change Has More Endangered Earth Than Never Before. 
-                                But Human-Being Has Provoked It Through His Continual Agression of Mother Nature. Now He Has to Stand up and Figure It Out In Order to Mitigate The Danger [Threat].</b> </p>
-                                <p style="font-family: 'helvetica'; color: rgba(33, 33, 33, 0.903); font-size: 15.78px; line-height: 22px; padding: 5px;">
-                            <b>Climate Change</b> has neither been a story nor a comedy. It's a mad reality.
-                        
-                            | <em style="font-family: arial; font-size: 11px; color:rgba(1, 121, 207, 0.97)">Earthquakes</em> | <em style="font-family: arial; font-size: 11px; color:rgba(1, 121, 207, 0.97);">Tsunamis</em> | <em style="font-family: arial; font-size: 11px; color:rgba(1, 121, 207, 0.97);">Floodings</em> | <em style="font-family: arial; font-size: 11px; color:rgba(1, 121, 207, 0.97);">Wildfires</em> | <em style="font-family: arial; font-size: 11px; color:rgba(1, 121, 207, 0.97);">Volcanos</em> | <em style="font-family: arial; font-size: 11px; color:rgba(1, 121, 207, 0.97);">Hurricanes</em> |
+                                But Human-Being Has Provoked It Through His Continual Agression of Mother Nature. Now He Has to Stand up and Figure It Out In Order to Mitigate The Danger [Threat].
+                            </b> 
+                        <br> 
+                        <b style="font-family: georgia; color:#000; font-size: 13.5px;">Climate Change has neither been a story nor a comedy. It's a mad reality.
+                        </b>
                         </p>
+                    </div>
+
+                    <div class="Clim2">
+                                
+                          <div class="Cli"><b style="font-family: arial; font-size: 11.5px;">Earthquakes</b> </div> <div class="Cli"><b style="font-family: arial; font-size: 11.5px;">Tsunamis</b> </div> <div class="Cli"><b style="font-family: arial; font-size: 11.5px;">Floodings</b> </div> <div class="Cli"><b style="font-family: arial; font-size: 11.5px;">Wildfires</b> </div> <div class="Cli"><b style="font-family: arial; font-size: 11.5px;">Volcanos</b> </div> <div class="Cli"><b style="font-family: arial; font-size: 11.5px;">Hurricanes</b> </div>
+                        
+                    </div>
+
                     </div>
                 </a>
 
