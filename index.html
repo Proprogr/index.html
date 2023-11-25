@@ -3748,7 +3748,6 @@ background: #717171;
     background: gainsboro;
     width: 111px;
     height: 45px;
-    padding: 5px;
     border-radius: 0.35rem;
     font-size: 14px;
     color: rgb(107, 107, 107);
@@ -3762,6 +3761,10 @@ background: #717171;
     color: #000;
     transition: 0.18s ease-in;
 }
+#more{
+    display: none;
+}
+
     </style>
 
     <title>home.html</title>
@@ -3825,22 +3828,6 @@ function showSlides(n) {
             }
         }
 
-        //Get the ReadLess, ReadMore function
-        function readMoreFunction() {
-            var dots = document.getElementById("dots");
-            var contentText = document.getElementById("contentText");
-            var btnText = document.getElementById("buttonReadMore");
-
-            if (dots.style.display === "none") {
-                dots.style.display = "inline";
-                btnText.innerHTML = "Read More";
-                contentText.style.display = "none";
-            } else {
-                dots.style.display = "none";
-                btnText.innerHTML = "Read Less";
-                contentText.style.display = "inline";
-            }
-        }
     </script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -5593,6 +5580,7 @@ function showSlides(n) {
      <button class="button" onclick="myFunction()" id="myBtn">Read more</button>
                     
                     <script>
+
                     function myFunction() {
                       var dots = document.getElementById("dots");
                       var moreText = document.getElementById("more");
@@ -5602,7 +5590,9 @@ function showSlides(n) {
                         dots.style.display = "inline";
                         btnText.innerHTML = "Read more"; 
                         moreText.style.display = "none";
-                      } else {
+                      } 
+                      
+                      else {
                         dots.style.display = "none";
                         btnText.innerHTML = "Read less"; 
                         moreText.style.display = "inline";
