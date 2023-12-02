@@ -2744,6 +2744,22 @@ height: auto;
     color: rgba(105, 105, 105, 0.751);
     font-family: 'Kanit';
     background: rgba(255, 255, 255, 0.984);
+    border: 0.12rem solid rgba(64, 116, 171, 0.46);
+    justify-content: center;
+    justify-items: center;
+    text-align: left;
+    width: 86%;
+    height: 370px;
+
+}
+.Burki-pics1{
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    column-gap: 0.9rem;
+    padding: 10px;
+    color: rgba(105, 105, 105, 0.751);
+    font-family: 'Kanit';
+    background: rgba(255, 255, 255, 0.984);
     border: 0.12rem solid rgba(134, 187, 244, 0.567);
     border-radius: 0.4rem;
     justify-content: center;
@@ -2751,7 +2767,6 @@ height: auto;
     text-align: left;
     width: 86%;
     height: 370px;
-
 }
 
 .Bu-pics1{
@@ -2767,9 +2782,60 @@ height: auto;
     font-size: 13.25px;
     background: #fff;
     color: rgba(79, 79, 79, 0.697);
+    border: 0.12rem solid rgba(64, 116, 171, 0.46);
+    border-radius: 0.3rem;
+}
+
+.Bu-pics3{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    justify-items: center;
+    width: 100%;
+    height: 349px;
+    padding: 15px;
+    font-family: 'Kanit';
+    line-height: 17.35px;
+    font-size: 13.25px;
+    background: #fff;
+    color: rgba(79, 79, 79, 0.697);
+    border: 0.12rem solid rgba(64, 116, 171, 0.46);
+    border-radius: 0.3rem;
+}
+.Bu-pics4{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    justify-items: center;
+    width: 100%;
+    height: 349px;
+    padding: 15px;
+    font-family: 'Kanit';
+    line-height: 17.35px;
+    font-size: 13.25px;
+    background: #fff;
+    color: rgba(79, 79, 79, 0.697);
+    border: 0.12rem solid rgba(64, 116, 171, 0.46);
+    border-radius: 0.3rem;
+}
+
+.Bu{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    justify-items: center;
+    width: 100%;
+    height: 349px;
+    padding: 15px;
+    font-family: 'Kanit';
+    line-height: 17.35px;
+    font-size: 13.25px;
+    background: #fff;
+    color: rgba(79, 79, 79, 0.697);
     border: 0.12rem solid rgba(134, 187, 244, 0.567);
     border-radius: 0.3rem;
 }
+
 .Bu-pics img{
     width: 400px;
     height: 255px;
@@ -4872,8 +4938,11 @@ function showSlides(n) {
 </div>
 
 <div class="Burki-PiK">
+
     <div class="Burki-pics" style="margin-top: 1.5rem">
+
         <div class="Bu-pics">
+
         <img src="https://www.hi-us.org/sn_uploads/federation/country/BURKINAFASO_1.jpg?maxw=1110&maxh=1110">
     <figure>
         <figcaption style="font-family: 'verdana'; font-size: 10px; color: #000;">
@@ -4921,17 +4990,45 @@ function myFunction() {
 
 </div>
 
-    <div class="Burki-pics">
+    <div class="Burki-pics1">
 
         <div class="Bu-pics">
-            Image Here
+        <img src="https://media.cntraveler.com/photos/569e7932c58591430b12c922/master/w_1600%2Cc_limit/burkina-faso-05-cr-getty.jpg" />
         </div>
-    <div class="Bu-pics1">
-Text Here [ 2.] Talk About the policies and gobernmental achievements and set rules about Disability, Their Rights, Their Duties And In General Their Lives As Different But Also As Citizens. They Have An Impact whetever Its Nature In The Communities Because Their Seventh Sens Will Get Them Emerge Even From A Little Chaos. And The Local interaction and perception given it is about disability or disabled persons. 
+    <div class="Bu">
+        <b style="font-size: 18px">2. Disability And Local LAw </b>
+    <p>Talk About the policies and gobernmental achievements and 
+        <span id="dots"> </span> ... <span id="more">set rules about Disability, Their Rights, Their Duties And In General Their Lives As 
+        Different But Also As Citizens. They Have An Impact whetever Its Nature In The Communities Because Their Seventh Sens Will Get Them Emerge Even From A Little Chaos. And The Local interaction and 
+        perception given it is about disability or disabled persons.
+</span> 
+</p>
+<button class="button" onclick="myFunction()" id="myBtn">Read more</button>
+                    
+<script>
+
+function myFunction() {
+  var dots1 = document.getElementById("dots1");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots1.style.display === "none") {
+    dots1.style.display = "inline";
+    btnText.innerHTML = "read more"; 
+    moreText.style.display = "none";
+  } 
+  
+  else {
+    dots1.style.display = "none";
+    btnText.innerHTML = "read less"; 
+    moreText.style.display = "inline";
+  }
+}
+</script>
 </div>
 
   </div>
-    <div class="Burki-pics">
+    <div class="Burki-pics1">
 
             <div class="Bu-pics">
                 Image Here
@@ -4952,7 +5049,7 @@ Text Here [ 2.] Talk About the policies and gobernmental achievements and set ru
 </div>
 </div>
 
-    <div class="Burki-pics">
+    <div class="Burki-pics3">
         <div class="Bu-pics">
             Image Here
         </div>
@@ -4962,7 +5059,7 @@ Text Here [ 2.] Talk About the policies and gobernmental achievements and set ru
     </div>
 
        </div>
-    <div class="Burki-pics">
+    <div class="Burki-pics4">
 
         <div class="Bu-pics">
         Image Here
