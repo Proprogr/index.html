@@ -2621,7 +2621,7 @@ height: auto;
             background-color: rgba(245, 245, 245, 0.436);
             width: 84%;
             height: 600px;
-            font-family: 'georgia';
+            font-family: 'Kanit';
             color: rgb(82, 82, 82);
             padding-left: 5px;
             padding-bottom: 5px;
@@ -2790,7 +2790,7 @@ height: auto;
     justify-content: center;
     justify-items: center;
     width: 100%;
-    height: 349px;
+    height: auto;
     padding: 15px;
     font-family: 'Kanit';
     line-height: 17.35px;
@@ -2800,12 +2800,102 @@ height: auto;
     border-left: 0.12rem solid rgba(44, 91, 140, 0.46);
 }
 
-.Bu-pics img{
+.Bu{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    justify-items: center;
+    position: sticky;
+    top: 0;
     width: 400px;
-    height: 255px;
-    background: transparent;
-    padding: 3px;
+    height: 260px; 
+    padding: 20px;
 }
+.Bu img{
+    width: 380px;
+    height: 220px;
+    background: transparent;
+    padding: 10px;
+    position: relative;
+}
+
+.Cu{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    justify-items: center;
+    position: sticky;
+    top: 0;
+    width: 400px;
+    height: 260px; 
+    padding: 20px;
+}
+
+.Cu img{
+    width: 380px;
+    height: 220px;
+    background: transparent;
+    padding: 10px;
+    position: relative;
+}
+
+.Du{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    justify-items: center;
+    position: sticky;
+    top: 0;
+    width: 400px;
+    height: 260px; 
+    padding: 20px;
+}
+.Du img{
+    width: 380px;
+    height: 220px;
+    background: transparent;
+    padding: 10px;
+    position: relative;
+}
+.Fu{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    justify-items: center;
+    position: sticky;
+    top: 0;
+    width: 400px;
+    height: 260px; 
+    padding: 20px;
+}
+.Fu img{
+    width: auto;
+    height: 220px;
+    background: transparent;
+    padding: 10px;
+    position: relative;
+}
+
+.Gu{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    justify-items: center;
+    position: sticky;
+    top: 0;
+    width: 400px;
+    height: 260px; 
+    padding: 20px;
+}
+
+.Gu img{
+    width: 380px;
+    height: 220px;
+    background: transparent;
+    padding: 10px;
+    position: relative;
+}
+
 
         .FASOTITLE{
             display: grid;
@@ -4681,8 +4771,8 @@ function showSlides(n) {
                 </div>
 
                 <div class="FASOTITLE">
-                <p><b><em style="font-family: 'arial black'; color: rgb(214, 41, 18);">Burkina Faso</em>, the land of integrity, a landlocked and low-income Sub-Saharan African country with limited natural resources, is administratively structured of <em style="font-family: 'arial black'; color:green">45 provinces </em>and nested within the heart of <em style="font-family: 'arial black'; color:rgb(214, 41, 18)">West Africa</em>. Burkina Faso was a former colony of France from which it gained (took) independence in August 5th, 1960. 
-                    <em style="font-family: 'arial black'; color: rgb(214, 41, 18)">Its capital and main city is Ouagadougou</em> populated by 1.086.505 people in the city area. The global <em style="font-family: 'arial black'; color:green;"> population of Burkina Faso is about 23 300 000 inhabitants</em> with a dominant percentage of youth. Geography influences Economy. The economy of Burkina Faso is mostly based on
+                <p><b><em style="font-family: 'Kanit'; color: rgb(214, 41, 18);">Burkina Faso</em>, the land of integrity, a landlocked and low-income Sub-Saharan African country with limited natural resources, is administratively structured of <em style="font-family: 'Kanit'; color:green">45 provinces </em>and nested within the heart of <em style="font-family: 'Kanit'; color:rgb(214, 41, 18)">West Africa</em>. Burkina Faso was a former colony of France from which it gained (took) independence in August 5th, 1960. 
+                    <em style="font-family: 'Kanit'; color: rgb(214, 41, 18)">Its capital and main city is Ouagadougou</em> which population is heightened about 1.086.505 people in the city area. The global <em style="font-family: 'Kanit'; color:green;"> population of Burkina Faso is approximatively equal to 23 300 000 inhabitants</em> with a dominant percentage of youth. Geography influences Economy. The economy of Burkina Faso is mostly based on
                 agriculture, livestock breeding, mining, market gardening. The informal
                 sector is growing and believed to create more jobs. Citizens of Burkina Faso are called Burkinabè or Burkinabé but no a plural mark with 'S' even if it is at least two inhabitants.  
                 </b>    
@@ -4901,12 +4991,16 @@ function showSlides(n) {
     <div class="Burki-pics0">
 
         <div class="Bu-pics">
-
+    <div class="Bu">
         <img src="https://img.freepik.com/vecteurs-libre/illustration-personnes-handicapees-dessinees-main_23-2149651449.jpg?size=626&ext=jpg&ga=GA1.1.1826414947.1698969600&semt=ais">
-        <figure>
-            <figcation>Disability And Inclusion</figcation>
-        </figure>
+    </div>
 
+        <div class="Bu">
+        <img src="https://thumbs.dreamstime.com/b/educational-specialist-service-isolated-cartoon-vector-illustration-247670238.jpg">
+        <figure>
+            <figcation style="font-family: 'Kanit'; font-size: 20px; color: blue">Disability And Inclusion</figcation>
+        </figure>
+        </div>
         </div>
     
 
@@ -4917,33 +5011,29 @@ function showSlides(n) {
         How Disability is perceived in African countries and mentalities in general but especially in countries like Burkina Faso, Niger or Mali all of them located in the Sahelian region and where violent terrorism is barbarically murdering lots innocent people.
         <br>
        
- It's Obvious that even an existence of a little difference of development between the <span id="dots"></span><span id="more"> three countries, matters and issues tied to disabled people that seem to be the same every where in terms of how people are living better or no with disabilities; what are their feelings about their rights? Basically, the main focus here is to dig deep into many subjects and concerns of disabled people no matter who they are, getting tools in trying to understand why there is a continual specter and ceaseless discriminations towards people with difference. Also what matters is the possibility of getting more people have substancial approaches and ideas of what is disability and how disabled people deal with that in their communites on a daily basis. 
+ It's Obvious that even an existence of a little difference of development between the three countries, matters and issues tied to disabled people that seem to be the same every where in terms of how people are living better or no with disabilities; what are their feelings about their rights? Basically, the main focus here is to dig deep into many subjects and concerns of disabled people no matter who they are, getting tools in trying to understand why there is a continual specter and ceaseless discriminations towards people with difference. Also what matters is the possibility of getting more people have substancial approaches and ideas of what is disability and how disabled people deal with that in their communites on a daily basis. 
  <br>
  Using resources, methology and analyses and narratives in order to bring to light and then allow a larger understanding of what is Disability by a wide ranger of people. Stories, ideas and narratives displayed below belong totally to people who are disabled or parents of disabled people and are agreeing to contribute by telling their stories.
-</span>
+----------------------------------------
+
+ Using resources, methology and analyses and narratives in order to bring to light and then allow a larger understanding of what is Disability by a wide ranger of people. Stories, ideas and narratives displayed below belong totally to people who are disabled or parents of disabled people and are agreeing to contribute by telling their stories.
+
+ Using resources, methology and analyses and narratives in order to bring to light and then allow a larger understanding of what is Disability by a wide ranger of people. Stories, ideas and narratives displayed below belong totally to people who are disabled or parents of disabled people and are agreeing to contribute by telling their stories.
+
+ Using resources, methology and analyses and narratives in order to bring to light and then allow a larger understanding of what is Disability by a wide ranger of people. Stories, ideas and narratives displayed below belong totally to people who are disabled or parents of disabled people and are agreeing to contribute by telling their stories.
+
+ Using resources, methology and analyses and narratives in order to bring to light and then allow a larger understanding of what is Disability by a wide ranger of people. Stories, ideas and narratives displayed below belong totally to people who are disabled or parents of disabled people and are agreeing to contribute by telling their stories.
+ Using resources, methology and analyses and narratives in order to bring to light and then allow a larger understanding of what is Disability by a wide ranger of people. Stories, ideas and narratives displayed below belong totally to people who are disabled or parents of disabled people and are agreeing to contribute by telling their stories.
+
+ Using resources, methology and analyses and narratives in order to bring to light and then allow a larger understanding of what is Disability by a wide ranger of people. Stories, ideas and narratives displayed below belong totally to people who are disabled or parents of disabled people and are agreeing to contribute by telling their stories.
+
+ Using resources, methology and analyses and narratives in order to bring to light and then allow a larger understanding of what is Disability by a wide ranger of people. Stories, ideas and narratives displayed below belong totally to people who are disabled or parents of disabled people and are agreeing to contribute by telling their stories.
+
+ Using resources, methology and analyses and narratives in order to bring to light and then allow a larger understanding of what is Disability by a wide ranger of people. Stories, ideas and narratives displayed below belong totally to people who are disabled or parents of disabled people and are agreeing to contribute by telling their stories.
+
+
 </p>
-<button class="button" onclick="myFunction()" id="myBtn">Read more</button>
-                    
-<script>
 
-function myFunction() {
-  var dots = document.getElementById("dots");
-  var moreText = document.getElementById("more");
-  var btnText = document.getElementById("myBtn");
-
-  if (dots.style.display === "none") {
-    dots.style.display = "inline";
-    btnText.innerHTML = "Read more"; 
-    moreText.style.display = "none";
-  } 
-  
-  else {
-    dots.style.display = "none";
-    btnText.innerHTML = "Read less"; 
-    moreText.style.display = "inline";
-  }
-}
-</script>
 </div>
 
 </div>
@@ -4951,86 +5041,53 @@ function myFunction() {
     <div class="Burki-pics1">
 
         <div class="Bu-pics">
-        <img src="https://media.istockphoto.com/id/1199289878/photo/hands-protecting-disabled-handicap-icon.jpg?s=612x612&w=0&k=20&c=3j8M-1Mr6UhVOGybVtOOqc9I_D-0oBYlf_VJAeaG4Kg=" />
-        <figure>
-            <figcation>Disability And Law</figcation>
-        </figure>    
-    </div>
+
+        <div class="Cu">
+            <img src="https://www.shutterstock.com/image-photo/gavel-symbol-law-disability-person-600nw-2309923245.jpg">
+        </div>
+    
+            <div class="Cu">
+            <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEBESEhMVFRAVFxYWFhUSFRYWFRAXFRgXFhYVFRMYHSggGBomHRUWITEhJSorLi4uGB8zODMsNygtLi0BCgoKDg0OGxAQGy8lICYtMy0tLS0tMy0tLS0yLi0tLS0vLS0vLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAJ8BPgMBIgACEQEDEQH/xAAcAAEAAgMBAQEAAAAAAAAAAAAABQYCAwQBBwj/xABJEAACAQIDBAUHCQUFCAMAAAABAgADEQQSIQUGMUETIlFhcVOBkZKhsdEUFiMyM0JScsEHYoLS8JOisuHxJFRzo6TCw9MVFzT/xAAaAQEAAgMBAAAAAAAAAAAAAAAABAUBAgMG/8QANxEAAgECAgYIBAYCAwAAAAAAAAECAxEEIQUSMUFRYRNxgZGhsdHwMsHh8RUiNEJy0hSCIzNS/9oADAMBAAIRAxEAPwCvRET1B5UREQBERAERAgGYnsROpEvcREQYMWmMzmE0ltJFJ5WERE1OgiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAnqzyZLMraazdosyiInQiiIiAJrabJi01kdKbszGIiaEgREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREATMTCZzaJyqvKx7ERNzgIiIAnhns8gynbMwiDE5EsREQBERAEREAREQBERAEREARE1dOl8uZb9l/61mG0tplJvYbYiJkwIiIAiIgCIiAIiIAiIgCIiAIiIB6synizKbxI9V5iIibHMREQBERAMWmMzaYTm9pJpu8RERMG4iIgCIiAIiIAnJjtoJSsGuWPADs7TOuQmH2FVrYtFbMyPUsWQgsqkklgG4BRrOGIqShC8V9CThaUKk7Tf15HfgtoLUJABBAvrwI7iPGdktG1tnUcLgRRp6aixI61Rr5mZiOfH3SrzXC1XVp6z4m2MoRo1NWPD1CrcgXtcWv8AhvpfzSxYzcrDnDEUUyVlUZHLvYlfxaka2Nza8qGJ2nTUlb3fhYcj3nhPou0GBoYqijFmpUQ7NYgWKs4BPf0ZBt2yLjrTlFRey9+V7E3RycIyco7bW52vl9dhRV4CZTnw2NSoBlOpF7HRvROiWSkpK6KmUXF2krGqtXVPrMq/mIF/TMqbhhdSCO0G49IkhX3UTFYem4bJX162pUi5sjL421Gsqm7B1qC+mmnfci9j6JEhitaq6aW9r33E2eC1KCqt7Un329SeiIkwgCIgCAImfRHs/r0zCYTT2M2lCUdqt2CIiZNRERAEREAyWZTwT2dFsIsnd3EREyanbsfZzYiqKacef7tv9ZNbS3Z6G2ZTY99wfAiRW7+0Pk+Ipv8AdB63hwP9d0v29WMpth1ysGzkFCDe4Gpa/Zrbzyg0tWxFKacJtRtlwvvvk8/oem0NQwtak1OClK+d+G62ezb23PmNZLMR2XExkhtOhbrjxPj2yPlrg8Qq9GNRcM+vf4+BS4/DPD15U3svddT2e+J5MJsmtpIkcaTzsJ30aCdGjMtyeeYjgSP0nBLRsa3yRSbfXbj/ABSq0rOcKKcJWettTtlqyLfRkITrNTV1q7HnviRHRU/wf3zMcRQTo3YLYi33ieN55gyMq20E34s/Qv8Aw+8yvw8q3SQcqkmm81fL4tXjyuW1fD0OgqyUEnFO1kv/ACn8yKiJmtJjqFJHcDPRHmTCJsNFvwt6DNcASzYWimBq0umK/ThglTgKbJlzI1zaxuLN3a6aysjiJY/2kYN6mEw7U0ZujqPmyAtkDDiQOA0GsiYqTyjud7k7AxTblvWzxM97tmuGFa5ykXysfq5ci6DvzA+YyqYmtkRnP3QT4901bLw9esV6MVKipyXMyoCNQByvbl2Tl3kYrRIsdXAOn1bXOvZqAJtCTpUnd3t7RitTVSusvi2/Pw7iu0qnWued7+fiZ9a2Zic7bRH48DTb/lOf/JPnG7dDDVa9NMU/R0QHZmLZc56uVL/dGh4eyfUtgYfDPWCYdKlnwhR6pFXJ0bLSFCxfQ3UNw16pvzlXHeuRbPanz+h8iovkegewi/ntm9l5c8Phaj3CIzkccqlrejwlP2lTyqEbSorOrDstYH2qZftztsCkVZr2qIhLfgNuJ7tZLw05QhLVV3k7EHFU4znDWdlmr+RI7oUKru6ZitNPrAjhe/Pla3CQu++xmw2Po1l+xrrk7w6qSwI5A9Vh/FPoOHphFCoLqzF6jEi9QnX0cB4C0qn7RMQamIwiAHJTSpVJI0LOejUeYBz5xOUZqrXUob7eB3nTdHDOM87J7eeSXdYr8ROihTp6FqljzXKTz7pazmoq7T7E35J+hSQi5Oyt2tLza9TWMOxIHM8NRz0m6pgqlNrOtvOp4juJnbhsRSV1YvmA+6VbXS3ZprrMq+Lpu4Y1LgEkqyuQb8BpbhIEcRXeU490J93vLmTVh6Sz11ty/NH1+vI1LxEihJsYuhp9TgeVTnw58pEV0UWytnHblK2mcEtVyTTV+MZLjvatvJOla0asabjJPVve0k9urzvuMJ7TQsQqgliQABxJOgAnkkt3B/teH/MPZcydJ2i3yKmMdaSXFm2puviQLtZF0uWOgv26Trp7ApW61ZS3MqVA9BJ98nd8K2IC01oUzUVr51yFxpYi4HDWVi+N/wB0/wCnaVTxU3vt1fUulg6cdiv1/Q17a2I+HytqabaBiOB7D+kixJvG4nH1qeSrRfoxbhScWy9/ZIVZYYWo6kM9pV42kqU/y7LXRnERJhVnXgtl16wJpUmcA2JVSQD2X4TrxG7WLp02qPRIRRdjmS4HM5Qb280tH7McZ1a9HsIcd9xlb3L6ZbKLNVFZKtLIuZqYuwYVqZA64twvmIseyVWIx1SlVcLKy8i6w2jqVakp6zu+rb3H593i2kaSqqGztrfmqD4/oZMLv3SGy6eHpo5xQUKWcKVVr3aoGJ1JubC2l+7Wvbc2FiVxWJWtTe9MNlyqbOqtlUoBxUjWR+zdh4qrpTw1Zx2rScj02tKzH1pVZaz+HcuSyvbruX2icNSoxUHbWXxPm0na/BK33uTOD3lq1GWlUyZCRcgWJ1txvbjblJsoOZN/AnTlrIWjuBtJ+GFYfnekvsZ7yWCMvVdcjp1WUkHKydVhcaHUHWd9E1HnRhkviyt1ehE09SpflxDV/wBtr23t3yfWJ40ynk9AzykXZmEmsJistBEIuCWPG2tyJCyRp/ZU/wCL/EZSab/Tr+S8pF/of9Q/4vzideFrZRZEa2l+sTwOl9JjtKsWovdStmXjzuTflNuzcUlMNnTNqhGtrBScw840mO1sWlSgcqZbWvre9729AAErsDCUpQlrPanbd8dvPPrLTHTUYThbbFvwf2IGW7CMeiQ9y8h2CVKWvB/Y0/yr7hPQ19iPP4bazab+YcdOEp176y6rVAR1PFrW8xlKXhNcPv8AfE2xX7e35Hsltn799E/R1QxAsOkSxJP7yHQ+I9EiZV8V9ep+d/eZnEpOKTM4K+s3yL9S3yPTVWpUER6nF/vNlFgXUaE8T5+fGRleqXZmbVmJJ7yeOkicB9ceB90k5tRpxjnFGMXUlKSTeX3Krt1VFYhQAABfKALk6308RJbBb+46jSWlTamqIqoPowTZBlFyxOtpHbx0gKoIvdhc+bQW9EiJV1lapJcy1w7TpRfIncdgKtWulSoVYYgNVLpa1s30gZQBlfMdRb7wk8BYWHCR+xUGVm55svmAB/WSMsMHT1Ya29lXjqjlU1dyy9S97v1KWRc1amAAAV6Rbk8wRfSRG/VdHr0yjK1kAJUggdZiBceM+XoPpK3/ABH/AMbSc2M3VYcgRbz/AOkiYbKv3k7F3eH7iQiIlqUoiIgCIiDIkju5/wDrofmHuM4BRY6hWI7lMkNg02GKoaFTm0LKbcDy0vNKnwPqfkb0v+yPWvM+kxNOSr+JP7Nv/ZNWJGIC/RmizX4OrqLeIZtfNKM9Eb8V9m/5W9xnyinwn0oDEmnU6XoVNmsKYdri3MsVsfMZ83TgJZaP/d2FPpbLV7fNGURPJZFKdGz94jgqy1FBZyD1OTKe08tQD5pN0v2p1vvYame5ajD2kGUTan2yfkH/AHTZgsI9aotKnlzubLnOVb2vqwBtw7J5rH1ZSrtcMvuez0ZhoQw0ZZu6v9i8f/YrO30eGSnWcgFy+eyjuygk8e4d84sRvhi1cgVWJHM5APQFlPwVYrWpKyMpLC3Yb9hnu09qInSMQScxAFiAxubDMRblInRK71lnvuiTOrGycHlyeXg8yzNvjjmJTpMuZXysuW6kKSDYpxnCvAX1PMnUk8yT2yJ2Hu7isWoxOIr/ACXCXsrdYPULD6tGmou5tzOluclX2W9AFlr/ACnC5ghqMpSth2Y5U6UH6yMbAOCdTY20lro6UaTd1a9s93vOxS6VhOsk076t3bf2diZlERLs86a2lg2Tg1qUUJ5X524sZAtLPu99ivn/AMTSk03+nX8l5SL/AEK71v8AV+cTNdlqOZ9M49s4YJRa3MiTsit4vsT+YSiwM5f5FON8tZeZeY2K6CbtnqvyKvLHs7HKyKoNmAAItwsOUrk+k7uplwlDILXGZrC+Yk6k989TipqMU7bzzmDpuc2k7ZFdxeMVBdj4AC95WCZ9WxaF6dRXF0KNcEd3vnygTGEmpJ5G2Ng4OOd1meyt7QH0r+Msk5juri6xNWnTBRibEuqk20vYmdMQ0o3ZjBJubS4HNswa3/c+Ekpow+CeiWSoAGFgQCDYjjqJvnSn8JxxD/5GVfeNr1vBQPaT+si53baa9ep3ED0KJpxVLL0faaaH1rt+sqK2c5PmXFC0acI8vfmiz7JH0Q72Pw/Sds5sALUk8PeSZ0y2oq1OK5Ipa7vVk+bKrUW1euP32PpJP6yZ2LwbxH6yL2glsU/7wB9g+BkrshSA1wRqOItK+irYi3N/Ms8RK+FT5R80SEREtCnEREAREQD6NgKFdKVNDTqXVFU5Xp2uOY6846uy65qU2K1mRajVGFWpSOUMPqpZ/wDKcV5lTqFSCDYjhKzo3e+V+r6npehyUbu3oT/RL5FvSn885Np0Vya0K9rj7Bhn5/he5Ej6G0cQM2apmuxI6iiw5DhrNn/ydX8fsX4Tj0EjfVZ07NwwZHVKOJudB8obW5FhlzPwkSNwtoeRHr0v5p208diGqU8tSygksMinMLcL20nbO9B1KV7Wz5X+aOFbAwxFnNvLgQvzC2h5EevS/mj5hbQ8iPXpfzSz4fCggE3N5w7N2zg69apQp1F6amzKyvmQ3U5TlLWDa9l50li5xzbVup/2OH4PQva78PQ+Wbx4N6GNNGqLVKYUMAQbXUONRpwYTLZb2qqb2sHsew5Gt7Zct5txOkxHS4eurVqjEtScjhYC6FRcKP3h2a8jW8Zs6ps6tSq4un9EroxKkMrKHUEXHn0NibGUcqvSVHPi7+PDgXUacaVHo1sSt4WLANz8YiGvUpAUwC+rISi8QAt73lM3n2HiH2jhcAy2qMqHKGBt0mrEkG2irefSNu7QodArUXR6TKWNRXuFRSOPfxB8DKPs/FrV3lwtXI6UmZDTFTRmUUiqtbkCRcAyfVxEpK11nbdtzbzze/bxKyODpxkmm8tnK6tl1JZF63i2FXAVhSy4SgBTonMvVXQFmF9CzC9/C85N3NgVqrsRTz0KimnVIZcop1B1spv1iLggDgV7RO7auCpnPTRT0lmNRszWQa30va5nm7WzqVGnSR7jokWoGzEZ0QZi1hpcW1HhMdLPV1bq1vvv3vN8/Db/ABYa2vvvfdztu3J2XIi8LuRjnpo4pKQyg3z09bjvM2/MLaHkR69L+aWbC4UdGmYWbKCdTxIuZhiqGWxBNu+To4qq+Hc/7Eb8HocX4ehWqm4m0ACehGmv2lLl/FOnZmDeinR1BZxxFweJJGo7jJOR+fISP6/rWQtJKtXpKKSf5k8lbc+LfEl4TBUsNPWi3stn1p/I6Zx7UwNSuhSmLve9rgaDjqZs+U90wq1byrw2FrwrQk47Gnu9SbWcKlOUL7VYiPmni/Jj1k+MvexaDU8PRpuLOoAIuDY+IlWvJfCbaCIq5CbC178fZL2u6k4pO3vrbK6lhI0W3G+ZN4hSUYDiVIHiRPnY3Txnkx66fGW2pt4EEZDqCPrdvmkJMUNene2Xvk0KuFjWtrbiN+aeM8mPWT4y20k6Oki/hUL6BaQ1NbsB2kCbto7VRMTTosbFwQv4Swy6E9pvp4d4nLGSnNJPdd/LizrhcNCg21vttIrGbs4t3dxTFmYsOunA3I5zX808Z5Meunxkk17meFra9mslxqVEkk13P1I0tHU5Ntt59XofJKuGari2pAXqPWNMAfiL5AL8OPOdu9mAehizTqDKwVDYEHQ8NRG51PpMbTY8s1Q+g2/vMJ0b7j/bvFKZ9pH6SDduDfF+/M7qmsnwy8vQtWyt2cU9Ck60wVemrKc6C4YXBsT3zq+aeL8mPWT4zp2YLUKI7KaD0KJ03k+NSpZWa7vqR3o6k3e7z6vQy3f2PicPULVEy020NmU8+roD/V5s3j2LVrujUlDEAhrso53XideLTzCtZ18Z1bXbrKO73n/KRXKf+Qpb7cOzZckrCw6Dos7X+d/fLIr3zTxfkx6yfGPmpi/Jj1k+MkrxeS+lqcV3P+xG/DaXF+HoRvzUxfkx6yfGPmpi/Jj1k+MkrxeOlqcV3P8AsPw2lxfh6Eb81MX5Mesnxj5qYvyY9ZPjJK8XjpanFdz/ALD8NpcX4egiImhYCIiAbsG1m8dJIyHnbh8Vybj29vjMG0WTWDq3W3Me6RG8W6WHxQdsipiDY9KFFyRp1x94W07Z0IxBuJ20sYD9bQ9vKc2mndGZRUlZkDsbCbQwVAqK2B6GmL/SrUXKq9jU1Bbz3MjcFiquPxLrXNGsoRyFRG6K5XKqhagDWuSesOJPdLxow5EHjzBmNKgi/VVV/KAPdIzpLXcklnyRqo2SV3Zbj5hhaNJaNgWGNFQKKZQ2ABXThbk1768Ba1zOj9qezqtKrhNpURrRyLUt9zK2ambdlyyn+Htn0c0ELZiq5vxWF/TMnQMCrAFSLEEXBB4gg8RMRpWTVwokdg9q4bE4VsTSq0/pEvUzMqZXy2Ia5sp7jOHZ2NXFBKdHrYenYVK/3arLb6GieLJmUFn4HKALgmazuFs3pOk+TLfjbM2T+zvl9ksChKahQAqjQAaADuEzGD2MJG2cOOq3IUcuPjFbGX0XTv5+acpMkxjvZukeyLxDXYn+tNJuxGKvovp+E5Z0NZO57ERMmoiIgCIiAc2NcqoqKCWpEVAo4tl+so7ypYeecNXH4TaDv0TFgq6kqVKmpzW/MFL3kvMFQC9gATxsOPj2zm6actbsBwbPo4pXPTVUqJaw6tmuOB0A9t5ht7Z1WugSnW6Jdc4y3LjkMwIIHHTneSk9myglHV3CxDbB3cpYUlgWeoRlLNoANCQqjgCQDrc6cZzbzbtfKWWojZaoGU5r5WUXI4cCCTrLFEOEWrGLHPg6brTRXIZwoDFRYMQLEgToiJsjJwtt/C0q2SrUCFdTcGw0vx8OztE8wG06uIqVqrgLRIToVt1gvWOZ/wB43U25XtOithabkF0ViOBZQxXwuNJunLo3r67YTPYiJ1AiIgCIiAIiIAiIgCIiAZU6zLwPm5TqTG9o9HwnHEWMrIkkxa8jY+cToTGnk4PoMhZ5MWM6xPjGt3QcY3aJARMaiFyafGHm/tA9052xS9t/CRs9mbDWOp8b2D0/Cc1SqW4meRMmHmIiIMCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIB//9k=">
+            <figure>
+                <figcation style="font-family: 'Kanit'; font-size: 20px; color: blue">Disability And Local Law</figcation>
+            </figure>
+            </div>
+        </div>
 
     <div class="Bu-pics1">
         <b style="font-size: 18px">2. Disability And Local LAw </b>
     <p>Talk About the policies and gobernmental achievements and 
-        <span id="dots"> </span> ... <span id="more">set rules about Disability, Their Rights, Their Duties And In General Their Lives As 
+        set rules about Disability, Their Rights, Their Duties And In General Their Lives As 
         Different But Also As Citizens. They Have An Impact whetever Its Nature In The Communities Because Their Seventh Sens Will Get Them Emerge Even From A Little Chaos. And The Local interaction and 
         perception given it is about disability or disabled persons.
-</span> 
 </p>
-<button class="button" onclick="myFunction()" id="myBtn">Read more</button>
-                    
-<script>
 
-function myFunction() {
-  var dots1 = document.getElementById("dots1");
-  var moreText = document.getElementById("more");
-  var btnText = document.getElementById("myBtn");
-
-  if (dots1.style.display === "none") {
-    dots1.style.display = "inline";
-    btnText.innerHTML = "read more"; 
-    moreText.style.display = "none";
-  } 
-  
-  else {
-    dots1.style.display = "none";
-    btnText.innerHTML = "read less"; 
-    moreText.style.display = "inline";
-  }
-}
-</script>
 </div>
 
   </div>
 
     <div class="Burki-pics2">
+        <div class="Bu-pics2">
 
-            <div class="Bu-pics">
+        <div class="Du">
+            <img src="https://media.istockphoto.com/id/1171406315/fr/vectoriel/illustration-de-vecteur-denfants-denfants-handicap%C3%A9s.jpg?s=612x612&w=0&k=20&c=ckeI6Yt3aXMY3jhfxi6vnLivpKrcg1GqVDEpTqsDRmc=">
+        </div>    
+            <div class="Du">
             <img src="https://media.istockphoto.com/id/1298415912/fr/vectoriel/un-groupe-diversifi%C3%A9-de-personnes-handicap%C3%A9es-travaillent-ensemble-au-pouvoir-les.jpg?s=612x612&w=0&k=20&c=GXooMr4zx3gB82eAKpal79IlnfPs-4GovlQHGJWrGH0="/>
             <figure>
-                <figcation>Disability And Gender</figcation>
+                <figcation style="font-family: 'Kanit'; font-size: 20px; color: blue">Disability And Gender</figcation>
             </figure>
-        </div>    
+        </div>  
+    </div>    
+
         <div class="Bu-pics1">
         <b style="font-size: 18px;"> Disability And Gender</b>
     <p> 
         Take An Approch that consist to first define what is disability and corollary 
-        <span id="dots"> </span> ... <span id="more">
         issues and matters. Dig Into A wider Way including Disability and gender in the society ? 
         Disability and Culture and many other Aspect Of Any Cultural identity.
-    </span>
     </p>
 
-<button class="button" onclick="myFunction()" id="myBtn">Read more</button>
-                    
-<script>
-
-function myFunction() {
-  var dots1 = document.getElementById("dots1");
-  var moreText = document.getElementById("more");
-  var btnText = document.getElementById("myBtn");
-
-  if (dots1.style.display === "none") {
-    dots1.style.display = "inline";
-    btnText.innerHTML = "read more"; 
-    moreText.style.display = "none";
-  } 
-  
-  else {
-    dots1.style.display = "none";
-    btnText.innerHTML = "read less"; 
-    moreText.style.display = "inline";
-  }
-}
-</script>
     </div>
 
      </div>
@@ -5038,74 +5095,65 @@ function myFunction() {
     <div class="Burki-pics3">
 
         <div class="Bu-pics">
+        <div class="Bu">
+            <img src="https://st2.depositphotos.com/17584076/46174/v/1600/depositphotos_461747842-stock-illustration-employee-people-disabilities-inclusion-work.jpg">
+        </div>
+
+        <div class="Bu">
             <img src="https://www.myperfectresume.com/wp-content/uploads/2020/09/employment-resources-for-the-disabled.jpg">
             <figure>
-                <figcation>Disabled worker coached</figcation>
+                <figcation style="font-family: 'Kanit'; font-size: 20px; color: blue">Working</figcation>
             </figure>
         </div>
+    </div>
 
     <div class="Bu-pics1">
         <b style="font-size: 18px;">Disablilty And Employment</b>
         
-        <p>Explore what is the best option to tacke barriers in<span id="dots"></span>...<span id="more"> some societies through their 
+        <p>Explore what is the best option to tacke barriers in some societies through their 
             perception to disabled people around them.
-        </span>
         </p>
-    <button class="button"; onclick="myfunction()"; id="myBtn">Read more</button>
-        
-                    
-<script>
-
-    function myFunction() {
-      var dots1 = document.getElementById("dots1");
-      var moreText = document.getElementById("more");
-      var btnText = document.getElementById("myBtn");
-    
-      if (dots1.style.display === "none") {
-        dots1.style.display = "inline";
-        btnText.innerHTML = "read more"; 
-        moreText.style.display = "none";
-      } 
-      
-      else {
-        dots1.style.display = "none";
-        btnText.innerHTML = "read less"; 
-        moreText.style.display = "inline";
-      }
-    }
-    </script>
-    
 </div>
 </div>
 
     <div class="Burki-pics4">
-
-        <div class="Bu-pics">
+        <div class="Bu-pics1">
+        <div class="Fu">
             <img src="data:image/png;base64,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" alt="Disabled kid with a tricycle in company in her classmates">
-            <figure>
-                <figcation>Disability And Transportation</figcation>
-            </figure>
         </div>
+        <div class="Fu">
+        <img src="https://img.freepik.com/free-vector/bus-wheelchair-ramp-concept-illustration_114360-17312.jpg?w=2000">
+        <figure>
+            <figcation style="font-family: 'Kanit'; font-size: 20px; color: blue">Disability And Transportation</figcation>
+        </figure>
+    </div>
+</div>
 
+        
     <div class="Bu-pics1">
         <b style="font-size: 18px;">Disability And Transportation</b>
         
-    <p>Coordinate A Coalition of disabled people and relatives to start<span id="dots"></span>...<span id="more"> a chapter of writing their own stories and histories.
-    </span>
+    <p>Coordinate A Coalition of disabled people and relatives to start a chapter of writing their own stories and histories.
     </p>
     </div>
 
        </div>
 
     <div class="Burki-pics5">
-
         <div class="Bu-pics">
+        <div class="Gu">
            <img src="data:image/jpeg;base64,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" />
-        <figure>
-            <figcation>Disability And Studies</figcation>
-        </figure>
+        </div>
+
+        <div class="Gu">
+            <img src="https://us.123rf.com/450wm/bsd555/bsd5552005/bsd555200500221/147013622-inclusive-education-rgb-color-icon.-assistastance-for-person-with-disability.-handicapped-student-support-program.-special-class-teacher.-school-accessibility-for-invalid.-isolated-vector-illustration.jpg" />
+         <figure>
+             <figcation style="font-family: 'Kanit'; font-size: 20px; color: blue">Disability And Studies</figcation>
+         </figure>
+         </div>
         </div>
         
+
 <div class="Bu-pics1">
 <b style="font-size: 18px;">Disability And Studies</b>
     6 Being An organisation that has tied cooperation with other similar organisations and then becoming an active member to try to gain more results about their fight for rights.
